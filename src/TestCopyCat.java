@@ -6,7 +6,7 @@ public class TestCopyCat {
 
 	static public void main(String args[]){
 		File file = new File(
-				"d:/list.xlsx");
+				"d:/test.xlsx");
 		
 		String writePath = "D:/";
 		CopyCat cc;
