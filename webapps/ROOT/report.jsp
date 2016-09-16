@@ -3,7 +3,7 @@
 <%
 	String cmd = request.getParameter("cmd");
 	String file = request.getParameter("file");
-	String filedir = "/usr/local/LibraryRecordLocate/webapps/ROOT/reports";
+	String filedir = request.getServletContext().getRealPath("/") + "reports";
 	File f = new File(filedir + "/" + file);
 	if(cmd!=null && cmd.contains("delete")){
 		f.delete();

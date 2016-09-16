@@ -5,8 +5,8 @@ CopyCAT Program for Library
 <%
 	try{
 		String file = request.getParameter("file");
-		String requestFilePath = "/usr/local/LibraryRecordLocate/webapps/ROOT/requests";
-		String reportFilePath = "/usr/local/LibraryRecordLocate/webapps/ROOT/reports";
+		String requestFilePath = request.getServletContext().getRealPath("/") + "requests";
+		String reportFilePath = request.getServletContext().getRealPath("/") + "reports";
 		if(file!=null && file.contains(".xlsx")){
 			File f = new File(requestFilePath + "/" + file);
 			CopyCat cc = new CopyCat(f, reportFilePath);

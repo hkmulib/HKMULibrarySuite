@@ -7,7 +7,7 @@
 <%@ page import="org.apache.commons.fileupload.servlet.*" %>
 <%@ page import="org.apache.commons.io.output.*" %>
 <%
-	String pwdfile = "/usr/local/LibraryRecordLocate/webapps/ROOT/conf/sphinx";
+	String pwdfile = request.getServletContext().getRealPath("/") + "/conf/sphinx";
 	String pwd = "&klsldfkj2356";
 	try{
 	BufferedReader br = new BufferedReader(new FileReader(pwdfile));
