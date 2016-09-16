@@ -8,6 +8,8 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.nio.charset.*;
 import java.util.*;
+import java.util.Map.Entry;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -151,9 +153,9 @@ public class CJKStringHandling {
 			} // end catch
 		} // end if
 
-		Iterator it = ChineseAI.entrySet().iterator();
+		Iterator<Entry<String, String>> it = ChineseAI.entrySet().iterator();
 		while (it.hasNext()) {
-			Map.Entry pair = (Map.Entry) it.next();
+			Map.Entry<String,String> pair = (Map.Entry<String,String>) it.next();
 			String key = pair.getKey() + "";
 			String value = pair.getValue() + "";
 			if (str.contains(key)) {

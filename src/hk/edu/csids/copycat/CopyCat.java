@@ -135,9 +135,12 @@ public class CopyCat {
 			for (String s : qArryList) {
 				instMatchCount.put(s, 0);
 			} // end
-			for (int i = 0; i < qArryList.size(); i++) {
-				for (int j = 0; j < IsbnArrayList.size(); j++) {
-					String s = IsbnArrayList.get(j);
+			
+			int j = 0;
+			for (String q : qArryList) {
+				j = 0;
+				for (String s : IsbnArrayList) {
+					
 					ISBN isbn = new ISBN(s);
 
 					if (!isbn.isValid())
@@ -146,21 +149,21 @@ public class CopyCat {
 					try {
 						if (strHandle.hasSomething(s)) {
 							if (zq == null) {
-								zq = new Z3950QueryByISBN(s, qArryList.get(i));
+								zq = new Z3950QueryByISBN(s, q);
 							} else {
-								zq.query(s, qArryList.get(i));
+								zq.query(s, q);
 							} // end if
 							if (strHandle.hasSomething(zq.bk.marc.getMarcTag()) && !isBriefRecord(zq)
 									&& matchTitle(j, zq) && zq.match() && !isCorruptedRecord(zq)) {
 								String record = zq.getResult();
-								record += "\nZ39    $a" + "EXCELID=" + j + "&Z3950LOCATE=" + qArryList.get(i) + "\n";
+								record += "\nZ39    $a" + "EXCELID=" + j + "&Z3950LOCATE=" + q + "\n";
 								++successRecNo;
 								MarcArrayList.set(j, record);
 								IsbnArrayList.set(j, "");
-								instMatchCount.put(qArryList.get(i), instMatchCount.get(qArryList.get(i)) + 1);
-								System.out.println(j + ". MATCH: " + s + " (" + qArryList.get(i) + ")");
+								instMatchCount.put(q, instMatchCount.get(q) + 1);
+								System.out.println(j + ". MATCH: " + s + " (" + q + ")");
 							} else {
-								System.out.println(j + ". NOTMATCH: " + s + " (" + qArryList.get(i) + ")");
+								System.out.println(j + ". NOTMATCH: " + s + " (" + q + ")");
 							} // end if
 						} // if
 					} // end try
@@ -168,11 +171,11 @@ public class CopyCat {
 						System.out.println("CopyCat:getMarArrayList()");
 						e.printStackTrace();
 					} // end catch
+					j++;
 				} // end for
 			} // end for
-
-			for (int i = 0, j = 1; i < IsbnArrayList.size(); i++, j++) {
-				String s = IsbnArrayList.get(i);
+			j=1;
+			for (String s : IsbnArrayList) {
 				if (strHandle.hasSomething(s)) {
 					String id = j + "";
 					if (id.length() == 1)
@@ -184,8 +187,8 @@ public class CopyCat {
 					String record = "EXCEL ROW ID: " + id + " NOT MATCH: " + s + ".\r\n";
 					IsbnNotMatchArrayList.add(record);
 				} // end if
-			} // end if
-
+				j++;
+			} // end for
 		} // end if
 
 		try {

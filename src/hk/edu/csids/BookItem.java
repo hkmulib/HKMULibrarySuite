@@ -47,28 +47,28 @@ public class BookItem {
 		isbn = new ISBN();
 	} // end BookItem
 
-	public BookItem(String str) {
+	public BookItem(String isbn) {
 		clearLibHoldInfo();
 		clearBookItemInfo();
-		isbn = new ISBN(str);
+		this.isbn = new ISBN(isbn);
 		marc = new MARC();
 	} // end BookItem
 
-	public BookItem(String ti, String cr) {
+	public BookItem(String titile, String creator) {
 		clearLibHoldInfo();
 		clearBookItemInfo();
-		setTitle(ti);
-		setCreator(cr);
+		setTitle(title);
+		setCreator(creator);
 		isbn = new ISBN();
 		marc = new MARC();
 	} // end BookItem
 
-	public BookItem(String ti, String cr, String pu) {
+	public BookItem(String title, String creator, String publisher) {
 		clearLibHoldInfo();
 		clearBookItemInfo();
-		setTitle(ti);
-		setCreator(cr);
-		setPublisher(pu);
+		setTitle(title);
+		setCreator(creator);
+		setPublisher(publisher);
 	} // end BookItem
 
 	public void clearBookItemInfo() {
@@ -110,8 +110,8 @@ public class BookItem {
 		subject = str;
 	} // end setSubjects()
 
-	private void setSubjects(String str) {
-		String[] strs = str.replaceAll("; ", ";").split(";");
+	private void setSubjects(String subject) {
+		String[] strs = subject.replaceAll("; ", ";").split(";");
 		subjects = new ArrayList<String>();
 		for (int i = 0; i < strs.length; i++) {
 			subjects.add(strs[i]);
@@ -120,7 +120,7 @@ public class BookItem {
 
 	public void setTitle(String str) {
 		if (!strHandle.hasSomething(str)) {
-			str = "ERR: NO TITLE";
+			str = "";
 		} else {
 			str = str.replaceAll("Vol.:.*", "");
 			str = StringEscapeUtils.unescapeHtml4(str);
