@@ -2,7 +2,6 @@ package hk.edu.csids.copycat;
 
 import hk.edu.csids.*;
 import hk.edu.csids.bookquery.*;
-
 import java.io.*;
 import java.util.*;
 import org.apache.poi.ss.usermodel.Cell;
@@ -27,6 +26,7 @@ public class CopyCat {
 	protected Map<String, Integer> instMatchCount = null;
 
 	private MarcConversion mc;
+	private String summaryTxt;
 
 	public CopyCat() {
 		clear();
@@ -62,6 +62,7 @@ public class CopyCat {
 	public void clear() {
 		Config.init();
 		zq = null;
+		summaryTxt = "";
 		strHandle = new GenStringHandling();
 		cjkStrHandle = new CJKStringHandling();
 		isbns = new ArrayList<String>();
@@ -107,7 +108,13 @@ public class CopyCat {
 				} // end if
 			} // end for
 			writer.close();
-
+			
+			path = writePath + now + "-summaryStat.txt";
+			file = new File(path);
+			writer = new BufferedWriter(new FileWriter(file));
+			writer.write(summaryTxt);
+			
+			writer.close();
 		} // end try
 		catch (Exception e) {
 			System.out.println("CopyCat:getConvertedMarc():");
@@ -135,18 +142,19 @@ public class CopyCat {
 			for (String s : qArryList) {
 				instMatchCount.put(s, 0);
 			} // end
-			
+
 			int j = 0;
 			for (String q : qArryList) {
 				j = 0;
 				for (String s : IsbnArrayList) {
-					
+
 					ISBN isbn = new ISBN(s);
 
 					if (!isbn.isValid())
 						s = "";
 
 					try {
+						int excelid = j+2;
 						if (strHandle.hasSomething(s)) {
 							if (zq == null) {
 								zq = new Z3950QueryByISBN(s, q);
@@ -156,14 +164,14 @@ public class CopyCat {
 							if (strHandle.hasSomething(zq.bk.marc.getMarcTag()) && !isBriefRecord(zq)
 									&& matchTitle(j, zq) && zq.match() && !isCorruptedRecord(zq)) {
 								String record = zq.getResult();
-								record += "\nZ39    $a" + "EXCELID=" + j + "&Z3950LOCATE=" + q + "\n";
+								record += "\nZ39    $a" + "EXCELID=" + excelid + "&Z3950LOCATE=" + q + "\n";
 								++successRecNo;
 								MarcArrayList.set(j, record);
 								IsbnArrayList.set(j, "");
 								instMatchCount.put(q, instMatchCount.get(q) + 1);
-								System.out.println(j + ". MATCH: " + s + " (" + q + ")");
+								System.out.println("ExcelID:" + excelid + ". MATCH: " + s + " (" + q + ")");
 							} else {
-								System.out.println(j + ". NOTMATCH: " + s + " (" + q + ")");
+								System.out.println("ExcelID:" + excelid + ". NOTMATCH: " + s + " (" + q + ")");
 							} // end if
 						} // if
 					} // end try
@@ -174,7 +182,7 @@ public class CopyCat {
 					j++;
 				} // end for
 			} // end for
-			j=1;
+			j = 2;
 			for (String s : IsbnArrayList) {
 				if (strHandle.hasSomething(s)) {
 					String id = j + "";
@@ -184,6 +192,7 @@ public class CopyCat {
 						id = "00" + id;
 					if (id.length() == 3)
 						id = "0" + id;
+					
 					String record = "EXCEL ROW ID: " + id + " NOT MATCH: " + s + ".\r\n";
 					IsbnNotMatchArrayList.add(record);
 				} // end if
@@ -191,56 +200,31 @@ public class CopyCat {
 			} // end for
 		} // end if
 
-		try {
-			String now = GenStringHandling.getToday();
-			String path = writePath + now + "-summaryStat.txt";
-			File file = new File(path);
-			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-			String str = "Active Query List: " + qArryList.toString() + "\r\n";
-			writer.write(str);
-			str = "Filtering Tags: " + Config.VALUES.get("EXISTTAG_FOR_MATCHING")+ "\r\n";
-			writer.write(str);
-			str = "Failed Z39.50 Server List: " + failedZ3950ServerList.toString() + "\r\n";
-			writer.write(str);
-			str = "Server match count:";
-			for (String s : qArryList) {
-				str += s + "(" + instMatchCount.get(s) + ") ";
-			} // end for
-			str += "\r\n";
-			writer.write(str);
-			str = "Titles Tried: " + IsbnArrayList.size() + "\r\n";
-			writer.write(str);
-			str = "Success Records: " + successRecNo + "\r\n";
-			writer.write(str);
-			str = "Failed Records: " + IsbnNotMatchArrayList.size() + "\r\n";
-			writer.write(str);
-			writer.write("----------------------------" + "\r\n");
+		String str = "Active Query List: " + qArryList.toString() + "\r\n";
+		summaryTxt += str;
+		str = "Filtering Tags: " + Config.VALUES.get("EXISTTAG_FOR_MATCHING") + "\r\n";
+		summaryTxt += str;
+		str = "Failed Z39.50 Server List: " + failedZ3950ServerList.toString() + "\r\n";
+		summaryTxt += str;
+		str = "Server match count:";
+		for (String s : qArryList) {
+			str += s + "(" + instMatchCount.get(s) + ") ";
+		} // end for
+		str += "\r\n";
+		summaryTxt += str;
+		str = "Titles Tried: " + IsbnArrayList.size() + "\r\n";
+		summaryTxt += str;
+		str = "Success Records: " + successRecNo + "\r\n";
+		summaryTxt += str;
+		str = "Failed Records: " + IsbnNotMatchArrayList.size() + "\r\n";
+		summaryTxt += str;
+		summaryTxt += "----------------------------" + "\r\n";
+		
+		for (String s : IsbnNotMatchArrayList) {
+			if (strHandle.hasSomething(s))
+				summaryTxt += s;
+		} // end for
 
-			for (String s : IsbnNotMatchArrayList) {
-				if (strHandle.hasSomething(s))
-					writer.write(s);
-			} // end for
-			writer.close();
-			path = writePath + now + "-outraw.txt";
-			file = new File(path);
-			writer = new BufferedWriter(new FileWriter(file));
-
-			if (successRecNo == 0)
-				writer.write("No record fetched");
-
-			for (int i = 0; i < MarcArrayList.size(); i++) {
-				String s = MarcArrayList.get(i);
-				if (strHandle.hasSomething(s)) {
-					writer.write(s);
-					writer.write("\n\n");
-				} // end if
-			} // end for
-			writer.close();
-		} // end try
-		catch (Exception e) {
-			System.out.println("CopyCat:getMarArrayList:");
-			e.printStackTrace();
-		} // end catch
 	} // getMarArrayList()
 
 	public void readISBNandTitleSource(FileInputStream is) {
@@ -254,7 +238,7 @@ public class CopyCat {
 				XSSFWorkbook wb = new XSSFWorkbook(is);
 				XSSFSheet sheet = wb.getSheetAt(0);
 				Iterator<org.apache.poi.ss.usermodel.Row> rowIterator = sheet.iterator();
-
+				rowIterator.next();
 				while (rowIterator.hasNext()) {
 					org.apache.poi.ss.usermodel.Row row = rowIterator.next();
 					// For each row, iterate through all the columns

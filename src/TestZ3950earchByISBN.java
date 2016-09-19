@@ -4,8 +4,8 @@ import hk.edu.csids.*;
 public class TestZ3950earchByISBN{
 	public static void main(String[] args){
 		
-		String inst = "USTL";
-		String isbn = "7302093326";
+		String inst = "CUHK";
+		String isbn = "7302088748";
 		//String isbn = "781058703X";
 		CJKStringHandling ch = new CJKStringHandling();
 		
