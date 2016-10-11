@@ -27,8 +27,9 @@ CopyCat Get MARCs
 	String savedFile = "";
 	if ((contentType!=null && contentType.indexOf("multipart/form-data") >= 0)) {
 		DiskFileItemFactory factory = new DiskFileItemFactory();
-		String filePath = "/usr/local/LibraryRecordLocate/webapps/ROOT/requests";
-		String reportsFilePath = "/usr/local/LibraryRecordLocate/webapps/ROOT/reports";
+		String basedir = request.getServletContext().getRealPath("/") + "copycat/";
+		String filePath = basedir + "requests";
+		String reportsFilePath = basedir + "reports";
 		factory.setRepository(new File(filePath));
 		ServletFileUpload upload = new ServletFileUpload(factory);
 		try{

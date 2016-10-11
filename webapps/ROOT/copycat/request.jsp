@@ -3,7 +3,7 @@
 <%
 	String cmd = request.getParameter("cmd");
 	String file = request.getParameter("file");
-	String filedir = request.getServletContext().getRealPath("/") + "requests";
+	String filedir = request.getServletContext().getRealPath("/") + "copycat/requests";
 	File f = new File(filedir + "/" + file);
 	if(cmd!=null && cmd.contains("delete")){
 		f.delete();
