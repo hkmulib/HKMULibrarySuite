@@ -72,16 +72,34 @@ public class CopyCat {
 
 	public void getConvertedMarc(String writePath) {
 		try {
-			mc.convert(MarcArrayList, ILSRecNoArrayList);
 			writePath = writePath.replaceAll("\\\\", "/");
 			if (!writePath.matches("/$")) {
 				writePath += "/";
 			} // end if
 			String now = GenStringHandling.getToday();
-			String path = writePath + now + "-outconvert.txt";
+			
+			String path = writePath + now + "-outconvertRaw.txt";
 			File file = new File(path);
 			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 			boolean nowrite = true;
+			for (int i = 0; i < MarcArrayList.size(); i++) {
+				String s = MarcArrayList.get(i);
+				if (strHandle.hasSomething(s)) {
+					MARC m = new MARC(s);
+					s = m.getMarcRawStr();
+					writer.write(s);
+					nowrite = false;
+				} // end if
+			} // end for
+			if (nowrite)
+				writer.write("No record fetched");
+			writer.close();
+			
+			mc.convert(MarcArrayList, ILSRecNoArrayList);
+			path = writePath + now + "-outconvert.txt";
+			file = new File(path);
+			writer = new BufferedWriter(new FileWriter(file));
+			
 			for (int i = 0; i < MarcArrayList.size(); i++) {
 				String s = MarcArrayList.get(i);
 				if (strHandle.hasSomething(s)) {
@@ -94,20 +112,6 @@ public class CopyCat {
 				writer.write("No record fetched");
 			writer.close();
 
-			path = writePath + now + "-outconvertRaw.txt";
-			file = new File(path);
-			writer = new BufferedWriter(new FileWriter(file));
-			if (nowrite)
-				writer.write("No record fetched");
-			for (int i = 0; i < MarcArrayList.size(); i++) {
-				String s = MarcArrayList.get(i);
-				if (strHandle.hasSomething(s)) {
-					MARC m = new MARC(s);
-					s = m.getMarcRawStr();
-					writer.write(s);
-				} // end if
-			} // end for
-			writer.close();
 			
 			path = writePath + now + "-summaryStat.txt";
 			file = new File(path);

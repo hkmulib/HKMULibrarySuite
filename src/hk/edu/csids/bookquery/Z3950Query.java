@@ -1,13 +1,9 @@
 package hk.edu.csids.bookquery;
 
 import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.regex.*;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.*;
 import java.io.*;
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
@@ -140,8 +136,8 @@ public abstract class Z3950Query extends Query {
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
 			String errStr = "Z3950Query:checkAva()" + errors.toString();
-			System.out.println(errStr);
 			errMsg = errStr;
+			System.out.println(errStr);
 		} // end catch
 		return false;
 	} // end checkAva

@@ -164,6 +164,9 @@ public class MarcConversion {
 							if(simpChiToTradChin)
 								line = simpChiToTradChin(line);
 							
+							if(line.matches("^LDR.*"))
+								line =  "LDR  01054nam 2200301 i 4500";
+							
 							if(removeLeader)
 								line = removeLeader(line);
 								
@@ -181,15 +184,15 @@ public class MarcConversion {
 							} // end if
 
 							line = stardarndConvertLine(line);
-
-							if (strHandle.hasSomething(line))
-								conRecord += line + "\n";
 							
-
+							if (strHandle.hasSomething(line)){
+								line = "=" + line;
+								conRecord += line + "\n";
+							} //end if
 						} // end while
 
 						if (con001 && ilsList != null)
-							conRecord = add001Line(ilsList.get(i)) + "\n" + conRecord;
+							conRecord = "=" + add001Line(ilsList.get(i)) + "\n" + conRecord;
 
 						marcList.set(i, conRecord);
 					} // end try

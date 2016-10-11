@@ -130,7 +130,7 @@ public class GenStringHandling {
 	
 	public static String getToday(){
         Date today = new Date();
-        SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss");
+        SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
         return formatter.format(today);
 	} //end getToday()
 

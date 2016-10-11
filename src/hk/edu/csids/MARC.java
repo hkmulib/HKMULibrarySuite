@@ -226,7 +226,7 @@ public class MARC {
 			for (int i = recordLen.length(); i < 5; i++) {
 				recordLen = "0" + recordLen;
 			} // end for
-			leader = recordLen + "nam  2200277   4500";
+			leader = recordLen + " 01054nam 2200301 i 4500";
 
 			//Prepare the MARC directory and contents.
 			String dir = leader;
@@ -263,6 +263,7 @@ public class MARC {
 
 	//Accept raw Marc
 	public boolean breakMarc(byte[] marc) {
+		
 		try {
 			if (marc == null) {
 				return false;
@@ -422,8 +423,11 @@ public class MARC {
 				cjkCon = true;
 			}
 			if (cjkStrHandle.isEACC(marcTagRaw)) {
-				
 				result = new String(cjkStrHandle.EACCtoUnicode(marcTagRaw));
+				result = result.replace("!ON(B", "");
+				result = result.replace("'Q[(B", "");
+				result = result.replace("!Na(B", "");
+				result = result.replace("!:g(B", "");
 				cjkCon = true;
 			} else if (cjkStrHandle.isCJKString(new String(marcTagRaw))) {
 				result = new String(marcTagRaw, Charset.forName("UTF-8"));
