@@ -7,7 +7,9 @@
 <%@ page import="org.apache.commons.fileupload.servlet.*" %>
 <%@ page import="org.apache.commons.io.output.*" %>
 <%
-	String pwdfile = request.getServletContext().getRealPath("/") + "/conf/sphinx";
+	String basedir = request.getServletContext().getRealPath("/") + "copycat/";
+	String webinfdir = request.getServletContext().getRealPath("/") + "WEB-INF/";
+	String pwdfile = basedir + "conf/sphinx";
 	String pwd = "&klsldfkj2356";
 	try{
 	BufferedReader br = new BufferedReader(new FileReader(pwdfile));
@@ -24,26 +26,26 @@
 CopyCat Trad Chin Corr Table
 <br>
 Day 1 Table:
-<a href="/conf/chineseAI_default.txt" target="_blank"> chineseAI_default.txt </a>
+<a href="/copycat/conf/chineseAI_default.txt" target="_blank"> chineseAI_default.txt </a>
 <br>
 Current Table:
-<a href="/conf/chineseAI.txt" target="_blank"> chineseAI.txt </a>
+<a href="/copycat/conf/chineseAI.txt" target="_blank"> chineseAI.txt </a>
 <hr>
 CopyCat Config 
 <br>
 Day 1 Table:
-<a href="/conf/ccconfig_default.txt" target="_blank"> ccconfig_default.txt </a>
+<a href="/copycat/conf/ccconfig_default.txt" target="_blank"> ccconfig_default.txt </a>
 <br>
 Current Table:
-<a href="/conf/ccconfig.txt" target="_blank"> ccconfig.txt </a>
+<a href="/copycat/conf/ccconfig.txt" target="_blank"> ccconfig.txt </a>
 <hr>
 BookQuery Config 
 <br>
 Day 1 Table:
-<a href="/conf/bqconfig_default.txt" target="_blank"> bqconfig_default.txt </a>
+<a href="/copycat/conf/bqconfig_default.txt" target="_blank"> bqconfig_default.txt </a>
 <br>
 Current Table:
-<a href="/conf/bqconfig.txt" target="_blank"> bqconfig.txt </a>
+<a href="/copycat/conf/bqconfig.txt" target="_blank"> bqconfig.txt </a>
 <hr>
 <form enctype="multipart/form-data" method="post">
 Current Password: <input type="password" name="pass"> (default pwd "123456"; pls don't change it at the moment)
@@ -62,8 +64,8 @@ Change Password:<br>
 	String contentType = request.getContentType();
 	if ((contentType!=null && contentType.indexOf("multipart/form-data") >= 0)) {
 		DiskFileItemFactory factory = new DiskFileItemFactory();
-		String filePath = "/usr/local/LibraryRecordLocate/webapps/ROOT/WEB-INF/classes/hk/edu/csids";
-		String filePath2 = "/usr/local/LibraryRecordLocate/webapps/ROOT/conf"; 
+		String filePath = webinfdir + "classes/hk/edu/csids";
+		String filePath2 = basedir + "conf"; 
 		factory.setRepository(new File(filePath));
 		ServletFileUpload upload = new ServletFileUpload(factory);
 

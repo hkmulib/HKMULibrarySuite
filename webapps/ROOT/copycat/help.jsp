@@ -12,7 +12,7 @@ Go to the <a href="miscconfig.jsp"> config page </a>. This allows you to configu
 </li>
 <br>
 <li>
-It is important to note that if the config files corrupted; the whole programs cannot be run properly. In this case, you may use the default config files to replace the corrupted ones.
+It is important to note that if the config files corrupted; the whole programs cannot run properly. In this case, you may use the default config files to replace the corrupted ones.
 </li>
 <br>
 <li>
@@ -44,7 +44,7 @@ File "ccconfig.txt" (Function): for configuring to enable or disable MARC post-p
 </li>
 <br>
 <li>
-File "bqconfig.txt": for configure server addresses, ports, databases for Z39.50 query. "Z3950_SERVER_[institute code], "Z3950_PORT_[institute code]", and "Z3950_BASE_[institute code]" must be defined in order to query a Z39.50 server. You may assign an institute code which will be used in "COPYCAT_QUERY_LIST" of ccconfig.txt. "EACC_SYSTEM_[institution code]" is optional, for the ILS contain EACC/CCCII characters. 
+File "bqconfig.txt": for configure server addresses, ports, databases for Z39.50 query. "Z3950_SERVER_[institute code], "Z3950_PORT_[institute code]", and "Z3950_BASE_[institute code]" must be defined in order to query a Z39.50 server. You may assign an institute code which will be used in "COPYCAT_QUERY_LIST" of ccconfig.txt. "EACC_SYSTEM_[institution code]" is optional, for the ILS contains EACC/CCCII characters. 
 </li>
 </ol>
 
