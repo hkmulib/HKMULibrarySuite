@@ -238,7 +238,6 @@ public class CopyCat {
 				IsbnArrayList = new ArrayList<String>();
 				ILSRecNoArrayList = new ArrayList<String>();
 				TitleArrayList = new ArrayList<String>();
-
 				XSSFWorkbook wb = new XSSFWorkbook(is);
 				XSSFSheet sheet = wb.getSheetAt(0);
 				Iterator<org.apache.poi.ss.usermodel.Row> rowIterator = sheet.iterator();
@@ -314,7 +313,7 @@ public class CopyCat {
 		} // end try
 
 		catch (Exception e) {
-			System.out.println("CopyCat:loadIsbnList():");
+			System.out.println("CopyCat:readISBNandTitleSource():");
 			e.printStackTrace();
 		} // end catch
 	} // end loadIsbnList()

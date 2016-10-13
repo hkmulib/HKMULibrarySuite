@@ -226,7 +226,7 @@ public class MARC {
 			for (int i = recordLen.length(); i < 5; i++) {
 				recordLen = "0" + recordLen;
 			} // end for
-			leader = recordLen + " 01054nam 2200301 i 4500";
+			leader = recordLen + "nam 2200301 i 4500";
 
 			//Prepare the MARC directory and contents.
 			String dir = leader;
