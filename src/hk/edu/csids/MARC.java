@@ -21,7 +21,7 @@ public class MARC {
 	public MARC(byte[] marc) {
 		clear();
 		setMarcRaw(marc);
-		
+
 	} // end MARC()
 
 	public MARC(String str) {
@@ -180,13 +180,13 @@ public class MARC {
 				String temp = line;
 				temp = temp.trim();
 				if (strHandle.hasSomething(temp)) {
-
 					tag = line.substring(0, 3);
 					tag = tag.trim();
 					value = line.substring(3, line.length());
 					byte[] vb = value.getBytes();
 
-					//Remove delimiters from MARC tags, convert subfield symbol (0x1f), and add content delimiter (0x1e)
+					// Remove delimiters from MARC tags, convert subfield symbol
+					// (0x1f), and add content delimiter (0x1e)
 					for (int i = 0; i < vb.length; i++) {
 						if (vb[i] == 0x1f || vb[i] == 0x1e)
 							vb[i] = 0x5f;
@@ -199,11 +199,12 @@ public class MARC {
 					value = value.replaceAll("_", "");
 					value = value.replace('$', (char) 0x1f);
 					value = value + (char) 0x1e;
-					
+
 					tags.add(tag);
 					values.add(value);
 
-					//Get the index fields (4 digits for length; and 5 digits for the start of content. 
+					// Get the index fields (4 digits for length; and 5 digits
+					// for the start of content.
 					String tmpStr = Integer.toString(value.getBytes().length);
 					for (int i = tmpStr.length(); i < 4; i++) {
 						tmpStr = "0" + tmpStr;
@@ -214,21 +215,21 @@ public class MARC {
 						tmpStr = "0" + tmpStr;
 					} // end for
 					startIndexes.add(tmpStr);
-					
+
 					startIndex += value.getBytes().length;
 				} // end if
 			} // end while
 
 			String leader = "";
 
-			//Prepare leader.
+			// Prepare leader.
 			String recordLen = Integer.toString(str.getBytes().length);
 			for (int i = recordLen.length(); i < 5; i++) {
 				recordLen = "0" + recordLen;
 			} // end for
-			leader = recordLen + "nam 2200301 i 4500";
+			leader = recordLen + "nam 2200301 i 4500 ";
 
-			//Prepare the MARC directory and contents.
+			// Prepare the MARC directory and contents.
 			String dir = leader;
 			for (int i = 0; i < tags.size(); i++) {
 				dir += tags.get(i) + valuesLength.get(i) + startIndexes.get(i);
@@ -261,9 +262,9 @@ public class MARC {
 		return marcRaw;
 	} // end getmarcRaw()
 
-	//Accept raw Marc
+	// Accept raw Marc
 	public boolean breakMarc(byte[] marc) {
-		
+
 		try {
 			if (marc == null) {
 				return false;
@@ -360,24 +361,23 @@ public class MARC {
 
 				if (!tag.equals("LDR") && !tag.equals("008") && !tag.equals("006") && !tag.equals("007")
 						&& !tag.equals("003") && !tag.equals("001")) {
-					
+
 					for (int j = bs.length - 1; j > 2; j--) {
 						bs[j] = bs[j - 1];
 					} // end for
 
 					if (bs.length > 3)
 						bs[3] = 0x20;
-				
+
 				} else {
-					
+
 					for (int j = bs.length - 1; j > 0; j--) {
 						bs[j] = bs[j - 1];
 					} // end for
 
 					bs[1] = 0x20;
-					
-				} // end if
 
+				} // end if
 				values.add(bs);
 				i++;
 			} // end for
@@ -405,16 +405,16 @@ public class MARC {
 					} // end if
 				} // end for
 				if (m < marcTagRaw.length) {
-					marcTagRaw[m] = 0x0a;
-					m++;
-					i++;
+					marcTagRaw[m] = 0xA;
+					m += 1;
+					i += 1;
 				} // end if
 			} // end for
 
 			String result = "";
 
 			boolean cjkCon = false;
-			
+
 			if (cjkStrHandle.isBig5(marcTagRaw)) {
 				result = new String(marcTagRaw, Charset.forName("Big5_HKSCS"));
 				result = new String(cjkStrHandle.removeControl(result.getBytes()));
@@ -431,7 +431,7 @@ public class MARC {
 				cjkCon = true;
 			} else if (cjkStrHandle.isCJKString(new String(marcTagRaw))) {
 				result = new String(marcTagRaw, Charset.forName("UTF-8"));
-				
+
 				cjkCon = true;
 			} // end if
 
@@ -440,7 +440,7 @@ public class MARC {
 
 			result = result.replaceAll("Ã", "©");
 			setMarcTag(result);
-			
+
 		} // end try
 		catch (Exception e) {
 			System.out.println("MARC::breakMarc():");

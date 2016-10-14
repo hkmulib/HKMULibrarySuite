@@ -18,6 +18,7 @@ public class MarcConversion {
 	private boolean con001;
 	private boolean simpChiToTradChin;
 	private boolean removeLeader;
+	private boolean addEqualSign;
 	private String pAddTagNo;
 
 	MarcConversion(ArrayList<String> marcList, ArrayList<String> ilsList) throws Exception {
@@ -29,6 +30,17 @@ public class MarcConversion {
 		clear();
 	} // end MarcConversion()
 
+	public void setAllConvFalse(){
+		conNRm880 = false;
+		remove0XXexcept008 = false;
+		rm9XX = false;
+		rm856 = false;
+		con001 = false;
+		simpChiToTradChin = false;
+		removeLeader = false;
+		addEqualSign = false;
+	} //end setAllConvFalse()
+	
 	public void setConAndRemove880() {
 		if (conNRm880) {
 			conNRm880 = false;
@@ -36,6 +48,22 @@ public class MarcConversion {
 			conNRm880 = true;
 		} // end if
 	} // end setConAndRemove880()
+	
+	public void setConAndRemove880(boolean b) {
+			conNRm880 = b;
+	} // end setConAndRemove880()
+	
+	public void setAddEqualSign() {
+		if (addEqualSign) {
+			addEqualSign = false;
+		} else {
+			addEqualSign = true;
+		} // end if
+	} // end setAddEqualSign()
+	
+	public void setAddEqualSign(boolean b) {
+			addEqualSign = b;
+	} // end setAddEqualSign()
 
 	public void setRemove856() {
 		if (rm856) {
@@ -45,6 +73,10 @@ public class MarcConversion {
 		} // end if
 	} // end setRemove856()
 
+	public void setRemove856(boolean b) {
+			rm856 = b;
+	} // end setRemove856()
+	
 	public void setProgramInsertedTagNumber(String str) {
 		if (strHandle.hasSomething(str) && str.matches("^9\\d\\d.*")) {
 			pAddTagNo = str;
@@ -60,6 +92,10 @@ public class MarcConversion {
 			con001 = true;
 		} // end if
 	} // end setRemove856()
+	
+	public void setConvert001(boolean b) {
+			con001 = b;
+	} // end setRemove856()
 
 	public void setRemove9XX() {
 		if (rm9XX) {
@@ -67,6 +103,10 @@ public class MarcConversion {
 		} else {
 			rm9XX = true;
 		} // end if
+	} // end setRemove9XX()
+
+	public void setRemove9XX(boolean b) {
+			rm9XX = b;
 	} // end setRemove9XX()
 	
 	public void setSimpChiToTradChin() {
@@ -77,13 +117,22 @@ public class MarcConversion {
 		} // end if
 	} // end setSimpChiToTradChin()
 	
+	public void setSimpChiToTradChin(boolean b) {
+		simpChiToTradChin = b;
+	} // end setSimpChiToTradChin()
+	
+	
 	public void setRemoveLeader() {
 		if (removeLeader) {
 			removeLeader = false;
 		} else {
 			removeLeader = true;
 		} // end if
-	} // end setSimpChiToTradChin()
+	} // end setRemoveLeader()
+	
+	public void setRemoveLeader(boolean b) {
+			removeLeader = b;
+	} // end setRemoveLeader()
 	
 	public void setRemove0XXexcept008() {
 		if (remove0XXexcept008) {
@@ -92,8 +141,13 @@ public class MarcConversion {
 			remove0XXexcept008 = true;
 		} // end if
 	} // end setRemove0XXexcept008()
+	
+	public void setRemove0XXexcept008(boolean b) {
+		remove0XXexcept008 = b;
+	} // end setRemove0XXexcept008()
 
 	public void clear() {
+		addEqualSign = true;
 		String value = Config.VALUES.get("conNRm880");
 		if(strHandle.hasSomething(value) && value.equals("YES")){
 			conNRm880 = true;
@@ -183,16 +237,19 @@ public class MarcConversion {
 								line = remove001Line(line);
 							} // end if
 
+							if (addEqualSign && ilsList != null) {
+								line = addEqualSign(line);
+							} // end if
+							
 							line = stardarndConvertLine(line);
 							
 							if (strHandle.hasSomething(line)){
-								line = "=" + line;
-								conRecord += line + "\n";
+								conRecord += line + "\r\n";
 							} //end if
 						} // end while
 
 						if (con001 && ilsList != null)
-							conRecord = "=" + add001Line(ilsList.get(i)) + "\n" + conRecord;
+							conRecord = add001Line(ilsList.get(i)) + "\r\n" + conRecord;
 
 						marcList.set(i, conRecord);
 					} // end try
@@ -264,7 +321,16 @@ public class MarcConversion {
 	} // end remove9XXLine()
 
 	private String add001Line(String ilsID) {
-		return "001  " + ilsID;
+		ilsID = "001  " + ilsID;
+		if(addEqualSign)
+			ilsID = addEqualSign(ilsID);
+		return ilsID;
+	} // end add001Line()
+	
+	private String addEqualSign(String line) {
+		if(strHandle.hasSomething(line))
+			return "=" + line;
+		return "";
 	} // end add001Line()
 	
 	private String simpChiToTradChin(String line){

@@ -78,7 +78,11 @@ public class CopyCat {
 			} // end if
 			String now = GenStringHandling.getToday();
 			
-			String path = writePath + now + "-outconvertRaw.txt";
+			mc.setAddEqualSign(false);
+			mc.convert(MarcArrayList, ILSRecNoArrayList);
+			
+			
+			String path = writePath + now + "-outconvertRaw.mrc";
 			File file = new File(path);
 			BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 			boolean nowrite = true;
@@ -95,8 +99,11 @@ public class CopyCat {
 				writer.write("No record fetched");
 			writer.close();
 			
+			mc.setAllConvFalse();
+			mc.setAddEqualSign(true);
 			mc.convert(MarcArrayList, ILSRecNoArrayList);
-			path = writePath + now + "-outconvert.txt";
+			
+			path = writePath + now + "-outconvert.mrk";
 			file = new File(path);
 			writer = new BufferedWriter(new FileWriter(file));
 			
@@ -104,7 +111,7 @@ public class CopyCat {
 				String s = MarcArrayList.get(i);
 				if (strHandle.hasSomething(s)) {
 					writer.write(s);
-					writer.write("\n\n");
+					writer.write("\r\n\r\n");
 					nowrite = false;
 				} // end if
 			} // end for
