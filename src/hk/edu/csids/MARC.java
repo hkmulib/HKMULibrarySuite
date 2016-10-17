@@ -177,6 +177,9 @@ public class MARC {
 				if (line.contains("LDR")) {
 					continue;
 				} // end if
+				if(line.contains("001") || line.contains("008")){
+					line = line.replaceAll("  ", " ");
+				} //end if
 				String temp = line;
 				temp = temp.trim();
 				if (strHandle.hasSomething(temp)) {
