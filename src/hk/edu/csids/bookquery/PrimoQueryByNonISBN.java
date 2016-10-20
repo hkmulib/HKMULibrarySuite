@@ -540,7 +540,6 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 
 	private boolean matchYear() {
 		String cPnx = getNodeValue("creationdate", nodesDisplay);
-		cPnx = cPnx.replace("-", "0");
 		if (queryBk.getPublishYear() == null) {
 			matchYear = "MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear();
 			// System.out.println(matchYear);
