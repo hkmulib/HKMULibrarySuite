@@ -58,7 +58,6 @@ public abstract class PrimoQuery extends Query {
 			} // end if
 
 			ArrayList<String> al = new ArrayList<String>();
-			al.
 			al = getNodeValues("sourcerecordid", nodesControl);
 			Pattern pat;
 			Matcher mat;
