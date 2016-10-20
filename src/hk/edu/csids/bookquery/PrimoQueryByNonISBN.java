@@ -388,12 +388,14 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 			chA.standardizeVariantChineseFast();
 			chA.standardizeVariantChineseForLooseMaching();
 			a = chA.convertToSimpChinese();
+			a = a.replaceAll("\\d", "");
 		} // end if
 
 		if (chCPnx.isCJK()) {
 			chCPnx.standardizeVariantChineseFast();
 			chCPnx.standardizeVariantChineseForLooseMaching();
 			cPnx = chCPnx.convertToSimpChinese();
+			cPnx = cPnx.replaceAll("\\d", "");
 		} // end if
 
 		String[] auKeys = a.split(" ");
@@ -538,6 +540,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 
 	private boolean matchYear() {
 		String cPnx = getNodeValue("creationdate", nodesDisplay);
+		cPnx = cPnx.replace("-", "0");
 		if (queryBk.getPublishYear() == null) {
 			matchYear = "MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear();
 			// System.out.println(matchYear);

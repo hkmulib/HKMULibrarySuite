@@ -4,7 +4,7 @@ import hk.edu.csids.*;
 public class TestZ3950earchByISBN{
 	public static void main(String[] args){
 		
-		String inst = "CAMBRI";
+		String inst = "IED";
 		String isbn = "7224043095";
 		//String isbn = "781058703X";
 		CJKStringHandling ch = new CJKStringHandling();
