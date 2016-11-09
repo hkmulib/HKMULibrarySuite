@@ -3,11 +3,11 @@ import hk.edu.csids.bookquery.*;
 public class TestZ3950earchByNonISBN {
 	public static void main(String[] args) {
 		try {
-			String inst = "LNU";
-			String author = "村上春樹";
-			String title = "黑夜之後 = After dark.";
-			String publisher = "明窗出版社有限公司,";
-			String year = "2005";
+			String inst = "HKSYU";
+			String author = "Wittgenstein, Ludwig";
+			String title = "The blue and brown books : preliminary studies for the 'philosophical investigations'.";
+			String publisher = "Harper Colophon,";
+			String year = "1965";
 			String edition = "";
 			String vol = "";
 

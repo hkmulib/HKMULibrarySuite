@@ -35,6 +35,14 @@ public class ISBN {
 		strHandle = new GenStringHandling();
 		setIsbn(str);
 	} // end ISBN
+	
+	public void setOriginalIsbn(String str){
+		if(!strHandle.hasSomething(str))
+			str = "";
+		
+		str = str.replaceAll("[^0-9|X|x]", "");
+		oriIsbn = str;
+	} //end setOriginalIsbn()
 
 	public void setIsbn(String str) {
 		isbn = str;
@@ -88,7 +96,7 @@ public class ISBN {
 
 	} // end getIsbn()
 
-	public String getOriIsbn() {
+	public String getOriginalIsbn() {
 		if (oriIsbn == null) {
 			return "";
 		} // end if

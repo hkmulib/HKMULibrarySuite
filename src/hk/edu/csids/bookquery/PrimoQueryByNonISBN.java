@@ -466,7 +466,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		} // end if
 		ArrayList<String> atl = getNodeValues("alttitle", nodesSearch);
 
-		if (tPnx.contains(t)) {
+		if (tPnx.contains(t)||t.contains(tPnx)) {
 			debug = "MATCH TITLE: tPnx: " + tPnx + " t:" + t + ":" + "\n";
 			// System.out.println(matchTitle);
 			return true;

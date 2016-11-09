@@ -59,8 +59,7 @@ public class GenStringHandling {
 		if (str == null) {
 			return "";
 		} // end if
-		String[] specChars = { "\\=", "\\-", "\\^", "#", "/", "@", "%", "&", "~", "[\\s|\t]and[\\s|\t]",
-				"[\\s|\t]or[\\s|\t]" };
+		String[] specChars = { "\\=", "\\-", "\\^", "#", "/", "@", "%", "&", "~", "[\\s|\t]or[\\s|\t]" };
 
 		String[] specChars2 = { "《", "》", "〈", "〉", ",", "「", "」", "\"", "？", "‘", "’", "‚", "“", "”", "†", "‡", "‰",
 				"‹", "›", "♠", "♣", "♥", "♥", "♦", "‾", "←", "↑", "→", "↓", "™", "\\+", "\\*", "'", "\\.", "\\\\",
@@ -81,8 +80,13 @@ public class GenStringHandling {
 		return str;
 	} // end trimSpecialChars()
 
-	public String trimSpaces(String str) {
+	public String trimNewLineChar(String str) {
 		str = str.replaceAll("\\n|\\t", "");
+		return str;
+	} // end NewLineChar()
+	
+	public String trimSpace(String str) {
+		str = str.replaceAll(" |\\s", "");
 		return str;
 	} // end trimSpace()
 
@@ -140,6 +144,47 @@ public class GenStringHandling {
 		str = str.replace("-", "");
 		return str;
 	} // end normalizeString()
+	
+	public String extract4LongestAdjententKeywords(String str){
+		
+		String result = "";
+		str = str.trim();
+		String[] strs = str.split(" |\\s|\\t");
+		
+		if(strs.length<4 || strs.length == 4)
+			return str;
+		
+		int longestIndex = -1;
+		for(int i=0; i<strs.length; i++){
+			if(longestIndex < strs[i].length())
+				longestIndex = i;
+		} //end for
+		
+		if(longestIndex == strs.length-1){
+			result = strs[longestIndex-3] + " "  + strs[longestIndex-2] + " "  + strs[longestIndex-1] + " " + strs[longestIndex]; 
+		} else {
+			result = strs[longestIndex] + " " + strs[longestIndex+1]  + " " + strs[longestIndex+2]  + " " + strs[longestIndex+3]; 
+		} //end if
+		
+		return result;
+	} //end extract4LongestAdjententKeywords
+	
+	public boolean containWords(String str1, String str2){
+		str1 = str1.trim();
+		str2 = str2.trim();
+		
+		String[] str2s = str2.split(" |\\t|\\s");
+		int matchCount = 0;
+		for(int i=0; i<str2s.length; i++){
+			if(str1.contains(str2s[i]))
+				matchCount++;
+		} //end for
+		
+		if(str2s.length == matchCount)
+			return true;
+		
+		return false;
+	} //end containWords()
 
 	public String extractNumeric(String str) {
 		if (str.contains("-")) {

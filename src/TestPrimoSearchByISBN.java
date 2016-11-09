@@ -17,7 +17,7 @@ public class TestPrimoSearchByISBN{
 			System.out.println("Fulltext Urls: " + q.bk.getFulltextUrls());
 			System.out.println("PUBLISH YEAR: " + q.bk.getPublishYear());
 			System.out.println("Subject: " + q.bk.getSubject());
-			System.out.println("ISBN ORI " + q.bk.isbn.getOriIsbn());
+			System.out.println("ISBN ORI " + q.bk.isbn.getOriginalIsbn());
 			System.out.println("ISBN13: " + q.bk.isbn.getIsbn13());
 			System.out.println("Primo Link: " + q.bk.getPrimoLink());
 			System.out.println("Holding Info: " + q.bk.getHoldingText());
@@ -33,9 +33,9 @@ public class TestPrimoSearchByISBN{
 				System.out.println("Authors " + i + ": " + q.bk.getCreators().get(i));	
 			}//endfor
 		} else {
-			System.out.println("NOT MATCHED. ISBN:"  + q.bk.isbn.getOriIsbn() + ".\n"+ q.getErrMsg());
+			System.out.println("NOT MATCHED. ISBN:"  + q.bk.isbn.getOriginalIsbn() + ".\n"+ q.getErrMsg());
 			System.out.println("Primo X-service Base: " + hk.edu.csids.bookquery.Config.PRIMO_X_BASE);
-			System.out.println("ISBN ORI " + q.bk.isbn.getOriIsbn());
+			System.out.println("ISBN ORI " + q.bk.isbn.getOriginalIsbn());
 			System.out.println("ISBN10 " + q.bk.isbn.getIsbn10());
 			System.out.println("ISBN13: " + q.bk.isbn.getIsbn13());
 		} //end if

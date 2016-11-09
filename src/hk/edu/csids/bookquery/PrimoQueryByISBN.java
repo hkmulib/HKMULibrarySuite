@@ -43,7 +43,7 @@ public class PrimoQueryByISBN extends PrimoQuery {
 
 	@Override
 	protected boolean query() {
-		if (queryBk.isbn.getOriIsbn().equals("N/A")) {
+		if (queryBk.isbn.getOriginalIsbn().equals("N/A")) {
 			return false;
 		} // end iF
 		queryStr = new String("&query=isbn,contains,");
@@ -57,7 +57,7 @@ public class PrimoQueryByISBN extends PrimoQuery {
 				errMsg = "No record found on Primo." + Config.QUERY_SETTING;
 			} // end if
 		} else {
-			errMsg = "Invalid ISBN: " + queryBk.isbn.getOriIsbn();
+			errMsg = "Invalid ISBN: " + queryBk.isbn.getOriginalIsbn();
 		} // end if
 		return false;
 	} // end query()

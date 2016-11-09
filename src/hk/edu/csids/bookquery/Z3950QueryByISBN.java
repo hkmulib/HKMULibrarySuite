@@ -33,13 +33,13 @@ public class Z3950QueryByISBN extends Z3950Query {
 
 	public boolean query() {
 		queryCount++;
-		if (!strHandle.hasSomething(queryBk.isbn.getOriIsbn())) {
+		if (!strHandle.hasSomething(queryBk.isbn.getOriginalIsbn())) {
 			queryStr = "";
 			return false;
 		} // end if
 
 		try {
-			queryStr = "@attr 1=7 @attr 2=3 " + queryBk.isbn.getOriIsbn();
+			queryStr = "@attr 1=7 @attr 2=3 " + queryBk.isbn.getOriginalIsbn();
 			if (remoteQuery(queryStr)) {
 				match = true;
 				setBookInfo();			

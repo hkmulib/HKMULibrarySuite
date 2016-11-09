@@ -120,6 +120,7 @@ public class BookItem {
 	} // end setSubjects()
 
 	public void setTitle(String str) {
+		
 		if (!strHandle.hasSomething(str)) {
 			str = "";
 		} else {
@@ -489,9 +490,9 @@ public class BookItem {
 			for (int i = chiEd.length - 1; i >= 0; i--) {
 				edition = edition.replaceAll(chiEd[i], (i + 1) + "");
 			} // end for
-			if (edition.matches("^修訂.*|^增訂.*|校訂.*")) {
-				edition = edition.replaceAll("xiu.*", "");
-				edition = edition.replaceAll("zeng.*", "");
+			if (edition.matches(".*修訂.*|.*增訂.*|.*校訂.*")) {
+				edition = edition.replaceAll(".*xiu.*", "");
+				edition = edition.replaceAll(".*zeng.*", "");
 				String minor_ed_str = strHandle.extractNumeric(edition);
 				if (minor_ed_str == null || minor_ed_str.equals("")) {
 					minor_ed_str = "1";
@@ -533,7 +534,7 @@ public class BookItem {
 		str = str.replace("明窗", "明報");
 		// The array is for trimming off common publishing company keywords
 		// before matching.
-		String[] dkeys = { " limited", " publications", " corporation", " publishing", " company", " books", " book",
+		String[] dkeys = { " limited", " publications", " corporation", " publishing", " company", " books", " book", " row",
 				" ltd$", " co$", " & co$", " pub$", " Inc$", " group$", " press$", " distributor$", " $", "有限公司",
 				"企管顧問", "企管顾问", "股份", "出版社", "出版", "資訊科技", "资讯科技", "出版企業", "出版企业", "書局", "书局", "大學", "大学", "師範", "师范",
 				"股彬", "文化企業", "書店", "發行" };

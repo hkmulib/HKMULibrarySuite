@@ -55,7 +55,9 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 	public boolean query() {
 		String qt = queryBk.getTitle();
+
 		qt = qt.trim();
+		
 		String qc = queryBk.getCreator();
 		qc = qc.trim();
 		String qp = queryBk.getPublisher();
@@ -107,6 +109,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 		if (!isEACC) {
 			qt = strHandle.trimSpecialChars(qt);
+			qt = strHandle.extract4LongestAdjententKeywords(qt);
 		} // end if
 
 		int noOfCri = 0;
@@ -329,7 +332,6 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			while ((line = bufReader.readLine()) != null) {
 
 				if (line.toLowerCase().matches("^260.*|^264.*|.*6260.*|.*6264.*")) {
-					System.out.println(line);
 
 					line = line.replaceAll("^.*?\\$b", "");
 					line = line.replaceAll("\\$c.*$", "");
@@ -361,15 +363,17 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			System.out.println(errStr);
 			errMsg = errStr;
 		}
+		debug += "NOT MATCH PUBLISHER\n";
 		return false;
 	} // end matchPublisher()
 
 	private boolean matchTitle() {
 		String qt = queryBk.getTitle();
-		qt = strHandle.removeArticles(qt);
+		
 		qt = strHandle.removeAccents(qt);
-		qt = strHandle.trimSpaces(qt);
+		qt = strHandle.trimNewLineChar(qt);
 		qt = qt.toLowerCase();
+		qt = strHandle.removeArticles(qt);
 
 		if (!strHandle.hasSomething(qt)) {
 			return false;
@@ -390,11 +394,15 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 				if (line.toLowerCase().matches(".*6245.*|^245.*")) {
 					line = line.replaceAll("^.*\\$a", "");
 					line = line.replaceAll("\\$c.*$", "");
+					line = line.replaceAll("\\$b", "");
+					line = line.replaceAll("\\$h", "");
+					line = line.replaceAll("\\[electronic resource\\]", "");
 					line = line.toLowerCase();
 					line = strHandle.trimSpecialChars(line);
-					line = strHandle.trimSpaces(line);
+					line = strHandle.trimNewLineChar(line);
 					line = strHandle.removeArticles(line);
 					line = strHandle.removeAccents(line);
+					
 					if (CJKStringHandling.isCJKString(line)) {
 						line = CJKStringHandling.removeNonCJKChars(line);
 						line = CJKStringHandling.standardizeVariantChinese(line);
@@ -402,7 +410,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 					} // end if
 					debug += "match title LINE: " + line + "\n";
 					debug += "match title qt: " + qt + "\n";
-					if (line.contains(qt) || qt.contains(line)) {
+					if (strHandle.containWords(line, qt) || strHandle.containWords(qt, line)) {
 						debug += "MATCHTITLE\n";
 						return true;
 					} // end if
@@ -417,6 +425,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			System.out.println(errStr);
 			errMsg = errStr;
 		}
+		debug += "NOT MATCHTITLE\n";
 		return false;
 	} // end matchTitle()
 
