@@ -11,7 +11,6 @@ public class MARC {
 	private String marcRawStr;
 	private byte[] marcTagRaw;
 	private String marcTag;
-	private CJKStringHandling cjkStrHandle;
 	private GenStringHandling strHandle;
 
 	public MARC() {
@@ -32,7 +31,6 @@ public class MARC {
 	private void clear() {
 		marcRaw = null;
 		marcTag = null;
-		cjkStrHandle = new CJKStringHandling();
 		strHandle = new GenStringHandling();
 	} // end clear()
 
@@ -267,7 +265,7 @@ public class MARC {
 
 	// Accept raw Marc
 	public boolean breakMarc(byte[] marc) {
-
+		
 		try {
 			if (marc == null) {
 				return false;
@@ -418,21 +416,21 @@ public class MARC {
 
 			boolean cjkCon = false;
 
-			if (cjkStrHandle.isBig5(marcTagRaw)) {
+			if (CJKStringHandling.isBig5(marcTagRaw)) {
 				result = new String(marcTagRaw, Charset.forName("Big5_HKSCS"));
-				result = new String(cjkStrHandle.removeControl(result.getBytes()));
+				result = new String(CJKStringHandling.removeControl(result.getBytes()));
 				result = result.replaceAll("，", ",");
 				marcTagRaw = result.getBytes();
 				cjkCon = true;
 			}
-			if (cjkStrHandle.isEACC(marcTagRaw)) {
-				result = new String(cjkStrHandle.EACCtoUnicode(marcTagRaw));
+			if (CJKStringHandling.isEACC(marcTagRaw)) {
+				result = new String(CJKStringHandling.EACCtoUnicode(marcTagRaw));
 				result = result.replace("!ON(B", "");
 				result = result.replace("'Q[(B", "");
 				result = result.replace("!Na(B", "");
 				result = result.replace("!:g(B", "");
 				cjkCon = true;
-			} else if (cjkStrHandle.isCJKString(new String(marcTagRaw))) {
+			} else if (CJKStringHandling.isCJKString(new String(marcTagRaw))) {
 				result = new String(marcTagRaw, Charset.forName("UTF-8"));
 
 				cjkCon = true;

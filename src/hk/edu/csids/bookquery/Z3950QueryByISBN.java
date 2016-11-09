@@ -1,5 +1,8 @@
 package hk.edu.csids.bookquery;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
+
 import hk.edu.csids.BookItem;
 
 //In development
@@ -30,31 +33,46 @@ public class Z3950QueryByISBN extends Z3950Query {
 
 	public boolean query() {
 		queryCount++;
-		if (!strHandle.hasSomething(queryBk.isbn.getIsbn())) {
+		if (!strHandle.hasSomething(queryBk.isbn.getOriIsbn())) {
 			queryStr = "";
 			return false;
-		} else {
-			if (!queryBk.isbn.isValid()) {
-				queryStr = "";
-				return false;
-			} // end if
 		} // end if
 
-		queryStr = "@attr 1=7 @attr 2=3 " + queryBk.isbn.getIsbn();
-		if (remoteQuery(queryStr)) {
-			match = true;
-			checkAva(-1);
-			setBookInfo();
-			return true;
-		} else {
-			// try again
-			if(remoteQuery(queryStr)){
+		try {
+			queryStr = "@attr 1=7 @attr 2=3 " + queryBk.isbn.getOriIsbn();
+			if (remoteQuery(queryStr)) {
 				match = true;
-				checkAva(-1);
-				setBookInfo();
+				setBookInfo();			
+				while(!checkAva(-1) && nextRecord()){
+					copyNextRecToCurrentRec();
+					setBookInfo();
+				} //end while
+				
 				return true;
 			} //end if
-		} //end if
+		} //end try
+		catch (Exception e){
+			try{
+				if(remoteQuery(queryStr)){
+					setBookInfo();
+					match = true;
+					checkAva(-1);
+					return true;
+				} //end if
+			} //end try
+			catch(Exception e2){
+				StringWriter errors = new StringWriter();
+				e.printStackTrace(new PrintWriter(errors));
+				String errStr = "Z3950Query:query()" + errors.toString();
+				errMsg = errStr;
+				System.out.println(errStr);	
+			} //end catch
+			StringWriter errors = new StringWriter();
+			e.printStackTrace(new PrintWriter(errors));
+			String errStr = "Z3950Query:query()" + errors.toString();
+			errMsg = errStr;
+			System.out.println(errStr);
+		} //end catch
 		return false;
 	} // end query()
 

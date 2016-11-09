@@ -5,6 +5,8 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 import javax.xml.parsers.*;
 import java.io.*;
+import java.nio.charset.Charset;
+
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 import org.yaz4j.*;
@@ -14,15 +16,19 @@ public abstract class Z3950Query extends Query {
 
 	protected String result;
 	protected String holdingXML;
+	protected String nextResult;
+	protected String nextHoldingXML;
 	protected ResultSet resultSet;
 	protected long resultCurrInd;
 	protected byte[] resultBytes;
+	protected byte[] nextResultBytes;
 	protected String resultMarc;
 	private String queryBase;
 	private String lastQueryInst;
 	private Connection z39c;
 	private org.yaz4j.Query query;
 	protected static int queryCount;
+
 
 	abstract boolean query();
 
@@ -46,11 +52,14 @@ public abstract class Z3950Query extends Query {
 	protected void clearQuery() {
 		super.clearQuery();
 		result = "";
+		nextResult = "";
 		resultSet = null;
 		resultCurrInd = 0;
 		resultBytes = null;
+		nextResultBytes = null;
 		query = null;
 		holdingXML = "";
+		nextHoldingXML = "";
 	} // end clearZ395Query()
 
 	public Z3950Query() {
@@ -58,7 +67,7 @@ public abstract class Z3950Query extends Query {
 	} // end Z3950QueryByISBN()
 
 	public boolean checkAva(int vol) {
-
+		
 		if (holdingXML == null)
 			return false;
 
@@ -67,6 +76,10 @@ public abstract class Z3950Query extends Query {
 		Document doc;
 		try {
 			int avaT = 0;
+			String noLendLocation = Config.VALUES.get("NOLEND_LOCATION_" + Config.VALUES.get("INST_CODE"));
+			if (noLendLocation == null)
+				noLendLocation = "";
+			String[] nolendLocations = noLendLocation.split(",");
 			f = DocumentBuilderFactory.newInstance();
 			b = f.newDocumentBuilder();
 			boolean start = false;
@@ -74,6 +87,7 @@ public abstract class Z3950Query extends Query {
 			holdingXML = "";
 			String line = "";
 			boolean holding = false;
+
 			while ((line = bufReader.readLine()) != null) {
 				if (line.toLowerCase().contains("<holdings>")) {
 					start = true;
@@ -85,7 +99,7 @@ public abstract class Z3950Query extends Query {
 					holdingXML += line;
 				} // end if
 			} // end while
-
+			
 			if (holding) {
 				holdingXML = holdingXML + "</holdings>";
 				InputSource is = new InputSource(new StringReader(holdingXML));
@@ -95,26 +109,36 @@ public abstract class Z3950Query extends Query {
 					nodesHolding = doc.getElementsByTagName("holding").item(i).getChildNodes();
 					String callNo = getNodeValue("callNumber", nodesHolding);
 					String volume = callNo;
-					volume = volume.replaceAll("^.*v\\.", "");
 					String status = getNodeValue("publicNote", nodesHolding);
 					String localLocation = getNodeValue("localLocation", nodesHolding);
 					bk.holdingInfo.add(new ArrayList<String>());
-
 					bk.holdingInfo.get(i).add(Config.VALUES.get("INST_CODE"));
 					bk.holdingInfo.get(i).add(localLocation);
 					bk.holdingInfo.get(i).add(callNo);
 					bk.holdingInfo.get(i).add(status);
-
+					
+					if (bk.isMultiVolume() && !volume.contains("v.") && !volume.contains("pt."))
+						volume = "yearvol" + volume;
 					status = strHandle.normalizeString(status);
-					if ((status.equals("NOTCHCKDOUT") || status.contains("AVAILABLE")) && vol < 1) {
-						avaT++;
+					status = strHandle.trimSpecialChars(status);
+					boolean lendable = true;
+
+					for (int j = 0; j < nolendLocations.length; j++) {
+						if (strHandle.normalizeString(localLocation).equals(strHandle.normalizeString((nolendLocations[j]))))
+							lendable = false;
+					} // end for
+					if ((status.equals("NOTCHCKDOUT") || status.contains("AVAILABLE")) && vol < 1
+							&& (queryBk.parseVolume(volume) < 0 || !bk.isMultiVolume())) {
 						ava = true;
 						bib_no = 1;
+						if (lendable)
+							avaT++;
 					} else if (vol > 0) {
 						if (vol == queryBk.parseVolume(volume)) {
-							avaT++;
 							ava = true;
 							bib_no = 1;
+							if ((status.equals("NOTCHCKDOUT") || status.contains("AVAILABLE")) && lendable)
+								avaT++;
 						} // end if
 					} // end if
 
@@ -143,40 +167,34 @@ public abstract class Z3950Query extends Query {
 	} // end checkAva
 
 	protected void setBookInfo() {
+
 		if (match && strHandle.hasSomething(result)) {
+
 			try {
 				String m = result;
-				boolean start = false;
 				BufferedReader bufReader = new BufferedReader(new StringReader(result));
 				String line = null;
 				while ((line = bufReader.readLine()) != null) {
-					if (line.toLowerCase().contains("<bibliographicrecord>")) {
-						m = "";
-						start = true;
-						continue;
-					} else if (line.toLowerCase().contains("</bibliographicrecord>")) {
-						start = false;
-						break;
-					} // end if
 
-					if (start) {
-						line = line.trim();
-						if (strHandle.hasSomething(line))
-							m += line + "\r";
+					line = line.trim();
+					if (strHandle.hasSomething(line))
+						m += line + "\r";
 
-						if (line.matches("^020.*"))
-							bk.isbn.addIsbn(parseMARCLineValue(line).trim());
+					if (line.matches("^020.*"))
+						bk.isbn.addIsbn(parseMARCLineValue(line).trim());
 
-						if (line.matches("^245.*"))
-							bk.setTitle(parseMARCLineValue(line).trim());
+					if (line.matches("^245.*"))
+						bk.setTitle(parseMARCLineValue(line).trim());
 
-						if (line.matches("^100.*"))
-							bk.setCreator(parseMARCLineValue(line).trim());
+					if (line.matches("^100.*"))
+						bk.setCreator(parseMARCLineValue(line).trim());
 
-						if (line.matches("^260.*|^264.*"))
-							bk.setPublisher(parseMARCLineValue(line).trim());
+					if (line.matches("^260.*|^264.*"))
+						bk.setPublisher(parseMARCLineValue(line).trim());
 
-					} // end if
+					if (line.matches("^300.*"))
+						bk.setFormat(parseMARCLineValue(line).trim());
+
 				} // end while
 				m = m.trim();
 			} // end try
@@ -209,24 +227,43 @@ public abstract class Z3950Query extends Query {
 		return resultBytes;
 	} // end getResultBytes()
 
-	protected boolean nextRecord() {
+	protected void closeConnection() {
+		try {
+			z39c.close();
+		} // end try
+		catch (Exception e) {
+			StringWriter errors = new StringWriter();
+			e.printStackTrace(new PrintWriter(errors));
+			String errStr = "Z3950Query:closeConnection()" + errors.toString();
+			System.out.println(errStr);
+			errMsg = errStr;
+		} // end catch
+	} // end closeConnection()
 
+	public void copyNextRecToCurrentRec() {
+		bk.marc.setMarcRaw(nextBk.marc.getMarcRaw());
+		resultBytes = nextResultBytes;
+		result = nextResult;
+		holdingXML = nextHoldingXML;
+	} // end copyNextRecToCurrentRec()
+
+	protected boolean nextRecord() {
+		debug += "nextrecord gethitcount(): " + resultSet.getHitCount() + "\n";
+		debug += "resultCurrInd: " + resultCurrInd + "\n";
 		resultCurrInd++;
 		if (resultSet.getHitCount() < resultCurrInd + 1 || resultSet == null) {
-			z39c.close();
 			return false;
 		} else {
 			try {
 				org.yaz4j.Record rec = resultSet.getRecord(resultCurrInd);
 				if (rec != null) {
-					resultBytes = rec.get("raw");
-					bk.marc.setMarcRaw(resultBytes);
-					resultBytes = bk.marc.getMarcTagRaw();
-					result = bk.marc.getMarcTag();
-					holdingXML = rec.render();
+					nextBk.marc.setMarcRaw(rec.get("raw"));
+					nextResultBytes = nextBk.marc.getMarcTagRaw();
+					nextResult = nextBk.marc.getMarcTag();
+					nextHoldingXML = rec.render();
 					return true;
 				} else {
-					result = "";
+					nextResult = "";
 				} // end if
 			} // end try
 			catch (Exception e) {
@@ -241,18 +278,19 @@ public abstract class Z3950Query extends Query {
 	} // end nextRecord()
 
 	protected boolean remoteQuery(String queryStr) {
-		
+		resultCurrInd = 0;
 		if (queryBase == null) {
+			debug += "queryBase NULL \n";
 			return false;
 		} // end if
-		
-		
+
 		if (z39c == null) {
 			try {
 				z39c = new Connection(queryBase, 0);
 				z39c.connect();
 				z39c.setSyntax("opac");
 				lastQueryInst = Config.VALUES.get("INST_CODE");
+
 			} // end try
 
 			catch (Exception e) {
@@ -260,14 +298,13 @@ public abstract class Z3950Query extends Query {
 				e.printStackTrace(new PrintWriter(errors));
 				String errStr = "Z3950Query:remoteQuery()" + errors.toString();
 				errMsg = errStr;
-			} //end catch
-		
-		} else if (!Config.VALUES.get("INST_CODE").equals(lastQueryInst)
-					|| queryCount % 400 == 0) {
+			} // end catch
+
+		} else if (!Config.VALUES.get("INST_CODE").equals(lastQueryInst) || queryCount % 400 == 0) {
 			try {
 				queryCount = 0;
-				z39c.close();
-				Thread.sleep(3000);
+				closeConnection();
+				Thread.sleep(500);
 				z39c = new Connection(queryBase, 0);
 				z39c.connect();
 				z39c.setSyntax("opac");
@@ -280,15 +317,18 @@ public abstract class Z3950Query extends Query {
 				String errStr = "Z3950Query:remoteQuery()" + errors.toString();
 				System.out.println(errStr);
 				errMsg = errStr;
-			} //end catch
+			} // end catch
 		} // end if
 
 		org.yaz4j.Record rec = null;
 		try {
-			query = new org.yaz4j.PrefixQuery(new String(queryStr));
+			query = new PrefixQuery(new String(queryStr));
 			resultSet = z39c.search(query);
 			rec = resultSet.getRecord(0);
-
+			if (resultSet.getHitCount() > 40) {
+				debug += "result > 40\n";
+				return false;
+			}
 			if (rec != null) {
 				resultBytes = rec.get("raw");
 				bk.marc.setMarcRaw(resultBytes);
@@ -306,16 +346,23 @@ public abstract class Z3950Query extends Query {
 			String errStr = "Z3950Query:remoteQuery()" + errors.toString();
 			System.out.println(errStr);
 			errMsg = errStr;
-			// Probably due to connection error. Try to connection again,
+			debug += errMsg;
+			// Probably due to connection error. Try to connect again,
 			// the caller of this function would try again.
 			try {
-				z39c.close();
+				closeConnection();
 				z39c = new Connection(queryBase, 0);
 				z39c.connect();
 				z39c.setSyntax("opac");
 			} // end try
 			catch (Exception e2) {
-			}
+				errors = new StringWriter();
+				e.printStackTrace(new PrintWriter(errors));
+				errStr = "Z3950Query:remoteQuery():catchException" + errors.toString();
+				System.out.println(errStr);
+				errMsg = errStr;
+				debug += errMsg;
+			} // end catch
 			return false;
 		} // end catch
 

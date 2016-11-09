@@ -5,14 +5,20 @@ import hk.edu.csids.*;
 public class TestChineseHandling
 {
 	public static void main(String[] args) {
-		String str = "{123456}¬aæ¨æ´å¹³ 10¬aå°å±±åºä¸ç¶»æ¾çç«ç° :-bæ¥éµåä»çæå­¸ä¸ç /¬cæ¨æ´å¹³è 30-aæ¥éµåä»çæå­¸ä¸ç   ¬aç¬¬ 1 ç   ¬aåäº¬ :¬bä½å®¶åºçç¤¾,-c2006.   ¬a11, 2, 379 p. ;¬c21 cm.  0¬aèºç£ä½å®¶ç ç©¶å¢æ¸ ;¬v3.   ¬aæ¸ç®";
-		
+		String str = "880    $6500-07/$1$a{215946}{215426}: {213034}{27376f}{215744}{69242d}{69244e}{692539}{69256d}{692526}{692126}{69255c}{69213c}{692548}.";
 		CJKStringHandling ch = new CJKStringHandling();
+		String strcon = new String(ch.EACCtoUnicode(str.getBytes()) );
+		System.out.println(strcon);
 		
-		String strcon = new String(ch.EACCtoUnicodeChar(str.getBytes()));
+		String str2 = "五零五";
+		System.out.println(CJKStringHandling.convertChineseToArabicNumber(str2));
 		
+		String str3 = "880    $6260-03/$1$a¥_¨Ê :$b¤H¥Á¤å¾Ç¥Xª©ªÀ,$c1985.";
+		System.out.println(CJKStringHandling.big5ToUnicode(str3));
 		
-		System.out.println(strcon + "HI");
+		String str4 = "Shek Mun Campus Library";
+		GenStringHandling strHandle = new GenStringHandling();
+		System.out.println(strHandle.normalizeString(str4));
 		
 	}
 }

@@ -4,8 +4,8 @@ import hk.edu.csids.*;
 public class TestZ3950earchByISBN{
 	public static void main(String[] args){
 		
-		String inst = "IED";
-		String isbn = "7224043095";
+		String inst = "HKSYU";
+		String isbn = "0773589848";
 		//String isbn = "781058703X";
 		CJKStringHandling ch = new CJKStringHandling();
 		
@@ -18,7 +18,9 @@ public class TestZ3950earchByISBN{
 			if(args[1]!=null){isbn=args[1];}
 		} //end try
 		catch (Exception e){System.out.println("No ISBN Argument, using default. Syntax: [ccommand] [inst] [inbn]");}
+		
 		Z3950QueryByISBN q = new Z3950QueryByISBN(isbn, inst);
+		
 		if(q.match()){
 			System.out.println("MATCH: ");
 			System.out.println("Query String:" + q.getQueryStr());

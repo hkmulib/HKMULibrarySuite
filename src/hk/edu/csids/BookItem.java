@@ -27,6 +27,7 @@ public class BookItem {
 	private String publisher;
 	private String publishYear;
 	private String translator;
+	private String format;
 	private String bookType;
 	private ArrayList<String> translators;
 	private String subject;
@@ -127,7 +128,7 @@ public class BookItem {
 			str = StringEscapeUtils.unescapeXml(str);
 			str = str.replaceAll("=.*", "");
 			str = strHandle.trimSpecialChars(str);
-			
+
 			title = str;
 		} // end if
 	} // end setTitle()
@@ -233,7 +234,12 @@ public class BookItem {
 	} // end setPublisher()
 
 	public void setVolume(String str) {
-		volume = str;
+		if (!strHandle.hasSomething(str)) {
+			volume = str;
+		} else {
+			volume = "v." + str;
+		} // end if
+
 	} // end setPublisher()
 
 	public void setPublishYear(String str) {
@@ -254,12 +260,20 @@ public class BookItem {
 	} // end setPublishYear()
 
 	public void setEdition(String str) {
-		if (str == null) {
+		if (str == null || (str.matches("臺.版") && strHandle.hasSomething(getPublishYear())) ) {
 			edition = "";
 		} else {
 			edition = str;
 		} // end if
 	} // end seteEdition()
+
+	public void setFormat(String str) {
+		if (str == null) {
+			format = "";
+		} else {
+			format = str;
+		} // end if
+	} // end setFormat()
 
 	public String getTitle() {
 		return title;
@@ -292,6 +306,12 @@ public class BookItem {
 	public String getContributor() {
 		return contributor;
 	}// end getAuthor
+
+	public String getFormat() {
+		if (format == null)
+			return "";
+		return format;
+	} // end getFormat()
 
 	public ArrayList<String> getContributors() {
 		return contributors;
@@ -409,20 +429,33 @@ public class BookItem {
 	} // end parseVolume
 
 	public int parseVolume(String str) {
-		if (str == null || str.contains("c.")) {
-			return -1;
-		} // end if
-		str = strHandle.extractNumeric(str);
-		if (str == null || str.equals("")) {
-			return -1;
-		} // end if
-		
 
-		
+		boolean isVol = false;
+
+		if (str.contains("v.") || str.contains("pt.") || str.contains("vol"))
+			isVol = true;
+
+		if (!isVol)
+			return -1;
+
+		if (str.contains("yearvol")) {
+			Pattern pattern = Pattern.compile(" (\\d{4})");
+			Matcher matcher = pattern.matcher(str);
+			if (matcher.find()) {
+				str = matcher.group(0);
+			} // end if
+		} // end if
+
+		str = str.replaceAll("^.*v\\.|^.*pt\\.|^.*vol|c\\..*$", "");
+
+		str = strHandle.extractNumeric(str);
+		if (str == null || str.equals("") || str.length() > 4)
+			return -1;
+
 		try {
 			return Integer.parseInt(str);
 		} // end try
-		
+
 		catch (Exception e) {
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
@@ -442,8 +475,7 @@ public class BookItem {
 			return -1;
 		} // end if
 
-		CJKStringHandling ch = new CJKStringHandling(edition);
-		if (ch.isCJK()) {
+		if (CJKStringHandling.isCJKString(edition)) {
 			edition = strHandle.normalizeString(edition);
 			edition = edition.toLowerCase();
 			edition = edition.replaceAll("tai.*", "");
@@ -483,28 +515,28 @@ public class BookItem {
 			} // end for
 		} // end if
 		edition = edition.replaceAll("[^0-9]", "");
-		
-		if(edition.equals("1"))
+
+		if (edition.equals("1"))
 			edition = "-1";
-		
+
 		if (!edition.equals("")) {
 			return Double.parseDouble(edition);
 		} // end if
 		return -1;
 	} // end parseEdition
 
-	public String removeCommonPublisherWording() {
-		return removeCommonPublisherWording(publisher);
+	public String standizePublisherWording() {
+		return stardizePublisherWording(publisher);
 	} // removeCommonPublisherWording()
 
-	public String removeCommonPublisherWording(String str) {
-
+	public String stardizePublisherWording(String str) {
+		str = str.replace("明窗", "明報");
 		// The array is for trimming off common publishing company keywords
 		// before matching.
 		String[] dkeys = { " limited", " publications", " corporation", " publishing", " company", " books", " book",
 				" ltd$", " co$", " & co$", " pub$", " Inc$", " group$", " press$", " distributor$", " $", "有限公司",
 				"企管顧問", "企管顾问", "股份", "出版社", "出版", "資訊科技", "资讯科技", "出版企業", "出版企业", "書局", "书局", "大學", "大学", "師範", "师范",
-				"股彬", "文化企業"};
+				"股彬", "文化企業", "書店", "發行" };
 
 		str = strHandle.tidyString(str);
 
@@ -548,5 +580,12 @@ public class BookItem {
 
 		return out;
 	} // end toString()
+
+	public boolean isMultiVolume() {
+		String format = getFormat();
+		if (format.contains("v.") || format.contains("vol") || format.contains("pt.") || format.contains("冊"))
+			return true;
+		return false;
+	} // end isMultiVolume()
 
 } // end class ChkBkByISBN()

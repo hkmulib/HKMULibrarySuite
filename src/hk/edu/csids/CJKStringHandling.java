@@ -15,53 +15,14 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import com.spreada.utils.chinese.ZHConverter;
 
-public class CJKStringHandling {
+public final class CJKStringHandling {
 
-	private String ori_str;
-	private String con_str;
 	private static HashMap<String, String> EACCMap = null;
 	private static HashMap<String, String> ToEACCMap = null;
 	private static HashMap<String, String> VariantChineseMap = null;
 	private static HashMap<String, String> ChineseAI = null;
 
-	public CJKStringHandling() {
-		clear();
-	} // end ChineseHandling
-
-	public CJKStringHandling(String str) {
-		clear();
-		getOriginalString(str);
-	} // end ChineseHandling()
-
-	public void clear() {
-		ori_str = null;
-		con_str = null;
-	} // end clear()
-
-	public boolean isCJK() {
-		if (ori_str != null) {
-			return true;
-		} // end if
-		return false;
-	} // end isChinese()
-
-	public String getResultString() {
-		return con_str;
-	} // end getResultString()
-
-	public String getOriginalString() {
-		return ori_str;
-	} // end getResultString()
-
-	public void getOriginalString(String str) {
-		if (isCJKString(str)) {
-			ori_str = str;
-		} else {
-			ori_str = null;
-		} // end if
-	} // end setOriStr()
-
-	public boolean isCJKString(String str) {
+	public static boolean isCJKString(String str) {
 		if (str == null) {
 			return false;
 		} // end if
@@ -82,17 +43,15 @@ public class CJKStringHandling {
 				&& !Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A.equals(block)
 				&& !Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B.equals(block)
 				&& !Character.UnicodeBlock.CJK_SYMBOLS_AND_PUNCTUATION.equals(block)
+				&& !Character.UnicodeBlock.HIRAGANA.equals(block) 
+				&& !Character.UnicodeBlock.KATAKANA_PHONETIC_EXTENSIONS.equals(block)
 				&& !Character.UnicodeBlock.KATAKANA.equals(block)) {
 			return false;
 		} // end if
 		return true;
 	} // end check()
 
-	public String convertToSimpChinese() {
-		return convertToSimpChinese(ori_str);
-	} // end public String convertToSimpChinese()
-
-	public String convertArabicToChineseNumber(String str) {
+	public static String convertArabicToChineseNumber(String str) {
 		str = str.replace("1", "一");
 		str = str.replace("2", "二");
 		str = str.replace("3", "三");
@@ -105,44 +64,170 @@ public class CJKStringHandling {
 		str = str.replace("0", "零");
 		return str;
 	} // end convertArabicToChineseNumber()
+	
+	public static String convertChineseToArabicNumber(String str) {
+		int i = 0;
+		if(str.contains("五百")){
+			i+=500;
+			str = str.replace("五百", ""); 
+		} //end if
+		if(str.contains("五零")){
+			i+=500;
+			str = str.replace("五零", ""); 
+		} //end if
+		if(str.contains("四百")){
+			i+=400;
+			str = str.replace("四百", ""); 
+		} //end if
+		if(str.contains("四零")){
+			i+=400;
+			str = str.replace("四零", ""); 
+		} //end if
+		if(str.contains("三百")){
+			i+=300;
+			str = str.replace("三百", ""); 
+		} //end if
+		if(str.contains("三零")){
+			i+=300;
+			str = str.replace("三零", ""); 
+		} //end if
+		if(str.contains("二百")){
+			i+=200;
+			str = str.replace("二百", ""); 
+		} //end if
+		if(str.contains("二零")){
+			i+=200;
+			str = str.replace("二零", ""); 
+		} //end if
+		if(str.contains("一百")){
+			i+=100;
+			str = str.replace("一百", ""); 
+		} //end if
+		if(str.contains("一零")){
+			i+=100;
+			str = str.replace("一零", ""); 
+		} //end if
+		if(str.contains("十")){
+			i+=10;
+			str = str.replace("十", ""); 
+		} //end if
+		if(str.contains("一十")){
+			i+=10;
+			str = str.replace("十", ""); 
+		} //end if
+		if(str.contains("二十")){
+			i+=20;
+			str = str.replace("二十", ""); 
+		} //end if
+		if(str.contains("廿")){
+			i+=20;
+			str = str.replace("廿", ""); 
+		} //end if
+		if(str.contains("三十")){
+			i+=30;
+			str = str.replace("三十", ""); 
+		} //end if
+		if(str.contains("卅")){
+			i+=30;
+			str = str.replace("卅", ""); 
+		} //end if
+		if(str.contains("四十")){
+			i+=40;
+			str = str.replace("四十", ""); 
+		} //end if
+		if(str.contains("五十")){
+			i+=50;
+			str = str.replace("五十", ""); 
+		} //end if
+		if(str.contains("六十")){
+			i+=60;
+			str = str.replace("六十", ""); 
+		} //end if
+		if(str.contains("七十")){
+			i+=70;
+			str = str.replace("七十", ""); 
+		} //end if
+		if(str.contains("八十")){
+			i+=80;
+			str = str.replace("八十", ""); 
+		} //end if
+		if(str.contains("九十")){
+			i+=90;
+			str = str.replace("九十", ""); 
+		} //end if
+		if(str.contains("一")){
+			i+=1;
+			str = str.replace("一", ""); 
+		} //end if
+		if(str.contains("二")){
+			i+=2;
+			str = str.replace("二", ""); 
+		} //end if
+		if(str.contains("三")){
+			i+=3;
+			str = str.replace("三", ""); 
+		} //end if
+		if(str.contains("四")){
+			i+=4;
+			str = str.replace("四", ""); 
+		} //end if
+		if(str.contains("五")){
+			i+=5;
+			str = str.replace("五", ""); 
+		} //end if
+		if(str.contains("六")){
+			i+=6;
+			str = str.replace("六", ""); 
+		} //end if
+		if(str.contains("七")){
+			i+=7;
+			str = str.replace("七", ""); 
+		} //end if
+		if(str.contains("八")){
+			i+=8;
+			str = str.replace("八", ""); 
+		} //end if
+		if(str.contains("九")){
+			i+=9;
+			str = str.replace("九", ""); 
+		} //end if
 
-	public String convertToSimpChinese(String str) {
-		ori_str = str;
-		if (ori_str != null) {
+		return i + "";
+	} // end convertChineseToArabicNumber()
+
+	public static String convertToSimpChinese(String str) {
+		if (str != null) {
 			ZHConverter converter = ZHConverter.getInstance(ZHConverter.SIMPLIFIED);
-
-			if (con_str == null) {
-				con_str = converter.convert(ori_str);
-			} else {
-				con_str = converter.convert(con_str);
-			} // end if
-			return con_str;
+			str = converter.convert(str);
+			return str;
 		} // end if
 		return "";
 	} // end convertToSimpChinese()
 
-	public String convertToTradChinese(String str) {
-		str = standardizeVariantChinese(str);
-		str = tradChineseAICorrection(str);
+	public static String convertToTradChinese(String str) {
+		if(isCJKString(str)){
+			str = standardizeVariantChinese(str);
+			str = tradChineseAICorrection(str);
+		} //end if
 		return str;
 	} // end convertToTradChinese()
 
-	public String tradChineseAICorrection(String str) {
+	public static String tradChineseAICorrection(String str) {
 
 		if (ChineseAI == null) {
 			ChineseAI = new HashMap<String, String>();
 			InputStream is = null;
-			is = getClass().getResourceAsStream("chineseAI.txt");
+			is = CJKStringHandling.class.getResourceAsStream("chineseAI.txt");
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
 			String line;
 			try {
 				while ((line = br.readLine()) != null) {
 					line = line.trim();
-					if(line != ""){
+					if (line != "") {
 						String[] strArry = line.split("_");
-						if(strArry.length>1 && strArry[1]!=null)
+						if (strArry.length > 1 && strArry[1] != null)
 							ChineseAI.put(strArry[0], strArry[1]);
-					} //end if
+					} // end if
 				} // end while
 			} // end try
 			catch (Exception e) {
@@ -155,13 +240,13 @@ public class CJKStringHandling {
 
 		Iterator<Entry<String, String>> it = ChineseAI.entrySet().iterator();
 		while (it.hasNext()) {
-			Map.Entry<String,String> pair = (Map.Entry<String,String>) it.next();
+			Map.Entry<String, String> pair = (Map.Entry<String, String>) it.next();
 			String key = pair.getKey() + "";
 			String value = pair.getValue() + "";
 			if (str.contains(key)) {
 				int replacePlace = -1;
 				String pos = "";
-				if(value.length()==2)
+				if (value.length() == 2)
 					pos = value.charAt(1) + "";
 				if (pos.matches("\\d")) {
 					replacePlace = Integer.parseInt(value.charAt(1) + "");
@@ -181,14 +266,7 @@ public class CJKStringHandling {
 		return str;
 	} // end
 
-	public String removeNonCJKChars() {
-		if (ori_str != null) {
-			con_str = removeNonCJKChars(ori_str);
-		} // end if
-		return "";
-	} // end removeNonCJKChars()
-
-	public String removeNonCJKChars(String str) {
+	public static String removeNonCJKChars(String str) {
 		String out = "";
 		if (str != null) {
 			for (int i = 0; i < str.length(); i++) {
@@ -198,65 +276,47 @@ public class CJKStringHandling {
 					out += ch;
 				} // end if
 			} // end for
-			con_str = out;
 		} // end if
-		return con_str;
+		return out;
 	} // end removeNonCJKChars()
 
-	public String standardizeVariantChineseFast() {
-		return standardizeVariantChineseFast(ori_str);
-	} // standardizeVariantChineseFast()
-
-	public String standardizeVariantChineseFast(String str) {
-		ori_str = str;
-		if (ori_str != null) {
-			if (con_str == null) {
-				con_str = ori_str;
-			} // end if
+	public static String standardizeVariantChineseFast(String str) {
+		if (str != null) {
+			
 			String[] specChars = { "檯", "枱", "臺", "台", "峰 ", "峰", "鑑", "鍳", "研", "硏", "羨", "羡", "清", "淸", "群", "羣", "羣",
 					"床", "裡", "裏", "啟", "啓", "敎", "教" };
 
 			for (int i = 0; i < specChars.length; i += 2) {
-				con_str = con_str.replaceAll(specChars[i], specChars[i + 1]);
+				str = str.replaceAll(specChars[i], specChars[i + 1]);
 			} // end for
-			return con_str;
+			
+			return str;
 		} // end if
 		return "";
 	} // end standardizeVariantChineseFast()
 
-	public String standardizeVariantChineseForLooseMaching() {
-		return standardizeVariantChineseForLooseMaching(ori_str);
-	} // end public String standardizeVariantChineseForLooseMaching()
-
-	public String standardizeVariantChineseForLooseMaching(String str) {
-		ori_str = str;
-		if (ori_str != null) {
-			if (con_str == null) {
-				con_str = ori_str;
-			} // end if
+	public static String standardizeVariantChineseForLooseMaching(String str) {
+	
+		if (str != null) {
+			
 			String[] specChars = { "营", "行", "词", "字", "詞", "字", "用", "下", "界", "介", "识", "慧", "識", "慧", "劃", "畫", "划",
 					"畫", "の", "之", "と", "與", "的", "之", "络", "路" };
 
 			for (int i = 0; i < specChars.length; i += 2) {
-				con_str = con_str.replaceAll(specChars[i], specChars[i + 1]);
+				str = str.replaceAll(specChars[i], specChars[i + 1]);
 			} // end for
-			return con_str;
+			return str;
 		} // end if
 		return "";
 	} // end standardizeVariantChineseForLooseMaching()
 
-	public String standardizeVariantChinese() {
-		return standardizeVariantChinese(ori_str);
-	} // end standardizeVariantChinese()
-
-	public String standardizeVariantChinese(String str) {
-		ori_str = str;
-		if (ori_str != null) {
-			con_str = ori_str;
+	public static String standardizeVariantChinese(String str) {
+		
+		if (str!=null) {
 			loadVariantChineseMap();
 			try {
-				for (int k = 0; k < con_str.length(); k++) {
-					char ch = con_str.charAt(k);
+				for (int k = 0; k < str.length(); k++) {
+					char ch = str.charAt(k);
 					String tempStr = Integer.toHexString(ch | 0x10000).substring(1);
 					tempStr = tempStr.toUpperCase();
 
@@ -264,24 +324,28 @@ public class CJKStringHandling {
 					if (conStr != null) {
 						int i = Integer.parseInt(conStr, 16);
 						char ch2 = (char) i;
-						con_str = con_str.replace(con_str.charAt(k), ch2);
+						str = str.replace(str.charAt(k), ch2);
 					} // end if
 				} // end for
 			} // end try
 			catch (Exception e) {
-				
+
 				StringWriter errors = new StringWriter();
 				e.printStackTrace(new PrintWriter(errors));
 				String errStr = "CJKStringHandling:standardizeVariantChinese():" + errors.toString();
 				System.out.println(errStr);
 
 			} // end catch
-			return con_str;
+			return str;
 		} // end if
 		return "";
 	} // standardizeVariantChinese()
 
-	public boolean isBig5(byte[] bytes) {
+	public static String big5ToUnicode(String str){
+		return new String(str.getBytes(), Charset.forName("Big5_HKSCS"));
+	} //end big5ToUnicode()
+	
+	public static boolean isBig5(byte[] bytes) {
 		String str = new String(bytes, Charset.forName("Big5_HKSCS"));
 
 		int matchCount = 0;
@@ -298,14 +362,14 @@ public class CJKStringHandling {
 
 			if (isCJKChar(ch)) {
 				matchCount++;
-				if (matchCount > 15)
+				if (matchCount > 12)
 					return true;
 			} // end if
 		} // end for
 		return false;
 	} // end isBig5
 
-	private int checkEACCScheme(byte[] bytes) {
+	private static int checkEACCScheme(byte[] bytes) {
 		if (bytes == null) {
 			return 0;
 		} // end if
@@ -336,13 +400,13 @@ public class CJKStringHandling {
 		return 0;
 	} // end checkScheme
 
-	public boolean isEACC(byte[] bytes) {
+	public static boolean isEACC(byte[] bytes) {
 		if (checkEACCScheme(bytes) < 1)
 			return false;
 		return true;
 	} // end isEACC()
 
-	public byte[] removeControl(byte[] bytes) {
+	public static byte[] removeControl(byte[] bytes) {
 		for (int i = 0; i < bytes.length; i++) {
 			if (bytes[i] == 0x1E || bytes[i] == 0x1f || bytes[i] == 0x1d) {
 				bytes[i] = 32;
@@ -351,7 +415,7 @@ public class CJKStringHandling {
 		return bytes;
 	} // end removeControl
 
-	public byte[] EACCtoUnicode(byte[] bytes) {
+	public static byte[] EACCtoUnicode(byte[] bytes) {
 
 		for (int i = 0; i < bytes.length; i++)
 			if (bytes[i] == 0x00)
@@ -389,6 +453,7 @@ public class CJKStringHandling {
 						byte[] tb = { bc1, bc2, bc3 };
 
 						String con = EACCtoUnicodeChar(tb);
+						
 						convertedSegment = con;
 					} // end if
 
@@ -443,14 +508,14 @@ public class CJKStringHandling {
 			} // end for
 
 		} else if (scheme == 2) {
-			
+
 			for (int k = 0; k < ori_strBytes.length; k++) {
 				byte b1 = ori_strBytes[k];
 				byte b8 = 0;
 
 				if (k + 7 < ori_strBytes.length)
 					b8 = ori_strBytes[k + 7];
-				
+
 				if (b1 == 123 && b8 == 125) {
 					String conStr = "";
 					String oriStr = "";
@@ -473,8 +538,9 @@ public class CJKStringHandling {
 							z++;
 						} // end if
 					} // end for
-					
+
 					conStr = EACCtoUnicodeChar(bch);
+					
 					byte[] conB = conStr.getBytes();
 
 					if (conB.length > 0)
@@ -497,14 +563,15 @@ public class CJKStringHandling {
 						con_strBytes[l] = ori_strBytes[l];
 				} // end for
 			} // end for
-			
+
 		} // end if
 		
+		
 		bytes = new byte[con_strBytes.length + 100];
-
+		
 		boolean notCJK = false;
 		int notCJKNo = 0;
-		
+
 		for (int i = 0, j = 0; i < con_strBytes.length; i++) {
 			if (con_strBytes[i] != 0x5f && i < bytes.length) {
 
@@ -512,6 +579,7 @@ public class CJKStringHandling {
 				bs[0] = ori_strBytes[i];
 				String str = "";
 				str = new String(bs, Charset.forName("ISO-8859-1"));
+				
 				bs = str.getBytes();
 
 				byte[] bs2 = new byte[3];
@@ -522,21 +590,22 @@ public class CJKStringHandling {
 				} // end if
 
 				String str2 = new String(bs2);
-
+				
 				if (isCJKString(str2))
 					notCJK = true;
 
 				if (notCJK)
 					notCJKNo += 1;
-
+				//System.out.println(new String(bytes) + "is cjk" + notCJK);
 				if (bs.length == 2 && !(notCJKNo > 0)) {
 					bytes[j] = bs[0];
 					bytes[j + 1] = bs[1];
+					
 					j += 1;
 				} else {
 					bytes[j] = con_strBytes[i];
 					if (notCJKNo == 3) {
-						notCJK=false;
+						notCJK = false;
 						notCJKNo = 0;
 					} // end if
 				} // end if
@@ -548,7 +617,7 @@ public class CJKStringHandling {
 		return bytes;
 	} // EACCtoUnicode()()
 
-	public String EACCtoUnicodeChar(byte[] bytes) {
+	public static String EACCtoUnicodeChar(byte[] bytes) {
 		if (bytes.length != 3) {
 			return "";
 		} // end if
@@ -579,8 +648,7 @@ public class CJKStringHandling {
 			return result;
 		} // end try
 		catch (Exception e) {
-			
-			
+
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
 			String errStr = "CJKStringHandling:EACCtoUnicodeChar():" + errors.toString();
@@ -590,7 +658,7 @@ public class CJKStringHandling {
 		return "";
 	} // EACCtoUnicodeChar()
 
-	public String UnicodeCharToEACCNumber(char ch) {
+	public static String UnicodeCharToEACCNumber(char ch) {
 		String hex = String.format("%04x", (int) ch);
 		String EACC = "";
 		hex = hex.toUpperCase();
@@ -599,12 +667,12 @@ public class CJKStringHandling {
 		return EACC;
 	} // UnicodeCharToEACCNumber()
 
-	private void loadEACCMap() {
+	private static void loadEACCMap() {
 		try {
 			if (EACCMap == null) {
 				EACCMap = new HashMap<String, String>();
 				InputStream is = null;
-				is = getClass().getResourceAsStream("EACC_Unicode.xlsx");
+				is = CJKStringHandling.class.getResourceAsStream("EACC_Unicode.xlsx");
 				XSSFWorkbook wb = new XSSFWorkbook(is);
 				XSSFSheet sheet = wb.getSheetAt(0);
 				Iterator<org.apache.poi.ss.usermodel.Row> rowIterator = sheet.iterator();
@@ -653,7 +721,7 @@ public class CJKStringHandling {
 			} // end if
 		} // end try
 		catch (Exception e) {
-			
+
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
 			String errStr = "CJKStringHandling:loadEACCMap():" + errors.toString();
@@ -662,12 +730,12 @@ public class CJKStringHandling {
 		} // end catch
 	} // loadEACCMap()
 
-	private void loadToEACCMap() {
+	private static void loadToEACCMap() {
 		try {
 			if (ToEACCMap == null) {
 				ToEACCMap = new HashMap<String, String>();
 				InputStream is = null;
-				is = getClass().getResourceAsStream("EACC_Unicode.xlsx");
+				is = CJKStringHandling.class.getResourceAsStream("EACC_Unicode.xlsx");
 				XSSFWorkbook wb = new XSSFWorkbook(is);
 				XSSFSheet sheet = wb.getSheetAt(0);
 				Iterator<org.apache.poi.ss.usermodel.Row> rowIterator = sheet.iterator();
@@ -716,21 +784,21 @@ public class CJKStringHandling {
 			} // end if
 		} // end try
 		catch (Exception e) {
-			
+
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
 			String errStr = "CJKStringHandling:loadEACCMap():" + errors.toString();
 			System.out.println(errStr);
-			
+
 		} // end catch
 	} // loadToEACCMap()
 
-	public void loadVariantChineseMap() {
+	public static void loadVariantChineseMap() {
 		try {
 			if (VariantChineseMap == null) {
 				VariantChineseMap = new HashMap<String, String>();
 				InputStream is = null;
-				is = getClass().getResourceAsStream("HKIUGTSVCC_modified.xlsx");
+				is = CJKStringHandling.class.getResourceAsStream("HKIUGTSVCC_modified.xlsx");
 				XSSFWorkbook wb = new XSSFWorkbook(is);
 				XSSFSheet sheet = wb.getSheetAt(0);
 				Iterator<org.apache.poi.ss.usermodel.Row> rowIterator = sheet.iterator();
@@ -784,7 +852,7 @@ public class CJKStringHandling {
 		} // end try
 
 		catch (IOException e) {
-			
+
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
 			String errStr = "CJKStringHandling:loadVariantChineseMap():" + errors.toString();
@@ -792,14 +860,5 @@ public class CJKStringHandling {
 
 		} // end catch
 	} // loadVariantChineseMap()
-
-	public void setOriginalString(String str) {
-		if (isCJKString(str)) {
-			ori_str = str;
-		} else {
-			ori_str = null;
-		} // end if
-		con_str = null;
-	} // end setOriginalString()
 
 } // end class

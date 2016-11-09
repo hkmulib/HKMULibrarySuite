@@ -1,4 +1,4 @@
-package hk.edu.csids.copycat;
+package hk.edu.csids.cat;
 
 import java.io.BufferedReader;
 import java.io.StringReader;

@@ -5,15 +5,55 @@ import java.text.Normalizer.Form;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
 public class GenStringHandling {
-
-	private CJKStringHandling cjkStrHandle = new CJKStringHandling();
-	
 	public String removeAccents(String text) {
 		return text == null ? null
 				: Normalizer.normalize(text, Form.NFD).replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
 	} // removeAccents()
+	
+	public String removeFirstArticles(String str){
+		str = str.replaceAll("^a ", "");
+		str = str.replaceAll("^an ", "");
+		str = str.replaceAll("^the ", "");
+		str = str.replaceAll("^la ", "");
+		str = str.replaceAll("^les ", "");
+		str = str.replaceAll("^die ", "");
+		str = str.replaceAll("^der ", "");
+		str = str.replaceAll("^das ", "");
+		str = str.replaceAll("^eine ", "");
+		return str;
+	} //end removeFirstArticles();
+	
+	public String removeArticles(String str){
+		str = str.replaceAll("^a ", "");
+		str = str.replaceAll("^an ", "");
+		str = str.replaceAll("^the ", "");
+		str = str.replaceAll("^la ", "");
+		str = str.replaceAll("^les ", "");
+		str = str.replaceAll("^die ", "");
+		str = str.replaceAll("^der ", "");
+		str = str.replaceAll("^das ", "");
+		str = str.replaceAll("^eine ", "");
+		str = str.replaceAll(" a$", "");
+		str = str.replaceAll(" an$", "");
+		str = str.replaceAll(" the$", "");
+		str = str.replaceAll(" la$", "");
+		str = str.replaceAll(" les$", "");
+		str = str.replaceAll(" die$", "");
+		str = str.replaceAll(" die$", "");
+		str = str.replaceAll(" der$", "");
+		str = str.replaceAll(" das$", "");
+		str = str.replaceAll(" a ", " ");
+		str = str.replaceAll(" an ", " ");
+		str = str.replaceAll(" the ", " ");
+		str = str.replaceAll(" la ", " ");
+		str = str.replaceAll(" les ", " ");
+		str = str.replaceAll(" die ", " ");
+		str = str.replaceAll(" der ", " ");
+		str = str.replaceAll(" das ", " ");
+		str = str.replaceAll(" eine ", " ");
+		return str;
+	} //end removeArticles
 
 	public String trimSpecialChars(String str) {
 		if (str == null) {
@@ -40,41 +80,41 @@ public class GenStringHandling {
 		str = str.trim();
 		return str;
 	} // end trimSpecialChars()
-	
-	public String trimSpaces(String str){
+
+	public String trimSpaces(String str) {
 		str = str.replaceAll("\\n|\\t", "");
 		return str;
-	} //end trimSpace()
-	
-	public String extractLast5Words(String str){
-		
-		if(!hasSomething(str))
+	} // end trimSpace()
+
+	public String extractLast5Words(String str) {
+
+		if (!hasSomething(str))
 			return "";
-		
-		if(cjkStrHandle.isCJKString(str)){
-			str = cjkStrHandle.removeNonCJKChars(str);
-			if(str.length()<5)
+
+		if (CJKStringHandling.isCJKString(str)) {
+			str = CJKStringHandling.removeNonCJKChars(str);
+			if (str.length() < 5)
 				return str;
 			String s = "";
-			for(int i=str.length()-5; i<str.length(); i++){
-				s+=str.charAt(i);
-			} //end for
+			for (int i = str.length() - 5; i < str.length(); i++) {
+				s += str.charAt(i);
+			} // end for
 			return s;
 		} else {
 			String[] arry = str.split("\\s|\\t");
-			if(arry.length>5){
+			if (arry.length > 5) {
 				str = "";
-				for(int i=arry.length-6; i<arry.length; i++){
+				for (int i = arry.length - 6; i < arry.length; i++) {
 					str += arry[i] + " ";
-				} //end for
+				} // end for
 				str = str.trim();
 				return str;
-				 
-			} //end if
-		} //end if
-		
+
+			} // end if
+		} // end if
+
 		return str;
-	} //end extractLast5Chars()
+	} // end extractLast5Chars()
 
 	public String tidyString(String str) {
 		if (str == null) {
@@ -110,6 +150,16 @@ public class GenStringHandling {
 		} // end if
 		return str;
 	} // extractNumeric
+	
+	public String trimNumeric(String str) {
+		if (str.contains("-")) {
+			str = str.replaceAll("[0-9]", "");
+			str = "-" + str;
+		} else {
+			str = str.replaceAll("[0-9]", "");
+		} // end if
+		return str;
+	} // trimNumeric
 
 	public boolean hasSomething(Object o) {
 		if (o == null || o.toString().equals("")) {
@@ -117,21 +167,21 @@ public class GenStringHandling {
 		} // end if
 		return true;
 	} // end hasSomething();
-	
-	public static String escapeRegExpReservedChars(String str){
-		char[] espChars = {'.', '\'', '^', '$', '*', '+', '?', '(', ')', '[', '{', '}', '|' };
-		for(int j=0; j<espChars.length; j++){
-			if(espChars[j]!= '\\'){
-				str = str.replaceAll("\\" + espChars[j], ""+ '\\' + '\\' + espChars[j]);
-			} //end if
-		} //end for
+
+	public static String escapeRegExpReservedChars(String str) {
+		char[] espChars = { '.', '\'', '^', '$', '*', '+', '?', '(', ')', '[', '{', '}', '|' };
+		for (int j = 0; j < espChars.length; j++) {
+			if (espChars[j] != '\\') {
+				str = str.replaceAll("\\" + espChars[j], "" + '\\' + '\\' + espChars[j]);
+			} // end if
+		} // end for
 		return str;
-	} //end escapeRegExpReservedChars()
-	
-	public static String getToday(){
-        Date today = new Date();
-        SimpleDateFormat formatter=new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-        return formatter.format(today);
-	} //end getToday()
+	} // end escapeRegExpReservedChars()
+
+	public static String getToday() {
+		Date today = new Date();
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+		return formatter.format(today);
+	} // end getToday()
 
 } // end class

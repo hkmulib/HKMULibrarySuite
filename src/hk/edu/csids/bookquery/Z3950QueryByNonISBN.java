@@ -4,8 +4,7 @@ import java.io.BufferedReader;
 import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.StringWriter;
-
-import hk.edu.csids.BookItem;
+import hk.edu.csids.*;
 
 //In Development
 public class Z3950QueryByNonISBN extends Z3950Query {
@@ -23,7 +22,18 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		queryBk.setPublisher(publisher);
 		if (query()) {
 			checkAva(queryBk.parseVolume());
-		} // end query()
+			while (!ava && nextRecord()) {
+				String tempHoldingXML = holdingXML;
+				holdingXML = nextHoldingXML;
+				if (matched()) {
+					checkAva(queryBk.parseVolume());
+					copyNextRecToCurrentRec();
+				} else {
+					holdingXML = tempHoldingXML;
+				} // end if
+			} // end while
+			closeConnection();
+		} // end if
 	} // Z3950QueryByNonISBN()
 
 	public Z3950QueryByNonISBN() {
@@ -45,92 +55,117 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 	public boolean query() {
 		String qt = queryBk.getTitle();
+		qt = qt.trim();
+		String qc = queryBk.getCreator();
+		qc = qc.trim();
+		String qp = queryBk.getPublisher();
+		qp = qp.trim();
+		String qy = queryBk.getPublishYear();
+		qy = qy.trim();
 
-		if (!strHandle.hasSomething(qt)) {
+		if (!strHandle.hasSomething(qt) || !strHandle.hasSomething(qc)) {
 			return false;
 		} // end if
 
-		if (cjkStrHandle.isCJKString(qt)) {
-			qt = cjkStrHandle.removeNonCJKChars(qt);
-		} // end if
+		if (CJKStringHandling.isCJKString(qt)) {
+			qt = qt.replaceAll("[\\s| ].*", "");
+			qt = CJKStringHandling.removeNonCJKChars(qt);
 
+		} // end if
 		String qtc = "";
-		String qc = queryBk.getCreator();
+
 		String qcc = "";
 		String inst = Config.VALUES.get("INST_CODE");
 		String eaccSys = Config.VALUES.get("EACC_SYSTEM_" + inst);
 		boolean isEACC = false;
-		if(strHandle.hasSomething(eaccSys) && eaccSys.contains("YES"))
+		if (strHandle.hasSomething(eaccSys) && eaccSys.contains("YES"))
 			isEACC = true;
 
-		if (result != null && cjkStrHandle.isCJKString(qt) && isEACC) {
+		if (result != null && CJKStringHandling.isCJKString(qt) && isEACC) {
 			int iterateNo = qt.length();
-
-			if (iterateNo > 7) {
-				iterateNo = 7;
+			if (iterateNo > 8) {
+				iterateNo = 8;
 			} // end if
 
 			for (int i = 0; i < iterateNo; i++) {
-				qtc += "{" + cjkStrHandle.UnicodeCharToEACCNumber(qt.charAt(i)) + "}";
+
+				qtc += "{" + CJKStringHandling.UnicodeCharToEACCNumber(qt.charAt(i)) + "}";
+
 			} // end for
 			qt = qtc;
 		} // end if
 
-		if (result != null && cjkStrHandle.isCJKString(qc)  && isEACC) {
+		if (result != null && CJKStringHandling.isCJKString(qc) && isEACC) {
 			for (int i = 0; i < qc.length(); i++) {
-				qcc += "{" + cjkStrHandle.UnicodeCharToEACCNumber(qc.charAt(i)) + "}";
+				qcc += "{" + CJKStringHandling.UnicodeCharToEACCNumber(qc.charAt(i)) + "}";
 			} // end for
 			qc = qcc;
+		} // end if
+
+		qt = qt.toLowerCase();
+		qt = strHandle.removeFirstArticles(qt);
+
+		if (!isEACC) {
+			qt = strHandle.trimSpecialChars(qt);
 		} // end if
 
 		int noOfCri = 0;
 		queryStr = "@attr 1=4 @attr 4=2 \"" + qt + "\" ";
 
-		if (!queryBk.getCreator().equals("")) {
-			queryStr += "@attr 1=1035 @attr 4=1 \"" + qc + "\" ";
+		String queryStrAdditional = queryStr;
+
+		if (strHandle.hasSomething(qy)) {
+			queryStrAdditional += " @attr 1=31 " + qy;
 			noOfCri++;
 		} // end if
 
-		if (strHandle.hasSomething(queryBk.getPublishYear())) {
-			queryStr += "@attr 1=31 " + queryBk.getPublishYear();
+		if (strHandle.hasSomething(qc)) {
+			queryStrAdditional += " @attr 1=1003 " + "\"" + qc + "\"";
 			noOfCri++;
 		} // end if
 
 		for (int i = 0; i < noOfCri; i++) {
-			queryStr = "@and " + queryStr;
+			queryStrAdditional = "@and " + queryStrAdditional;
 		} // end for
 
-		if (remoteQuery(queryStr)) {
+		boolean querySuccess = remoteQuery(queryStrAdditional);
+		
+		if (!querySuccess) {
+			querySuccess = remoteQuery(queryStr);
+			queryStrAdditional = queryStr;
+		} // end if
 
-			if (matchPublisher() || matchEdition()) {
-				match = true;
-				setBookInfo();
+		if (querySuccess) {
+			debug += "First Query + " + queryStrAdditional + " \n";
+			while (!matchTitle() && nextRecord()) {
+				copyNextRecToCurrentRec();
+			} // end while
+			if (matched())
 				return true;
-			} // end if
+		} // end if
 
-			for (int i = 0; i < resultSet.getHitCount(); i++) {
-				if (!nextRecord()) {
-					result = "";
-					resultBytes = null;
-					return false;
-				} else {
-					if (matchPublisher() || matchEdition()) {
-						match = true;
-						setBookInfo();
-						return true;
-					} // end if
+		if (!queryStr.equals(queryStrAdditional) && remoteQuery(queryStr)) {
+			debug += "standard query " + queryStr + "\n";
+			boolean nextRec = true;
+			while (!matchTitle() && nextRec) {
+				nextRec = nextRecord();
+				if (nextRec) {
+					copyNextRecToCurrentRec();
 				} // end if
-			} // end for
+			} // end while
+			if (matched())
+				return true;
 		} // end if
 
 		result = "";
 		resultBytes = null;
+
 		return false;
 	} // end query()
 
-	private boolean matchEdition() {
-
-		if (!strHandle.hasSomething(queryBk.getEdition())) {
+	private boolean matchYear() {
+		String qy = queryBk.getPublishYear();
+		if (!strHandle.hasSomething(qy)) {
 			return false;
 		} // end if
 
@@ -138,9 +173,19 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			BufferedReader bufReader = new BufferedReader(new StringReader(result));
 			String line = null;
 			while ((line = bufReader.readLine()) != null) {
-				if (line.toLowerCase().matches("^250.*")) {
-					line = line.replaceAll("^250.*\\$a", "");
-					if (queryBk.parseEdition(line) == queryBk.parseEdition()) {
+				if (line.toLowerCase().matches("^264.*") || line.toLowerCase().matches("^260.*")
+						|| line.toLowerCase().matches("^008.*")) {
+					line = line.toLowerCase();
+					line = line.trim();
+					if (line.matches("^008.*")) {
+						line = line.substring(11, 16);
+					} // end if
+					line = line.replaceAll("^.*\\$a", "");
+					line = strHandle.extractNumeric(line);
+					debug += " match year LINE: " + line + "\n";
+					debug += " match year qy: " + qy + "\n";
+					if (line.contains(qy) || qy.contains(line)) {
+						debug += "MATCH YEAR\n";
 						return true;
 					} // end if
 				} // end if
@@ -152,15 +197,129 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			String errStr = "Z3950QueryByNonISBN:matchEdition()" + errors.toString();
 			System.out.println(errStr);
 			errMsg = errStr;
-		} //end catch()
+		} // end catch()
+		debug += "NOT MATCH YEAR\n";
+		return false;
+	} // end matchYear()
 
+	private boolean matchAuthor() {
+		
+		String qc = queryBk.getCreator();
+		if (!strHandle.hasSomething(qc)) {
+			return false;
+		} // end if
+
+		qc = strHandle.trimSpecialChars(qc);
+		qc = qc.toLowerCase();
+		qc = qc.replaceAll("\\d", "");
+		while (qc.matches(".* [a-z] .*")) {
+			qc = qc.replaceAll(" [a-z] ", " ");
+		} // end while
+
+		if (CJKStringHandling.isCJKString(qc)) {
+			qc = CJKStringHandling.removeNonCJKChars(qc);
+			qc = CJKStringHandling.standardizeVariantChinese(qc);
+			qc = CJKStringHandling.convertToSimpChinese(qc);
+		} // end if
+
+		String[] qcNames = qc.split(" ");
+
+		try {
+			BufferedReader bufReader = new BufferedReader(new StringReader(result));
+			String line = null;
+			while ((line = bufReader.readLine()) != null) {
+				if (line.matches("^100.*") || line.matches("^260.*") || line.matches("^264.*") || line.contains("6260")
+						|| line.contains("6264") || line.contains("6100") || line.contains("6700")
+						|| line.matches("^245.*") || line.contains("6245")) {
+					if (line.matches("^245.*") || line.contains("6245")) {
+						line = line.replaceAll("^.*\\$c", "");
+					} // end if
+					line = line.toLowerCase();
+					line = line.replaceAll("^100.*\\$a", "");
+					line = line.replaceAll("\\$[a-z]", "");
+					line = strHandle.trimSpecialChars(line);
+					line = line.replaceAll("\\d", "");
+
+					while (line.matches(".* [a-z] .*")) {
+						line = line.replaceAll(" [a-z] ", " ");
+					} // end while
+					if (CJKStringHandling.isCJKString(line)) {
+						line = CJKStringHandling.removeNonCJKChars(line);
+						line = CJKStringHandling.standardizeVariantChinese(line);
+						line = CJKStringHandling.convertToSimpChinese(line);
+					} // end if
+
+					debug += " match author LINE: " + line + "\n";
+					debug += " match author qc: " + qc + "\n";
+
+					for (int i = 0; i < qcNames.length; i++) {
+						if (line.contains(qcNames[i])) {
+							debug += "MATCH AUTHOR\n";
+							return true;
+						} // end if
+					} // end for
+				} // end if
+			} // end while
+		} // end try
+		catch (Exception e) {
+			StringWriter errors = new StringWriter();
+			e.printStackTrace(new PrintWriter(errors));
+			String errStr = "Z3950QueryByNonISBN:matchEdition()" + errors.toString();
+			System.out.println(errStr);
+			errMsg = errStr;
+		} // end catch()
+
+		return false;
+	} // matchAuthor
+
+	private boolean matchEdition() {
+		
+		String qe = queryBk.getEdition();
+		
+		if (!strHandle.hasSomething(qe)) {
+			debug += "MATCHEDITION (cos NO Query Edition)\n";
+			return true;
+		} // end if
+		double ed = queryBk.parseEdition(qe);
+		if (ed < 0)
+			return true;
+
+		try {
+			BufferedReader bufReader = new BufferedReader(new StringReader(result));
+			String line = null;
+			while ((line = bufReader.readLine()) != null) {
+				if (line.matches("^250.*") || line.contains("$6250")) {
+					line = line.replaceAll(".*\\$a", "");
+					debug += "match edition LINE: " + line + "\n";
+					debug += "match edition: " + ed + "\n";
+					if (queryBk.parseEdition(line) == ed) {
+						debug += "MATCH EDITION\n";
+						return true;
+					} // end if
+				} // end if
+			} // end while
+		} // end try
+		catch (Exception e) {
+			StringWriter errors = new StringWriter();
+			e.printStackTrace(new PrintWriter(errors));
+			String errStr = "Z3950QueryByNonISBN:matchEdition()" + errors.toString();
+			System.out.println(errStr);
+			errMsg = errStr;
+		} // end catch()
+		debug += "NOT MATCH EDITION\n";
 		return false;
 	} // end matchEdition()
 
 	private boolean matchPublisher() {
-		String qPub = queryBk.removeCommonPublisherWording();
+		String qPub = queryBk.standizePublisherWording().toLowerCase();
 		if (!strHandle.hasSomething(qPub)) {
 			return false;
+		} // end if
+
+		if (CJKStringHandling.isCJKString(qPub)) {
+			qPub = CJKStringHandling.removeNonCJKChars(qPub);
+			qPub = CJKStringHandling.standardizeVariantChinese(qPub);
+			qPub = CJKStringHandling.convertToSimpChinese(qPub);
 		} // end if
 
 		try {
@@ -169,16 +328,32 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 			while ((line = bufReader.readLine()) != null) {
 
-				if (line.toLowerCase().matches(".*260.*|.*264.*")) {
+				if (line.toLowerCase().matches("^260.*|^264.*|.*6260.*|.*6264.*")) {
+					System.out.println(line);
 
-					line = line.replaceAll("^260.*\\$a|^264.*\\$a", "").toLowerCase();
-					if (line.contains(queryBk.removeCommonPublisherWording().toLowerCase())) {
+					line = line.replaceAll("^.*?\\$b", "");
+					line = line.replaceAll("\\$c.*$", "");
+					line = line.toLowerCase();
+					line = strHandle.trimSpecialChars(line);
+					line = strHandle.trimNumeric(line);
+					line = queryBk.stardizePublisherWording(line);
+
+					if (CJKStringHandling.isCJKString(line)) {
+						line = CJKStringHandling.removeNonCJKChars(line);
+						line = CJKStringHandling.standardizeVariantChinese(line);
+						line = CJKStringHandling.convertToSimpChinese(line);
+					} // end if
+
+					debug += " match pub Line: " + line + "\n";
+					debug += " matchpub qpub: " + qPub + "\n";
+					if (line.contains(qPub) || qPub.contains(line)) {
+						debug += "MATCH PUBLISHER\n";
 						return true;
 					} // end if
 				} // end if
 			} // end while
 		} // end try
-		
+
 		catch (Exception e) {
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
@@ -189,4 +364,112 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		return false;
 	} // end matchPublisher()
 
-}
+	private boolean matchTitle() {
+		String qt = queryBk.getTitle();
+		qt = strHandle.removeArticles(qt);
+		qt = strHandle.removeAccents(qt);
+		qt = strHandle.trimSpaces(qt);
+		qt = qt.toLowerCase();
+
+		if (!strHandle.hasSomething(qt)) {
+			return false;
+		} // end if
+
+		if (CJKStringHandling.isCJKString(qt)) {
+			qt = CJKStringHandling.removeNonCJKChars(qt);
+			qt = CJKStringHandling.standardizeVariantChinese(qt);
+			qt = CJKStringHandling.convertToSimpChinese(qt);
+		} // end if
+
+		try {
+			BufferedReader bufReader = new BufferedReader(new StringReader(result));
+			String line = null;
+
+			while ((line = bufReader.readLine()) != null) {
+
+				if (line.toLowerCase().matches(".*6245.*|^245.*")) {
+					line = line.replaceAll("^.*\\$a", "");
+					line = line.replaceAll("\\$c.*$", "");
+					line = line.toLowerCase();
+					line = strHandle.trimSpecialChars(line);
+					line = strHandle.trimSpaces(line);
+					line = strHandle.removeArticles(line);
+					line = strHandle.removeAccents(line);
+					if (CJKStringHandling.isCJKString(line)) {
+						line = CJKStringHandling.removeNonCJKChars(line);
+						line = CJKStringHandling.standardizeVariantChinese(line);
+						line = CJKStringHandling.convertToSimpChinese(line);
+					} // end if
+					debug += "match title LINE: " + line + "\n";
+					debug += "match title qt: " + qt + "\n";
+					if (line.contains(qt) || qt.contains(line)) {
+						debug += "MATCHTITLE\n";
+						return true;
+					} // end if
+				} // end if
+			} // end while
+		} // end try
+
+		catch (Exception e) {
+			StringWriter errors = new StringWriter();
+			e.printStackTrace(new PrintWriter(errors));
+			String errStr = "Z3950QueryByNonISBN:matchTitle()" + errors.toString();
+			System.out.println(errStr);
+			errMsg = errStr;
+		}
+		return false;
+	} // end matchTitle()
+
+	private boolean matched() {
+		String qt = queryBk.getTitle();
+		qt = qt.trim();
+		String qc = queryBk.getCreator();
+		qc = qc.trim();
+		String qp = queryBk.getPublisher();
+		qp = qp.trim();
+		String qy = queryBk.getPublishYear();
+		qy = qy.trim();
+		
+		if (strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
+			
+			if (matchPublisher() && matchYear() && matchEdition() && matchAuthor()) {
+				match = true;
+				setBookInfo();
+				return true;
+			} else {
+				match = false;
+				return false;
+			} //end if
+
+		} else {
+			if (matchAuthor() && matchEdition() &&  (matchYear() || matchPublisher())) {
+				match = true;
+				setBookInfo();
+				return true;
+			} // end if
+		} // end if
+
+		for (int i = 0; i < resultSet.getHitCount(); i++) {
+			if (nextRecord()) {
+				copyNextRecToCurrentRec();
+				if (strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
+					if ((matchPublisher() && matchYear() && matchEdition()) && matchAuthor()) {
+						match = true;
+						setBookInfo();
+						return true;
+					} else {
+						match = false;
+						return false;
+					} // end if
+				} else {
+					if (matchAuthor() && matchEdition() &&  (matchYear() || matchPublisher())) {
+						match = true;
+						setBookInfo();
+						return true;
+					} // end if
+				} // end if
+			} // end if
+		} // end for
+		return false;
+	} // end matched()
+} // end class

@@ -20,7 +20,7 @@ PRIMO_SEARCHFIELD_AUTHOR creator
 ILS_AVA_BASE_TWC ils.twc.edu.hk/X?op=circ-status&library=TWC01&sys_no=
 ILS_AVA_BASE_CIHE ils.cihe.edu.hk/X?op=circ-status&library=SFU01&sys_no=
 ILS_AVA_BASE_CHCHE library.chuhai.hk/X?op=circ-status&library=CCT01&sys_no=
-ILS_AVA_BASE_OUHK aleph.lib.ouhk.edu.hk/X?op=circ-status&library=OUL01&sys_no=
+ILS_AVA_BASE_OUHK aleph2.lib.ouhk.edu.hk/X?op=circ-status&library=OUL01&sys_no=
 ILS_AVA_BASE_HKSYU www.hksyu.edu.hk/lib/IIIRTA.php?level=full&bibkey=
 Z3950_PORT_HKSYU 210
 Z3950_PORT_CUHK 210
@@ -72,7 +72,7 @@ Z3950_BASE_CIHE CIHE01
 Z3950_BASE_CHCHE CHCHE01
 Z3950_BASE_ARLINGTON INNOPAC
 Z3950_BASE_WISCONSIN 01UWI_MAD
-Z3950_SERVER_OUHK aleph2.lib.ouhk.edu.hk
+Z3950_SERVER_OUHK aleph.lib.ouhk.edu.hk
 Z3950_SERVER_TWC ils.twc.edu.hk
 Z3950_SERVER_CIHE ils.cihe.edu.hk
 Z3950_SERVER_CHCHE library.chulai.hk
@@ -97,4 +97,14 @@ Z3950_SERVER_ARLINGTON libsys.arlingtonva.us
 Z3950_SERVER_LCC lx2.loc.gov
 Z3950_SERVER_MIT library.mit.edu
 Z3950_SERVER_WISCONSIN na02.alma.exlibrisgroup.com
+EACC_SYSTEM_HKU YES
+EACC_SYSTEM_CAMBI YES
+EACC_SYSTEM_POLYU YES
+EACC_SYSTEM_HKBU YES
+EACC_SYSTEM_USTL YES
+EACC_SYSTEM_IED YES
+EACC_SYSTEM_CUHK YES
+EACC_SYSTEM_CITYU YES
+NOLEND_LOCATION_CUHK ILC
+NOLEND_LOCATION_HKBU SHEKMUNCAMPUSLIBRARY
 SYSADMIN_EMAIL abc@abc.edu

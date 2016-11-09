@@ -1,6 +1,6 @@
 import java.io.File;
 
-import hk.edu.csids.copycat.*;
+import hk.edu.csids.cat.*;
 
 public class TestCopyCat {
 

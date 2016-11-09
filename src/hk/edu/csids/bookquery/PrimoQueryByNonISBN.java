@@ -27,13 +27,6 @@ import java.net.URLConnection;
 
 public class PrimoQueryByNonISBN extends PrimoQuery {
 
-	// For debugging only
-	private String matchTitle = "";
-	private String matchAuthor = "";
-	private String matchPublisher = "";
-	private String matchEdition = "";
-	private String matchYear = "";
-
 	public PrimoQueryByNonISBN() {
 		super();
 	} // end PrimoQueryByISBN()
@@ -61,7 +54,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 	public PrimoQueryByNonISBN(String author, String title, String publisher, String year, String edition, String vol) {
 		super();
 		queryBk.setPublishYear(year);
-		queryBk.setVolume(vol);
+		queryBk.setVolume("v." + vol);
 		queryBk.setEdition(edition);
 		queryBk.setTitle(title);
 		queryBk.setCreator(author);
@@ -179,8 +172,9 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 
 		// Additional query for Chinese titles
 
-		if (!match && (cjkStrHandle.isCJKString(queryBk.getTitle()) || cjkStrHandle.isCJKString(queryBk.getCreator())
-				|| cjkStrHandle.isCJKString(queryBk.getPublisher()))) {
+		if (!match && (CJKStringHandling.isCJKString(queryBk.getTitle())
+				|| CJKStringHandling.isCJKString(queryBk.getCreator())
+				|| CJKStringHandling.isCJKString(queryBk.getPublisher()))) {
 
 			queryStr = new String(processQueryTitle(queryBk.getTitle()));
 			if (remoteQuery(queryStr)) {
@@ -221,7 +215,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 
 		// Additional check for ISO Document number in <search> <genernal> PNX
 		// tag
-		if (!match && !cjkStrHandle.isCJKString(queryBk.getTitle())) {
+		if (!match && !CJKStringHandling.isCJKString(queryBk.getTitle())) {
 			queryStr = new String(processQueryTitleISODoc(queryBk.getTitle()));
 			if (remoteQuery(queryStr)) {
 				match = true;
@@ -238,7 +232,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 
 	// Called by query(), to fetch remote Primo PNX records.
 	@Override
-	protected boolean remoteQuery(String qstr){
+	protected boolean remoteQuery(String qstr) {
 		if (queryBk.getPublishYear() == null || queryBk.getPublishYear().equals("")) {
 			if (queryBk.getPublisher() == null || queryBk.getPublisher().equals("")) {
 				if (queryBk.parseEdition() == -1 && queryBk.parseVolume() == -1) {
@@ -279,7 +273,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 				// Return true if the query item is of ISO doc no. and of
 				// published by ISO
 				if (matchIsoPublisher() && matchIsoDocNo()) {
-					
+
 					return true;
 				} // end if
 
@@ -355,46 +349,42 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 
 	private String processTitle(String str) {
 		str = strHandle.tidyString(str);
-		// triming off any non-character symbols
+		// Triming off any non-character symbols
 		str = str.replaceAll("\\s|:|：|、|,|:|\"", "");
 
 		// remove any space if the title is in Chinese
-		CJKStringHandling ch = new CJKStringHandling(str);
-		if (ch.isCJK()) {
+		if (CJKStringHandling.isCJKString(str)) {
 			str = str.replaceAll("\\s", "");
-			ch.standardizeVariantChineseFast();
-			ch.standardizeVariantChineseForLooseMaching();
-			ch.convertToSimpChinese();
-			str = ch.convertToSimpChinese();
+			str = CJKStringHandling.standardizeVariantChineseFast(str);
+			str = CJKStringHandling.standardizeVariantChineseForLooseMaching(str);
+			str = CJKStringHandling.convertToSimpChinese(str);
 		} // end if
 			// System.out.println("ProcessTitle(): " + str);
 		return str;
 	} // end processTitle
 
 	private boolean matchAuthor() {
-		
+
 		String a = strHandle.removeAccents(queryBk.getCreator());
-		
-		if(!strHandle.hasSomething(a))
+
+		if (!strHandle.hasSomething(a))
 			return false;
-		
+
 		String cPnx = getNodeValue("creator", nodesDisplay) + getNodeValue("contributor", nodesDisplay);
 
 		cPnx = processAuthor(cPnx).replaceAll("\\s", "");
-		CJKStringHandling chA = new CJKStringHandling(a);
-		CJKStringHandling chCPnx = new CJKStringHandling(cPnx);
 
-		if (chA.isCJK()) {
-			chA.standardizeVariantChineseFast();
-			chA.standardizeVariantChineseForLooseMaching();
-			a = chA.convertToSimpChinese();
+		if (CJKStringHandling.isCJKString(a)) {
+			a = CJKStringHandling.standardizeVariantChineseFast(a);
+			a = CJKStringHandling.standardizeVariantChineseForLooseMaching(a);
+			a = CJKStringHandling.convertToSimpChinese(a);
 			a = a.replaceAll("\\d", "");
 		} // end if
 
-		if (chCPnx.isCJK()) {
-			chCPnx.standardizeVariantChineseFast();
-			chCPnx.standardizeVariantChineseForLooseMaching();
-			cPnx = chCPnx.convertToSimpChinese();
+		if (CJKStringHandling.isCJKString(cPnx)) {
+			cPnx = CJKStringHandling.standardizeVariantChineseFast(cPnx);
+			cPnx = CJKStringHandling.standardizeVariantChineseForLooseMaching(cPnx);
+			cPnx = CJKStringHandling.convertToSimpChinese(cPnx);
 			cPnx = cPnx.replaceAll("\\d", "");
 		} // end if
 
@@ -403,13 +393,12 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		for (int i = 0; i < auKeys.length; i++) {
 			String key = auKeys[i].toLowerCase();
 			if (cPnx.contains(key) && key.length() > 1) {
-				matchAuthor = "MATCH AUTHOR: cPnx: " + cPnx + " key: " + key;
+				debug += "MATCH AUTHOR: cPnx: " + cPnx + " key: " + key + "\n";
 				// System.out.println(matchAuthor);
 				return true;
 			} // end if
 		} // end for
-		matchAuthor = "NO MATCH AUTHOR: cPnx: " + cPnx + " a: " + a;
-		// System.out.println(matchAuthor);
+		debug = "NO MATCH AUTHOR: cPnx: " + cPnx + " a: " + a + "\n";
 		return false;
 	} // end matchAuthor()
 
@@ -424,19 +413,17 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 	} // end matchIsoPublisher()
 
 	private boolean matchPublisher() {
-		String p = strHandle.tidyString(queryBk.removeCommonPublisherWording());
+		String p = strHandle.tidyString(queryBk.standizePublisherWording());
 		String pPnx = strHandle
-				.tidyString(queryBk.removeCommonPublisherWording(getNodeValue("publisher", nodesDisplay)));
+				.tidyString(queryBk.stardizePublisherWording(getNodeValue("publisher", nodesDisplay)));
 		String[] pubKeys;
-		CJKStringHandling chP = new CJKStringHandling(p);
-		CJKStringHandling chPnx = new CJKStringHandling(pPnx);
-		if (chP.isCJK() || chPnx.isCJK()) {
-			p = chP.convertToSimpChinese();
-			pPnx = chPnx.convertToSimpChinese();
+		if (CJKStringHandling.isCJKString(p) || CJKStringHandling.isCJKString(pPnx)) {
+			p = CJKStringHandling.convertToSimpChinese(p);
+			pPnx = CJKStringHandling.convertToSimpChinese(pPnx);
 		} // end if
 
 		int len = 0;
-		if (chPnx.isCJK()) {
+		if (CJKStringHandling.isCJKString(pPnx)) {
 			len -= 1;
 			pubKeys = new String[pPnx.length()];
 			for (int i = 0; i < pPnx.length(); i++) {
@@ -454,12 +441,12 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		for (int i = 0; i < len; i++) {
 			String key = pubKeys[i].toLowerCase();
 			if (p.toLowerCase().contains(key)) {
-				matchPublisher = "PUB MATCH: PNX - " + pPnx + " p:" + p;
+				debug = "PUB MATCH: PNX - " + pPnx + " p:" + p + "\n";
 				// System.out.println(matchPublisher);
 				return true;
 			} // end if
 		} // end for
-		matchPublisher = "NO PUB MATCH: PNX - " + pPnx + " p:" + p;
+		debug = "NO PUB MATCH: PNX - " + pPnx + " p:" + p + "\n";
 		// System.out.println(matchPublisher);
 		return false;
 	} // end matchPublisher()
@@ -467,22 +454,20 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 	private boolean matchTitle() {
 		String t = processTitle(queryBk.getTitle());
 		String tPnx = processTitle(getNodeValue("title", nodesDisplay).toLowerCase());
-		CJKStringHandling chT = new CJKStringHandling(t);
-		CJKStringHandling chTPnx = new CJKStringHandling(tPnx);
-		if (chT.isCJK()) {
-			chT.standardizeVariantChineseFast();
-			chT.standardizeVariantChineseForLooseMaching();
-			t = chT.convertToSimpChinese();
+		if (CJKStringHandling.isCJKString(t)) {
+			t = CJKStringHandling.standardizeVariantChineseFast(t);
+			t = CJKStringHandling.standardizeVariantChineseForLooseMaching(t);
+			t = CJKStringHandling.convertToSimpChinese(t);
 		} // end if
-		if (chTPnx.isCJK()) {
-			chTPnx.standardizeVariantChineseFast();
-			chT.standardizeVariantChineseForLooseMaching();
-			tPnx = chTPnx.convertToSimpChinese();
+		if (CJKStringHandling.isCJKString(tPnx)) {
+			tPnx = CJKStringHandling.standardizeVariantChineseFast(tPnx);
+			tPnx = CJKStringHandling.standardizeVariantChineseForLooseMaching(tPnx);
+			tPnx = CJKStringHandling.convertToSimpChinese(tPnx);
 		} // end if
 		ArrayList<String> atl = getNodeValues("alttitle", nodesSearch);
 
 		if (tPnx.contains(t)) {
-			matchTitle = "MATCH TITLE: tPnx: " + tPnx + " t:" + t + ":";
+			debug = "MATCH TITLE: tPnx: " + tPnx + " t:" + t + ":" + "\n";
 			// System.out.println(matchTitle);
 			return true;
 		} // end if
@@ -490,12 +475,12 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		for (int i = 0; i < atl.size(); i++) {
 			String t3 = processTitle(atl.get(i));
 			if (t3.contains(t)) {
-				matchTitle = "MATCH TITLE: t: " + t + " t3:" + t3;
+				debug = "MATCH TITLE: t: " + t + " t3:" + t3 + "\n";
 				// System.out.println(matchTitle);
 				return true;
 			} // end if
 		} // end for
-		matchTitle = "NO MATCH TITLE: tPnx: " + tPnx + " t:" + t;
+		debug = "NO MATCH TITLE: tPnx: " + tPnx + " t:" + t + "\n";
 		// System.out.println(matchTitle);
 		return false;
 	} // matchTitle()
@@ -510,7 +495,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 			t2 = atl.get(i).replace(" ", "").toLowerCase();
 			if (t2.contains(t2)) {
 				return true;
-			} // endif
+			} // end if
 		} // end for
 		return false;
 	} // end matchIsoDocNo()
@@ -524,35 +509,30 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 				e = "-1";
 			} // end if
 			if (queryBk.parseEdition() == queryBk.parseEdition(e)) {
-				matchEdition += " MATCH EDITION ";
-				matchEdition += " edition: " + queryBk.parseEdition();
-				matchEdition += " e: " + e;
-				// System.out.println(matchEdition);
+				debug += " MATCH EDITION edition: " + queryBk.parseEdition() + " e: " + e + "\n";
 				return true;
 			} // end if
 		} // end if
-		matchEdition += " NOT MATCH EDITION ";
-		matchEdition += " edition: " + queryBk.parseEdition();
-		matchEdition += " e: " + e;
-		// System.out.println(matchEdition);
+		debug += " NOT MATCH EDITION edition: " + queryBk.parseEdition() + " e: " + e + "\n";
 		return false;
 	} // end matchEdition()
 
 	private boolean matchYear() {
 		String cPnx = getNodeValue("creationdate", nodesDisplay);
+		
+		for(String str : getNodeValues("creationdate", nodesSearch))
+			cPnx = cPnx + "#" + str;
+			
 		cPnx = cPnx.replace("-", "0");
 		if (queryBk.getPublishYear() == null) {
-			matchYear = "MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear();
-			// System.out.println(matchYear);
+			debug += "MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear() + "\n";
 			return true;
 		} // end if
 		if (cPnx.contains(queryBk.getPublishYear())) {
-			matchYear = "MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear();
-			// System.out.println(matchYear);
+			debug += "MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear() + "\n";
 			return true;
 		} // end if
-		matchYear = "NO MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear();
-		// System.out.println(matchYear);
+		debug = "NO MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear() + "\n";
 		return false;
 	} // end matchYear()
 
@@ -572,7 +552,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		} // end switch
 		str += "&query=" + Config.VALUES.get("PRIMO_SEARCHFIELD_EDITION") + "general,contains," + i2 + noStr + "%20ed";
 
-		if (cjkStrHandle.isCJKString(queryBk.getTitle())) {
+		if (CJKStringHandling.isCJKString(queryBk.getTitle())) {
 			str = "&query=" + Config.VALUES.get("PRIMO_SEARCHFIELD_EDITION") + ",contains," + i2 + "版";
 		} // end if
 		return str;
@@ -617,7 +597,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 			return "";
 		} // end if
 		String queryPublisher = "";
-		str = queryBk.removeCommonPublisherWording(str);
+		str = queryBk.stardizePublisherWording(str);
 		String[] sArry = str.split(" ");
 
 		/*
@@ -668,13 +648,11 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		t = t.replaceAll("\\s\\s", " ");
 		t = t.trim();
 
-		CJKStringHandling ch = new CJKStringHandling(t);
-		if (ch.isCJK()) {
+		if (CJKStringHandling.isCJKString(t)) {
 			t = t.replaceAll("[a-z]|[A-Z]|\\s|[0-9]", "");
 			t = t.replaceAll("\\s", "");
-			ch = new CJKStringHandling(t);
-			t = ch.standardizeVariantChineseFast();
-			t = ch.standardizeVariantChineseForLooseMaching();
+			t = CJKStringHandling.standardizeVariantChineseFast(t);
+			t = CJKStringHandling.standardizeVariantChineseForLooseMaching(t);
 		} // end if
 
 		String[] tArr = t.split(" ");

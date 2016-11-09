@@ -52,6 +52,7 @@ public abstract class PrimoQuery extends Query {
 			bk.isbn.setIsbn(getNodeValue("isbn", nodesSearch));
 			bk.setContributor(getNodeValue("contributor", nodesDisplay));
 			bk.setPublishYear(getNodeValue("creationdate", nodesDisplay));
+			bk.setFormat(getNodeValue("format", nodesDisplay));
 
 			if (getNodeValue("subject", nodesDisplay) != null) {
 				bk.setSubject(getNodeValue("subject", nodesDisplay));
@@ -66,8 +67,7 @@ public abstract class PrimoQuery extends Query {
 			int noPrimoIds = 0;
 			boolean found = false;
 			for (int i = 0, j = 0; i < al.size(); i++) {
-				if (al.get(i).matches(
-						".*\\$\\$O" + Config.VALUES.get("SOURCE_ID") + ".*")) {
+				if (al.get(i).matches(".*\\$\\$O" + Config.VALUES.get("SOURCE_ID") + ".*")) {
 					pat = Pattern.compile(".*\\$\\$O(.*)");
 					mat = pat.matcher(al.get(i));
 					if (mat.find()) {
@@ -75,15 +75,11 @@ public abstract class PrimoQuery extends Query {
 							primoIds[j] = mat.group(1);
 							j++;
 						} // end if
-						bk.setPrimoLink("http://"
-								+ Config.VALUES.get("PRIMO_BASE") + "/"
-								+ Config.VALUES.get("INST_CODE") + ":"
-								+ mat.group(1));
+						bk.setPrimoLink("http://" + Config.VALUES.get("PRIMO_BASE") + "/"
+								+ Config.VALUES.get("INST_CODE") + ":" + mat.group(1));
 
-						String temp_ilsid = mat.group(1)
-								.replaceAll(
-										Config.VALUES.get("SOURCE_ID").replace(
-												".", ""), "");
+						String temp_ilsid = mat.group(1).replaceAll(Config.VALUES.get("SOURCE_ID").replace(".", ""),
+								"");
 						temp_ilsid = temp_ilsid.replace(".", "");
 
 						bk.setIlsId(temp_ilsid);
@@ -92,15 +88,11 @@ public abstract class PrimoQuery extends Query {
 				} else {
 					if (!found) {
 						primoIds[0] = getNodeValue("recordid", nodesControl);
-						bk.setPrimoLink("http://"
-								+ Config.VALUES.get("PRIMO_BASE") + "/"
-								+ Config.VALUES.get("INST_CODE") + ":"
-								+ getNodeValue("recordid", nodesControl));
+						bk.setPrimoLink("http://" + Config.VALUES.get("PRIMO_BASE") + "/"
+								+ Config.VALUES.get("INST_CODE") + ":" + getNodeValue("recordid", nodesControl));
 
-						String temp_ilsid = getNodeValue("recordid",
-								nodesControl).replaceAll(
-								Config.VALUES.get("SOURCE_ID"), "").replace(
-								".", "");
+						String temp_ilsid = getNodeValue("recordid", nodesControl)
+								.replaceAll(Config.VALUES.get("SOURCE_ID"), "").replace(".", "");
 						temp_ilsid = temp_ilsid.replace(".", "");
 
 						bk.setIlsId(temp_ilsid);
@@ -118,10 +110,7 @@ public abstract class PrimoQuery extends Query {
 			for (int i = 0; i < primoIds.length; i++) {
 				if (primoIds[i] != null) {
 					ilsids[i] = primoIds[i];
-					ilsids[i] = ilsids[i]
-							.replaceAll(
-									Config.VALUES.get("SOURCE_ID").replace(".",
-											""), "");
+					ilsids[i] = ilsids[i].replaceAll(Config.VALUES.get("SOURCE_ID").replace(".", ""), "");
 					ilsids[i] = ilsids[i].replace(".", "");
 				} // end if
 			} // end if
@@ -131,9 +120,7 @@ public abstract class PrimoQuery extends Query {
 			al = getNodeValues("availlibrary", nodesDisplay);
 
 			for (int i = 0, j = 0; i < al.size(); i++) {
-				if (al.get(i).matches(
-						".*\\$\\$I" + Config.VALUES.get("INST_CODE")
-								+ "\\$\\$.*")) {
+				if (al.get(i).matches(".*\\$\\$I" + Config.VALUES.get("INST_CODE") + "\\$\\$.*")) {
 					bk.holdingInfo.add(new ArrayList<String>());
 					pat = Pattern.compile("\\$\\$I(.*?)\\$\\$");
 					mat = pat.matcher(al.get(i));
@@ -168,13 +155,10 @@ public abstract class PrimoQuery extends Query {
 			boolean hasFulltext = false;
 			al = getNodeValues("delcategory", nodesDelivery);
 			for (int i = 0; i < al.size(); i++) {
-				if (al.get(i).contains(
-						"$$VOnline Resource$$O"
-								+ Config.VALUES.get("SOURCE_ID"))) {
+				if (al.get(i).contains("$$VOnline Resource$$O" + Config.VALUES.get("SOURCE_ID"))) {
 					hasFulltext = true;
 				} else if (al.size() == 1
-						&& getNodeValue("institution", nodesDelivery).equals(
-								Config.VALUES.get("INST_CODE"))) {
+						&& getNodeValue("institution", nodesDelivery).equals(Config.VALUES.get("INST_CODE"))) {
 					hasFulltext = true;
 				} // end if
 			} // end for
@@ -193,9 +177,7 @@ public abstract class PrimoQuery extends Query {
 					mat.find();
 					if (!al.get(i).contains("$$O")) {
 						bk.fulltextUrls.add(mat.group(1));
-					} else if (al.get(i).contains(
-							Config.VALUES.get("SOURCE_ID"))
-							|| al.size() == 1) {
+					} else if (al.get(i).contains(Config.VALUES.get("SOURCE_ID")) || al.size() == 1) {
 						bk.fulltextUrls.add(mat.group(1));
 					} // end if
 				} // end for
@@ -207,7 +189,7 @@ public abstract class PrimoQuery extends Query {
 
 	// Check ILS item availbility.
 	protected void checkAVA(int vol) {
-		
+
 		String[] ilsids = bk.getIlsIds();
 		for (int h = 0; h < ilsids.length; h++) {
 			if (ilsids.length > 0) {
@@ -229,8 +211,7 @@ public abstract class PrimoQuery extends Query {
 					URLConnection urlcon = url.openConnection();
 
 					urlcon.setConnectTimeout(8000);
-					BufferedReader buffread = new BufferedReader(
-							new InputStreamReader(urlcon.getInputStream()));
+					BufferedReader buffread = new BufferedReader(new InputStreamReader(urlcon.getInputStream()));
 					String inputLine;
 					while ((inputLine = buffread.readLine()) != null)
 						outstr += inputLine;
@@ -249,8 +230,11 @@ public abstract class PrimoQuery extends Query {
 						loanDueDates = new String[jArray.size()];
 						for (int i = 0; i < jArray.size(); i++) {
 							JSONObject jo = (JSONObject) jArray.get(i);
-							volumes[i] = bk.parseVolume(jo.get("volume")
-									.toString());
+							String v = jo.get("volume").toString();
+							if(bk.isMultiVolume() && !v.contains("v.") && !v.contains("pt.")){
+								v = "yearvolume" + v;
+							} //end if
+							volumes[i] = bk.parseVolume(v);
 							String order = "";
 							if (jo.get("order") != null)
 								order = jo.get("order").toString();
@@ -266,20 +250,15 @@ public abstract class PrimoQuery extends Query {
 					} else {
 						// Check Aleph ILSs (OUHK,TWC,CIHE,and CHCHE)'
 						// X-services
-						DocumentBuilderFactory factory = DocumentBuilderFactory
-								.newInstance();
+						DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 						DocumentBuilder builder = factory.newDocumentBuilder();
-						InputSource is = new InputSource(new StringReader(
-								outstr));
+						InputSource is = new InputSource(new StringReader(outstr));
 						Document doc = builder.parse(is);
-						NodeList nlist = doc
-								.getElementsByTagName("loan-status");
+						NodeList nlist = doc.getElementsByTagName("loan-status");
 						if (nlist != null && nlist.getLength() == 1) {
-							loanStatus = nlist.item(0).getFirstChild()
-									.getNodeValue();
+							loanStatus = nlist.item(0).getFirstChild().getNodeValue();
 							nlist = doc.getElementsByTagName("due-date");
-							loanDueDate = nlist.item(0).getFirstChild()
-									.getNodeValue();
+							loanDueDate = nlist.item(0).getFirstChild().getNodeValue();
 							loanStatuses = new String[1];
 
 							loanStatuses[0] = loanStatus;
@@ -290,23 +269,16 @@ public abstract class PrimoQuery extends Query {
 							String v = "";
 							nlist = doc.getElementsByTagName("location");
 							if (nlist.item(0).getFirstChild() != null) {
-								v = nlist.item(0).getFirstChild()
-										.getNodeValue();
-								if (v.contains("v.")) {
-									v = v.replaceAll("^.*v\\.", "");
-									volumes[0] = bk.parseVolume(v);
-								} else {
-									volumes[0] = -1;
-								} // end if
+								v = nlist.item(0).getFirstChild().getNodeValue();
+								if(bk.isMultiVolume() && !v.contains("v.") && !v.contains("pt.")){
+									v = "yearvolume" + v;
+								} //end if
+								volumes[0] = bk.parseVolume(v);
 							} else {
-								nlist = doc
-										.getElementsByTagName("z30-description");
+								nlist = doc.getElementsByTagName("z30-description");
 								if (nlist.item(0).getFirstChild() != null) {
-									v = nlist.item(0).getFirstChild()
-											.getNodeValue();
+									v = nlist.item(0).getFirstChild().getNodeValue();
 									volumes[0] = bk.parseVolume(v);
-								} else {
-									volumes[0] = -1;
 								} // end if
 							} // end if
 							itemCount++;
@@ -318,22 +290,19 @@ public abstract class PrimoQuery extends Query {
 							subLibraries = new String[nlist.getLength()];
 							volumes = new int[nlist.getLength()];
 							for (int i = 0; i < nlist.getLength(); i++) {
-								loanStatuses[i] = nlist.item(i).getFirstChild()
-										.getNodeValue();
+								loanStatuses[i] = nlist.item(i).getFirstChild().getNodeValue();
 
 								itemCount++;
 							} // end for
 
 							nlist = doc.getElementsByTagName("due-date");
 							for (int i = 0; i < nlist.getLength(); i++) {
-								loanDueDates[i] = nlist.item(i).getFirstChild()
-										.getNodeValue();
+								loanDueDates[i] = nlist.item(i).getFirstChild().getNodeValue();
 							} // end for
 
 							nlist = doc.getElementsByTagName("sub-library");
 							for (int i = 0; i < nlist.getLength(); i++) {
-								subLibraries[i] = nlist.item(i).getFirstChild()
-										.getNodeValue();
+								subLibraries[i] = nlist.item(i).getFirstChild().getNodeValue();
 							} // end for
 
 							nlist = doc.getElementsByTagName("location");
@@ -341,14 +310,8 @@ public abstract class PrimoQuery extends Query {
 								if (nlist.item(i).getFirstChild() == null) {
 									volumes[i] = -1;
 								} else {
-									String v = nlist.item(i).getFirstChild()
-											.getNodeValue();
-									if(v.matches("^.*v\\..*")){
-										v = v.replaceAll("^.*v\\.", "");
-										volumes[i] = bk.parseVolume(v);
-									} else {
-										volumes[i] = -1;
-									} //end if
+									String v = nlist.item(i).getFirstChild().getNodeValue();
+									volumes[i] = bk.parseVolume(v);
 								} // end if
 
 							} // end for
@@ -359,8 +322,7 @@ public abstract class PrimoQuery extends Query {
 								if (nlist.item(i).getFirstChild() == null) {
 									volumes[i] = -1;
 								} else {
-									volumes[i] = bk.parseVolume(nlist.item(i)
-											.getFirstChild().getNodeValue());
+									volumes[i] = bk.parseVolume(nlist.item(i).getFirstChild().getNodeValue());
 								} // end if
 
 							} // end for
@@ -386,55 +348,36 @@ public abstract class PrimoQuery extends Query {
 					ArrayList<String> al = new ArrayList<String>();
 					al = getNodeValues("lds48", nodesDisplay);
 					for (int m = 0; m < al.size(); m++) {
-						if (al.get(m).contains("ILL-")
-								&& al.get(m).contains(
-										Config.VALUES.get("INST_CODE"))) {
+						if (al.get(m).contains("ILL-") && al.get(m).contains(Config.VALUES.get("INST_CODE"))) {
 							illable = true;
 						} // end if
 					} // end for
 					for (int i = 0; i < itemCount; i++) {
-						loanDueDates[i] = strHandle
-								.normalizeString(loanDueDates[i]);
-						loanStatuses[i] = strHandle
-								.normalizeString(loanStatuses[i]);
+						loanDueDates[i] = strHandle.normalizeString(loanDueDates[i]);
+						loanStatuses[i] = strHandle.normalizeString(loanStatuses[i]);
 
-						if ((loanDueDates[i].equals("ONSHELF")
-								|| loanDueDates[i].equals("AVAILABLE") || loanDueDates[i]
-									.equals("JUSTRETURNED"))
-								&& bk.getBookType().contains("book")
-								&& !loanStatuses[i].contains("RESERVE")
-								&& !loanStatuses[i].contains("USEONLY")
-								&& !loanStatuses[i].contains("NOTCIR")
-								&& !loanStatuses[i].contains("NOT")
-								&& !loanStatuses[i].contains("CONTACT")
-								&& !loanStatuses[i].contains("ASK")
-								&& !loanStatuses[i].contains("STAFF")
-								&& !loanStatuses[i].contains("MISSING")
-								&& !loanStatuses[i].contains("ORDER")
-								&& !loanStatuses[i].contains("DISPLAY")
-								&& !loanStatuses[i].contains("EXHIBITION")
-								&& !loanStatuses[i].contains("CATALOGING")
-								&& !loanStatuses[i].contains("BINARY")
-								&& !loanStatuses[i].contains("DAMAGE")
-								&& !loanStatuses[i].contains("WEBACCESS")
-								&& !loanStatuses[i].contains("INLIBUSE")
-								&& !loanStatuses[i].contains("WITHDRAWN")
-								&& !loanStatuses[i].contains("WRITE-OFF")
-								&& !loanStatuses[i].contains("CANCELL")
-								&& !loanStatuses[i].contains("NEWITEM")
-								&& !loanStatuses[i].contains("OTHER")
-								&& !loanStatuses[i].contains("LOST")) {
+						if ((loanDueDates[i].equals("ONSHELF") || loanDueDates[i].equals("AVAILABLE")
+								|| loanDueDates[i].equals("JUSTRETURNED")) && bk.getBookType().contains("book")
+								&& !loanStatuses[i].contains("RESERVE") && !loanStatuses[i].contains("USEONLY")
+								&& !loanStatuses[i].contains("NOTCIR") && !loanStatuses[i].contains("NOT")
+								&& !loanStatuses[i].contains("CONTACT") && !loanStatuses[i].contains("ASK")
+								&& !loanStatuses[i].contains("STAFF") && !loanStatuses[i].contains("MISSING")
+								&& !loanStatuses[i].contains("ORDER") && !loanStatuses[i].contains("DISPLAY")
+								&& !loanStatuses[i].contains("EXHIBITION") && !loanStatuses[i].contains("CATALOGING")
+								&& !loanStatuses[i].contains("BINARY") && !loanStatuses[i].contains("DAMAGE")
+								&& !loanStatuses[i].contains("WEBACCESS") && !loanStatuses[i].contains("INLIBUSE")
+								&& !loanStatuses[i].contains("WITHDRAWN") && !loanStatuses[i].contains("WRITE-OFF")
+								&& !loanStatuses[i].contains("CANCELL") && !loanStatuses[i].contains("NEWITEM")
+								&& !loanStatuses[i].contains("OTHER") && !loanStatuses[i].contains("LOST")) {
 
-							if (vol == -1 && volumes[i] < 1) {
-
+							if (vol == -1 && (volumes[i] < 1 || !bk.isMultiVolume())) {
 								ava = true;
 								int tmp = 0;
 								if (illable) {
 
 									if (bib_no == 1 && ext_itm_no != 0) {
 										ava_itm_no++;
-									} else if (volumes.length == 1
-											&& volumes[0] == -1) {
+									} else if (volumes.length == 1 && volumes[0] == -1) {
 										ava_itm_no++;
 									} else {
 										for (int j = 0; j < volumes.length; j++) {

@@ -1,4 +1,4 @@
-package hk.edu.csids.copycat;
+package hk.edu.csids.cat;
 
 import hk.edu.csids.*;
 import hk.edu.csids.bookquery.*;
@@ -24,7 +24,6 @@ public class CopyCat {
 	protected ArrayList<String> IsbnNotMatchArrayList = null;
 	protected ArrayList<String> MarcArrayList = null;
 	protected Map<String, Integer> instMatchCount = null;
-
 	private MarcConversion mc;
 	private String summaryTxt;
 
@@ -175,6 +174,11 @@ public class CopyCat {
 							if (strHandle.hasSomething(zq.bk.marc.getMarcTag()) && !isBriefRecord(zq)
 									&& matchTitle(j, zq) && zq.match() && !isCorruptedRecord(zq)) {
 								String record = zq.getResult();
+								String excelidStr = excelid + "";
+								for(int i=4; i>0; i--){
+									if(excelidStr.length()<i)
+										excelidStr = "0" + excelidStr;
+								} // end for
 								record += "\nZ39    $a" + "EXCELID=" + excelid + "&Z3950LOCATE=" + q + "\n";
 								++successRecNo;
 								MarcArrayList.set(j, record);

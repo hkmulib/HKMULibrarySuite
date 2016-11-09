@@ -12,6 +12,7 @@ import org.w3c.dom.NodeList;
 public abstract class Query {
 
 	public BookItem bk;
+	public BookItem nextBk;
 	public BookItem queryBk;
 	protected boolean match;
 	protected boolean ava;
@@ -22,6 +23,7 @@ public abstract class Query {
 	protected String queryStr;
 	protected GenStringHandling strHandle = new GenStringHandling();
 	protected CJKStringHandling cjkStrHandle = new CJKStringHandling();
+	public String debug = "";
 
 	/*
 	 * "nodesRecord" holds result PNX records each node of which represents a
@@ -77,6 +79,7 @@ public abstract class Query {
 		ext_itm_no = 0;
 		ava_itm_no = 0;
 		bk = new BookItem();
+		nextBk = new BookItem();
 		queryBk = new BookItem();
 	} // end clearQuery()
 
