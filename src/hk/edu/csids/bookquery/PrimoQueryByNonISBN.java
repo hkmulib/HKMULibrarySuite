@@ -253,7 +253,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 			con.setConnectTimeout(3000);
 			doc = b.parse(con.getInputStream());
 			queryStr = Config.PRIMO_X_BASE + qstr;
-			// System.out.println(Config.PRIMO_X_BASE + qstr);
+			debug += queryStr + "\n";
 
 			nodesRecord = doc.getElementsByTagName("record");
 
@@ -338,7 +338,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 			String errStr = "PrimoQueryByNonISBN:remoteQuery()" + errors.toString();
 			System.out.println(errStr);
 			errMsg = errStr;
-		}
+		} //end catch
 		return false;
 	} // end remoteQuery()
 

@@ -145,7 +145,7 @@ public class GenStringHandling {
 		return str;
 	} // end normalizeString()
 	
-	public String extract4LongestAdjententKeywords(String str){
+	public String extract3LongestAdjententKeywords(String str){
 		
 		String result = "";
 		str = str.trim();
@@ -161,9 +161,9 @@ public class GenStringHandling {
 		} //end for
 		
 		if(longestIndex == strs.length-1){
-			result = strs[longestIndex-3] + " "  + strs[longestIndex-2] + " "  + strs[longestIndex-1] + " " + strs[longestIndex]; 
+			result = strs[longestIndex-2] + " "  + strs[longestIndex-1] + " " + strs[longestIndex]; 
 		} else {
-			result = strs[longestIndex] + " " + strs[longestIndex+1]  + " " + strs[longestIndex+2]  + " " + strs[longestIndex+3]; 
+			result = strs[longestIndex] + " " + strs[longestIndex+1]  + " " + strs[longestIndex+2]; 
 		} //end if
 		
 		return result;

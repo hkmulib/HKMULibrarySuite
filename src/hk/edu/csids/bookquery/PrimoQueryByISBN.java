@@ -62,7 +62,6 @@ public class PrimoQueryByISBN extends PrimoQuery {
 		return false;
 	} // end query()
 
-	@Override
 	protected boolean remoteQuery(String qstr) {
 		DocumentBuilderFactory f;
 		DocumentBuilder b;
@@ -103,13 +102,15 @@ public class PrimoQueryByISBN extends PrimoQuery {
 				return true;
 			} // end if
 		} // end try
+
 		catch (Exception e) {
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
 			String errStr = "PrimoQueryByISBN:remoteQuery()" + errors.toString();
 			System.out.println(errStr);
 			errMsg = errStr;
-		}
+		} // end catch
+		
 		return false;
 	} // end remoteQuery()
 

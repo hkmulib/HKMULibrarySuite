@@ -120,7 +120,6 @@ public class BookItem {
 	} // end setSubjects()
 
 	public void setTitle(String str) {
-		
 		if (!strHandle.hasSomething(str)) {
 			str = "";
 		} else {
@@ -502,7 +501,7 @@ public class BookItem {
 			} // end if
 		} else {
 
-			if (edition.contains("rev.") || edition.contains("revise") || edition.contains("expand")) {
+			if (edition.contains("rev.") || edition.contains("revise") || edition.contains("expand") || edition.contains("new ed")) {
 				return 2.1;
 			} // end if
 
@@ -531,6 +530,9 @@ public class BookItem {
 	} // removeCommonPublisherWording()
 
 	public String stardizePublisherWording(String str) {
+		if(!strHandle.hasSomething(str))
+			return "";
+		
 		str = str.replace("明窗", "明報");
 		// The array is for trimming off common publishing company keywords
 		// before matching.
@@ -584,8 +586,13 @@ public class BookItem {
 
 	public boolean isMultiVolume() {
 		String format = getFormat();
-		if (format.contains("v.") || format.contains("vol") || format.contains("pt.") || format.contains("冊"))
+		
+		if(format.contains("全一冊") || format.matches("^1v\\..*")) 
+				return false;
+		
+		if (format.contains("v.") || format.contains("vol") || format.contains("pt.") || format.matches(".*.全.冊.*"))
 			return true;
+		
 		return false;
 	} // end isMultiVolume()
 

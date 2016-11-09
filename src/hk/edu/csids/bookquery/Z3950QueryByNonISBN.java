@@ -24,12 +24,19 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			checkAva(queryBk.parseVolume());
 			while (!ava && nextRecord()) {
 				String tempHoldingXML = holdingXML;
+				String tempResult = result;
+				byte[] tempMarcRaw = bk.marc.getMarcRaw();
 				holdingXML = nextHoldingXML;
-				if (matched()) {
-					checkAva(queryBk.parseVolume());
+				result = nextResult;
+				if (matched() && checkAva(queryBk.parseVolume())) {
 					copyNextRecToCurrentRec();
 				} else {
 					holdingXML = tempHoldingXML;
+					result = tempResult;
+					bk.marc.setMarcRaw(tempMarcRaw);
+					setBookInfo();
+					matched();
+					checkAva(queryBk.parseVolume());
 				} // end if
 			} // end while
 			closeConnection();
@@ -57,7 +64,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		String qt = queryBk.getTitle();
 
 		qt = qt.trim();
-		
+
 		String qc = queryBk.getCreator();
 		qc = qc.trim();
 		String qp = queryBk.getPublisher();
@@ -74,6 +81,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			qt = CJKStringHandling.removeNonCJKChars(qt);
 
 		} // end if
+
 		String qtc = "";
 
 		String qcc = "";
@@ -109,7 +117,6 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 		if (!isEACC) {
 			qt = strHandle.trimSpecialChars(qt);
-			qt = strHandle.extract4LongestAdjententKeywords(qt);
 		} // end if
 
 		int noOfCri = 0;
@@ -132,7 +139,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		} // end for
 
 		boolean querySuccess = remoteQuery(queryStrAdditional);
-		
+
 		if (!querySuccess) {
 			querySuccess = remoteQuery(queryStr);
 			queryStrAdditional = queryStr;
@@ -140,24 +147,24 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 		if (querySuccess) {
 			debug += "First Query + " + queryStrAdditional + " \n";
-			while (!matchTitle() && nextRecord()) {
-				copyNextRecToCurrentRec();
-			} // end while
-			if (matched())
+			if (matched()) {
+				queryStr = queryStrAdditional;
 				return true;
+			} // end if
 		} // end if
 
-		if (!queryStr.equals(queryStrAdditional) && remoteQuery(queryStr)) {
-			debug += "standard query " + queryStr + "\n";
-			boolean nextRec = true;
-			while (!matchTitle() && nextRec) {
-				nextRec = nextRecord();
-				if (nextRec) {
-					copyNextRecToCurrentRec();
-				} // end if
-			} // end while
+		queryStr = "@attr 1=4 @attr 3=3 @attr 4=2 \"" + qt + "\" ";
+		if (remoteQuery(queryStr)) {
+			debug += "\n\n DEBUG: Remedy query " + queryStr + "\n";
 			if (matched())
 				return true;
+
+			queryStr = "@attr 1=4 @attr 4=2 \"" + qt + "\" ";
+			debug += "\n\n DEBUG: Final query " + queryStr + "\n";
+
+			if (remoteQuery(queryStr) && match())
+				return true;
+
 		} // end if
 
 		result = "";
@@ -206,7 +213,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 	} // end matchYear()
 
 	private boolean matchAuthor() {
-		
+
 		String qc = queryBk.getCreator();
 		if (!strHandle.hasSomething(qc)) {
 			return false;
@@ -267,7 +274,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		catch (Exception e) {
 			StringWriter errors = new StringWriter();
 			e.printStackTrace(new PrintWriter(errors));
-			String errStr = "Z3950QueryByNonISBN:matchEdition()" + errors.toString();
+			String errStr = "Z3950QueryByNonISBN:matchAuthor()" + errors.toString();
 			System.out.println(errStr);
 			errMsg = errStr;
 		} // end catch()
@@ -276,16 +283,20 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 	} // matchAuthor
 
 	private boolean matchEdition() {
-		
+
 		String qe = queryBk.getEdition();
-		
+
 		if (!strHandle.hasSomething(qe)) {
 			debug += "MATCHEDITION (cos NO Query Edition)\n";
 			return true;
 		} // end if
+
 		double ed = queryBk.parseEdition(qe);
-		if (ed < 0)
+
+		if (ed < 0) {
+			debug += "MATCHEDITION (cos NO Query Edition < 0)\n";
 			return true;
+		} // end if
 
 		try {
 			BufferedReader bufReader = new BufferedReader(new StringReader(result));
@@ -294,7 +305,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 				if (line.matches("^250.*") || line.contains("$6250")) {
 					line = line.replaceAll(".*\\$a", "");
 					debug += "match edition LINE: " + line + "\n";
-					debug += "match edition: " + ed + "\n";
+					debug += "match edition ed: " + ed + "\n";
 					if (queryBk.parseEdition(line) == ed) {
 						debug += "MATCH EDITION\n";
 						return true;
@@ -309,6 +320,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			System.out.println(errStr);
 			errMsg = errStr;
 		} // end catch()
+		debug += "match edition: qed " + ed + "\n";
 		debug += "NOT MATCH EDITION\n";
 		return false;
 	} // end matchEdition()
@@ -369,7 +381,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 	private boolean matchTitle() {
 		String qt = queryBk.getTitle();
-		
+
 		qt = strHandle.removeAccents(qt);
 		qt = strHandle.trimNewLineChar(qt);
 		qt = qt.toLowerCase();
@@ -380,6 +392,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		} // end if
 
 		if (CJKStringHandling.isCJKString(qt)) {
+			qt = qt.replaceAll("[\\s| ].*", "");
 			qt = CJKStringHandling.removeNonCJKChars(qt);
 			qt = CJKStringHandling.standardizeVariantChinese(qt);
 			qt = CJKStringHandling.convertToSimpChinese(qt);
@@ -402,7 +415,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 					line = strHandle.trimNewLineChar(line);
 					line = strHandle.removeArticles(line);
 					line = strHandle.removeAccents(line);
-					
+
 					if (CJKStringHandling.isCJKString(line)) {
 						line = CJKStringHandling.removeNonCJKChars(line);
 						line = CJKStringHandling.standardizeVariantChinese(line);
@@ -430,6 +443,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 	} // end matchTitle()
 
 	private boolean matched() {
+
 		String qt = queryBk.getTitle();
 		qt = qt.trim();
 		String qc = queryBk.getCreator();
@@ -438,31 +452,47 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		qp = qp.trim();
 		String qy = queryBk.getPublishYear();
 		qy = qy.trim();
-		
+		String qe = queryBk.getEdition();
+		qe = qe.trim();
 		if (strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
-			
-			if (matchPublisher() && matchYear() && matchEdition() && matchAuthor()) {
+
+			if (matchTitle() && matchPublisher() && matchYear() && matchEdition() && matchAuthor()) {
 				match = true;
 				setBookInfo();
 				return true;
 			} else {
 				match = false;
 				return false;
-			} //end if
+			} // end if
 
-		} else {
-			if (matchAuthor() && matchEdition() &&  (matchYear() || matchPublisher())) {
+		} else if (!strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
+			if (matchTitle() && matchAuthor() && matchPublisher()) {
 				match = true;
 				setBookInfo();
 				return true;
+			} else {
+				match = false;
+				return false;
 			} // end if
+
+		} else if (strHandle.hasSomething(qe) && !strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
+			if (matchTitle() && matchAuthor() && matchEdition()) {
+				match = true;
+				setBookInfo();
+				return true;
+			} else {
+				match = false;
+				return false;
+			} // end if
+
 		} // end if
 
 		for (int i = 0; i < resultSet.getHitCount(); i++) {
 			if (nextRecord()) {
 				copyNextRecToCurrentRec();
 				if (strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
-					if ((matchPublisher() && matchYear() && matchEdition()) && matchAuthor()) {
+
+					if (matchTitle() && matchPublisher() && matchYear() && matchEdition() && matchAuthor()) {
 						match = true;
 						setBookInfo();
 						return true;
@@ -470,15 +500,32 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 						match = false;
 						return false;
 					} // end if
-				} else {
-					if (matchAuthor() && matchEdition() &&  (matchYear() || matchPublisher())) {
+
+				} else if (!strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
+					if (matchTitle() && matchAuthor() && matchYear()) {
 						match = true;
 						setBookInfo();
 						return true;
+					} else {
+						match = false;
+						return false;
 					} // end if
+
+				} else if (strHandle.hasSomething(qe) && !strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
+					if (matchTitle() && matchAuthor() && matchEdition()) {
+						match = true;
+						setBookInfo();
+						return true;
+					} else {
+						match = false;
+						return false;
+					} // end if
+
 				} // end if
 			} // end if
 		} // end for
+		match = false;
 		return false;
+
 	} // end matched()
 } // end class
