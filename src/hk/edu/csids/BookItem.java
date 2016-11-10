@@ -411,7 +411,7 @@ public class BookItem {
 		} // end if
 
 		String str = new String("");
-
+		System.out.println("HOLDINGSIZE::" + holdingInfo.size() + "<<<<<");
 		for (int i = 0; i < holdingInfo.size(); i++) {
 			str += "Holding Record " + (i + 1) + ": ";
 			str += " [Institution: " + holdingInfo.get(i).get(0);
@@ -421,6 +421,8 @@ public class BookItem {
 			str += ".]";
 			str += "\n";
 		} // end for
+		
+		
 		return str;
 	} // end getHoldingText()
 
@@ -516,8 +518,8 @@ public class BookItem {
 		} // end if
 		edition = edition.replaceAll("[^0-9]", "");
 
-		if (edition.equals("1"))
-			edition = "-1";
+		if (edition.equals("1") || edition.equals(""))
+			edition = "1";
 
 		if (!edition.equals("")) {
 			return Double.parseDouble(edition);
@@ -531,15 +533,14 @@ public class BookItem {
 
 	public String stardizePublisherWording(String str) {
 		if(!strHandle.hasSomething(str))
-			return "";
-		
+			return "";	
 		str = str.replace("明窗", "明報");
 		// The array is for trimming off common publishing company keywords
 		// before matching.
 		String[] dkeys = { " limited", " publications", " corporation", " publishing", " company", " books", " book", " row",
-				" ltd$", " co$", " & co$", " pub$", " Inc$", " group$", " press$", " distributor$", " $", "有限公司",
+				" colophon", "ltd$", " co$", " & co$", " pub$", " Inc$", " group$", " press$", " distributor$", " $", "有限公司",
 				"企管顧問", "企管顾问", "股份", "出版社", "出版", "資訊科技", "资讯科技", "出版企業", "出版企业", "書局", "书局", "大學", "大学", "師範", "师范",
-				"股彬", "文化企業", "書店", "發行" };
+				"股彬", "文化企業", "書店", "發行", "印书馆", "印書館" };
 
 		str = strHandle.tidyString(str);
 
@@ -554,7 +555,7 @@ public class BookItem {
 		} // end for
 
 		return str;
-	} // end removeCommonPublisherWording()
+	} // end stardizePublisherWording()
 
 	public String convMarcRaw(String str) {
 
@@ -586,11 +587,12 @@ public class BookItem {
 
 	public boolean isMultiVolume() {
 		String format = getFormat();
-		
-		if(format.contains("全一冊") || format.matches("^1v\\..*")) 
+		format = format.toLowerCase();
+		format = strHandle.trimSpace(format);
+		if(format.contains("全一冊") || format.matches("^1V\\..*") || format.matches("^1冊.*") || format.matches("^一冊.*")) 
 				return false;
 		
-		if (format.contains("v.") || format.contains("vol") || format.contains("pt.") || format.matches(".*.全.冊.*"))
+		if (format.contains("v.") || format.contains("vol") || format.contains("pt.") || format.matches(".*冊.*"))
 			return true;
 		
 		return false;

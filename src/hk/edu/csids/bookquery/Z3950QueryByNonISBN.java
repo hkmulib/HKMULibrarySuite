@@ -50,7 +50,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 					checkAva(queryBk.parseVolume());
 				} // end if
 			} // end while
-
+			
 			closeConnection();
 		} // end if
 	} // Z3950QueryByNonISBN()
@@ -313,17 +313,27 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		try {
 			BufferedReader bufReader = new BufferedReader(new StringReader(result));
 			String line = null;
+			boolean noResultEdition = true;
 			while ((line = bufReader.readLine()) != null) {
 				if (line.matches("^250.*") || line.contains("$6250")) {
 					line = line.replaceAll(".*\\$a", "");
 					debug += "match edition LINE: " + line + "\n";
 					debug += "match edition ed: " + ed + "\n";
+					noResultEdition = false;
 					if (queryBk.parseEdition(line) == ed) {
 						debug += "MATCH EDITION\n";
 						return true;
 					} // end if
 				} // end if
 			} // end while
+			if(noResultEdition){
+				if(ed == 1){
+					debug += "match edition LINE: NO EDITION\n";
+					debug += "match edition ed: " + ed + "\n";
+					debug += "MATCH EDITION\n";
+					return true;
+				} //end if
+			} //end if
 		} // end try
 		catch (Exception e) {
 			StringWriter errors = new StringWriter();
@@ -338,6 +348,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 	} // end matchEdition()
 
 	private boolean matchPublisher() {
+		
 		String qPub = queryBk.standizePublisherWording().toLowerCase();
 		if (!strHandle.hasSomething(qPub)) {
 			return false;
@@ -372,7 +383,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 					debug += " match pub Line: " + line + "\n";
 					debug += " matchpub qpub: " + qPub + "\n";
-					if (line.contains(qPub) || qPub.contains(line)) {
+					if (line.contains(qPub)) {
 						debug += "MATCH PUBLISHER\n";
 						return true;
 					} // end if

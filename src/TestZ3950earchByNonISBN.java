@@ -3,19 +3,19 @@ import hk.edu.csids.bookquery.*;
 public class TestZ3950earchByNonISBN {
 	public static void main(String[] args) {
 		try {
-			String inst = "HKBU";
-			String author = "De Bono, Edward";
-			String title = "Lateral thinking : a textbook of creativity.";
-			String publisher = "";
-			String year = "1977";
-			String edition = "";
+			String inst = "CITYU";
+			String author = "Mao, Zedong";
+			String title = "Four essays on philosophy.";
+			String publisher = "Foreign Language Press,";
+			String year = "1968";
+			String edition = "1st ed";
 			String vol = "";
 
 			Z3950Query q = new Z3950QueryByNonISBN(author, title, publisher, year, edition, vol, inst);
 			System.out.println("QUERY: " + author + ", " + title  + ", " + publisher  + ", " + year  + ", " + edition  + ", " + vol  + ", " + inst);
 			if (q.match()) {
+				
 				System.out.println("MATCH: ");
-				q.queryBk.getTitle();
 				System.out.println(q.getQueryStr());
 				System.out.println(q.getQueryBase());
 				System.out.println(q.bk.marc.getMarcTag());

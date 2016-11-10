@@ -102,15 +102,18 @@ public abstract class Z3950Query extends Query {
 			
 			if (holding) {
 				holdingXML = holdingXML + "</holdings>";
+				holdingXML = holdingXML.replaceAll("</holdings></holdings>", "</holdings>");
 				InputSource is = new InputSource(new StringReader(holdingXML));
 				doc = b.parse(is);
 				nodesHoldings = doc.getElementsByTagName("holding");
+				bk.clearLibHoldInfo();
+				
 				for (int i = 0; i < nodesHoldings.getLength(); i++) {
 					nodesHolding = doc.getElementsByTagName("holding").item(i).getChildNodes();
 					String callNo = getNodeValue("callNumber", nodesHolding);
 					String volume = callNo;
 					String status = getNodeValue("publicNote", nodesHolding);
-					String localLocation = getNodeValue("localLocation", nodesHolding);
+					String localLocation = getNodeValue("localLocation", nodesHolding);	
 					bk.holdingInfo.add(new ArrayList<String>());
 					bk.holdingInfo.get(i).add(Config.VALUES.get("INST_CODE"));
 					bk.holdingInfo.get(i).add(localLocation);
@@ -129,6 +132,7 @@ public abstract class Z3950Query extends Query {
 					} // end for
 					if ((status.equals("NOTCHCKDOUT") || status.contains("AVAILABLE")) && vol < 1
 							&& (queryBk.parseVolume(volume) < 0 || !bk.isMultiVolume())) {
+						
 						ava = true;
 						bib_no = 1;
 						if (lendable)
@@ -161,7 +165,7 @@ public abstract class Z3950Query extends Query {
 			e.printStackTrace(new PrintWriter(errors));
 			String errStr = "Z3950Query:checkAva()" + errors.toString();
 			errMsg = errStr;
-			System.out.println(errStr);
+			System.out.println(errStr + "\n\n" + holdingXML);
 		} // end catch
 		return false;
 	} // end checkAva
