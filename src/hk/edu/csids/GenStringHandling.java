@@ -138,7 +138,7 @@ public class GenStringHandling {
 			return "";
 		} // end if
 		str = str.toUpperCase();
-		str = str.replace(" ", "");
+		str = str.replaceAll(" |\\s|\\t", "");
 		str = str.replace("\"", "");
 		str = str.replace("/", "");
 		str = str.replace("-", "");
@@ -207,7 +207,7 @@ public class GenStringHandling {
 	} // trimNumeric
 
 	public boolean hasSomething(Object o) {
-		if (o == null || o.toString().equals("")) {
+		if (o == null || o.toString().trim().equals("")) {
 			return false;
 		} // end if
 		return true;

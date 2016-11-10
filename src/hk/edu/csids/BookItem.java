@@ -296,6 +296,10 @@ public class BookItem {
 	} // end getTotalHoldings()
 
 	public String getCreator() {
+		
+		if(creator == null)
+			return "";
+		
 		return creator;
 	}// end getAuthor
 
@@ -304,6 +308,9 @@ public class BookItem {
 	} // end getAuthors
 
 	public String getContributor() {
+		if(contributor == null)
+			return "";
+		
 		return contributor;
 	}// end getAuthor
 
@@ -333,16 +340,16 @@ public class BookItem {
 	} // end getFulltextUrls()
 
 	public String getTranslator() {
-		if (translator == null) {
+		if (translator == null)
 			return "";
-		} // end if
+			
 		return translator;
 	}// end getTranslator
 
 	public String getVolume() {
-		if (volume == null) {
+		if (volume == null)
 			return "";
-		} // end if
+			
 		return volume;
 	}// end getVolume
 
@@ -351,30 +358,30 @@ public class BookItem {
 	} // end getTranslators
 
 	public String getPublisher() {
-		if (publisher == null) {
+		if (publisher == null)
 			return "";
-		} // end if
+		
 		return publisher;
 	} // end getPublisher()
 
 	public String getPublishYear() {
-		if (publishYear == null) {
+		if (publishYear == null)
 			return "";
-		} // end if
+
 		return publishYear;
 	} // end getPublishYear()
 
 	public String getEdition() {
-		if (edition == null) {
+		if (edition == null)
 			return "";
-		} // end if
+		
 		return edition;
 	} // end GetEdition()
 
 	public String getSubject() {
-		if (subject == null) {
+		if (subject == null)
 			return "";
-		} // end if
+		
 		return subject;
 	} // end getSubject()
 
@@ -387,16 +394,16 @@ public class BookItem {
 	} // end getSubjects
 
 	public String getPrimoLink() {
-		if (primoLink == null) {
+		if (primoLink == null)
 			return "";
-		} // end if
+	
 		return primoLink;
 	} // end getPrimoLink()
 
 	public String getBookType() {
-		if (bookType == null) {
+		if (bookType == null)
 			return "";
-		} // end if
+		
 		return bookType;
 	} // end getBookType()
 
@@ -411,7 +418,7 @@ public class BookItem {
 		} // end if
 
 		String str = new String("");
-		System.out.println("HOLDINGSIZE::" + holdingInfo.size() + "<<<<<");
+		
 		for (int i = 0; i < holdingInfo.size(); i++) {
 			str += "Holding Record " + (i + 1) + ": ";
 			str += " [Institution: " + holdingInfo.get(i).get(0);
@@ -434,7 +441,7 @@ public class BookItem {
 
 		boolean isVol = false;
 
-		if (str.contains("v.") || str.contains("pt.") || str.contains("vol"))
+		if (str.contains("v.") || str.contains("pt.") || str.contains("vol") || str.contains("vd."))
 			isVol = true;
 
 		if (!isVol)
@@ -448,7 +455,7 @@ public class BookItem {
 			} // end if
 		} // end if
 
-		str = str.replaceAll("^.*v\\.|^.*pt\\.|^.*vol|c\\..*$", "");
+		str = str.replaceAll("^.*vd.|^.*v\\.|^.*pt\\.|^.*vol|c\\..*$", "");
 
 		str = strHandle.extractNumeric(str);
 		if (str == null || str.equals("") || str.length() > 4)

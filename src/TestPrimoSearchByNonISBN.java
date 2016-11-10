@@ -2,15 +2,17 @@ import hk.edu.csids.bookquery.*;
 
 public class TestPrimoSearchByNonISBN {
 	public static void main(String[] args) {
-		
-		String author = "  Rowling, J. K.";
-		String title = "哈利波特 : 死神的聖物.";
-		String publisher = "皇冠文化,";
-		String year = "2007.";
-		String ed = "";
-		String vol = "2";
+		String inst = "TWC";
+		String author = "  McGee Harold";
+		String title = "食物與廚藝 食物的起源、構成 以及各類食材變身為誘人美食的科學 = On food and cooking the science and lore of the kitchen(Vol.: v.02).";
+		String publisher = "大家出版社,";
+		String year = "2010.";
+		String ed = "初版";
+		String vol = "v.02";
+		if(args.length != 0)
+			inst = args[0];
 		try{
-		PrimoQueryByNonISBN q = new PrimoQueryByNonISBN(author, title, publisher, year, ed, vol, "HKSYU");
+		PrimoQueryByNonISBN q = new PrimoQueryByNonISBN(author, title, publisher, year, ed, vol, inst);
 		
 		if (q.match()) {
 			System.out.println("-- MATCHED --");

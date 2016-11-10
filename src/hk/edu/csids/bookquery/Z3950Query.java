@@ -127,21 +127,23 @@ public abstract class Z3950Query extends Query {
 					boolean lendable = true;
 
 					for (int j = 0; j < nolendLocations.length; j++) {
-						if (strHandle.normalizeString(localLocation).equals(strHandle.normalizeString((nolendLocations[j]))))
+						if (strHandle.hasSomething(nolendLocations[j]) && strHandle.normalizeString(localLocation).contains(strHandle.normalizeString((nolendLocations[j]))))
 							lendable = false;
 					} // end for
-					if ((status.equals("NOTCHCKDOUT") || status.contains("AVAILABLE")) && vol < 1
+								
+					if ((status.equals("NOTCHCKDOUT") || status.equals("AVAILABLE")) && vol < 1
 							&& (queryBk.parseVolume(volume) < 0 || !bk.isMultiVolume())) {
-						
 						ava = true;
 						bib_no = 1;
 						if (lendable)
 							avaT++;
+						
 					} else if (vol > 0) {
 						if (vol == queryBk.parseVolume(volume)) {
 							ava = true;
 							bib_no = 1;
-							if ((status.equals("NOTCHCKDOUT") || status.contains("AVAILABLE")) && lendable)
+							
+							if ((status.equals("NOTCHCKDOUT") || status.equals("AVAILABLE")) && lendable)
 								avaT++;
 						} // end if
 					} // end if

@@ -210,7 +210,7 @@ public abstract class PrimoQuery extends Query {
 					URL url = new URL(urlStr);
 					URLConnection urlcon = url.openConnection();
 
-					urlcon.setConnectTimeout(8000);
+					urlcon.setConnectTimeout(3000);
 					BufferedReader buffread = new BufferedReader(new InputStreamReader(urlcon.getInputStream()));
 					String inputLine;
 					while ((inputLine = buffread.readLine()) != null)
@@ -218,18 +218,19 @@ public abstract class PrimoQuery extends Query {
 					buffread.close();
 					// Check HKSYU's III Millennium API
 					if (Config.VALUES.get("INST_CODE").contains("HKSYU")) {
+
 						outstr = outstr.replaceAll("^.*\\[", "");
 						outstr = outstr.replaceAll("\\].*$", "");
-						outstr = "[" + outstr;
-						outstr = outstr + "]";
+						outstr = "{\"items\": [" + outstr + "] }";
 						JSONParser parser = new JSONParser();
-						Object obj = parser.parse(outstr);
-						JSONArray jArray = (JSONArray) obj;
-						volumes = new int[jArray.size()];
-						loanStatuses = new String[jArray.size()];
-						loanDueDates = new String[jArray.size()];
-						for (int i = 0; i < jArray.size(); i++) {
-							JSONObject jo = (JSONObject) jArray.get(i);
+						JSONObject json = (JSONObject) parser.parse(outstr);
+						JSONArray jarry = (JSONArray) json.get("items");
+						
+						volumes = new int[jarry.size()];
+						loanStatuses = new String[jarry.size()];
+						loanDueDates = new String[jarry.size()];
+						for (int i = 0; i < jarry.size(); i++) {
+							JSONObject jo = (JSONObject) jarry.get(i);
 							String v = jo.get("volume").toString();
 							if(bk.isMultiVolume() && !v.contains("v.") && !v.contains("pt.")){
 								v = "yearvolume" + v;
@@ -340,8 +341,8 @@ public abstract class PrimoQuery extends Query {
 					StringWriter errors = new StringWriter();
 					e.printStackTrace(new PrintWriter(errors));
 					String errStr = "PrimoQuery:checkAva()" + errors.toString();
-
 					errMsg = errStr;
+					System.out.println(errStr);
 				} // end catch
 				if (loanStatuses != null) {
 					boolean illable = false;

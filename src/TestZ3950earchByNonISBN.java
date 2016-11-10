@@ -3,12 +3,12 @@ import hk.edu.csids.bookquery.*;
 public class TestZ3950earchByNonISBN {
 	public static void main(String[] args) {
 		try {
-			String inst = "CITYU";
-			String author = "Mao, Zedong";
-			String title = "Four essays on philosophy.";
-			String publisher = "Foreign Language Press,";
-			String year = "1968";
-			String edition = "1st ed";
+			String inst = "CUHK";
+			String author = "Krzysztof";
+			String title = " La double vie de Veronique.";
+			String publisher = "";
+			String year = "2006";
+			String edition = "";
 			String vol = "";
 
 			Z3950Query q = new Z3950QueryByNonISBN(author, title, publisher, year, edition, vol, inst);

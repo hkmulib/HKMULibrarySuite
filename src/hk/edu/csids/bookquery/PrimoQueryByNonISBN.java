@@ -54,7 +54,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 	public PrimoQueryByNonISBN(String author, String title, String publisher, String year, String edition, String vol) {
 		super();
 		queryBk.setPublishYear(year);
-		queryBk.setVolume("v." + vol);
+		queryBk.setVolume(vol);
 		queryBk.setEdition(edition);
 		queryBk.setTitle(title);
 		queryBk.setCreator(author);

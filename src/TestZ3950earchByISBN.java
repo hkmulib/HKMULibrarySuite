@@ -5,7 +5,7 @@ public class TestZ3950earchByISBN{
 	public static void main(String[] args){
 		
 		String inst = "HKSYU";
-		String isbn = "0773589848";
+		String isbn = "9787020075621";
 		//String isbn = "781058703X";
 		CJKStringHandling ch = new CJKStringHandling();
 		
