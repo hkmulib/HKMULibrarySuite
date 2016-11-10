@@ -234,6 +234,7 @@ public abstract class Z3950Query extends Query {
 	} // end getResultBytes()
 
 	protected void closeConnection() {
+		
 		try {
 			z39c.close();
 		} // end try

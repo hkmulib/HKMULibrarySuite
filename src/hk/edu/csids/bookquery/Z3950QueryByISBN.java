@@ -12,10 +12,10 @@ public class Z3950QueryByISBN extends Z3950Query {
 		super(inst);
 	} // end Z3950QueryByISBN()
 
-	public Z3950QueryByISBN(String isbnStr, String inst) {
+	public Z3950QueryByISBN(String isbn, String inst) {
 		super(inst);
-		queryBk = new BookItem(isbnStr);
-		queryBk.isbn.setIsbn(isbnStr);
+		queryBk = new BookItem(isbn);
+		queryBk.isbn.setIsbn(isbn);
 		query();
 	} // end Z3950QueryByISBN()
 
@@ -27,6 +27,7 @@ public class Z3950QueryByISBN extends Z3950Query {
 		clearQuery();
 		Config.init(inst);
 		setQueryBase();
+		queryBk = new BookItem(isbn);
 		queryBk.isbn.setIsbn(isbn);
 		return query();
 	} // end if

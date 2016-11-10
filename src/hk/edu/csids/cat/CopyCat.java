@@ -188,6 +188,7 @@ public class CopyCat {
 							} else {
 								System.out.println("ExcelID:" + excelid + ". NOTMATCH: " + s + " (" + q + ")");
 							} // end if
+							
 						} // if
 					} // end try
 					catch (Exception e) {

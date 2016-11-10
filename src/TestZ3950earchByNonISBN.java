@@ -4,10 +4,10 @@ public class TestZ3950earchByNonISBN {
 	public static void main(String[] args) {
 		try {
 			String inst = "CUHK";
-			String author = "Krzysztof";
-			String title = " La double vie de Veronique.";
-			String publisher = "";
-			String year = "2006";
+			String author = "Hitchcock, Alfred";
+			String title = " Rear window";
+			String publisher = "Evervision co.,";
+			String year = "";
 			String edition = "";
 			String vol = "";
 

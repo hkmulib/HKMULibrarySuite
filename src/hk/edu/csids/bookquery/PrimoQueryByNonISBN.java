@@ -398,7 +398,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 				return true;
 			} // end if
 		} // end for
-		debug = "NO MATCH AUTHOR: cPnx: " + cPnx + " a: " + a + "\n";
+		debug += "NO MATCH AUTHOR: cPnx: " + cPnx + " a: " + a + "\n";
 		return false;
 	} // end matchAuthor()
 
@@ -446,7 +446,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 				return true;
 			} // end if
 		} // end for
-		debug = "NO PUB MATCH: PNX - " + pPnx + " p:" + p + "\n";
+		debug += "NO PUB MATCH: PNX - " + pPnx + " p:" + p + "\n";
 		// System.out.println(matchPublisher);
 		return false;
 	} // end matchPublisher()
@@ -467,7 +467,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		ArrayList<String> atl = getNodeValues("alttitle", nodesSearch);
 
 		if (tPnx.contains(t)||t.contains(tPnx)) {
-			debug = "MATCH TITLE: tPnx: " + tPnx + " t:" + t + ":" + "\n";
+			debug += "MATCH TITLE: tPnx: " + tPnx + " t:" + t + ":" + "\n";
 			// System.out.println(matchTitle);
 			return true;
 		} // end if
@@ -475,12 +475,12 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 		for (int i = 0; i < atl.size(); i++) {
 			String t3 = processTitle(atl.get(i));
 			if (t3.contains(t)) {
-				debug = "MATCH TITLE: t: " + t + " t3:" + t3 + "\n";
+				debug += "MATCH TITLE: t: " + t + " t3:" + t3 + "\n";
 				// System.out.println(matchTitle);
 				return true;
 			} // end if
 		} // end for
-		debug = "NO MATCH TITLE: tPnx: " + tPnx + " t:" + t + "\n";
+		debug += "NO MATCH TITLE: tPnx: " + tPnx + " t:" + t + "\n";
 		// System.out.println(matchTitle);
 		return false;
 	} // matchTitle()
@@ -506,7 +506,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 			return true;
 		} else {
 			if (e == null || e.equals("")) {
-				e = "-1";
+				e = "1";
 			} // end if
 			if (queryBk.parseEdition() == queryBk.parseEdition(e)) {
 				debug += " MATCH EDITION edition: " + queryBk.parseEdition() + " e: " + e + "\n";
@@ -532,7 +532,7 @@ public class PrimoQueryByNonISBN extends PrimoQuery {
 			debug += "MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear() + "\n";
 			return true;
 		} // end if
-		debug = "NO MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear() + "\n";
+		debug += "NO MATCH YEAR: PNX -" + cPnx + " year - " + queryBk.getPublishYear() + "\n";
 		return false;
 	} // end matchYear()
 
