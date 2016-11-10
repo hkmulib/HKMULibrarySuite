@@ -6,6 +6,14 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import hk.edu.csids.*;
 
+/*
+ * This class accepts parameters Author, Title, Publisher, Publishing Year, Edition, Volume, and Institute.
+ * Author and Title are mandatory.
+ * For Publisher, Publishing Year, or Edition, at least one must be filled.
+ * Volume & Institute are optional.
+ * "-1" is the default code for note specifying edition/volume information.
+ */
+
 public class Z3950QueryByNonISBN extends Z3950Query {
 
 	public Z3950QueryByNonISBN(String author, String title, String publisher, String year, String edition, String vol,
@@ -21,6 +29,10 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		queryBk.setPublisher(publisher);
 		if (query()) {
 			checkAva(queryBk.parseVolume());
+
+			// Cater the case that there are two BIB records and the first one
+			// is not available.
+			// In this case 2nd BIB record is tried for availbility.
 			while (!ava && nextRecord()) {
 				String tempHoldingXML = holdingXML;
 				String tempResult = result;
@@ -38,6 +50,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 					checkAva(queryBk.parseVolume());
 				} // end if
 			} // end while
+
 			closeConnection();
 		} // end if
 	} // Z3950QueryByNonISBN()
@@ -453,74 +466,65 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 		qy = qy.trim();
 		String qe = queryBk.getEdition();
 		qe = qe.trim();
-		if (strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
-
-			if (matchTitle() && matchPublisher() && matchYear() && matchEdition() && matchAuthor()) {
-				match = true;
-				setBookInfo();
-				return true;
-			} else {
-				match = false;
-				return false;
-			} // end if
-
-		} else if (!strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
-			if (matchTitle() && matchAuthor() && matchYear()) {
-				match = true;
-				setBookInfo();
-				return true;
-			} else {
-				match = false;
-				return false;
-			} // end if
-
-		} else if (strHandle.hasSomething(qe) && !strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
-			if (matchTitle() && matchAuthor() && matchEdition()) {
-				match = true;
-				setBookInfo();
-				return true;
-			} else {
-				match = false;
-				return false;
-			} // end if
-
-		} // end if
 
 		for (int i = 0; i < resultSet.getHitCount(); i++) {
+			
+			//Evaluate 2^3 - 1 = 7 possibilities. Minusing all void inputs, as a result, one of the three inputs (year, publisher, or edition) must appear.
+			if (strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
+				if (matchTitle() && matchPublisher() && matchYear() && matchEdition() && matchAuthor()) {
+					match = true;
+					setBookInfo();
+					return true;
+				} // end if
+
+			} else if (!strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
+				if (matchTitle() && matchAuthor() && matchYear() && matchPublisher()) {
+					match = true;
+					setBookInfo();
+					return true;
+				} // end if
+				
+			} else if (!strHandle.hasSomething(qe) && !strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
+				if (matchTitle() && matchAuthor() && matchPublisher()) {
+					match = true;
+					setBookInfo();
+					return true;
+				} // end if
+				
+			} else if (!strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
+				if (matchTitle() && matchAuthor() && matchYear()) {
+					match = true;
+					setBookInfo();
+					return true;
+				} // end if
+
+			} else if (strHandle.hasSomething(qe) && !strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
+				if (matchTitle() && matchAuthor() && matchEdition()) {
+					match = true;
+					setBookInfo();
+					return true;
+				} // end if
+				
+			} else if (strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
+				if (matchTitle() && matchAuthor() && matchEdition() && matchYear()) {
+					match = true;
+					setBookInfo();
+					return true;
+				} // end if
+				
+			} else if (strHandle.hasSomething(qe) && !strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
+				if (matchTitle() && matchAuthor() && matchEdition() && matchPublisher()) {
+					match = true;
+					setBookInfo();
+					return true;
+				} // end if
+				
+			} // end if
+			
+
+			// If no matched, loop to next record for further matching.
 			if (nextRecord()) {
 				copyNextRecToCurrentRec();
-				if (strHandle.hasSomething(qy) && strHandle.hasSomething(qp)) {
-
-					if (matchTitle() && matchPublisher() && matchYear() && matchEdition() && matchAuthor()) {
-						match = true;
-						setBookInfo();
-						return true;
-					} else {
-						match = false;
-						return false;
-					} // end if
-
-				} else if (!strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
-					if (matchTitle() && matchAuthor() && matchYear()) {
-						match = true;
-						setBookInfo();
-						return true;
-					} else {
-						match = false;
-						return false;
-					} // end if
-
-				} else if (strHandle.hasSomething(qe) && !strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
-					if (matchTitle() && matchAuthor() && matchEdition()) {
-						match = true;
-						setBookInfo();
-						return true;
-					} else {
-						match = false;
-						return false;
-					} // end if
-
-				} // end if
 			} // end if
 		} // end for
 		match = false;
