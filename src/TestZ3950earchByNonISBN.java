@@ -7,8 +7,8 @@ public class TestZ3950earchByNonISBN {
 			String author = "De Bono, Edward";
 			String title = "Lateral thinking : a textbook of creativity.";
 			String publisher = "";
-			String year = "";
-			String edition = "New ed.";
+			String year = "1977";
+			String edition = "";
 			String vol = "";
 
 			Z3950Query q = new Z3950QueryByNonISBN(author, title, publisher, year, edition, vol, inst);

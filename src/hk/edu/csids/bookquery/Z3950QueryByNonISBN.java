@@ -6,7 +6,6 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import hk.edu.csids.*;
 
-//In Development
 public class Z3950QueryByNonISBN extends Z3950Query {
 
 	public Z3950QueryByNonISBN(String author, String title, String publisher, String year, String edition, String vol,
@@ -466,7 +465,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			} // end if
 
 		} else if (!strHandle.hasSomething(qe) && strHandle.hasSomething(qy) && !strHandle.hasSomething(qp)) {
-			if (matchTitle() && matchAuthor() && matchPublisher()) {
+			if (matchTitle() && matchAuthor() && matchYear()) {
 				match = true;
 				setBookInfo();
 				return true;
