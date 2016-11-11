@@ -225,16 +225,16 @@ public abstract class PrimoQuery extends Query {
 						JSONParser parser = new JSONParser();
 						JSONObject json = (JSONObject) parser.parse(outstr);
 						JSONArray jarry = (JSONArray) json.get("items");
-						
+
 						volumes = new int[jarry.size()];
 						loanStatuses = new String[jarry.size()];
 						loanDueDates = new String[jarry.size()];
 						for (int i = 0; i < jarry.size(); i++) {
 							JSONObject jo = (JSONObject) jarry.get(i);
 							String v = jo.get("volume").toString();
-							if(bk.isMultiVolume() && !v.contains("v.") && !v.contains("pt.")){
+							if (bk.isMultiVolume() && !v.contains("v.") && !v.contains("pt.")) {
 								v = "yearvolume" + v;
-							} //end if
+							} // end if
 							volumes[i] = bk.parseVolume(v);
 							String order = "";
 							if (jo.get("order") != null)
@@ -271,9 +271,9 @@ public abstract class PrimoQuery extends Query {
 							nlist = doc.getElementsByTagName("location");
 							if (nlist.item(0).getFirstChild() != null) {
 								v = nlist.item(0).getFirstChild().getNodeValue();
-								if(bk.isMultiVolume() && !v.contains("v.") && !v.contains("pt.")){
+								if (bk.isMultiVolume() && !v.contains("v.") && !v.contains("pt.")) {
 									v = "yearvolume" + v;
-								} //end if
+								} // end if
 								volumes[0] = bk.parseVolume(v);
 							} else {
 								nlist = doc.getElementsByTagName("z30-description");
@@ -329,7 +329,7 @@ public abstract class PrimoQuery extends Query {
 							} // end for
 						} // end if
 
-						if (vol < 0 && volumes[0] > 0) {
+						if (vol < 0 && volumes[0] > 0  && bk.isMultiVolume()) {
 							ext_itm_no = 0;
 						} else {
 							ext_itm_no = itemCount;
@@ -383,7 +383,7 @@ public abstract class PrimoQuery extends Query {
 									} else {
 										for (int j = 0; j < volumes.length; j++) {
 
-											if (volumes[j] == -1) {
+											if (volumes[j] == -1 || !bk.isMultiVolume()) {
 												tmp++;
 											} // end if
 										} // end for
