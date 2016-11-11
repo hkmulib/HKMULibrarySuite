@@ -318,7 +318,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 			while ((line = bufReader.readLine()) != null) {
 				if (line.matches("^250.*") || line.contains("$6250")) {
 					line = line.replaceAll(".*\\$a", "");
-					debug += "match edition LINE: " + line + "\n";
+					debug += "match edition LINE: " + queryBk.parseEdition(line) + "\n";
 					debug += "match edition ed: " + ed + "\n";
 					noResultEdition = false;
 					if (queryBk.parseEdition(line) == ed) {
@@ -369,7 +369,7 @@ public class Z3950QueryByNonISBN extends Z3950Query {
 
 				if (line.toLowerCase().matches("^260.*|^264.*|.*6260.*|.*6264.*")) {
 
-					line = line.replaceAll("^.*?\\$b", "");
+					line = line.replaceAll("^.*?\\$a", "");
 					line = line.replaceAll("\\$c.*$", "");
 					line = line.toLowerCase();
 					line = strHandle.trimSpecialChars(line);

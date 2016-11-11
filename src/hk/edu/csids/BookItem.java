@@ -491,6 +491,7 @@ public class BookItem {
 			edition = edition.replaceAll("di.*", "");
 			edition = edition.replaceAll("第", "");
 			edition = edition.replaceAll("初", "一");
+			edition = edition.replaceAll("再版", "一");
 			edition = edition.replaceAll("二十", "廿");
 			edition = edition.replaceAll("三十", "卅");
 			String[] chiEd = { "一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二", "十三", "十四", "十五", "十六",
@@ -509,7 +510,8 @@ public class BookItem {
 				return Double.parseDouble("1." + minor_ed);
 			} // end if
 		} else {
-
+			edition = edition.toLowerCase();
+			edition = edition.replaceAll("zai ban", "first");
 			if (edition.contains("rev.") || edition.contains("revise") || edition.contains("expand") || edition.contains("new ed")) {
 				return 2.1;
 			} // end if
