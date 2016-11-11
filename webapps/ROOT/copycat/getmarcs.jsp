@@ -1,15 +1,15 @@
-<%@ page import="hk.edu.csids.copycat.*,hk.edu.csids.*"%>
+<%@ page import="hk.edu.csids.cat.*,hk.edu.csids.*"%>
 <%@ page import="hk.edu.csids.bookquery.*"%>
-<%@ page import="java.io.*,java.util.*" %>
-CopyCAT Program for Library 
+<%@ page import="java.io.*,java.util.*"%>
+CopyCAT Program for Library
 <%
-	try{
+	try {
 		String file = request.getParameter("file");
 		String requestFilePath = request.getServletContext().getRealPath("/") + "copycat/requests";
 		String reportFilePath = request.getServletContext().getRealPath("/") + "copycat/reports";
 		out.println(requestFilePath);
 		out.println(reportFilePath);
-		if(file!=null && file.contains(".xlsx")){
+		if (file != null && file.contains(".xlsx")) {
 			File f = new File(requestFilePath + "/" + file);
 			CopyCat cc = new CopyCat(f, reportFilePath);
 			String now = GenStringHandling.getToday();
@@ -20,5 +20,7 @@ CopyCAT Program for Library
 		} //end if
 	} //end try
 
-	catch(Exception e){e.printStackTrace();}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
 %>

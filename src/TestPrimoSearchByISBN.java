@@ -2,8 +2,13 @@ import hk.edu.csids.bookquery.*;
 
 public class TestPrimoSearchByISBN{
 	public static void main(String[] args){
-		String inst = "CIHE";
-		PrimoQueryByISBN q = new PrimoQueryByISBN("7533911695", inst);
+
+		String inst = "HKSYU";
+		String isbn = "9787020075621";
+		//String isbn = "781058703X";
+		String vol = "1";
+
+		PrimoQueryByISBN q = new PrimoQueryByISBN(isbn, inst, vol);
 		if(q.match()){
 			System.out.println("Query Setting: " + q.getQuerySetting());
 			System.out.println("-- MATCHED --");

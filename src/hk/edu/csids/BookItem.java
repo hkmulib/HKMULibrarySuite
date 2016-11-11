@@ -235,7 +235,7 @@ public class BookItem {
 
 	public void setVolume(String str) {
 		if (!strHandle.hasSomething(str)) {
-			volume = str;
+			volume = "-1";
 		} else {
 			volume = "v." + str;
 		} // end if
@@ -434,7 +434,7 @@ public class BookItem {
 	} // end getHoldingText()
 
 	public int parseVolume() {
-		return parseVolume(volume);
+		return parseVolume(getVolume());
 	} // end parseVolume
 
 	public int parseVolume(String str) {
@@ -549,7 +549,7 @@ public class BookItem {
 		String[] dkeys = { " limited", " publications", " corporation", " publishing", " company", " books", " book", " row",
 				" colophon", "ltd$", " co$", " & co$", " pub$", " Inc$", " group$", " press$", " distributor$", " $", "有限公司",
 				"企管顧問", "企管顾问", "股份", "出版社", "出版", "資訊科技", "资讯科技", "出版企業", "出版企业", "書局", "书局", "大學", "大学", "師範", "师范",
-				"股彬", "文化企業", "書店", "發行", "印书馆", "印書館" };
+				"股彬", "文化企業", "書店", "發行", "印书馆", "印書館", "公司", "事業", "事业" };
 
 		str = strHandle.tidyString(str);
 

@@ -7,6 +7,8 @@ public class TestZ3950earchByISBN{
 		String inst = "HKSYU";
 		String isbn = "9787020075621";
 		//String isbn = "781058703X";
+		String vol = "1";
+		
 		CJKStringHandling ch = new CJKStringHandling();
 		
 		try{
@@ -19,7 +21,7 @@ public class TestZ3950earchByISBN{
 		} //end try
 		catch (Exception e){System.out.println("No ISBN Argument, using default. Syntax: [ccommand] [inst] [inbn]");}
 		
-		Z3950QueryByISBN q = new Z3950QueryByISBN(isbn, inst);
+		Z3950QueryByISBN q = new Z3950QueryByISBN(isbn, inst, vol);
 		
 		if(q.match()){
 			System.out.println("MATCH: ");

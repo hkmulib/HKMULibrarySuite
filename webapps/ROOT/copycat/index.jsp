@@ -1,45 +1,41 @@
-<%@ page import="hk.edu.csids.copycat.*,hk.edu.csids.*"%>
+<%@ page import="hk.edu.csids.cat.*,hk.edu.csids.*"%>
 <%@ page import="hk.edu.csids.bookquery.*"%>
-<%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
-<%@ page import="javax.servlet.http.*" %>
-<%@ page import="org.yaz4j.*" %>
-<%@ page import="org.apache.commons.fileupload.*" %>
-<%@ page import="org.apache.commons.fileupload.disk.*" %>
-<%@ page import="org.apache.commons.fileupload.servlet.*" %>
-<%@ page import="org.apache.commons.io.output.*" %>
+<%@ page import="java.io.*,java.util.*, javax.servlet.*"%>
+<%@ page import="javax.servlet.http.*"%>
+<%@ page import="org.yaz4j.*"%>
+<%@ page import="org.apache.commons.fileupload.*"%>
+<%@ page import="org.apache.commons.fileupload.disk.*"%>
+<%@ page import="org.apache.commons.fileupload.servlet.*"%>
+<%@ page import="org.apache.commons.io.output.*"%>
 <html>
 <head>
-<title> CopyCAT Program for Library </title>
+<title>CopyCAT Program for Library</title>
 </head>
 <%@include file="menu.jsp"%>
 CopyCat Get MARCs
 <hr>
 <form enctype="multipart/form-data" method="post">
-<input type="file" name="srcFile" id="srcFile">
-<br>
-<br>
-<input type="submit" value="Get MARCs">
+	<input type="file" name="srcFile" id="srcFile"> <br> <br>
+	<input type="submit" value="Get MARCs">
 </form>
 
 <%
-
 	String contentType = request.getContentType();
 	String savedFile = "";
-	if ((contentType!=null && contentType.indexOf("multipart/form-data") >= 0)) {
+	if ((contentType != null && contentType.indexOf("multipart/form-data") >= 0)) {
 		DiskFileItemFactory factory = new DiskFileItemFactory();
 		String basedir = request.getServletContext().getRealPath("/") + "copycat/";
 		String filePath = basedir + "requests";
 		String reportsFilePath = basedir + "reports";
 		factory.setRepository(new File(filePath));
 		ServletFileUpload upload = new ServletFileUpload(factory);
-		try{
+		try {
 			List fileItems = upload.parseRequest(request);
 			Iterator i = fileItems.iterator();
-			 while ( i.hasNext () ) 
-		         {
-		         	FileItem fi = (FileItem)i.next();
-				if ( !fi.isFormField () ) {
-		            		// Get the uploaded file parameters
+			while (i.hasNext()) {
+				FileItem fi = (FileItem) i.next();
+				if (!fi.isFormField()) {
+					// Get the uploaded file parameters
 					String now = GenStringHandling.getToday();
 					String fieldName = fi.getFieldName();
 					String fileName = fi.getName();
@@ -47,7 +43,7 @@ CopyCat Get MARCs
 					savedFile = now + "." + fileExt;
 					boolean isInMemory = fi.isInMemory();
 					long sizeInBytes = fi.getSize();
-					if(!fileExt.equals("xlsx")){
+					if (!fileExt.equals("xlsx")) {
 						out.println("Wrong file format; must be .xlsx");
 					} else {
 						out.println("Start time: " + now + "<br>");
@@ -58,16 +54,16 @@ CopyCat Get MARCs
 						out.println("You may close this tab and check report later on the report page.<br>");
 					} //end if
 				} //end if
-			}//end while
+			} //end while
 		} //end try
 
-		catch(Exception e){e.printStackTrace();}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	} //end if
-
-
 %>
 
-        <script lanuage="javascript">
+<script lanuage="javascript">
 		var savedFile = "<%out.print(savedFile);%>";
                 var xhttp${resultStatus.index} = new XMLHttpRequest();
                 xhttp${resultStatus.index}.onreadystatechange = function() {

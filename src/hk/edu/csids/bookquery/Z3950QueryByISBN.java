@@ -18,6 +18,14 @@ public class Z3950QueryByISBN extends Z3950Query {
 		queryBk.isbn.setIsbn(isbn);
 		query();
 	} // end Z3950QueryByISBN()
+	
+	public Z3950QueryByISBN(String isbn, String inst, String vol) {
+		super(inst);
+		queryBk = new BookItem(isbn);
+		queryBk.isbn.setIsbn(isbn);
+		queryBk.setVolume(vol);
+		query();
+	} // end Z3950QueryByISBN()
 
 	public Z3950QueryByISBN() {
 		super();
@@ -44,7 +52,7 @@ public class Z3950QueryByISBN extends Z3950Query {
 			if (remoteQuery(queryStr)) {
 				match = true;
 				setBookInfo();			
-				while(!checkAva(-1) && nextRecord()){
+				while(!checkAva(queryBk.parseVolume()) && nextRecord()){
 					copyNextRecToCurrentRec();
 					setBookInfo();
 				} //end while
@@ -57,7 +65,7 @@ public class Z3950QueryByISBN extends Z3950Query {
 				if(remoteQuery(queryStr)){
 					setBookInfo();
 					match = true;
-					checkAva(-1);
+					checkAva(queryBk.parseVolume());
 					return true;
 				} //end if
 			} //end try

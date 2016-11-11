@@ -13,7 +13,7 @@ import org.w3c.dom.*;
 import hk.edu.csids.BookItem;
 
 /*
- * This class accepts ISBN and search over Primo via X-service.
+ * This class accepts ISBN and Volume (optional) and search over Primo via X-service.
  * The related configs can be done in Config.java of the same package.
  */
 
@@ -32,12 +32,21 @@ public class PrimoQueryByISBN extends PrimoQuery {
 	public PrimoQueryByISBN(String str, String inst) {
 		super(inst);
 		queryBk = new BookItem(str);
+		queryBk.setVolume("-1");
+		query();
+	} // end PrimoQueryByISBN()
+
+	public PrimoQueryByISBN(String str, String inst, String vol) {
+		super(inst);
+		queryBk = new BookItem(str);
+		queryBk.setVolume(vol);
 		query();
 	} // end PrimoQueryByISBN()
 
 	public boolean query(String str) {
 		clearQuery();
 		queryBk.isbn.setIsbn(str);
+		queryBk.setVolume("-1");
 		return query();
 	} // end if
 
@@ -51,7 +60,7 @@ public class PrimoQueryByISBN extends PrimoQuery {
 			queryStr += queryBk.isbn.getIsbn13();
 			if (remoteQuery(queryStr)) {
 				setBookInfo();
-				checkAVA(-1);
+				checkAVA(queryBk.parseVolume());
 				return true;
 			} else {
 				errMsg = "No record found on Primo." + Config.QUERY_SETTING;
@@ -110,7 +119,7 @@ public class PrimoQueryByISBN extends PrimoQuery {
 			System.out.println(errStr);
 			errMsg = errStr;
 		} // end catch
-		
+
 		return false;
 	} // end remoteQuery()
 

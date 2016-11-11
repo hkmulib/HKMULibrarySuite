@@ -4,11 +4,11 @@ public class TestZ3950earchByNonISBN {
 	public static void main(String[] args) {
 		try {
 			String inst = "CUHK";
-			String author = "查愼行";
-			String title = " 敬業堂詩集 ; 方望溪先生全集.";
-			String publisher = "台灣商務印書館,.";
-			String year = "";
-			String edition = "台一版";
+			String author = "牟宗三";
+			String title = " 牟宗三先生全集.(Vol.: v.24)..";
+			String publisher = "聯經出版公司,.";
+			String year = "2003.";
+			String edition = "";
 			String vol = "";
 
 			Z3950Query q = new Z3950QueryByNonISBN(author, title, publisher, year, edition, vol, inst);
