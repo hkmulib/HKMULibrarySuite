@@ -130,7 +130,7 @@ public abstract class Z3950Query extends Query {
 						if (strHandle.hasSomething(nolendLocations[j]) && strHandle.normalizeString(localLocation).contains(strHandle.normalizeString((nolendLocations[j]))))
 							lendable = false;
 					} // end for
-								
+					
 					if ((status.equals("NOTCHCKDOUT") || status.equals("AVAILABLE")) && vol < 1
 							&& (queryBk.parseVolume(volume) < 0 || !bk.isMultiVolume())) {
 						ava = true;
@@ -158,8 +158,9 @@ public abstract class Z3950Query extends Query {
 					bib_no = 1;
 					ext_itm_no = 0;
 					ava_itm_no = 0;
-				} // end if
-				return true;
+				} else {
+					return true;
+				} //end if
 			} // end if
 		} // end try
 		catch (Exception e) {

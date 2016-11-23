@@ -51,7 +51,8 @@ public class Z3950QueryByISBN extends Z3950Query {
 			queryStr = "@attr 1=7 @attr 2=3 " + queryBk.isbn.getOriginalIsbn();
 			if (remoteQuery(queryStr)) {
 				match = true;
-				setBookInfo();			
+				setBookInfo();
+				
 				while(!checkAva(queryBk.parseVolume()) && nextRecord()){
 					copyNextRecToCurrentRec();
 					setBookInfo();

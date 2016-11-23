@@ -9,12 +9,13 @@ public class TestZ3950earchByNonISBN {
 			String publisher = "聯經出版公司,.";
 			String year = "2003.";
 			String edition = "";
-			String vol = "";
+			String vol = "25";
 
 			Z3950Query q = new Z3950QueryByNonISBN(author, title, publisher, year, edition, vol, inst);
-			System.out.println("QUERY: " + author + ", " + title  + ", " + publisher  + ", " + year  + ", " + edition  + ", " + vol  + ", " + inst);
+			System.out.println("QUERY: " + author + ", " + title + ", " + publisher + ", " + year + ", " + edition
+					+ ", " + vol + ", " + inst);
 			if (q.match()) {
-				
+
 				System.out.println("MATCH: ");
 				System.out.println(q.getQueryStr());
 				System.out.println(q.getQueryBase());

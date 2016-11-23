@@ -4,11 +4,11 @@ public class TestPrimoSearchByNonISBN {
 	public static void main(String[] args) {
 		
 		String inst = "HKSYU";
-		String author = "查愼行";
-		String title = " 敬業堂詩集 ; 方望溪先生全集.";
-		String publisher = "台灣商務印書館,.";
-		String year = "";
-		String edition = "台一版";
+		String author = "梁恩榮, 阮衛華著";
+		String title = " 公民教育, 香港再造! : 迎向新世代公民社會.";
+		String publisher = "";
+		String year = "2011.";
+		String edition = "";
 		String vol = "";
 				
 		if(args.length != 0)
