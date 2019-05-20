@@ -1,0 +1,1487 @@
+954921332001	^Z1219 .P98	Publishers weekly	00000019,	21504008,	OXFORD
+954921333016	^HD28 .A25	Administrative science quarterly	00018392,	19303815,	OXFORD
+954921343183	^CB158 .F88	The Futuristhelectronic resource	00163317,		OXFORD
+954921349270	^HD5701 .J6	The journal of human resources	0022166X,	15488004,	OXFORD
+954921356390	^HF5549.A2	Personnel psychologyhelectronic resource	00315826,	17446570,	USTL
+954921357407	^JK1	Public administration review	00333352,	15406210,	USTL
+954921361479	^HF5549.5.T7 A6	Training and development journal	00410861,		USTL
+954921363513	^RA410.A1 I58	Inquiry	00469580,	19457243,	USTL
+954921363515	^HD8005.6.U5 J68	Journal of collective negotiations in the public sector	00472301,	15414175,	USTL
+954921365535	^RA421 .A411	American journal of public health	00900036,	15410048,	USTL
+954921365545	^HF1 .P976	Public personnel management	00910260,	19457421,	USTL
+954921367573	^HF5549.5.T7	Training	00955892,	19437242,	USTL
+954921367581	^HD8051 .A78	Monthly labor review cUS Department of Labor Burea of Labor Statistics	00981818,	19374658,	USTL
+954921371634	^Z699.A1 O54	Onlinehelectronic resource	01465422,	23249706,	USTL
+954921373678	^Z699.A1 D37	Database	01624105,	01464422,	USTL
+954921377731	^HF5001 .I35	In business	01902458,		USTL
+954921379769	^Z668 .I47	The information society	01972243,	10876537,	USTL
+954921380779	^HF5382.5.U5 O3	Occupational outlook quarterly online	01994786,		USTL
+954921383834	^HD6331	New technology work and employment	02681072,	1468005X,	USTL
+954921383835	^HC59.72.I55 I532	Information technology for development	02681102,	15540170,	USTL
+954921392997	^Z671 .L7	Library journal	03630277,		USTL
+954921395055	^Z678.9.A1 J68	Information technology and librarieshelectronic resource	07309295,	21635226,	USTL
+954921418476	^HD28 .J62	Journal of managerial issues bJMI	10453695,	23287470,	USTL
+954921418483	^HD28 .O758	Organization science ba journal of the Institute of Management Sciences	10477039,	15265455,	USTL
+954921419497	^HF5736 .R3632	Records management quarterly	10502343,		USTL
+954921420525	^HF5549.5.T7 A6	Training development	10559760,		USTL
+954921423573	^HF5549.5.M5 D565	The diversity factor	10677194,	15452808,	USTL
+954921430719	^QA76 .I43	Information today	87556286,	21690340,	USTL
+954925234033	^TA1	Journal of professional issues in engineering education and practicehelectronic resource	10523928,	19435541,	USTL
+954925241053	^L101.A2 P3	European journal of educationhelectronic resource	01418211,	14653435,	MIT
+954925241057	^L18 .P55	Journal of philosophy of educationhelectronic resource	03098249,	14679752,	MIT
+954925241061	^L16 .F46	Higher education quarterlyhelectronic resource cSociety for Research into Higher Education	09515224,	14682273,	MIT
+954925246077	^Q124.6 .I85	Issues in science and technology	07485492,	19381557,	MIT
+954925254118	^RC941	British journal of diseases of the chesthelectronic resource	00070998,	20448279,	MIT
+954925254128	^L16 .J68	Journal of curriculum studieshelectronic resource	00220272,	13665839,	MIT
+954925255154	^L16	Oxford review of educationhelectronic resource	03054985,	14653915,	MIT
+954925256168	^LC4661 .S564	International journal of disability development and educationhelectronic resource	1034912X,	1465346X,	MIT
+954925264195	^LB1025.2 .E38	Educational philosophy and theoryhelectronic resource	00131857,	14695812,	MIT
+954925264197	^L16 .E47	Educational review	00131911,	14653397,	OXFORD
+954925264214	^LB1028 .S27	Scandinavian journal of educational research	00313831,	14701170,	USTL
+954925265217	^CD23.S6 A3	Journal of the Society of Archivists	00379816,	14653907,	USTL
+954925265221	^LA5 .H55	History of educationhelectronic resource	0046760X,	14645130,	USTL
+954925265224	^RJ504	Journal of child psychotherapy	0075417X,	14699370,	USTL
+954925265229	^RA421	Journal of community health	00945145,	15733610,	USTL
+954925265233	^L16 .W47	Westminster studies in education	01406728,	14701359,	USTL
+954925265234	^PR6029.R8 Z48 2011	A life in letters cGeorge Orwell ; selected and annotated by Peter Davison	01411926,	14693518,	HKSYU
+954925265240	^R735.A1 M34	Medical teacherhelectronic resource	0142159X,	1466187X,	MIT
+954925266261	^LC5201 .S88	Studies in continuing educationhelectronic resource	0158037X,	1470126X,	MIT
+954925266262	^L91 .D57	Discoursehelectronic resource bstudies in the cultural politics of education	01596306,	14693739,	USTL
+954925266267	^BF712	International journal of behavioral development	01650254,	14640651,	USTL
+954925267272	^RC488.5	The American journal of family therapy	01926187,	15210383,	USTL
+954925267278	^L16 .S36	School organisation	02601362,	13600605,	USTL
+954925267281	^LB2300	Assessment and evaluation in higher education	02602938,	1469297X,	USTL
+954925267284	^BF712 .B75	The British journal of developmental psychology	0261510X,	2044835X,	USTL
+954925267285	^HV11	Social work education	02615479,	14701227,	USTL
+954925267286	^LB1723 .E95	European journal of teacher education	02619768,	14695928,	USTL
+954925268303	^LC5808.G7	Open learning	02680513,	14699958,	USTL
+954925268313	^BF456.R2	Reading psychology	02702711,	15210685,	USTL
+954925269334	^LC268	Journal of moral education	03057240,	14653877,	USTL
+954925269335	^LB1725.G6	Cambridge journal of education	0305764X,	14693577,	USTL
+954925269336	^LB43	Compare	03057925,	14693623,	USTL
+954925269338	^LB1027.5	British journal of guidance counselling	03069885,	14693534,	USTL
+954925269340	^LB2300	Studies in higher education	03075079,	1470174X,	USTL
+954925269345	^G72	Journal of geography in higher education	03098265,	14661845,	USTL
+954925270347	^LB2300 .C36	The Canadian journal of higher education bLa revue canadienne denseignement supérieur	03161218,	22936602,	USTL
+954925270350	^LC5201	Educational gerontology	03601277,	15210472,	USTL
+954925270351	^LB2331.63	Research in higher education	03610365,	1573188X,	USTL
+954925270356	^LA628 .H54	Higher education in Europe	03797724,	14698358,	USTL
+954925270370	^HC79.T4 P764	Prometheus	08109028,	14701030,	USTL
+954925270371	^HQ1101	Australian feminist studies	08164649,	14653303,	USTL
+954925271383	^AS30 .A23	Academic questions bAQ	08954852,	19364709,	USTL
+954925271398	^BF636.5	Counselling psychology quarterly	09515070,	14693674,	USTL
+954925271400	^LB1043	Educational media international	09523987,	14695790,	USTL
+954925272404	^KD3600	Education and the law	09539964,	14695774,	USTL
+954925272407	^LC212.8	Gender and education	09540253,	13600516,	USTL
+954925272422	^LB2806.15 .C8	The Curriculum journal	09585176,	14693704,	USTL
+954925273446	^HF5630 .A426	Accounting education	09639284,	14684489,	USTL
+954925273448	^LC65	Education economics	09645292,	14695782,	USTL
+954925274456	^LB1139.2 .I57	International journal of early years education	09669760,	14698463,	USTL
+954925274461	^HV5808	Drugs beducation prevention policy	09687637,	14653370,	USTL
+954925274472	^G72 .I58	International research in geographical and environmental education	10382046,	17477611,	USTL
+954925276532	^GE70	Environmental education researchhelectronic resource	13504622,	14695871,	MIT
+954925277553	^QA11.A1 M274	Mathematical cognitionhelectronic resource	13546791,	14640724,	MIT
+954925278563	^LB1028.5 .P72	Innovations in education and training internationalhelectronic resource	13558005,	14698420,	MIT
+954925278565	^LB2331 .T43	Teaching in higher educationhelectronic resource	13562517,	14701294,	MIT
+954925278578	^R735.A1	Education for health bchange in training practice	13576283,	14695804,	USTL
+954925278584	^PR31	Changing English	1358684X,	14693585,	USTL
+954925279589	^LC3991 .H44	High ability studies bthe journal of the European Council for High Ability cECHA	13598139,	1469834X,	USTL
+954925279590	^LB1727.A7 A75	Asia Pacific journal of teacher education	1359866X,	14692945,	USTL
+954925279592	^LB2341	Journal of higher education policy and management	1360080X,	14699508,	USTL
+954925279613	^BV4560	International journal of childrens spirituality	1364436X,	14698455,	USTL
+954925280624	^P115 .I582	The international journal of bilingualism	13670069,	17566878,	USTL
+954925280628	^HF5549.5.M3	Human resource development international	13678868,	14698374,	USTL
+954925281645	^ML5	Music education research	14613808,	14699893,	USTL
+954925374833	^HQ793 .A44	Adolescence	00018449,		USTL
+954925375855	^LB1028 .A36	Alberta journal of educational research	00024805,	19231857,	USTL
+954925375862	^HV2510 .A5	American annals of the deafhelectronic resource	0002726X,	15430375,	MIT
+954925376867	^QH1 .A275	The American biology teacherhelectronic resource	00027685,	19384211,	MIT
+954925376882	^E171 .A57	The American historical review	00028762,	19375239,	MIT
+954925377903	^RS110 .A33	American journal of pharmaceutical educationhelectronic resource	00029459,	15536467,	MIT
+954925378937	^AP2 .A4572	The American scholar	00030937,	21622892,	USTL
+954925383070	^L91	Australian journal of educationhelectronic resource	00049441,	20505884,	USTL
+954925383079	^BF1 .A97	Australian psychologisthelectronic resource	00050067,	17429544,	USTL
+954925385123	^E185.5	The black scholar	00064246,	21625387,	USTL
+954925386148	^LB1043 .J64	British journal of educational technology	00071013,	14678535,	USTL
+954925386162	^RC489.A7 B8	American journal of art therapy	00074764,		USTL
+954925390257	^HQ750.A1 C45	Child development	00093920,	14678624,	USTL
+954925390258	^RJ499.A1	Child psychiatry and human development	0009398X,	15733327,	USTL
+954925390259	^HV701 .C52	Child welfare	00094021,		USTL
+954925392317	^L11	Comparative education review	00104086,	1545701X,	USTL
+954925395396	^HX1 .D58	Dissent	00123846,	19460910,	USTL
+954925396427	^L11	Educational leadership	00131784,	19435878,	USTL
+954925396441	^L11 E6	The elementary school journal	00135984,	15548279,	USTL
+954925398495	^LC3950	Exceptional children	00144029,	21635560,	USTL
+954925399523	^LC3950 .F63	Focus on exceptional children	0015511X,		USTL
+954925403631	^LB2300 .H53	Higher education	00181560,	1573174X,	USTL
+954925404650	^L11 .H57	History of education quarterlyhelectronic resource	00182680,	17485959,	USTL
+954925406715	^L11	Instructional science	00204277,	15731952,	USTL
+954925407732	^TK1.A1 I5794	International journal of electrical engineering education	00207209,	20504578,	USTL
+954925410806	^E171 .J87	The journal of American history	00218723,	19452314,	USTL
+954925410827	^QH315 .J66	Journal of biological educationhelectronic resource	00219266,	21576009,	USTL
+954925411847	^RC321 .J74	Journal of clinical psychology	00219762,	10974679,	USTL
+954925412857	^BF408 .J65	The journal of creative behaviorhelectronic resource	00220175,	21626057,	USTL
+954925412869	^H62.5.U5	The Journal of economic education	00220485,	21524068,	USTL
+954925412873	^LB1131.A1 N32	Journal of educational measurementhelectronic resource	00220655,	17453984,	MIT
+954925412875	^LB1028 .J69	The Journal of educational research	00220671,	19400675,	MIT
+954925413879	^HF5382.5.U5 J68	Journal of employment counseling	00220787,	21611920,	MIT
+954925413884	^L11 .J77	The journal of experimental educationhelectronic resource	00220973,	19400683,	MIT
+954925413900	^G1 .J87	The Journal of geography	00221341,	17526868,	MIT
+954925414908	^L11 .J78	The Journal of higher education	00221546,	15384640,	MIT
+954925415952	^LC2701 .J6	The journal of Negro education	00222984,	21676437,	MIT
+954925417005	^ML1	Journal of research in music educationhelectronic resource	00224294,	19450095,	MIT
+954925418016	^HM251.A1 J6	The Journal of social psychology	00224545,	19401183,	MIT
+954925418021	^LC4001 .J6	The journal of special education	00224669,	15384764,	OXFORD
+954925420087	^Z671 .L7154	Library resources technical services	00242527,	21599610,	USTL
+954925420088	^Z671 .L6173	Library trendshe journal	00242594,	15590682,	USTL
+954925425187	^AS121	Minerva ba review of science learning and policy	00264695,	15731871,	USTL
+954925426219	^ML27	Notes	00274380,	1534150X,	USTL
+954925430321	^BF789.D4 O4	Omegahelectronic resource ban international journal for the study of dying death bereavement suicide and other lethal behaviors	00302228,	15413764,	MIT
+954925432385	^LJ121 .P4	The Phi Delta Kappanhelectronic resource	00317217,	19406487,	MIT
+954925436471	^BF1 .P68	The Psychological record	00332933,	21633452,	MIT
+954925436476	^LB1101	Psychology in the schoolshelectronic resource	00333085,	15206807,	MIT
+954925437506	^LB1050	Reading research quarterlyhelectronic resource	00340553,	19362722,	MIT
+954925437507	^LB1573 .R28	The reading teacherhelectronic resource	00340561,	19362714,	MIT
+954925437510	^HD7255.A2 R42	Rehabilitation counseling bulletin	00343552,	15384853,	OXFORD
+954925442604	^HT401 .R8	Rural sociology	00360112,	15490831,	OXFORD
+954925443634	^Q181.A1 S32	Science education	00368326,	1098237X,	USTL
+954925444668	^HN51 .S5	Social forces	00377732,	15347605,	USTL
+954925445688	^L11	Sociology of education	00380407,	19398573,	USTL
+954925446716	^H1 .S65	Social science quarterlyhelectronic resource	00384941,	15406237,	USTL
+954925449789	^LB1028	Theory into practice	00405841,	15430421,	USTL
+954925451846	^HV2350 .V7	The Volta reviewhelectronic resource	00428639,	21625158,	USTL
+954925455952	^Z1037.A1 C5	Childrens literature in education	00456713,	15731693,	USTL
+954925455959	^LB1051	Educational psychologist	00461520,	15326985,	USTL
+954925461118	^HV5128.U5 J68	Journal of alcohol and drug education	00901482,	21624119,	USTL
+954925463187	^H1 .T47	Theory and research in social educationhelectronic resource	00933104,	21631654,	MIT
+954925463188	^PR1 .C65	College literaturehelectronic resource	00933139,	15424286,	MIT
+954925466268	^BF77 .T43	Teaching of psychologyhelectronic resource	00986283,	15328023,	MIT
+954925467278	^Z671 .J58	Journal of academic librarianship	00991333,	18791999,	MIT
+954925473405	^HV1571 .O85	Journal of visual impairment blindnesshelectronic resource	0145482X,	15591476,	MIT
+954925474433	^RJ503.3 .J68	Journal of pediatric psychology	01468693,	1465735X,	OXFORD
+954925475459	^RT1 .J65	The Journal of nursing education	01484834,	19382421,	OXFORD
+954925477513	^RC423.A1 L25	Language speech hearing services in schools	01611461,	15589129,	USTL
+954925478520	^H1	Historical methods	01615440,	19401906,	USTL
+954925478528	^LB45	Anthropology education quarterlyhelectronic resource	01617761,	15481492,	MIT
+954925479545	^RJ499.A1	Journal of autism and developmental disordershelectronic resource	01623257,	15733432,	MIT
+954925479546	^LC3993.9 .J68	Journal for the education of the giftedhelectronic resource	01623532,	21629501,	MIT
+954925488820	^LB2301 .A3	AAUP bulletin bquarterly publication of the American Association of University Professors	01902946,	21625247,	MIT
+954925490875	^L11	American journal of educationhelectronic resource	01956744,	15496511,	MIT
+954925492910	^LB1051 .B38	Behavioral disordershelectronic resource bjournal of the Council for Children with Behavioral Disorders	01987429,	21635307,	MIT
+954925496034	^LB1051 .E976	European journal of psychology of educationhelectronic resource	02562928,	18785174,	MIT
+954925497056	^N81 .J68	The international journal of art design educationhelectronic resource	02609991,	14685949,	MIT
+954925502194	^LC4019.2 .T66	Topics in early childhood special educationhelectronic resource	02711214,	15384845,	MIT
+954925504231	^HQ1 .M4	Merrill Palmer quarterlyhelectronic resource	0272930X,	15350266,	MIT
+954925506306	^LB1051 .S373	School psychology reviewhelectronic resource	02796015,	2372966X,	MIT
+954925513476	^HQ767.8 .C446	Child care health and developmenthelectronic resource	03051862,	13652214,	MIT
+954925515524	^R735.A1 B7	Medical educationhelectronic resource	03080110,	13652923,	MIT
+954925523741	^BF311 .C552	Cognitive science	03640213,	15516709,	MIT
+954925534047	^LC4704 .L424	Learning disability quarterlyhelectronic resource bjournal of the Division for Children with Learning Disabilities	07319487,	2168376X,	MIT
+954925536090	^LB1028.5 .J613	Journal of educational computing research	07356331,	15414140,	MIT
+954925536110	^RJ496.A5 O78	Annals of dyslexiahelectronic resource ban interdisciplinary journal of the Orton Dyslexia Society	07369387,	19347243,	MIT
+954925539170	^LC5201 .A33	Adult education quarterlyhelectronic resource	07417136,	15523047,	MIT
+954925540172	^LC3950 .R45	Remedial and special educationhelectronic resource bRASE	07419325,	15384756,	MIT
+954925541195	^RA564.5 .J65	Journal of American college healthhelectronic resource bJ of ACH	07448481,	19403208,	MIT
+954925542207	^LB1027.5 .M38	Measurement and evaluation in counseling and developmenthelectronic resource	07481756,	19476302,	MIT
+954925543218	^HF5381.A1 O45	Journal of counseling and development	07489633,	15566676,	OXFORD
+954925549331	^LC3701 .J68	Journal of multicultural counseling and development	08838534,	21611912,	OXFORD
+954925552372	^LB1050 .J63	Reading research and instructionhelectronic resource bthe journal of the College Reading Association	08860246,	23313587,	MIT
+954925555423	^HF5381.A1 V55	The Career development quarterlyhelectronic resource	08894019,	21610045,	MIT
+954925560550	^LB3051 .A74	Applied measurement in educationhelectronic resource	08957347,	15324818,	MIT
+954925565696	^BF456	Reading and writinghelectronic resource	09224777,	15730905,	MIT
+954925567747	^PL492 .J683	Journal of East Asian linguistics	09258558,	15728560,	MIT
+954925581150	^RC321 .J78	Journal of intellectual disability researchhelectronic resource bJIDR	09642633,	13652788,	MIT
+954925587335	^BF408 .C743	Creativity research journal	10400419,	15326934,	MIT
+954925588351	^LB1051	Educational psychology reviewhelectronic resource	1040726X,	1573336X,	MIT
+954925589371	^LB1051	Learning and individual differenceshelectronic resource	10416080,	18733425,	MIT
+954925589375	^LB1028.3	Educational technology research and developmenthelectronic resource bETR D	10421629,	15566501,	MIT
+954925590394	^HQ12 .J66	Journal of the history of sexuality	10434070,	15353605,	MIT
+954925590399	^HV11 .J66	Journal of social work educationhelectronic resource	10437797,	21635811,	MIT
+954925592442	^LB2799 .J68	Journal of educational and psychological consultationhelectronic resource bthe official journal of the Association for Educational and Psychological Consultants	10474412,	1532768X,	MIT
+954925593477	^HQ796 .J6245	Journal of research on adolescencehelectronic resource bthe official journal of the Society for Research on Adolescence	10508392,	15327795,	MIT
+954925594516	^LC4001 .A25	Intervention in school and clinichelectronic resource	10534512,	15384810,	MIT
+954925595521	^LC4019.2 .J68	Journal of early interventionhelectronic resource	10538151,	21543992,	MIT
+954925595534	^HV741 .F89	The future of childrenhelectronic resource	10548289,	15501558,	MIT
+954925597600	^L11 .S82	Russian education and societyhelectronic resource	10609393,	15580423,	MIT
+954925598623	^E185.5	Black American literature forumhelectronic resource	10624783,	19456182,	MIT
+954925599638	^RJ499.A1 J63	Journal of emotional and behavioral disordershelectronic resource	10634266,	15384799,	MIT
+954925601702	^RJ506.D78 J68	Journal of child adolescent substance abusehelectronic resource	1067828X,	15470652,	MIT
+954925606840	^BF575.D35 J68	Journal of personal interpersonal losshelectronic resource	10811443,	23750243,	MIT
+954925609906	^RC423 .J7	Journal of speech language and hearing research bJSLHR	10924388,	15589102,	MIT
+954925610924	^Z671 .R23	Reference user services quarterlyhelectronic resource	10949054,	21635242,	MIT
+954925610932	^H1 .E76	The American journal of evaluationhelectronic resource	10982140,	15570878,	MIT
+954925612986	^Z1007 .C28	The Canadian journal of information and library sciencehelectronic resource	1195096X,	19207239,	MIT
+954925619143	^RC569.7 .J68	Journal of applied research in intellectual disabilitieshelectronic resource bJARID	13602322,	14683148,	MIT
+954925626339	^Z699.A1 D37	EContenthelectronic resource	15252531,		MIT
+954926246546	^HD7255.A2 J68	Journal of vocational rehabilitationhelectronic resource	10522263,	18786316,	MIT
+954926247568	^LB1775.6 .J68	Journal of early childhood teacher educationhelectronic resource	10901027,	17455642,	MIT
+954927378251	^QA1 .E35	Educational studies in mathematicshelectronic resource	00131954,	15730816,	MIT
+954927378252	^L18 .I6	International review of educationbInternationale Zeitschrift f�r Erziehungswissenschaft Revue internationale de p�dagogie	00208566,	15730638,	MIT
+954927379255	^L11 .S92	Studies in philosophy and educationhelectronic resource	00393746,	1573191X,	MIT
+954927380270	^L11 .I57	Interchange	08264805,	15731790,	MIT
+954927382294	^Q181.A1 S297	Science educationhelectronic resource	09267220,	15731901,	MIT
+954927383308	^T61	International journal of technology and design educationhelectronic resource	09577572,	15731804,	MIT
+954927383318	^Q181.A1 J63	Journal of science teacher educationhelectronic resource	1046560X,	15731847,	MIT
+954927383320	^Q183.3.A1 J68	Journal of science education and technology	10590145,	15731839,	MIT
+954927384330	^LB1028.43 .E366	Education and information technologieshelectronic resource	13602357,	15737608,	MIT
+954927384337	^LC189.8	Social psychology of educationhelectronic resource	13812890,	15731928,	MIT
+954927386369	^QA11.A1 J687	Journal of mathematics teacher educationhelectronic resource	13864416,	15731820,	MIT
+954927386375	^L11 .L43	Learning environments researchhelectronic resource	13871579,	15731855,	MIT
+954927516543	^Z673.A5 B82	ALA bulletin	00029769,	21635129,	MIT
+954927528818	^LB2300 .C4	Change in higher education	00091383,	19399146,	MIT
+954927546239	^RT90 .J6	The Journal of continuing education in nursinghelectronic resource	00220124,	19382472,	MIT
+954927550324	^Z684 .L75	Library technology reports	00242586,	19454538,	MIT
+954927573902	^LB1103 .S6	Monographs of the Society for Research in Child Developmenthelectronic resource	0037976X,	15405834,	MIT
+954927608795	^RJ245 .P4	Pediatric nursinghelectronic resource	00979805,		MIT
+954927615958	^JK2403 .S76	State legislatureshelectronic resource	01476041,	01470641,	MIT
+954927625193	^HQ767.8 .N48	New directions for child developmenthelectronic resource	01952269,	23313498,	MIT
+954927658983	^HV741 .C5362	Children today	03614336,	21691894,	USTL
+954927659000	^HD7255.A2 A19	American rehabilitation bAR	03624048,	21698554,	USTL
+954927700063	^RA418 .J68	Journal of health social policy	08977186,	15404064,	HKSYU
+954927721493	^RF286 .A44	American journal of audiologyhelectronic resource	10590889,	15589137,	MIT
+954927743899	^HQ767.8 .N48	New directions for child and adolescent developmenthelectronic resource	15203247,	15348687,	MIT
+954928372939	^L11 .J775	The Journal of general education	00213667,	15272060,	MIT
+954928373951	^HQ1186.U6 N87	NWSA journal ba publication of the National Womens Studies Association	10400656,	15271889,	MIT
+954928416979	^HV2350	Journal of deaf studies and deaf education	10814159,	14657325,	USTL
+954928437991	^RC553.A88 A875	Autismhelectronic resource bthe international journal of research and practice	13623613,	14617005,	MIT
+954928480202	^LC5201 .C69	Convergencehelectronic resourcebConvergencia Convergence	00108146,		MIT
+954928481223	^L11 .E5135	Educational theoryhelectronic resource	00132004,	17415446,	MIT
+954928495415	^L11 .J86	Journal of thoughthelectronic resource	00225231,	2375270X,	MIT
+954928504551	^L10 .P24	Paedagogica historicahelectronic resource	00309230,	1477674X,	MIT
+954928529978	^S946 .E54	The Journal of environmental education	00958964,	19401892,	MIT
+954928537119	^S530 .N33	NACTA journalhelectronic resource	01494910,		MIT
+954928620291	^HC79.E5 A45	Alternatives journal	12057398,		MIT
+954933183408	^HQ792.G7	Children society	09510605,	10990860,	OXFORD
+957956063001	^LB3051	Educational assessment	10627197,	15326977,	USTL
+957956063006	^LC4704	Learning disabilities research practice	09388982,	15405826,	USTL
+957956063012	^L11	Educational studies ba journal of the American Educational Studies Association	00131946,	15326993,	USTL
+957956063013	^BF712	Applied developmental science	10888691,	1532480X,	USTL
+958480155093	^LB1028.43 .J68	Journal of interactive learning research	1093023X,		USTL
+958480243420	^LB1043 .M357	Media and methods	00256897,		USTL
+958480246480	^Z675.B8 J65	Journal of business finance librarianship	08963568,	15470644,	HKSYU
+958480246484	^TA1635 .L37	E media professionalhelectronic resource	1090946X,		MIT
+958480254654	^Z713 .J68	Journal of interlibrary loan document delivery information supplyhelectronic resource	1072303X,	15403572,	MIT
+958480254661	^HC79.I55 I5	Information infrastructure and policyhelectronic resource	13837605,	18758738,	MIT
+958480269940	^LB1705 .J69	Journal of technology and teacher educationhelectronic resource	10597069,	19435924,	MIT
+958480288338	^LB1028.3 .J69	THE journal btechnological horizons in education	0192592X,	21692319,	USTL
+958480289347	^LB1043 .A85	TechTrends	87563894,	15597075,	USTL
+958480290368	^QA13 .M16	Mathematics and computer education	07308639,		USTL
+958480290375	^LC4023 .J68	Journal of special education technologyhelectronic resource	01626434,	23813121,	MIT
+958480290376	^LB2846 .A78	Journal of research on technology in educationhelectronic resource bJRTE	08886504,		MIT
+958480290379	^LB1028.5 .J618	Journal of educational multimedia and hypermediahelectronic resource	10558896,	19435916,	MIT
+958480291383	^QA20.C65 J68	The Journal of computers in mathematics and science teachinghelectronic resource	07319258,	19435908,	MIT
+958480291384	^Q183.U6 J68	Journal of college science teachinghelectronic resource	0047231X,	19434898,	MIT
+958480291392	^Z699.A1 I613	Information services usehelectronic resource	01675265,	18758789,	MIT
+958480291403	^G1 .F6	The American Geographical Societys focus on geographyhelectronic resource	00155004,		MIT
+958480292411	^LB2300 .E4	Educom review	10459146,	23312904,	MIT
+958480292415	^Z668 .E385	Education for informationhelectronic resource	01678329,	18758649,	MIT
+958480292421	^LB1028.43 .C6475	Computers in the schoolshelectronic resource	07380569,	15287033,	MIT
+958480308480	^LB1028.3 .J68	Journal of educational technology systems	00472395,	15413810,	MIT
+958480309483	^Z678.9.A1 S6	Computers in libraries	10417915,		MIT
+958480310490	^Z672 .R47	Resource sharing information networkshelectronic resource	07377797,	15411125,	MIT
+958480310491	^Z711 .R444	The reference librarianhelectronic resource	02763877,	15411117,	MIT
+958480310493	^QA76.8.I2594 P3	PC world	07378939,	19449143,	MIT
+958480310500	^Z678 .J68	Journal of library administration	01930826,	15403564,	MIT
+959328102022	^HV3004 .B75	British journal of learning disabilitieshelectronic resource	13544187,	14683156,	MIT
+960238428025	^D839 .A383	The American ba magazine of ideas	10473572,		MIT
+960238480082	^LC3986.G7 B76	British journal of special educationhelectronic resource	09523383,	14678578,	MIT
+960238494102	^LA410	Canadian journal of educationhelectronic resource	03802361,	19185979,	MIT
+960238503115	^HV701	Child adolescent social work journalhelectronic resource	07380151,	15732797,	MIT
+960238505118	^LB1101 .C43	Child study journalhelectronic resource	00094005,	21688923,	MIT
+960238517124	^LA229 .C64	College student journalhelectronic resource	01463934,		MIT
+960238526139	^AS30 .C593	Community reviewhelectronic resource bCR	01638475,	21686769,	MIT
+960238537149	^L11 .T37	Contemporary educationhelectronic resource cIndiana State University	00107476,		MIT
+960238547164	^E185.5 .C92	The crisis	15591573,	21692734,	USTL
+960238581208	^LB1139.25	Early childhood education journal	10823301,	15731707,	USTL
+960238581209	^LB1101 .E27	Early education and developmenthelectronic resource	10409289,	15566935,	MIT
+960238587212	^L11 .E2	Educationhelectronic resource	00131172,		MIT
+960238588213	^L11 .E32	Education treatment of childrenhelectronic resource	07488491,	19348924,	MIT
+960238589215	^LB1028.24 .E38	Educational action researchhelectronic resource	09650792,	17475074,	MIT
+960238590216	^LA217 .E3668	Educational foundationshelectronic resource	10478248,		MIT
+960238604233	^LC2701 .I5822	Equity excellence in educationhelectronic resource bUniversity of Massachusetts School of Education journal	10665684,	15473457,	MIT
+960238608244	^B840 .E85	Etc;ba review of general semantics	0014164X,	21689245,	MIT
+960238637268	^RJ506.A9 F63	Focus on autistic behaviorhelectronic resource	08871566,		MIT
+960238693329	^LA227.3	Innovative higher educationhelectronic resource	07425627,	15731758,	MIT
+960238731373	^PQ4001 .I8	Italicahelectronic resource bbulletin of the American Association of Teachers of Italian	00213020,	23256672,	MIT
+960238756397	^RJ499.A1 J595	Journal of child and family studieshelectronic resource	10621024,	15732843,	MIT
+960238757398	^HV6570 .J68	Journal of child sexual abusehelectronic resource	10538712,	15470679,	MIT
+960238770406	^LB1027 .J635	Journal of curriculum and supervisionhelectronic resource	08821232,		MIT
+960238771408	^HV1551 .J67	Journal of disability policy studieshelectronic resource	10442073,	15384802,	MIT
+960238788419	^HV697 .J68	Journal of family social workhelectronic resource	10522158,	15404072,	MIT
+960238801433	^LB1051 .J65	Journal of instructional psychologyhelectronic resource	00941956,		MIT
+960238817443	^HV3176 .J68	Journal of multicultural social workhelectronic resource	10428224,	23314516,	MIT
+960238820447	^HV9261 .O33	Journal of offender rehabilitationhelectronic resource	10509674,	15408558,	MIT
+960238852474	^HD62.4 .J68	Journal of teaching in international businesshelectronic resource	08975930,	15286991,	MIT
+960238854477	^RF290.A1 J682	Journal of the American Deafness and Rehabilitation Associationhelectronic resource bJADARA	08999228,		MIT
+960238865488	^PN4788 .J63	Journalism mass communication educatorhelectronic resource	10776958,	21614326,	MIT
+960238895523	^D16.3 .M33	Magazine of history cOrganization of American Historians	0882228X,	19382340,	MIT
+960238904538	^L56 .M43	Mediterranean journal of educational studieshelectronic resource	10245375,		MIT
+960238919555	^LC1099.3 .M82	Multicultural educationhelectronic resource bthe magazine of the National Association for Multicultural Education	10683844,		MIT
+960238919556	^GN345.6 .M85	MultiCultural reviewhelectronic resource bdedicated to a better understanding of ethnic racial and religious diversity	10589236,		MIT
+960238958614	^JA1 .P48	Perspectives on political sciencehelectronic resource	10457097,	19305478,	MIT
+960238983645	^HV888 .P65	Preventing school failurehelectronic resource	1045988X,	19404387,	MIT
+960239007669	^HX1 .R36	Radical teacher	01914847,	19410832,	MIT
+960239011679	^HV741 .A16	Reclaiming children and youthhelectronic resource bjournal of emotional and behavioral problems	10895701,		MIT
+960239017687	^Z5813 .R4	Research in educationhelectronic resource	00345237,	20504608,	MIT
+960239047739	^LC3991 .R64	Roeper reviewhelectronic resource	02783193,	1940865X,	MIT
+960239085776	^D16.3 .S65	The social studieshelectronic resource ba periodical for teachers and administrators	00377996,	2152405X,	MIT
+960239125835	^LC5215 .S76	Studies in the education of adultshelectronic resource	02660830,	14789833,	MIT
+960239141856	^LB1049.9 .A97	The Australian journal of language and literacyhelectronic resource cARA	10381562,	18394728,	MIT
+960239142857	^P115 .B54	The Bilingual reviewhelectronic resourcebLa Revista biling�e	00945366,	2327624X,	MIT
+960239190882	^LC5101 .U75	The Urban review	00420972,	15731960,	MIT
+960239197890	^L11 .T53	Thrust for educational leadershiphelectronic resource	10552243,		MIT
+960239201897	^LB2361.5 .T73	Transformationshelectronic resource bthe New Jersey Project journal	10525017,	23779578,	MIT
+960239213914	^AS36.W79 A37	The Wilson quarterly	03633276,	2328529X,	MIT
+962824841003	^LB3205 .A5	American school universityhelectronic resource	00030945,	00040945,	MIT
+962824841004	^L11 .A81	American secondary educationhelectronic resource	00031003,	23269618,	MIT
+962824843007	^L11 .J88	Arts and activitieshelectronic resource	00043931,		MIT
+962824851017	^L11 .C53	The clearing househelectronic resource	00098655,	1939912X,	MIT
+962824856022	^L11 .E265	The education digesthelectronic resource	0013127X,	19490275,	MIT
+962824864025	^D1 .H8177	The history teacherhelectronic resource	00182745,	19452292,	MIT
+962824865026	^Z1037.A1 A15	The horn book magazinehelectronic resource	00185078,		MIT
+962824878029	^LJ75 .K3273	Kappa Delta Pi recordhelectronic resource	00228958,	21631611,	MIT
+962824886041	^ML1	Music educators journalhelectronic resource	00274321,	19450087,	MIT
+962824888043	^PN2 .N28	New England Reading Association journalhelectronic resource	00284882,		MIT
+962824892046	^GV201 .P56	The Physical educatorhelectronic resource	00318981,	21601682,	MIT
+962824893048	^Z119 .P8985	Print	00328510,		MIT
+962824897049	^LB1050 .R412	Reading horizonshelectronic resource	00340502,		MIT
+962824897050	^LB1050.5 .R39	Reading improvementhelectronic resource	00340510,		MIT
+962824899052	^Q181.A1 S29	Science activitieshelectronic resource	00368121,	19401302,	MIT
+962824905056	^LC3950 .T4	Teaching exceptional childrenhelectronic resource	00400599,	21635684,	MIT
+962824913067	^HQ773 .E93	The Exceptional parenthelectronic resource	00469157,		OXFORD
+962824920074	^LB2328 .C69	Community college review	00915521,	19402325,	USTL
+962824927087	^Z1035.A1 C18	Curriculum review	01472453,	19449534,	USTL
+962824930095	^LC1090 .I553	International education	01605429,		USTL
+962824935102	^LB1027.5 .N482	New directions for student services	01647970,	15360695,	USTL
+962824938109	^LB2328 .N473	New directions for community collegeshelectronic resource	01943081,	15360733,	MIT
+962824941113	^LB1028 .J69	Journal of research in childhood educationhelectronic resource bJRCE cAssociation for Childhood Education International	02568543,	21502641,	MIT
+962824943116	^L13 .N46523	Principalhelectronic resource	02716062,		MIT
+962824946121	^LC5251 .J78	The learning professionalhelectronic resource	0276928X,		MIT
+962824948128	^Z675.S3 E43	Emergency librarianhelectronic resource	03158888,		MIT
+962824956136	^Z675.S3 B65	The book reporthelectronic resource	07314388,		MIT
+962824957138	^LB2351.2 .J68	The Journal of college admissionshelectronic resource bjournal of the National Association of College Admissions Counselors	07346670,		MIT
+962824958139	^LB1705 .C34	Teacher education quarterlyhelectronic resource	07375328,		MIT
+962824960141	^LC2781 .B464	Black issues in higher educationhelectronic resource	07420277,		MIT
+962824961142	^T61 .M28	Technology and engineering teacherhelectronic resource	07463537,	21681945,	MIT
+962824963147	^LB1034 .J68	The journal of classroom interactionhelectronic resource	07494025,	23766670,	MIT
+962824963148	^LB1027.5 .G78	Guidance counsellinghelectronic resource	08315493,		MIT
+962824964151	^HF1101 .J6	Journal of education for businesshelectronic resource	08832323,	19403356,	MIT
+962824964152	^LB2300 .A84	ASHE ERIC higher education reporthelectronic resource	08840040,	15360709,	MIT
+962824966157	^LB1705 .S9	The Teacher educatorhelectronic resource bofficial organ of the Indiana Association of Teacher Educators	08878730,	19388101,	MIT
+962824968161	^LB1501 .E27	Teaching pre K 8helectronic resource	08914508,		MIT
+962824971169	^HV1571 .I523	REviewhelectronic resource	08991510,	19404018,	MIT
+962824972172	^Z870.A1 A78	Australasian public libraries and information serviceshelectronic resource	10305033,	18392466,	MIT
+962824976183	^LC5251 .L493	Adult learninghelectronic resource	10451595,	21624070,	MIT
+962824979189	^KF4102.5 .Y4	The Yearbook of education lawhelectronic resource	10490264,		MIT
+962824980190	^LC5251 .N48	New directions for adult and continuing educationhelectronic resource	10522891,	15360717,	MIT
+962824981192	^Z671 .L537	Library mosaics	10549676,		MIT
+962824982194	^LA622 .W42	European educationhelectronic resource ba journal of translations	10564934,	19447086,	MIT
+962824982196	^T61 .A83	ASEE prism	10568077,	19306148,	MIT
+962824983199	^LA1130 .C38	Chinese education and societyhelectronic resource	10611932,	19447116,	MIT
+962824984201	^T61 .S35	Tech directions	10629351,	19403100,	USTL
+962824984202	^NK1 .A792	Arts education policy review	10632913,	19404395,	USTL
+962824988209	^LC3991 .G54	Gifted child today magazine	10762175,	2162951X,	USTL
+962824993223	^Z675.S3 T23	Teacher librarian	14811782,		USTL
+962824995231	^L11 .I4	College teaching	87567555,	19308299,	USTL
+963017360014	^LB1050	Reading	00340472,	14679345,	USTL
+963017395026	^LB1050.6	Journal of research in reading	01410423,	14679817,	USTL
+963017453042	^BV4376	Pastoral care in education	02643944,	14680122,	USTL
+963017462048	^P118	Second language research	02676583,	14770326,	USTL
+963017465050	^LB1029.R4 S87	Support for learning	02682141,	14679604,	USTL
+963017740165	^RJ503.3 .C54	Clinical child and family psychology review	10964037,	15732827,	USTL
+963017778205	^HF5549.5.T7	International journal of training and development	13603736,	14682419,	USTL
+963017793229	^BL41	Teaching theology religion	13684868,	14679647,	USTL
+963017817258	^LB1027 .J68	Journal of educational change	13892843,	15731812,	USTL
+963017889379	^LB1731.75 .C68	Counselor education and supervision	00110035,	15566978,	USTL
+963017890380	^AP1	Current events	00113492,		USTL
+963017890381	^LB1585 .C87	Current science	00113905,		USTL
+963017898391	^LB1027.5 .E38	Elementary school guidance counseling	00135976,		USTL
+963017910413	^L11 .H5	The High school journal	00181498,	15345157,	USTL
+963017930429	^AP201 .J68	Junior scholastic	00226688,		USTL
+963017932433	^L13 .A6	Liberal educationhelectronic resource	00241822,		OXFORD
+963017933434	^AP2 .L574	Literary cavalcade	00244511,	21681937,	USTL
+963017939440	^AP2 .M628	Modern age	00267457,	21685975,	USTL
+963017964477	^LA201	Scholastic scope	00366412,	19305680,	USTL
+963017964478	^LB1027.5 .S28	The School counselor	00366536,		USTL
+963017964479	^Q1 .S28	School science and mathematics	00366803,	19498594,	USTL
+963017969487	^Z965 .S767	Quarterly bulletin of the South African Library	00382418,		USTL
+963017975497	^D16.4.G7 T4	Teaching history	00400610,		USTL
+963017986515	^Q183.43.A8 A8	The Australian science teachers journal	00450855,		USTL
+963018011548	^QA276.18	Teaching statistics	0141982X,	14679639,	USTL
+963018016552	^LC47 .I6	Independent school	01459635,		USTL
+963018021557	^E185.5	Black American literature forum	01486179,	23261536,	USTL
+963018025565	^LC461 .N438	Counseling and values	01607960,	2161007X,	USTL
+963018041592	^LC2781 .B45	The Black collegian online	01923757,	19437382,	USTL
+963018051614	^QA135.5.	Scholastic math magazine	01988379,		USTL
+963018054622	^RA440	Current health 1	0199820X,		USTL
+963018055627	^GF26 .C67	Connect;bUNESCO UNEP environmental education newsletter	02504499,		USTL
+963018057628	^Z671 .S69	South African journal of library and information science	02568861,	23048263,	USTL
+963018092738	^LB1631 .W75	Writing cCurriculum Innovations	02797208,		USTL
+963018107753	^Z675.S3 S29115	School library journal bSLJ	03628930,		USTL
+963018118773	^NK1160 .D4	Design for arts in education	07320973,	2375043X,	USTL
+963018123781	^LB1715 .S79a	The journal of humanistic counseling education and developmenthelectronic resource	07356846,	21644683,	MIT
+963018123782	^LB1583.5	Scholastic newshelectronic resource	07360533,		MIT
+963018123783	^LB1583.5	Scholastic newshelectronic resource	0736055X,		MIT
+963018123784	^LB1583.5	Scholastic newshelectronic resource	07360576,		MIT
+963018124786	^AP201 .S43	Scholastic newshelectronic resource	07360614,		MIT
+963018126791	^LB1049.9 .R42	Reading today ba bimonthly newspaper of the International Reading Association	07374208,	21608083,	USTL
+963018129802	^GV191.2 .C36	The Camping magazine	07404131,	00082376,	USTL
+963018134810	^HF5381.A1 C2853	Career world cCurriculum Innovations Inc	07441002,		USTL
+963018152856	^TX1 .P7	Scholastic choices	0883475X,	19305664,	USTL
+963018154862	^LC1041 .A6	Vocational education journal	08848009,		USTL
+963018156867	^Z692.S5 S55	SISAC news bthe report of the Serials Industry Systems Advisory Committee	08853959,		USTL
+963018174913	^LB2331 .J68	Journal of developmental education	08943907,		USTL
+963018178927	^LB2300 .C661	Connection bNew Englands journal of higher education	08956405,		USTL
+963018200964	^LC5201 .A352	Adults learning	09552308,		USTL
+963018211983	^CD1 .S2	SA archives journalhelectronic resource	10122796,		MIT
+963018215998	^HQ799.A8 Y66x	Youth studies Australiahelectronic resource	10382569,		MIT
+963018218006	^Q1 .S8147	Science worldhelectronic resource	10411410,		MIT
+963018218007	^LB2328 .C6668	Community college weekhelectronic resource	10415726,	23282045,	MIT
+963018222016	^Z675.S3 L52	Library talkhelectronic resource	1043237X,		MIT
+963018237055	^L11 .I544	Instructorhelectronic resource	10495851,	21682224,	MIT
+963018241068	^LC5201 .A3	Adult basic educationhelectronic resource	1052231X,		MIT
+963018241069	^E97.55 .T75	Tribal collegehelectronic resource bjournal of American Indian higher education	10525505,	21633630,	MIT
+963018247081	^HV9275 .J68	Journal of addictions offender counselinghelectronic resource	10553835,	21611874,	MIT
+963018250090	^T11 .T299	Technical communication quarterly bTCQ	10572252,	15427625,	MIT
+963018252094	^HQ767.8 .B76	The Brown University child and adolescent behavior letterhelectronic resource bmonthly reports on the problems of children and adolescents growing up	10581073,	15567575,	MIT
+963018264114	^RJ1 .C5	Child health alerthelectronic resource	10644849,		OXFORD
+963018274141	^Z699.A1 S4	Searcherhelectronic resource bthe magazine for database professionals	10704795,		OXFORD
+963018280159	^LB1028.3 .T39675	Technology connectionhelectronic resource	10744851,		OXFORD
+963018281163	^LB1028.3 .M86	MultiMedia schools	10750479,		USTL
+963018285172	^LB1 .J86	The journal of secondary gifted education bJSGE	10774610,	21629528,	USTL
+963018293200	^LB1051 .I64	Issues in education bcontributions from educational psychology	10809724,	18792014,	USTL
+963018296205	^HG152 .F56	Financial practice and education bFPE journal of the Financial Management Association	10820698,		USTL
+963018297207	^LB1570 .C8	Curriculum administrator	10825495,		USTL
+963018301223	^TX326.A1 .F33	Family economics and nutrition reviewhelectronic resource cCenter for Nutrition Policy and Promotion	10859985,	1554897X,	MIT
+963018309249	^LC1041 .A6	Techniqueshelectronic resource	10910131,		MIT
+963018321293	^RJ505.B4 J68	Journal of positive behavior interventionshelectronic resource	10983007,	15384772,	MIT
+963018329321	^LB1556.7 .A87	Primary middle years educatorhelectronic resource	13244825,		MIT
+963018353367	^LB1043.2.A8 A87	Australian screen educationhelectronic resource	14431629,		MIT
+963018358384	^Z286.O68 E45	Emedia magazinehelectronic resource	15254658,		MIT
+969963424003	^RJ506.B44 E46	Emotional and behavioural difficultieshelectronic resource bthe journal of the Association of Workers for Children with Emotional and Behavioural Difficulties	13632752,	17412692,	MIT
+974392603027	^LB3201.P43	PEB exchange bthe journal of the OECD Programme on Educational Building	10189327,	16097548,	MIT
+110974993510305	^HV701	Child youth care forumhelectronic resource	10531890,	15733319,	MIT
+110974993863504	^LB1060.2 .J68	Journal of behavioral educationhelectronic resource	10530819,	15733513,	MIT
+110975405638444	^LA226 .C55	The Chronicle of higher education almanac	00095982,	19311362,	MIT
+110975413975892	^Z1035.A1 B65	The booklisthelectronic resource cAmerican Library Association	00067385,		MIT
+110975413975948	^Q181 .S38	The science teacher	00368555,	19434871,	USTL
+110975413975996	^HQ759 .M284	Working mother	0278193X,		USTL
+110975506071643	^BF637.C6	Journal of mental health counseling	10402861,	21635749,	USTL
+110975506071745	^T61 .J64	Journal of engineering education cAmerican Society for Engineering Education	10694730,	21689830,	MIT
+110975506071771	^RC628.O24	Healthy weight journalhelectronic resource	10750169,		MIT
+110975595961376	^QA11.A1 T43	Teaching mathematics and its applicationshelectronic resource cthe Institute of Mathematics and Its Applications	02683679,	14716976,	MIT
+110975946727543	^TJ1 .I585	The International journal of mechanical engineering education	03064190,	20504586,	MIT
+110975946727599	^HQ56 .S3755	Sex educationhelectronic resource	14681811,	14720825,	MIT
+110975946727635	^L11	Scholastic parent child	10700552,	21682240,	USTL
+110975946727637	^LB1139.2 .S36	Scholastic early childhood today	10701214,	21682283,	USTL
+110975946727647	^H1 .E84	Ethos P 6 cthe Victorian Association of Social Studies Teachers Inc	13281925,		USTL
+110975946727663	^LB1028 .E42	Educational research quarterly bERQ	01965042,		USTL
+110975946727671	^L11 .J765	The journal of experiential education	10538259,	2169009X,	USTL
+110975955581100	^QA11.A1 .M37	Mathematics teaching	00255785,		USTL
+110975955581158	^BV4012 .H82	Human developmenthelectronic resource cthe Jesuit Educational Center for Human Development	01973096,		MIT
+110975955581200	^LB3051 .E27	Educational measurement issues and practicehelectronic resource	07311745,	17453992,	MIT
+110975955581216	^LC197 .F476	Feminist teacherhelectronic resource	08824843,	19346034,	MIT
+110975955581222	^Z671	Libraries culturehelectronic resource	08948631,	15347591,	MIT
+110975955581250	^LB1028.43 .C53	Technology learninghelectronic resource	10536728,		MIT
+110975955581256	^Z1037 .B7218	Book linkshelectronic resource	10554742,	21635269,	MIT
+110976010040260	^L11 .E393	Education week	02774232,	19448333,	USTL
+110976039149779	^N81	Art education	00043125,	23255161,	USTL
+110976039149787	^L11 .E393	Education week on the webhelectronic resource	10466193,		USTL
+110976039689407	^Q181.A1 S86	Super science	1010144X,		USTL
+110976116299585	^PN1009.A1 S567	Skipping stones	0899529X,		USTL
+110976184943559	^ML1 .A5	The American music teacher	00030112,		USTL
+110976186421937	^Z675.S3 O577	Orana	00456705,		USTL
+110976549881461	^LB1028.5 .P72	Innovations in education and teaching internationalhelectronic resource	14703297,	14703300,	MIT
+110976725599528	^P1 .B31x	Babelhelectronic resource	00053503,	00053511,	MIT
+110976725601388	^LB2300 .A97 x	The Australian universities reviewhelectronic resource bjournal of the Federation of Australian University Staff Associations	08188068,		MIT
+110976725706582	^BV1460 .B74	British journal of religious educationhelectronic resource	01416200,	17407931,	MIT
+110978966549014	^LA132.A1 M68	Notes and abstracts in American and international educationhelectronic resource cSchool of Education The University of Michigan	00293962,		MIT
+110978966549694	^LA210 .P57	Planning changinghelectronic resource	00320684,		MIT
+110978966550242	^PE1121 .R32	Readhelectronic resource	00340359,		MIT
+110978966550740	^LB1585 .S34	Science and children	00368148,	19434812,	USTL
+110978966550990	^H62.5.U5 S64	Social science recordhelectronic resource	00377872,		MIT
+110978966551398	^N81	Studies in art education	00393541,	23258039,	USTL
+110978966551906	^ML1 .T51	Triadhelectronic resource bofficial publication of the Ohio Music Education Association	00412511,		MIT
+110978966552778	^Z733 .Y17G	The Yale University library gazette	00440175,	21560854,	MIT
+110978966552850	^L51 .Z58	Zivot i skolahelectronic resource	00444855,		MIT
+110978966553124	^HT390	The review of regional studieshelectronic resource	0048749X,	15530892,	MIT
+110978966553488	^LC5201 .J64	Journal of adult educationhelectronic resource	00904244,		MIT
+110978966553906	^L11 .M65	Middle school journalhelectronic resource	00940771,	23276223,	MIT
+110978966555310	^LB3226 .J68	The Journal of college and university student housinghelectronic resource	0161827X,		MIT
+110978966556712	^LB2331.72 .N48	New directions for higher educationhelectronic resource	02710560,	15360741,	MIT
+110978966556714	^LB1028 .N357	New directions for institutional researchhelectronic resource	02710579,	1536075X,	MIT
+110978966556828	^K10 .O873	Journal of law educationhelectronic resource	02756072,		MIT
+110978966556908	^PE65 .C34	California Englishhelectronic resource	02791161,		MIT
+110978966557252	^LA229 .N38	National on campus reporthelectronic resource	03006646,		MIT
+110978966558014	^HD5850.A6 A97 x	Australian bulletin of labourhelectronic resource	03116336,		OXFORD
+110978966558108	^LC71.2 .E35	Educational planninghelectronic resource	03159388,		MIT
+110978966560166	^PE65 .V5	Virginia English bulletinhelectronic resource	0504426X,		MIT
+110978966560434	^LC2701 .N43	The Negro educational reviewhelectronic resource	05481457,	05488197,	MIT
+110978966561048	^LC5201 .J68	The journal of continuing higher educationhelectronic resource	07377363,	19484801,	MIT
+110978966561108	^LB1027 .C37	Catalyst for changehelectronic resource bjournal of the National School Development Council	07392532,		MIT
+110978966561306	^PN2016.N32 A3	Campus activities programminghelectronic resource	07462328,		MIT
+110978966561782	^LB1025.3 .T4	Teaching learninghelectronic resource	08879486,	19308906,	MIT
+110978966561906	^LB1050 .C34	The California readerhelectronic resource ba quarterly publication of the California Reading Association	08926964,	21590273,	MIT
+110978966562838	^H1 .S65	Social studies reviewhelectronic resource bjournal of the California Council for the Social Studies	10566325,		MIT
+110978966563202	^ML1 .K64	The Kod�ly envoyhelectronic resource	10841776,		MIT
+110978966563228	^GV561 .S3	Coach and athletic directorhelectronic resource	10872000,	21682313,	MIT
+110978966563288	^Z675.S3 K67	Knowledge questhelectronic resource bjournal of the American Association of School Librarians	10949046,	21635234,	MIT
+110978976472229	^L26	Cahiers p嶮agogiques	0008042X,	22687963,	MIT
+110978976472357	^ML5 .C25	The Canadian music educatorhelectronic resource	00084549,		MIT
+110978976473545	^Z671 C213	Feliciterhelectronic resource	00149802,		MIT
+110978976474239	^GR1 .H4	Hessische Bl酹ter f僡 Volkskundehelectronic resource	0018103X,		MIT
+110978976476403	^L11 .P957	Prospectshelectronic resource	00331538,	15739090,	MIT
+110978976480629	^BF637.C6 C335	Canadian journal of counsellinghelectronic resource	08283893,	19200994,	MIT
+110978976777287	^LB1140.A1	International journal of early childhood	00207187,	18784658,	USTL
+110978977120166	^U4 .K85	Handlingar och tidskrifthelectronic resource	00235369,		MIT
+110978977121574	^PE1068.A7 R45	RELC journalhelectronic resource	00336882,	1745526X,	MIT
+110978977121752	^L41 .R53	Revista espa�ola de pedagog�ahelectronic resource	00349461,	21740909,	MIT
+110978977124720	^LB1633 .L374	Language learning journalhelectronic resource bjournal of the Association for Language Learning	09571736,	17532167,	MIT
+110978977275632	^L11 .A8	The American school board journalhelectronic resource	00030953,		MIT
+110978977275654	^ML27.U5 A8356	American string teacherhelectronic resource	00031313,		MIT
+110978977277850	^L10 .F30	The Delta Kappa Gamma bulletinhelectronic resource	00118044,	21695326,	MIT
+110978977277852	^LJ121.D35 D44a	Delta Pi Epsilon journalhelectronic resource	00118052,		MIT
+110978977280790	^PE1065 .K4	Kentucky English bulletinhelectronic resource	00230197,		MIT
+110978977283078	^LB2805 .S412	The School administratorhelectronic resource	00366439,		OXFORD
+110978977285364	^G73	Know your world extrahelectronic resource	01634844,		OXFORD
+110978977285458	^BF637.C6 C633	Counseling and human developmenthelectronic resource	01937375,		OXFORD
+110978977286312	^Z5814.P8 C66$aLB2343	Higher education abstracts	07484364,	21501092,	OXFORD
+110978977287078	^LB1029.M75 M63	Montessori lifehelectronic resource ba publication of the American Montessori Society	10540040,		OXFORD
+110978977287198	^LB2300	Community college journal	10671803,	2151755X,	USTL
+110978977287368	^ML27.U5 N2652	Journal of singinghelectronic resource bthe official journal of the National Association of Teachers of Singing	10867732,		MIT
+110978977287446	^LB1027.5 .P659	Professional school counselinghelectronic resource	10962409,	2156759X,	MIT
+110978977560225	^LB1051 .N38x	Communiquéhelectronic resource	0164775X,		OXFORD
+110978977561013	^LB2338 .S36	Student aid newshelectronic resource	01942212,	1943751X,	MIT
+110978977561211	^LB1715 .P744	The Professional educatorhelectronic resource	0196786X,	21626618,	MIT
+110978977563625	^L45 .E4595	Educaci�nhelectronic resource brevista de la Universidad de Costa Rica	03797082,	22152644,	MIT
+110978977565513	^LC1551 .O533	On campus with womenhelectronic resource	07340141,		MIT
+110978977566209	^LB1583.5	Weekly readerpEdition 4helectronic resource	08903190,		MIT
+110978977566959	^LB1570	Journal of curriculum theorizinghelectronic resource	1057896X,		MIT
+110978977567107	^H62.A1 N4	New directions for evaluationhelectronic resource	10976736,	1534875X,	MIT
+110978977567429	^LB1731 .J67	Journal of in service educationhelectronic resource	13674587,	17475082,	MIT
+110978977739629	^G72 .G43x	Geographical educationhelectronic resource	00850969,		MIT
+110978977741303	^Z675.S3 S29112	School libraries in Canadahelectronic resource cCanadian School Library Association	02273780,	17108535,	MIT
+110978977741789	^LB1025.2 .N456	New directions for teaching and learninghelectronic resource	02710633,	15360768,	MIT
+110978977742331	^LC5201 C16	Canadian journal of university continuing educationhelectronic resourcebRevue canadienne de l�ducation permanente universitaires	03189090,		MIT
+110978977744563	^QA75.5 .C7M	Learning and leading with technologyhelectronic resource bthe ISTE journal of educational technology practice and policy	10825754,	1945080X,	MIT
+110978977981754	^CS81-229	Education in Canada a statistical review for the period helectronic resource cStatistics Canada Education Science and Culture Division Projections Section	07063679,		MIT
+110978977982254	^K6 .R44	Free speech yearbookhelectronic resource	08997225,	21681430,	MIT
+110978978189646	^LA1235 .J87	Jurnal pendidikanhelectronic resource	01266020,		MIT
+110978978190216	^Q183.4.A8 R44	Research in science educationhelectronic resource	0157244X,	15731898,	MIT
+110978978190806	^ML1 .C9154	Contributions to music educationhelectronic resource	01904922,		MIT
+110978978194560	^PE1065 .L65	Louisiana English journalhelectronic resource	04567463,		MIT
+110978978197054	^E172 .O15	OAH newsletterhelectronic resource cOrganization of American Historians	10591125,	19449127,	MIT
+110978978378817	^LB1567 .R83	The rural educatorhelectronic resource	0273446X,		MIT
+110978978381743	^QA135.5	Scholastic dynamathhelectronic resource	07327773,		OXFORD
+110978978382015	^P1 .J67	International journal of the Linguistic Association of the Southwest	07374143,	23325836,	OXFORD
+110978978382143	^BV1460 .C485	Christian education journal	07398913,	2378525X,	USTL
+110978978382349	^LB2341 .A36	EduExec	07447078,		USTL
+110978978552101	^RA440.3.G7	Education and health bjournal of the HEA Schools Health Education Unit University of Exeter cHealth Education Authority	02651602,	20493665,	USTL
+110978978552919	^BM100 .S88	Studies in Jewish educationhelectronic resource cthe Hebrew University of Jerusalem the Melton Centre for Jewish Education in the Diaspora	03339661,		MIT
+110978978554121	^LA2301 .V57	Vitae scholasticaehelectronic resource	07351909,		MIT
+110978978554615	^LC3950 .S63	Special services in the schoolshelectronic resource	07399820,	23314311,	MIT
+110978978555919	^H1 .J68	Journal of social studies researchhelectronic resource	0885985X,	23522798,	MIT
+110978978734817	^LC5800 D57	Distance educationhelectronic resource	01587919,	14750198,	MIT
+110978978736265	^PN118.2	Reading in a foreign languagehelectronic resource	02642425,	15390578,	MIT
+110978978736527	^WMLC 93/1792	Micromathhelectronic resource ba journal of the Association of Teachers of Mathematics	02675501,		MIT
+110978978740259	^LA2102 .E48	Education linkshelectronic resource	08146802,		MIT
+110978978741017	^LB2342.82 .J68	Journal of marketing for higher educationhelectronic resource	08841241,	15407144,	MIT
+110978978741135	^LC3981 .C35	Career development for exceptional individualshelectronic resource bofficial journal of Division on Career Development the Council for Exceptional Children	08857288,	15575047,	MIT
+110978978741357	^LB2341 .C712	The College student affairs journalhelectronic resource	0888210X,		MIT
+110978978741381	^LB1715 .T43	Teacher education and special educationhelectronic resource	08884064,	19444931,	MIT
+110978978741417	^WMLC 93/1836	National forum of educational administration and supervision journalhelectronic resource	08888132,		MIT
+110978978743917	^LB2979 .I58	International studies in educational administrationhelectronic resource	13241702,	18392768,	MIT
+110978978953158	^HF5381.A1 C283	Career planning and adult development journalhelectronic resource ba quarterly publication of the Career Planning and Adult Development Network	07361920,		MIT
+110978978954180	^LC5808.C2 J68	Journal of distance education	08300445,	19166818,	USTL
+110978978954856	^LB1585.3 .S36	Science scope	08872376,	19434901,	USTL
+110978978956038	^L11 .N273	National forum of applied educational research journalhelectronic resource bNFAER journal	08953880,		MIT
+110978978958226	^LB1068 .J68	Journal of visual literacyhelectronic resource	1051144X,	23796529,	MIT
+110978979117717	^L10 .I58	International journal of educologyhelectronic resource	08180563,	14497255,	MIT
+110978979118611	^HV88 .N2615	Human service educationhelectronic resource ba journal of the National Organization for Human Service Education	08905428,		MIT
+110978979118963	^PE1403 .I6	Issues in writinghelectronic resource	08970696,		OXFORD
+110978979121023	^LB2822.75 .A8	Assessment update	10416099,	15360725,	OXFORD
+110978979121037	^LB1585.3 .C66	Connect	1041682X,	21692300,	USTL
+110978979121323	^L10 .I5	The International educatorhelectronic resource bTIE	10443509,		MIT
+110978979121503	^LB2343.4 .R48x	Research teaching in developmental educationhelectronic resource	10463364,		MIT
+110978979122283	^Q179.9 .C68	Council on Undergraduate Research quarterlyhelectronic resource	10725830,		MIT
+110978979122369	^PN1701 .S73	Stage of the arthelectronic resource	10807268,		MIT
+110978979271428	^HQ767.8 .D55	Dimensions of early childhoodhelectronic resource cSouthern Association on Children under Six	10686177,		MIT
+110978979429874	^L107 .O37a	Philosophical studies in educationhelectronic resource	01607561,		MIT
+110978979432344	^KF4225.A15 P47	Magnas campus legal monthlyhelectronic resource	08889732,		MIT
+110978979432366	^WMLC 93/4083	The Writing center journalhelectronic resource	08896143,		MIT
+110978979432406	^LB2300 .R43	Recruitment and retention in higher educationhelectronic resource	0891012X,		MIT
+110978979435844	^LB1715 .N397	National forum of teacher education journalhelectronic resource	10492658,		MIT
+110978979435854	^LB2300	The department chairhelectronic resource ba newsletter for academic administrators	10493255,	19364393,	MIT
+110978979784587	SCHOOLEL_SCHOOLST^GE30	Electronic green journalhelectronic resource cUniversity of Idaho Library	10767975,11921285,14681366,87566575,03098451,08407339,08642141,08920206,10415718,10528008,10570837,10594221,10606041,10853545,10943838,10483713,10524800,10716084,	09533028,17475104,15612902,17419883,21598371,21539987,19450079,21685894,21647992,21588414,19313756,19452993,15419258,	MIT
+110978979785727	^LA410 .E38	Education quarterly reviewhelectronic resource cStatistics Canada Education Culture and Tourism Division	11952261,	12090859,	MIT
+110978979786753	^LB2341 .A218	Academic leaderhelectronic resource	87507730,	19381417,	MIT
+110978984079371	^QA76.27 .J68	Journal of information systems education	10553096,	25743872,	USTL
+110978984079571	^ML1 .P49	Philosophy of music education review	10635734,	15433412,	USTL
+110978984082733	^LB1025.2 .P76	Prosperohelectronic resource ba journal of new thinking in philosophy for education	13586785,		MIT
+110978984250074	SCHOOLST^Q181.A1 R47	Resonancehelectronic resource	09718044,	0973712X,	MIT
+110978984250592	^P129 .H65	Hong Kong journal of applied linguistics	10284435,		HKSYU
+110978984250696	^LC1037.8.A8 A884	Australian journal of career development	10384162,	22006974,	USTL
+110978984250952	SCHOOLEL^LC71	Education policy analysis archiveshelectronic resource	10682341,		USTL
+110978984251308	^LB45 .T23	Taboo bthe journal of culture and education	10805400,	21647399,	USTL
+110978984251394	^F106 .J74	Journal of Appalachian studies	10827161,	23288612,	USTL
+110978984251582	^LB1028 .R347	Research in the schools ba nationally refereed journal sponsored by the Mid South Educational Research Association and the University of Alabama	10855300,		USTL
+110978984251780	^LA226 .A5542	About campus	10864822,	15360687,	USTL
+110978984251894	^HC110.P6 J683	Journal of povertyhelectronic resource	10875549,	15407608,	MIT
+110978984348219	^PE1404 .W18	WPA writing program administrationhelectronic resource	01964682,		MIT
+110978984348321	^LC1090 .I57x	The International schools journalhelectronic resource	02647281,		OXFORD
+110978984351159	SCHOOLEL^LB2300 .C65	The college quarterlyhelectronic resource bCQ a journal of professional development for college educators	10113487,10918515,11954353,	17535913,	USTL
+110978984351205	^Z487.R48	Resource links	12017647,		USTL
+110978984444247	^LC5148.A8 E38	Education in rural Australiahelectronic resource cSPERA	10360026,		MIT
+110978984444403	^QA135.5 .M37	The Mathematics educatorhelectronic resource	10629017,	23314451,	MIT
+110978984444553	SCHOOLEL^PE1128.A2	TESL EJ bteaching English as a second foreign language	10724303,		USTL
+110978984444709	^LB1 .J86	Journal of college reading and learning	10790195,	23327413,	USTL
+110978984445173	^LB1585 .J68	Journal of elementary science education	1090185X,	21688753,	USTL
+110978984445459	^LA217.2	Education review ba journal of book reviews	10945296,		USTL
+110978984445649	^LB2341.93.U6 U55	University business	10976671,	21626642,	USTL
+110978984448599	SCHOOLEL^LB1028.3	Educational technology society bjournal of International Forum of Educational Technology Society and IEEE Learning Technology Task Force	14364522,	11763647,	USTL
+110978984449355	^JF1338.A2 J68	Journal of public affairs educationhelectronic resource bJ PAE	15236803,	23289643,	MIT
+110978984449371	SCHOOLEL^LB1 .R129	Radical pedagogyhelectronic resource	15246345,		MIT
+110978984449385	^L1	Paths of learninghelectronic resource	15260186,		MIT
+110978984564887	^PE1065 .A75	Asian journal of English language teachinghelectronic resource	10262652,	23337192,	MIT
+110978984565071	^LB1715 .J68	Journal of computing in teacher educationhelectronic resource	10402454,	23327421,	MIT
+110978984565973	^LB2343 .J62	Journal of college counselinghelectronic resource	10990399,	21611882,	MIT
+110978984567851	SCHOOLEL_SCHOOLST^LB1028.55 .J68	Journal of interactive media in educationhelectronic resource bJiME	1365893X,		MIT
+110978984569029	^QA11.A1 M376	Mathematics teacher education developmenthelectronic resource bmted	14423901,		MIT
+110978984569965	^P87 .D57	Discourse bBerkeley journal for theoretical studies in media and culture	15225321,	15361810,	MIT
+110978984570175	^BF724.5 .A38	Adultspan journalhelectronic resource	15246817,	21610029,	MIT
+110978984570415	^RS101 .P43	Pharmacy educationhelectronic resource ban international journal for pharmaceutical education	15602214,	14772701,	MIT
+110979839331409	^LB1028.3 .E37	Educational media and technology yearbook	87552094,		MIT
+110984073528702	^LB1101 .A98	Australian journal of early childhoodhelectronic resource	03125033,		MIT
+110984073529272	^LB2341 .P74	The presidencyhelectronic resource cAmerican Council on Education	10993681,	21632294,	MIT
+110985818829940	^P1 .F6	Foreign language annals	0015718X,	19449720,	MIT
+110985822449620	^LB2341 .C64	The journal of the College University Personnel Associationhelectronic resource	00100935,		MIT
+110985822450210	^QA11.A1 A8	The Australian mathematics teacherhelectronic resource	00450685,	18394779,	MIT
+110985822451458	^L11 .A68	American educatorhelectronic resource	0148432X,		MIT
+110985822451750	^LC1037.5 .J68	Journal of career educationhelectronic resource	01642502,		MIT
+110985822453136	^LB1051 .E34	Educational and child psychologyhelectronic resource cDivision of Educational and Child Psychology	02671611,		MIT
+110985822453928	^LA640 .I74	Irish educational studieshelectronic resource	03323315,	17474965,	MIT
+110985822457306	^HV8875 .J67	Journal of correctional educationhelectronic resource bofficial publication of the Correctional Education Association	07402708,		MIT
+110985822458136	^LB1028.3 .I52	Instruction delivery systemshelectronic resource	08924872,		MIT
+110985822459548	^BV1460 .J685	Journal of research on christian educationhelectronic resource bJRCE	10656219,	19344945,	MIT
+110985822459722	^LB1028.4 .F56	Florida media quarterlyhelectronic resource ba publication of the Florida Association of Media in Education	10851976,		MIT
+110985822459782	^HD6054.4.U6 A38	Advancing women in leadershiphelectronic resource	10937099,		MIT
+110985822460146	^QA135.5 .A97	Australian primary mathematics classroomhelectronic resource bAPMC	13260286,	18394833,	MIT
+110985822460244	^RA440.5 .I546	Interfacehelectronic resource	14143283,	18075762,	MIT
+110990112650248	^LC1041 .A6	Techniqueshelectronic resource	15271803,	10911031,	MIT
+110990112650268	^Z286.O68 E45	Emedia magazinehelectronic resource	15297306,		MIT
+110990112650284	^L11 .T53	Leadershiphelectronic resource	15313174,		MIT
+110990112651292	^L11 .I544	Instructorhelectronic resource	15320200,	2168233X,	MIT
+110990130691206	^LB3013.4 .S62	Children schoolshelectronic resource	15328759,	1545682X,	MIT
+110992357390152	^T10.5 .K57	Knowledge and policyhelectronic resource bthe international journal of knowledge transfer and utilization	10538798,	21687005,	MIT
+110994185131198	^HF5549.5.P37 P45	Performance improvement quarterlyhelectronic resource	08985952,	19378327,	MIT
+110994185140272	^ML1 .U56	Updatehelectronic resource bthe applications of research in music education	87551233,	19450109,	MIT
+110998582678002	^RC570 .A977x	Journal of intellectual developmental disabilityhelectronic resource	13668250,	14699532,	MIT
+111000311409010	^BF176 .I595	International journal of testinghelectronic resource	15305058,	15327574,	MIT
+111000826669000	^HN41 .V54	Viewpoints cNational Association of Jewish Center Workers	10380310,		USTL
+111004365735178	^LA2315.T4 E47 1997	The empty schoolhousehelectronic resource bmemories of one room Texas schools ccollected and edited by Luther Bryan Clegg	0890967490,058517427X,	0890967490,058517427X,	USTL
+111004366762724	^LB1564.G7 -- I47 1999eb	Improving Teaching and Learning in the Humanities	0750708018,1138420743,0203011929,1135709823,1280400706,0203158814,	0750708018,1138420743,0203011929,1135709823,1280400706,0203158814,	HKSYU
+111006469447798	^RS101	Journal of pharmacy teachinghelectronic resource	10440054,	15407365,	MIT
+111006469453840	^LB1028.5 .N3a	Performance improvementhelectronic resource cISPI International Society for Performance Improvement	10908811,	19308272,	MIT
+111006469466302	^P129	The Canadian journal of applied linguisticshelectronic resource cCanadian Association of Applied Linguistics	1481868X,	19201818,	OXFORD
+111006469467344	^BF575.D35	Journal of loss trauma	15325024,	15325032,	USTL
+111006469467354	^HF5549.5.T7	TD bbetter performance through workplace learning cASTD	15357740,	1943782X,	USTL
+111006489772040	^LB1575.8 .L1	L1 educational studies in language and literaturehelectronic resource	15676617,	15731731,	USTL
+111006902713106	^R729.5.G4	Education for primary care ban official publication of the Association of Course Organisers National Association of GP Tutors World Organisation of Family Doctors	14739879,	1475990X,	USTL
+111006902714142	^LB1028.43	International journal of artificial intelligence in education	15604292,	15604306,	USTL
+111011799097016	^HF5736 .R3632	Information management journal	15352897,	21553505,	USTL
+111014393768026	^LC2667	Journal of Latinos and education	15348431,	1532771X,	USTL
+111014995503000	^LC93.G7 E393	Education parliamentary monitor	1366302X,	17487625,	USTL
+111018452521000	^Z965 .S767	Quarterly bulletin of the National Library of South Africa	15629392,		USTL
+111018898050000	^HF5411 .A158	Marketing theory and applications cAMA Winter Educators Conference	10540806,		USTL
+111021052066064	^AP2 .S4612	The New York times upfront	15251292,		USTL
+111021054329004	^LB1583.5	Weekly readerpEdition 3	08903204,		USTL
+111021054329006	^LB1583.5	Weekly readerpEdition 2	08903212,		USTL
+111021054532302	^KF279	The journal of legal studies education	08965811,	17441722,	USTL
+111021473081068	^BF721	Journal of clinical child and adolescent psychology	15374416,	15374424,	USTL
+111022104693052	^LJ85.P45 A3	Phi Kappa Phi forum	15385914,	21622957,	USTL
+111022262801002	^LA632 .E483	Education journal	13644505,	20507070,	USTL
+111022262801004	^LC149 .L52	Literacy today	13678825,	17419875,	USTL
+111022262802008	^Z649.S72 B37	BASIC news cBook and Serial Industry Communications	15300870,		USTL
+111024950808012	^LB2806 .L432	Leadership and policy in schoolshelectronic resource	15700763,	17445043,	MIT
+111024950809014	^LB2341 .H527	Higher education management and policy bjournal of the Programme on Institutional Management in Higher Education	16823451,	17269822,	MIT
+111025125046006	^HC79.I55 I5	Information polityhelectronic resource	15701255,	18758754,	MIT
+111032216815006	^Z717 .C65	College university media reviewhelectronic resource	10758496,		MIT
+111032216815008	^LC5805.U6 D57	Distance education reporthelectronic resource	1094320X,		MIT
+111032216816014	^Z1037.A1 C15x	Journal of childrens literaturehelectronic resource	15217779,		MIT
+111032216816020	^LB2846 .A78	Journal of research on technology in educationhelectronic resource bJRTE	15391523,	19450818,	MIT
+111032388159008	^LB1044.84 .I589	International journal on e learninghelectronic resource	15372456,	19435932,	MIT
+111032812853626	^LB1025.3 .T437	The teaching professorhelectronic resource	08922209,		MIT
+111032812860318	^LB2866	Campus security reporthelectronic resource	10861335,	19438001,	MIT
+111032812861414	^LC148	Enrollment management reporthelectronic resource	10943757,	19456263,	MIT
+111032812863704	^HF5547.5.A1 034	Information technology learning and performance journalhelectronic resource	15351556,		MIT
+111034022289020	^LC4631 .A75a	Research and practice for persons with severe disabilitieshelectronic resource bthe journal of TASH	15407969,	21692408,	MIT
+111035569479044	^HF1101 .B69	BizEdhelectronic resource	1537338X,	21618380,	MIT
+111035577506006	^LB1 .M266	Managing education mattershelectronic resource	14637081,		MIT
+111035577507020	^LB1570 .C8	District administrationhelectronic resource	15375749,	21626650,	MIT
+111038259967000	^LC5800 .Q37	Quarterly review of distance educationhelectronic resource	15283518,	21691266,	MIT
+111038260037020	^L16 .L65	London review of educationhelectronic resource	14748460,	14748479,	MIT
+111038260037038	^LC368 .C46	Christian higher educationhelectronic resource	15363759,	15394107,	MIT
+111038336088002	^LA1050 .E38	Educational research for policy and practicehelectronic resource	15702081,	15731723,	MIT
+111040422444000	^LB2328.15.U62 M56	The community college enterprisehelectronic resource bCCE	15410935,		MIT
+111053459401000	^H62.5.A8	Ethos 7 12helectronic resource	13281941,		MIT
+111053608907014	^L11 .E384	Educational scienceshelectronic resource btheory practice	13030485,		MIT
+111053608908016	^L16 .N15	NUT education reviewhelectronic resource	14627272,		MIT
+111056485523872	^P51 .R66 2000	Routledge encyclopedia of language teaching and learninghelectronic resource cedited by Michael Byram	0415120853,0415332869,113480931X,128032306X,0203219309,	0415120853,0415332869,113480931X,128032306X,0203219309,	USTL
+111056485534696	^LB675.A82 -- C6 1999eb	The Educational Thought and Influence of Matthew Arnold	0415177618,0415847273,9786610066612,128006661X,0203000013,	0415177618,0415847273,9786610066612,128006661X,0203000013,	HKSYU
+111056485538972	^LC1042.5 -- .W56 2000eb	Education Work and Social Capital bTowards a New Conception of Vocational Training	0415204348,1134629206,1280326301,0203183274,	0415204348,1134629206,1280326301,0203183274,	HKSYU
+111056486435184	^HF5549.5.T7 T4623 2003	Blended learning bhow to integrate online traditional learning cKaye Thorne	0585450358,0749439017,1597343188,	0585450358,0749439017,1597343188,	LCC
+111056486498188	^LB2806.36 .F527 2000	Charter schools in action brenewing public education cChester E Finn Bruno V Manno Gregg Vanourek	0691004803,0691090084,1400823412,9786612607912,128260791X,1400811589,	0691004803,0691090084,1400823412,9786612607912,128260791X,1400811589,	LCC
+111056486499248	^LB2828.85.W6 W58 2000	The market approach to education ban analysis of Americas first voucher program cJohn F Witte	0691009449,0691089833,1400823315,9786612753879,1282753878,1400813875,	0691009449,0691089833,1400823315,9786612753879,1282753878,1400813875,	LCC
+111056486499250	^GV351 .Z56 1999	Unpaid professionals bcommercialism and conflict in big time college sports cAndrew Zimbalist	0691009554,0691086907,1400823072,1282457861,9786612457869,1400813964,	0691009554,0691086907,1400823072,1282457861,9786612457869,1400813964,	LCC
+111056486500308	^LA636.7 .R62 2000	The sacred and the secular university cJon H Roberts and James Turner ; with an introduction by John F Wilson	0691015562,1400823501,1400813123,	0691015562,1400823501,1400813123,	LCC
+111056486500322	^LC5131 .C586 1999	The color of school reform brace politics and the challenge of urban education cJeffrey R Henig et al	0691016348,1400812062,	0691016348,1400812062,	LCC
+111056486502472	^LB1027.9 .H46 1994	Rethinking school choice blimits of the market metaphor cJeffrey R Henig	0691033471,1400812054,	0691033471,1400812054,	LCC
+111056486503538	^D805.U5 R63 1995	The barbed wire college breeducating German POWs in the United States during World War II cRon Robin	0691037000,9786612752186,1400821622,1282752189,140081314X,	0691037000,9786612752186,1400821622,1282752189,140081314X,	LCC
+111056486504618	^HV95 .G54 2000	The ambiguous embrace bgovernment and faith based schools and social agencies cCharles L Glenn ; with a foreword by Peter L Berger	0691048525,1400811783,	0691048525,1400811783,	LCC
+111056486504650	^PN68 .D36 2000	Meetings of the mind cDavid Damrosch ; in collaboration with Vic Addams Marsha Doddvic and Dov Midrash	0691050554,1400811341,	0691050554,1400811341,	LCC
+111056486528960	^GV342.27 .L26 2001	Developing personal social and moral education through physical education ba practical guide for teachers cAnthony Laker	0750709294,1138143863,1135701350,1280401907,0203181859,	0750709294,1138143863,1135701350,1280401907,0203181859,	LCC
+111056486528966	^LC191.8.S6 M84 2000	Reclaiming knowledge bsocial theory curriculum and education policy cJohan Muller	0750709588,1138984736,1135700443,9786613897350,9786610401987,1283584905,1280401982,0203183401,	0750709588,1138984736,1135700443,9786613897350,9786610401987,1283584905,1280401982,0203183401,	LCC
+111056486729332	^LA1333 .H54 2000	Higher education in Korea btradition and adaptation cedited by John C Weidman and Namgi Park	0815319576,0203905075,1280407395,0203906314,	0815319576,0203905075,1280407395,0203906314,	LCC
+111056486736438	^LB2806.15 . C694 2000	Curriculum in the postmodern condition cAlicia de Alba et al	0820441767,0585392617,	0820441767,0585392617,	LCC
+111056486803348	^LB2361 .L33 2001	Creating interdisciplinarity binterdisciplinary research and teaching among college and university faculty cLisa R Lattuca	0826513670,9780585407886,9786612304781,128230478X,0826591361,0585407886,	0826513670,9780585407886,9786612304781,128230478X,0826591361,0585407886,	LCC
+111056486803358	^LC4069.6 .R63 2001	Giants among us bfirst generation college graduates who lead activist lives cSandria Rodriguez	0826513913,9786612451928,0826591507,1282451928,0585408041,	0826513913,9786612451928,0826591507,1282451928,0585408041,	LCC
+111056486874936	^LC1090 .N49 1999	A new world of knowledge bCanadian universities and globalization ; edited by Sheryl Bond and Jean Pierre Lemasson	0889368937,9786610718504,1280718501,1552500454,	0889368937,9786610718504,1280718501,1552500454,	LCC
+111056486995828	^QA11 .E74 1991	The philosophy of mathematics education cPaul Ernest	1850006679,1138145068,9786610406494,0203497015,1135387540,1280406496,020322423X,	1850006679,1138145068,9786610406494,0203497015,1135387540,1280406496,020322423X,	LCC
+111056644984258	^PE1404 .J694	Journal of writing assessment bJWA	1543043X,		MIT
+111056645141140	^LC243.A1 J68	Journal of research on character educationhelectronic resource	15431223,		MIT
+111056646956324	^L64 .C45	Jiao yu shu guanghelectronic resource bXianggang jiao shi hui xue bao	16831381,		MIT
+111056647206156	^Q181.A1 T48	The Texas science teacherhelectronic resource bofficial publication of the Science Teachers Association of Texas	15439321,	21618372,	MIT
+111056647208304	^L45	Revista electrónica de investigación educativahelectronic resource bREDIE	16074041,		OXFORD
+111056648146326	^PE1404 .W25	The WAC journal	15444929,		USTL
+111056648951120	^LB1044.87 .E42	Learning training innovations	1544645X,		USTL
+111056649444166	^LB1141 .R42	Report on preschool programshelectronic resource bthe biweekly newsletter on programs for early childhood development	15449157,		MIT
+111056649600076	^H8.L78 T55	Tiltaihelectronic resource bhumanitariniai ir socialiniai mokslai cKlaipedos Universitetas	13923137,		MIT
+111056649744354	^JA86 .G37	Gesellschaft Wirtschaft Politikhelectronic resource bSozialwissenschaften f�r politische Bildung	16196910,	21961654,	MIT
+111061245809010	SCHOOLEL^LC5800	The Turkish online journal of distance educationhelectronic resource bTOJDE cAnadolu University	13026488,		OXFORD
+111061572253000	^LC196 .B8	Bulletin of good practice in higher education	1325233X,		USTL
+111064236181000	^LB1779 .J68	Journal of academic ethics	15701727,	15728544,	USTL
+111064236181002	^Q181.A1 I58	International journal of science and mathematics education	15710068,	15731774,	USTL
+111067463832020	^Q181.A1 J687	Journal of Baltic science education	16483898,		USTL
+111068740159008	^LA605 .R48	Revista de pedagogía	07989792,		USTL
+111072147933000	^HB1 .E2515	Economic papershelectronic resource	08120439,	17593441,	MIT
+111074107177000	^LB1050 .R35	Literacyhelectronic resource	17414350,	17414369,	MIT
+111075993725102	^LB1044.87 .E53	Electronic journal of e Learninghelectronic resource bEJEL	14794403,		MIT
+111075993727160	^LC71	Journal for critical education policy studies	20510969,	17402743,	USTL
+111077589805000	^LB1028.3 .M86	MultiMedia internet schools	15464636,	21690413,	USTL
+111080316688000	^LB1028	Revista electr鏮ica de investigaci鏮 y evaluaci鏮 educativahelectronic resource bRELIEVE	11344032,		MIT
+111081782471014	^RC569.7 .J68	Journal of policy and practice in intellectual disabilitieshelectronic resource	17411122,	17411130,	MIT
+111082135093044	^HD57.7 .J68	Journal of leadership organizational studieshelectronic resource	15480518,	19397089,	MIT
+111086125838002	SCHOOLEL^LB1028.25.A8	The Australian educational researcherhelectronic resource	03116999,	22105328,	MIT
+111087026842178	^LC191.8.E85 -- W55 2002eb	Education Policy and Realist Social Theory bPrimary Teachers Child Centred Philosophy and the New Managerialism	0203281691,0415464331,0415268397,1134493541,1280401761,0203166531,	0203281691,0415464331,0415268397,1134493541,1280401761,0203166531,	HKSYU
+111087026886952	^RA644.A25 T635 1996	Teaching AIDS cDouglas Tonks	0203406001,0415908752,0415928508,1280322047,0585448507,	0203406001,0415908752,0415928508,1280322047,0585448507,	LCC
+111087027955126	^LC212.2 .L49 2003	Race in the schoolyard bnegotiating the color line in classrooms and communities cAmanda E Lewis	0813532248,9786613904492,0813547032,1283592045,0813535263,	0813532248,9786613904492,0813547032,1283592045,0813535263,	LCC
+111087028144794	^PZ7.C76842 No 1994	Northern lights ba Hanukkah story cby Diana Cohen Conway ; illustrated by Shelly O Haas	0929371798,9786611295769,1580131174,1281295760,1580131360,	0929371798,9786611295769,1580131174,1281295760,1580131360,	LCC
+111087028266998	^LC4717.5 .M68 2002	Addressing the challenging behavior of children with high functioning autism Asperger syndrome in the classroom ba guide for teachers and parents cRebecca A Moyes	1843107198,9786611325510,1281325511,1846423465,	1843107198,9786611325510,1281325511,1846423465,	LCC
+111087904362004	^G1 .F6	The American Geographical Societys focus on geographyhelectronic resource	15494934,	19498535,	MIT
+111087911598002	^LE41.B34 Z66	Zona pr�ximahelectronic resource	16572416,		MIT
+111088195274182	^LB1044.87	The journal of educators onlinehelectronic resource	1547500X,		MIT
+111088195288122	^LB1570 .J678	Journal of curriculum and pedagogyhelectronic resource	15505170,	21568154,	MIT
+111088196505592	^LB1028.3 I56	Informatics in educationhelectronic resource	16485831,	23358971,	MIT
+111088199762396	^MT32 .M855	Music education technologyhelectronic resource	15509400,		MIT
+111089136836004	^LC3950 .J68	Journal of research in special educational needshelectronic resource bJORSEN	14713802,		MIT
+111089136844022	^JZ5511.2 .J6	Journal of peace educationhelectronic resource	17400201,	1740021X,	MIT
+111090529158014	^LC146.5 .S59 2004	Dropping out drifting off being excludedhelectronic resource bbecoming somebody without school cJohn Smyth and Robert Hattam with Jenny Cannon et al	0820455075,9780820472964,0820472964,	0820455075,9780820472964,0820472964,	USTL
+111090529200370	^BF637.B85 .R5 2003	Stop the bullyinghelectronic resource ba handbook for schools cKen Rigby	0864315686,1417506725,1417506725,	0864315686,1417506725,1417506725,	USTL
+111093463393016	^LC149 .L4997	Literacy learninghelectronic resource bsecondary thoughts	13205692,		MIT
+111093463394022	^LC159	Literacy numeracy studies	14410559,	18392903,	USTL
+111093463528028	^LC5201 .A833	Australian journal of adult learning	14431394,		USTL
+111094225731010	^BF712 .E98	European journal of developmental psychologyhelectronic resource	17405629,	17405610,	MIT
+111096300959018	SCHOOLEL^LA201 .I58	Interactionshelectronic resource bUCLA journal of education and information studies	15483320,		MIT
+111097776606034	^BV4019 .J68	Journal of adult theological educationhelectronic resource bJATE	17407141,	17431654,	MIT
+111097776606046	^R735.A1 C58	The clinical teacherhelectronic resource	17434971,	1743498X,	MIT
+111099104164000	^QH51.A1 N281	Teaching science	14496313,	18392946,	USTL
+991042723496648	^L67 A612 2004	Análisis de las interacciones maestra alumnos durante la enseñanza de las ciencias naturales en primaria cGuadalupe Mares Cárdenas y otros 4	14056666,		USTL
+991042723511456	^LB1028	The journal of scholarship of teaching and learning bJoSoTL	15279316,		USTL
+991042723523330	^LB1028.3	Contemporary issues in technology and teacher educationhelectronic resource bCITE	15285804,		MIT
+991042723585686	^KF4225	Campus legal advisorhelectronic resource	15313999,	19456239,	MIT
+991042723609370	^MT1	Research and issues in music educationhelectronic resource bRIME	15328090,		MIT
+991042723615812	^RC451.5.I5	American Indian and Alaska native mental health research bthe journal of the National Center	08935394,	15337731,	USTL
+991042723617948	^ML1 .B786	Journal of historical research in music educationhelectronic resource	15366006,	23282525,	MIT
+991042725024058	^ML5 .A698	Australian journal of music educationhelectronic resource	00049484,		MIT
+991042725220092	^Z671 .L7	LJ Library journalhelectronic resource	03603113,		MIT
+991042725914972	^RE956 .J68	Journal of optometric educationhelectronic resource	00986917,		MIT
+991042726857420	^L71 .P36	Pendidik dan pendidikanhelectronic resourcebEducators and education	01267272,		MIT
+991042726919032	^LB2343 .N32	NACADA journalhelectronic resource cNational Academic Advising Association	02719517,	23303840,	MIT
+991042727025820	^P118.2	The reading matrixhelectronic resource	1533242X,		OXFORD
+991042727037670	^LB2806	Academic leadershiphelectronic resource	15337812,		MIT
+991042727038770	^PN3373 .E94	Eureka studies in teaching short fictionhelectronic resource	15338509,		MIT
+991042727057108	^LB2845.7	The successful registrarhelectronic resource	15347710,	19437560,	MIT
+991042727063536	^LA205 .M55a	American educational history journalhelectronic resource	15350584,		MIT
+991042727064602	^LB1028.3	The journal of literacy and technologyhelectronic resource	15350975,		MIT
+991042727089408	^LB1716.C2 I87	Issues in teacher educationhelectronic resource ban official publication of the State of California Association of Teacher Educators	15363031,		MIT
+991042727127172	^HV1551 .D58	Disability culture and educationhelectronic resource	15382060,	2169124X,	MIT
+991042728057968	^LB1043.2.S7 C68	Comunicarhelectronic resource cGrupo Pedag�gico Andaluz Prensa y Educaci�n	11343478,	19883293,	MIT
+991042728092130	SCHOOLEL^LC149	Language literacyhelectronic resource ba Canadian educational e journal	14960974,		MIT
+991042728094278	^LC5800 .M35	Malaysian journal of distance educationhelectronic resource	15116433,		MIT
+991042728101754	^LB2331.44 .J68	Journal of higher education outreach and engagementhelectronic resource	15346102,	21648212,	MIT
+991042728102858	^PL501	The journal of the Association of Teachers of Japanesehelectronic resource	15367827,	23264586,	MIT
+991042728110382	^LB1576 .L559	Literacy teaching and learning	15384209,	21595380,	USTL
+991042728112502	^LB2831.8	Scholastic administr tor	15385191,		USTL
+991042728114694	^LB1140.A1	Beyond the journal byoung children on the web	15386619,	19412002,	USTL
+991042728116826	^LB2806.15 .C825	Curriculum and teaching dialogue	1538750X,	21691231,	USTL
+991042728117948	^LB3013.3 .J695	Journal of school violencehelectronic resource	15388220,	15388239,	MIT
+991042728125528	^QB61	Astronomy education review	15391515,		MIT
+991042728127684	^QH301 .M53	Bioscenehelectronic resource bjournal of college biology teaching	15392422,		MIT
+991042728130882	SCHOOLST^LB1028.43 .J684	Journal of information technology educationhelectronic resource	15479714,	15393585,	USTL
+991042728131984	^LB1050.455 .J68	Journal of content area readinghelectronic resource	15394220,		MIT
+991042728132006	^RC489.R4	The behavior analyst todayhelectronic resource	15394352,		MIT
+991042728144924	^LB1027.9 .E39	Education nexthelectronic resource ba journal of opinion and research	15399664,	15399672,	MIT
+991042728146018	^LB1028.35 .T43	Technology instruction cognition and learninghelectronic resource	15400182,	15400174,	MIT
+991042728156818	^HD30.23 .D423	Decision sciences journal of innovative education	15404595,	15404609,	MIT
+991042728173018	^LB2335.7 .A33	Peer reviewhelectronic resource bemerging trends and key debates in undergraduate education	15411389,		MIT
+991042728174094	^LB1139.5 .A78	Teaching artist journalhelectronic resource	15411796,	1541180X,	MIT
+991042728179538	^Z718.1 .A1 T6	Young adult library serviceshelectronic resource	15414302,	23747706,	MIT
+991042728179542	^TX341 .J56	Journal of food science educationhelectronic resource	15414329,		MIT
+991042728181654	^LB1028.5	Journal of interactive online learninghelectronic resource	15414914,		MIT
+991042728181662	^LB1027.42	The interdisciplinary journal of problem based learninghelectronic resource	15415015,		MIT
+991042728197876	^LC1099.3 .N38	National forum of multicultural issues journalhelectronic resource cSul Ross State University Rio Grande College	15421953,		MIT
+991042728204394	^Z675.S3 S291148	School library connectionhelectronic resource bSLC	15424715,		MIT
+991042728207606	^LB1576.A1 F73	Composition studieshelectronic resource bFreshman English news		15349322,	MIT
+991042728216274	^Z718.1 .C46	Children librarieshelectronic resource	15429806,	23747641,	MIT
+991042728220574	^L12.S6 E88	Estudios sobre educaci�nhelectronic resource bESE	15787001,	23866292,	MIT
+991042728220576	^PE1128.A2 I586	International journal of English studieshelectronic resource	15787044,	19896131,	MIT
+991042729619656	^PE1128.A2 T4515	TESL reporterhelectronic resource	08860661,		MIT
+991042729689450	^BF412 .A38	Advanced developmenthelectronic resource	10422021,		MIT
+991042730673954	^PE1130.5.M2 J68	Journal of language teaching linguistics and literaturehelectronic resource bjurnal Pusat Bahasa Universiti Kebangsaan Malaysia	01285157,		MIT
+991042730791650	^LC3981 .N35	National Forum of Special Education journalhelectronic resource	10432167,		MIT
+991042730814912	^LB1584 .R47	The reviewhelectronic resource cOhio Council for the Social Studies	10502130,		MIT
+991042730853190	^LB1028.25.U6 M53	Mid western educational researcherhelectronic resource bofficial publication of the Mid Western Educational Research Association	10563997,	23757876,	MIT
+991042730873484	^LC215 .S387	The School community journalhelectronic resource	1059308X,	2379397X,	MIT
+991042731627340	SCHOOLEL^LA2100 .I878	Issues in educational research	03137155,		USTL
+991042731711222	^PE1404 .W7286	Writing on the edgehelectronic resource	10646051,		MIT
+991042731766630	^HQ792.U5 S63	Social policy reporthelectronic resource cSociety for Research in Child Development	10757031,	23793988,	MIT
+991042731826640	^LB2376 .F76	Frontiershelectronic resource bthe interdisciplinary journal of study abroad	10854568,		MIT
+991042732664016	^LB2331.2 .L43	The learning assistance reviewhelectronic resource bthe journal of the Midwest College Learning Center Association	10870059,		MIT
+991042732684380	^SB486.I57 J68	Journal of interpretation researchhelectronic resource	10925872,		MIT
+991042732714448	^LC461 .C326	Catholic educationhelectronic resource ba journal of inquiry and practice cjointly sponsored by Fordham University et al	10979638,	21640246,	MIT
+991042732745614	^AS348.S266 A24	Egitim Fak�ltesi dergisihelectronic resource	1300302X,		MIT
+991042733665004	^BF637.C6 C37	Canadian counsellor		19236182,	USTL
+991042735618044	^LB1028.3 .C296	Canadian journal of learning and technologyhelectronic resource	14996677,	14996685,	MIT
+991042736802200	^PE1128.A2 T453	TESL Canada journalhelectronic resource	0826435X,	19258917,	MIT
+991042739287358	^LB1025.3.T42	Teachhelectronic resource	11987707,		MIT
+991042741349112	^RA773 .E8	The Eta Sigma Gammanhelectronic resource	87565943,	2168183X,	MIT
+991042742897520	^ML1 .I48	The Illinois music educatorhelectronic resource	00192147,	21693641,	MIT
+991042743130734	^LB1049.9 .O83	Journal of reading educationhelectronic resource	08865701,		MIT
+991042745933994	^LB1028.3	The Edutech reporthelectronic resource	08831327,		MIT
+991042745965054	^D1 .W67	World history bulletinhelectronic resource bnewsletter of the World History Association	0886117X,		MIT
+991042746957496	^Newspaper	The daily presshelectronic resource	08900310,		MIT
+991042748370874	^SB481.A1 .L43	Legacyhelectronic resource bthe journal of the National Association for Interpretation	10523774,	15590054,	MIT
+991042748398622	^LB1049.9	Illinois Reading Council journalhelectronic resource bIRCJ	1082555X,	21693617,	MIT
+991042749811194	^CURRENT ISSUES ONLY	New teacher advocatehelectronic resource	10707379,	21661944,	MIT
+991042751282146	^LC4802 .B49	Beyond behaviorhelectronic resource	10742956,	21635323,	MIT
+991042751343220	^BF637.C6 G52	Counseling todayhelectronic resource ba publication of the American Counseling Association	10788719,		MIT
+991042751416118	^LB1575.5.U5 O44	Ohio journal of the English language artshelectronic resource	10852492,		MIT
+991042751419330	^L11 .E2265	Education and culturehelectronic resource	10854908,	15591786,	MIT
+991042751430038	^RA790.A1 P74	The prevention researcherhelectronic resource	10864385,		MIT
+991042751443760	^LC701 .J68	Journal of Jewish educationhelectronic resource	15244113,	1554611X,	MIT
+991042752594132	^CLASSED SEPARATELY	Rethinking childhoodhelectronic resource	10867155,		MIT
+991042752602736	^LB1027.55 .C35	The California school psychologisthelectronic resource bCASP cCalifornia Association of School Psychologists	10873414,	23769866,	MIT
+991042752661670	^L11 .A9	Education updatehelectronic resource cAssociation for Supervision and Curriculum Development	10912622,		MIT
+991042752790110	^LB1140.A1 P72	Practically primaryhelectronic resource cAustralian Literacy Educators Association	13245961,		MIT
+991042754003884	^LC143 .J68	The Journal of at risk issueshelectronic resource ba joint publication of the National Dropout Prevention Center and Network	10981608,		MIT
+991042754006010	^MT733 .S33	School band and orchestrahelectronic resource bSB and O	10983694,		MIT
+991042754112986	^CURRENT ISSUES ONLY	Development and alumni relations reporthelectronic resource	15235343,	19456255,	MIT
+991042754126970	^LC3950 .S62	Special education technology practicehelectronic resource	15242765,		MIT
+991042754146244	^LC3950 .J68	Journal of special education leadershiphelectronic resource bthe journal of the Council of Administrators of Special Education	15251810,		MIT
+991042754152746	^LB1583.5	My weekly readerpEdition Khelectronic resource	15255093,		MIT
+991042754182860	^GE70 .C54x	Clearinghelectronic resource	15268942,		MIT
+991042754195778	^Q175.4 .T54	Theory sciencehelectronic resource	15275558,		MIT
+991042754197918	^LB2341	Dean provosthelectronic resource bbuilding and leading successful learning communities	15276562,	19437587,	MIT
+991042754207586	^LB3621 .C747	Communication journalism education todayhelectronic resource	15369129,		MIT
+1000000000003964	^LC4717.5 -- .M69 2001eb	Incorporating Social Goals in the Classroom bA Guide for Teachers and Parents of Children with High Functioning Autism and Asperger Syndrome	185302967X,9786610447121,1846421942,1280447125,1417552905,	185302967X,9786610447121,1846421942,1280447125,1417552905,	HKSYU
+1000000000007511	^LC410.G7 -- W77 2000eb	Spirituality and Education	075070909X,0750709081,0203289293,0203209494,1280068094,	075070909X,0750709081,0203289293,0203209494,1280068094,	HKSYU
+1000000000009187	^LC5146	Journal of research in rural educationhelectronic resource	15510670,		OXFORD
+1000000000017080	^LB1556.7 .A87	Primary middle years educator	14476436,	1839468X,	USTL
+1000000000017118	^LB1044.87 .O55	Online cl ssroom bideas for effective online instruction	15462625,		USTL
+1000000000017182	^L11 .E232	Education sciences and psychology	15121801,		USTL
+1000000000017198	^LB1051	Revista electr鏮ica de investigaci鏮 psicoeducativahelectronic resource bREIPE	16962095,	16995880,	MIT
+1000000000017383	^LA227.4 .A44	American academichelectronic resource ba higher education journal from the American Federation of Teachers	1553443X,	15534421,	MIT
+1000000000017419	^QA150 .I58	The international journal for technology in mathematics educationhelectronic resource	17442710,	20452519,	MIT
+1000000000019791	^TR860 .E9	EventDV bthe authority for event videographers	15542009,	21690383,	USTL
+1000000000019794	^LC5805 .D5845	Distance learning bfor educators trainers and leaders	15474712,		USTL
+1000000000020862	^AP210 .S43	Scholastic news	15542440,		USTL
+1000000000021292	^LB1705 .S88	Studying teacher educationhelectronic resource	17425964,	17425972,	MIT
+1000000000021320	^LB2300	ASHE higher education report	15516970,	15546306,	MIT
+1000000000021326	^JA86 .J68	Journal of political science educationhelectronic resource	15512169,	15512177,	MIT
+1000000000022908	^LB1631	English teachinghelectronic resource bpractice and critique	11758708,		OXFORD
+1000000000022909	^L1 .N48	NZ journal of teachers workhelectronic resource	11766662,		USTL
+1000000000022914	^LB2331 .J68eb	Journal of university teaching and learning practicehelectronic resource	14499789,		MIT
+1000000000022920	^LC3950	Teaching exceptional children plushelectronic resource	15539318,		MIT
+1000000000022926	^LB2331 .M68	MountainRise	15557200,		USTL
+1000000000022955	^HM851	International journal of education and development using information and communication technology	18140556,		USTL
+1000000000023034	SCHOOLEL^LB1028.3	AACE journal	15513696,		USTL
+1000000000024700	^L7	Annual review of education communication and language sciences	1743159X,		USTL
+1000000000024926	^LA227.3 H535	Higher education in review	15565424,	15565750,	USTL
+1000000000025138	^LC2781 .B464	Diverse issues in higher education	15575411,	21635862,	USTL
+1000000000025968	^N81 .I64	International journal of education through arthelectronic resource	17435234,	2040090X,	MIT
+1000000000026216	^LA852.4 .A95	Aukstojo mokslo kokybehelectronic resource btyrimai geroji patirtis akualijos diskusijos	18221645,		MIT
+1000000000033750	^LB2324	International journal for educational integrityhelectronic resource bIJEI cAsia Pacific Forum on Educational Integrity	18332595,		MIT
+1000000000033751	^LB2341 .C37	International journal of educational advancementhelectronic resource	17446503,	17446511,	MIT
+1000000000033753	^HQ56 .A64	American journal of sexuality educationhelectronic resource	15546128,	15546136,	MIT
+1000000000033755	^P40.8	Across the disciplineshelectronic resource binterdisciplinary perspectives on language learning and academic writing	15548244,		OXFORD
+1000000000033758	^ML1	Action criticism theory for music educationhelectronic resource	15454517,		OXFORD
+1000000000033771	^Q181.A1	Asia Pacific forum on science learning and teachinghelectronic resource	16094913,		OXFORD
+1000000000033838	^L11	Ilköğretim online	13053515,		USTL
+1000000000033846	^LB1028.38 .I5895	Interdisciplinary journal of knowledge learning objectshelectronic resource	15522210,	15522237,	MIT
+1000000000033851	^L10	International journal of progressive educationhelectronic resource	15545210,		MIT
+1000000000033853	^LC1200	International journal of whole schoolinghelectronic resource cWhole Schooling Consortium	17102146,		MIT
+1000000000033869	^LB14.7 .E35	Egitimde kuram ve uygulamahelectronic resource	13049496,		MIT
+1000000000033938	^QA276.18	Statistics education research journal cIASE	15701824,		USTL
+1000000000033954	^QA11	The Montana math enthusiast	15513440,		USTL
+1000000000108457	^LB1028.24	Ontario action researcherhelectronic resource	17152461,		USTL
+1000000000210407	^E185.5 .C92	The new crisis	15591603,	21692815,	USTL
+1000000000210530	^LB1025.3 .P4342	Pedagogieshelectronic resource ban international journal	1554480X,	15544818,	MIT
+1000000000210559	^LB1028.25.C44 F76	Frontiers of education in Chinahelectronic resource bselected publications from Chinese universities	1673341X,	16733533,	MIT
+1000000000210588	^LC268	Ethics and educationhelectronic resource	17449642,	17449650,	MIT
+1000000000210590	^RC489.A7	International journal of art therapy binscapehelectronic resource	17454832,	17454840,	HKSYU
+1000000000210621	^Q181	Cultural studies of science educationhelectronic resource	18711502,	18711510,	MIT
+1000000000220601	^BF309 .M48	Metacognition and learninghelectronic resource	15561623,	15561631,	MIT
+1000000000220602	^LB1032 .I525	International journal of computer supported collaborative learninghelectronic resource	15561607,	15561615,	MIT
+1000000000220604	^LC1041 .C213	Career and technical education researchhelectronic resource bCTER	1554754X,	15547558,	MIT
+1000000000221255	SCHOOLEL^LB1028.3	Journal of online learning and teachinghelectronic resource cMERLOT	15589528,		MIT
+1000000000221329	^LC1041	Vocational traininghelectronic resource bresearch and realities	13926241,	20298447,	MIT
+1000000000221447	^GN345	Ethnography and educationhelectronic resource	17457823,	17457831,	MIT
+1000000000221514	^LB1027.9 .J68	Journal of school choicehelectronic resource	15582159,	15582167,	MIT
+1000000000222775	^LC1099	International journal of multicultural educationhelectronic resource	15595005,		MIT
+1000000000222815	^LB1028.38	Journal of learning designhelectronic resource	18328342,		MIT
+1000000000222872	^LB1028.3	Seminarnethelectronic resource binternational journal of media technology lifelong learning	15044831,		MIT
+1000000000222893	^L56 .P432	Pedagogikahelectronic resource	13920340,	20290551,	MIT
+1000000000223962	^LB1028.3	International journal of emerging technologies in learninghelectronic resource	18630383,	18688799,	OXFORD
+1000000000224435	^B809.13.A1 C66	Constructivist foundationshelectronic resource bCF	1782348X,		MIT
+1000000000226923	^Z671	Libraries the cultural recordhelectronic resource	19324855,	19329555,	MIT
+1000000000238179	^LB1028.3 .R458	Research and practice in technology enhanced learninghelectronic resource	17932068,	17937078,	MIT
+1000000000238499	^LB2300	Revista de universidad y sociedad del conocimientohelectronic resource	1698580X,		OXFORD
+1000000000238831	^LB2300 .I576	Insight ba journal of the Center for Excellence in Teaching and Learning	19334850,	19334869,	USTL
+1000000000238960	^LB2371 .I68	International journal of doctoral studies bIJDS	15568881,		USTL
+1000000000239510	^LB1139.225 .P69 2005	Power voice in research with childrenhelectronic resource cLourdes Diaz Soto Beth Blue Swadener editors	0820474142,0820480959,	0820474142,0820480959,	USTL
+1000000000244019	^LC4717.5.H65 2005	Teaching at Home bA New Approach to Tutoring Children with Autism and Asperger Syndrome	1843107872,9786610262137,1280262133,1846421268,	1843107872,9786610262137,1280262133,1846421268,	HKSYU
+1000000000246055	^LB3060.83 .A44 2001	American standards bquality education in a complex world the Texas case cedited by Raymond A Horn Jr Joe L Kincheloe	0820455059,	0820455059,	LCC
+1000000000246058	^LB2331 .A648 2001	The art and politics of college teaching ba practical guide for the beginning professor cedited by Karl D Hostetler R McLaran Sawyer and Keith W Prichard	0820452041,1453914560,	0820452041,1453914560,	LCC
+1000000000246060	^LC196.5.U6 H56 2004	Becoming a critical educator bdefining a classroom identity designing a critical pedagogy cPatricia H Hinchey	0820461490,0820480827,	0820461490,0820480827,	LCC
+1000000000246068	^LC2781.5 .L67 2004	A long way to go bconversations about race by African American faculty and graduate students cedited by Darrell Cleveland	0820463663,0820480819,	0820463663,0820480819,	LCC
+1000000000246072	^LC196 .K55 2004	Critical pedagogy primer cJoe L Kincheloe	082047262X,	082047262X,	LCC
+1000000000246075	^LB2806.36 .S65 2001	The democratic potential of charter schools cStacy Smith	0820449091,	0820449091,	LCC
+1000000000246091	^PN1995.9.T4 D36 2004	The Hollywood curriculum bteachers in the movies cMary M Dalton	0820468215,	0820468215,	LCC
+1000000000246100	^HQ767.9 .K53 2002	Kidworld bchildhood studies global perspectives and education cedited by Gaile S Cannella Joe L Kincheloe	082044989X,	082044989X,	LCC
+1000000000246105	^BF724 .C635 2001	Mind fields badolescent consciousness in a culture of distraction cThomas J Cottle	0820449229,	0820449229,	LCC
+1000000000246110	^LB14.7 .B76 2000	Philosophical scaffolding for the construction of critical democratic education cRichard A Brosio	0820439398,	0820439398,	LCC
+1000000000246119	^LB3060.83 .H67 2004	Standards primer cRaymond A Horn Jr	0820470783,	0820470783,	LCC
+1000000000246122	^LA210 .H674 2000	Teacher talk ba post formal inquiry into educational change cRaymond A Horn Jr	0820445584,	0820445584,	LCC
+1000000000246123	^LB1775 .T4179 2000	Teachers pedagogical thinking btheoretical landscapes practical challenges cPertti Kansanen et al	0820448974,1453915141,	0820448974,1453915141,	LCC
+1000000000246130	^LB1117 .W543 2000	Understanding the preschooler cReudene E Wilburn	0820440582,	0820440582,	LCC
+1000000000247353	^L101.A8 M4	Critical studies in educationhelectronic resource	17508487,	17508495,	MIT
+1000000000249469	^LC71 .T76 1998	Education policy ba policy sociology approach cPaul Trowler	0415275539,0203419936,0415275547,1280070552,0203417852,0953357104,	0415275539,0203419936,0415275547,1280070552,0203417852,0953357104,	OXFORD
+1000000000249478	^LC212.93.G7 S43 1995	Education gender and anxiety cJenny Shaw	0748401016,0748401024,0203461134,1280067322,0203451120,	0748401016,0748401024,0203461134,1280067322,0203451120,	OXFORD
+1000000000252058	^LC1099.3 -- .R35 2003eb	Multicultural Education bA Source Book Second Edition	0815317441,0203446356,128007518X,0203428633,	0815317441,0203446356,128007518X,0203428633,	HKSYU
+1000000000253445	^LB17 .R68 2000	Routledge international companion to education cedited by Bob Moon Miriam Ben Peretz and Sally Brown	041511814X,0203639391,1134815824,0203639065,1280025093,	041511814X,0203639391,1134815824,0203639065,1280025093,	LCC
+1000000000254205	^P91.3 .B8 1990	Teaching communication cGraeme Burton and Richard Dimbleby	0415030633,9786610326860,0203327616,0203136853,1134970455,1280326867,	0415030633,9786610326860,0203327616,0203136853,1134970455,1280326867,	LCC
+1000000000254601	^LC67.68.E852 E47 2000	The emerging markets and higher education bdevelopment and sustainability cedited by Matthew S McMullen James E Mauch Bob Donnorummo	081533463X,113896865X,0203903358,1135578362,128040728X,	081533463X,113896865X,0203903358,1135578362,128040728X,	LCC
+1000000000254779	^GE70 .P35 1994	The handbook of environmental education cJoy Palmer and Philip Neal	0415093147,0585462143,1138145467,0203422023,1134871333,1280108924,	0415093147,0585462143,1138145467,0203422023,1134871333,1280108924,	LCC
+1000000000256225	^LC2032 .W66 1999	Womens education in early modern Europe ba history 1500 1800 cedited by Barbara J Whitehead	0815324677,113898728X,9786612778971,1135580952,0203905067,1282778978,	0815324677,113898728X,9786612778971,1135580952,0203905067,1282778978,	LCC
+1000000000256986	^LB1027.5	Journal of school counseling bJSC	15542998,		USTL
+1000000000257016	^LB1028	International journal for the scholarship of teaching and learning	19314744,		USTL
+1000000000275713	^HM571 .Z45	Zeitschrift für qualitative Bildungs Beratungs und Sozialforschung bZBBS	14388324,		USTL
+1000000000277248	^HQ799.G5 D55	Diskurs Kindheits und Jugendforschung	18625002,	21939713,	USTL
+1000000000277702	^LC71	International journal of education policy and leadership	15555062,		USTL
+1000000000277709	^LC4801	Journal of early and intensive behavior intervention bJEIBI	15544893,		USTL
+1000000000277724	^Q181.A1	Türk fen eğitimi dergisihelectronic resource	13046020,		USTL
+1000000000277780	^LB1060 .M559	Mind brain and education bthe official journal of the International Mind Brain and Education Society	17512271,	1751228X,	USTL
+1000000000277826	^G72 .G442	Geography teacherhelectronic resource	19338341,	17526884,	MIT
+1000000000277830	^LB41 E589 2007	Amenazas a la calidad de la educación femenina al comienzo del siglo XXIhrecurso electronico cInger Enkvist	01231294,		USTL
+1000000000277836	^L91	Waikato journal of education	11736135,	23820373,	USTL
+1000000000277846	^LB1028.25.L78	Acta pedagogica Vilnensia	13925016,	1648665X,	USTL
+1000000000277850	^LC142 .I58	International journal on school disaffectionhelectronic resource	14788497,	17479207,	MIT
+1000000000277852	^LC3950	The journal of the International Association of Special Educationhelectronic resource	15556913,		MIT
+1000000000277853	^LB1025.3 .E376	EDgehelectronic resource	15566765,		MIT
+1000000000277854	^Q183.3.A1 J685	Journal of STEM educationhelectronic resource binnovations and research	15575276,	15575284,	MIT
+1000000000277856	^LB2325	Journal of the scholarship of teaching and learning for Christians in higher educationhelectronic resource	15598624,		MIT
+1000000000277857	^LC94.K6 K43	KEDI journal of educational policyhelectronic resource	17394341,		MIT
+1000000000277858	^K2 .R475	Brigham Young University education and law journalhelectronic resource	19305273,	19305281,	MIT
+1000000000277925	^HF1101	Business education digesthelectronic resource	21605130,		MIT
+1000000000278603	^HV3004 .F63	Intellectual and developmental disabilitieshelectronic resource bpublication of the American Association on Intellectual and Developmental Disabilities	19349491,	19349556,	MIT
+1000000000280389	^LB2331 .I593	International journal of teaching and learning in higher educationhelectronic resource	18129129,		USTL
+1000000000280442	^L81 .A33	Africa education reviewhelectronic resource	18146627,	17535921,	MIT
+1000000000280466	^LB1623.5 .M52	Middle grades research journalhelectronic resource cMissouri State University Institute for School Improvement	19370814,	19370822,	MIT
+1000000000280535	^Q175.32.C65	Complicityhelectronic resource ban international journal of complexity and education	17105668,		MIT
+1000000000280767	^LB1060 .L42437	Learning inquiryhelectronic resource	15582973,	15582981,	MIT
+1000000000280784	^LB1028 .A647	Aperturahelectronic resource	16656180,	20071094,	MIT
+1000000000280860	^D839 .A383	The American ba magazine of ideas	19328117,	19328125,	MIT
+1000000000281031	^QA8.7 .R47	Research in mathematics educationhelectronic resource bpapers of the British Society for Research into Learning Mathematics	14794802,	17540178,	MIT
+1000000000281041	^QA8.7 .P55	Philosophy of mathematics education journal	14652978,		USTL
+1000000000281452	^E185.5 .N383	Black history bulletin	19386656,	21534810,	USTL
+1000000000281509	^LC3993.9 .J69	Journal of advanced academics	1932202X,	21629536,	USTL
+1000000000281510	^KF4225.A15 P47	Magnas campus legal monthly	19325800,		USTL
+1000000000285639	^QA76	Innovations in teaching and learning in information and computer sciences cLTSN	14737507,		USTL
+1000000000285646	^P51 .N68	Novitas ROYAL	13074733,		USTL
+1000000000289208	^LB1715 .S79a	The journal of humanistic counseling education and developmenthelectronic resource	19310293,	2164490X,	MIT
+1000000000289638	^LB1570	Journal of curriculum instructionhelectronic resource	19373929,		USTL
+1000000000289657	^LB2838 .J68	Educational assessment evaluation and accountability	18748597,	18748600,	USTL
+1000000000289898	^LB3605 .M37 1998	Attitudes to school lifehelectronic resource btheir influences and their effects on achievement and leaving school cGary N Marks	0864313152,	0864313152,	USTL
+1000000000289899	^LA2108 .E38 2002	Education participation and outcomes by geographic locationhelectronic resource	0864316321,	0864316321,	USTL
+1000000000289900	^LC146.5 .L36 1999	The initial work and education experiences of early school leavershelectronic resource ba comparative study of Australia and the United States cStephen Lamb Russell Rumberger	0864313462,	0864313462,	USTL
+1000000000289901	^LA2108 .L66 1999	Participation in education and traininghelectronic resource b1980 1994 cMichael Long Peter Carpenter Martin Hayden	0864313357,	0864313357,	USTL
+1000000000289902	^LB3605 .F85 2002	Student engagement with schoolhelectronic resource bindividual and school level influences cSue Fullarton	0864317840,	0864317840,	USTL
+1000000000289903	^LA2108 .M37 2001	Tertiary entrance performancehelectronic resource bthe role of student background and school factors cGary N Marks Julie McMillan Kylie Hillman	0864314485,	0864314485,	USTL
+1000000000291738	^TX165.A1	Journal of family and consumer sciences education	19385919,	19385927,	USTL
+1000000000291747	^Q181 .E83 2005	Exemplary science bbest practices in professional development cRobert E Yager editor	0873552563,	0873552563,	LCC
+1000000000291748	^Q181 -- .E85 2005eb	Exemplary Science in Grades 9 12 bStandards Based Success Stories	0873552571,9786611758097,1435652843,1281758094,1933531509,	0873552571,9786611758097,1435652843,1281758094,1933531509,	HKSYU
+1000000000291763	^LB3013 .L286 1994	Tips for creating a manageable classroom bunderstanding your students basic needs cJulie Landsman	1571312005,	1571312005,	LCC
+1000000000292325	^LC5201	New horizons in adult education human resource developmenthelectronic resource	19394225,		OXFORD
+1000000000293278	^LC5451	LLI review bannual journal of the Osher Lifelong Learning Institute	19327625,	19327633,	USTL
+1000000000294534	^LC67.65.N49 C66	The New England journal of higher education	19385978,		USTL
+1000000000294969	^H62.A1	Social studies research practicehelectronic resource	19335415,		MIT
+1000000000299253	^LB1028.25.A8	Post scripthelectronic resource bPS	1444383X,		MIT
+1000000000301268	^QA76.76.C54 C47	Childrens technology reviewhelectronic resource	1555242X,	15552470,	MIT
+1000000000302518	^PB38.C6 J68	International forum of teaching and studieshelectronic resource	1555872X,		MIT
+1000000000302833	^LC151 .C57	Community literacy journalhelectronic resource	15559734,	21626324,	MIT
+1000000000306283	^LA1535 .E383	Education as changehelectronic resource	16823206,	19479417,	MIT
+1000000000307966	^LB2364 .J68	Journal of the National Collegiate Honors Councilhelectronic resource ca publication of the National Collegiate Honors Council	15590151,	23785993,	MIT
+1000000000308146	^LB2369	Doctoral forumhelectronic resource bnational journal for publishing mentoring doctoral student research	15592804,		MIT
+1000000000308852	^LB2395.7	Informing facultyhelectronic resource	1559727X,		USTL
+1000000000309474	^P40.85.G4 L36	Language Centre journalhelectronic resource	08557454,		MIT
+1000000000310269	^LC1099.3 .P73	Praxishelectronic resource	19310242,	21612978,	MIT
+1000000000313659	^HF1101 .I47	International journal of education researchhelectronic resource	19328443,		MIT
+1000000000315269	^LC5251 .A637	Adult basic education and literacy journalhelectronic resource	19342322,		MIT
+1000000000315913	^LC1099	International journal of multicultural educationhelectronic resource	19345267,		MIT
+1000000000316050	^L11	Journal of education and human developmenthelectronic resource	19347200,		MIT
+1000000000316080	^PN167 .P529	Plagiaryhelectronic resource bcross disciplinary studies in plagiarism fabrication and falsification	19347294,		MIT
+1000000000316339	^LB1775	International journal of teacher leadershiphelectronic resource	19349726,		MIT
+1000000000316515	^L11 .J72	Journal of education researchhelectronic resource	1935052X,		MIT
+1000000000321471	^TK5101.A1 T3564	Telecommunicationshelectronic resource	1936993X,	19435517,	MIT
+1000000000322054	^RA418 .J68	Social work in public healthhelectronic resource	19371918,	1937190X,	MIT
+1000000000323920	^LB1028.3 .I5675	International journal of technology in teaching and learninghelectronic resource	19375204,	15512576,	MIT
+1000000000324651	^LB1140.23 .T43	Teaching young childrenhelectronic resource	19397283,		MIT
+1000000000326367	^LB1731 .T4193	Teacher professional development sourcebookhelectronic resource	19346212,		MIT
+1000000000326546	^LB1028 .J674	Journal of educational research policy studieshelectronic resource cUniversity of Arkansas	19346875,	19346883,	MIT
+1000000000328733	^LB2364	Honors in practicehelectronic resource ca publication of the National Collegiate Honors Council	15590143,	23748176,	MIT
+1000000000328805	^LC93.G7 E3935	Education parliamentary monitorpWeekly bulletinhelectronic resource	17554594,		MIT
+1000000000330820	^RM930.A1 D45	Defektoloska teorija i praktikahelectronic resource	14096099,	1857663X,	MIT
+1000000000330853	^LC4704 .L43	Learning disabilitieshelectronic resource	19376928,	19376936,	MIT
+1000000000335298	^LB1585 -- .A57 2007eb	More Picture Perfect Science Lessons bUsing Childrens Books to Guide Inquiry K 4	1933531126,1933531746,	1933531126,1933531746,	HKSYU
+1000000000335300	^Q183.3.A1 -- H44 2006eb	Start With a Story bThe Case Study Method of Teaching College Science An NSTA Press Journals Collection	1933531061,9786611758240,1281758248,1933531886,	1933531061,9786611758240,1281758248,1933531886,	HKSYU
+1000000000335303	^LB1585 -- .A785 2006eb	Assessment in Science bPractical Experiences and Education Research	1933531002,9786611217815,1281217816,1933531932,	1933531002,9786611217815,1281217816,1933531932,	HKSYU
+1000000000338018	^RC553.A88 A88 2007	The complete guide to Aspergers syndrome cTony Attwood	1843104954,1843106698,184985789X,9786610929757,1280929758,184642559X,	1843104954,1843106698,184985789X,9786610929757,1280929758,184642559X,	LCC
+1000000000338071	^LC4717.5 .B74 2006	The autism spectrum and further education ba guide to good practice cChristine Breakey	1843103826,1849852634,9786610738069,1280738065,184642531X,	1843103826,1849852634,9786610738069,1280738065,184642531X,	LCC
+1000000000338075	^HV1569.5 .M87 2006	Getting IT busing information technology to empower people with communication difficulties cDinah Murray and Ann Aspinall	1843103753,9786610738045,1280738049,1846425093,	1843103753,9786610738045,1280738049,1846425093,	LCC
+1000000000338103	^LC4704.5 .C75 2006	Drama therapy and storymaking in special education cPaula Crimmens	1843102919,1849854394,9786610566327,1280566221,1846424860,	1843102919,1849854394,9786610566327,1280566221,1846424860,	LCC
+1000000000340125	^Q179.9	Science educationhelectronic resource bmodels and networking of student research training under 21 cedited by Péter Csermely Korado Korlevic and Katalin Sulyok	1586037218,6610934770,9786610934775,142949218X,1607502291,6000005466,1280934778,1433708736,	1586037218,6610934770,9786610934775,142949218X,1607502291,6000005466,1280934778,1433708736,	LCC
+1000000000344125	^QE715 .H36 2006	Adventures in paleontology b36 classroom fossil activities cby Thor Hansen and Irwin Slesnick ; illustrations by DW Miller	0873552725,9786611217778,1281217778,1933531991,	0873552725,9786611217778,1281217778,1933531991,	LCC
+1000000000344127	^LB1585 .Y43 2006	If you build it they will learn b17 devices for demonstrating physical science cby Bruce Yeany	0873552679,1933531924,	0873552679,1933531924,	LCC
+1000000000344129	^QK981 -- .R47 2006 eb	Garden Genetics bTeaching with Edible Plants Combined Teacher and Student Edition	0873552644,1933531975,	0873552644,1933531975,	HKSYU
+1000000000344131	^Q183.3.A1 -- H35 2006eb	Handbook of College Science Teaching bTheory Research and Practice	0873552601,1933531908,	0873552601,1933531908,	HKSYU
+1000000000365665	^LB1623.5	RMLE onlinehelectronic resource bresearch in middle level education	19404476,		MIT
+1000000000375829	^LB1028.3 .E19	Education weeks digital directionshelectronic resource	19408609,	19408617,	MIT
+1000000000378347	^H62.A1 I547	International journal of multiple research approacheshelectronic resource	18340806,	18340814,	MIT
+1000000000381001	^LC67.62.B65 2003	Universities in the marketplace bthe commercialization of higher education cDerek Bok	0691114129,0691120129,1400825490,9786612087264,1282087266,	0691114129,0691120129,1400825490,9786612087264,1282087266,	MIT
+1000000000381413	^LC1085.2 .W37 2005	University Inc bthe corporate corruption of American higher education cJennifer Washburn	0465090524,078672238X,	0465090524,078672238X,	OXFORD
+1000000000387864	^LC189.8 .S36	Schoolshelectronic resource bstudies in education	15501175,	21530327,	MIT
+1000000000389863	^HF1131.K45 2007	From higher aims to hired hands bthe social transformation of American business schools and the unfulfilled promise of management as a profession cRakesh Khurana	069112020X,0691145873,9786612259197,1282259199,1400830869,	069112020X,0691145873,9786612259197,1282259199,1400830869,	MIT
+1000000000390630	^LB2300 .R45	Review of higher education and self learninghelectronic resource	19409494,	19409508,	MIT
+1000000000391965	^LB1028.3 .J6673	Journal of educational technology development and exchangehelectronic resource	19418027,	19418035,	MIT
+1000000000392386	^BF712	Behavioral development bulletinhelectronic resource	19420722,		MIT
+1000000000392700	^LB1570	Journal of curriculum theorizinghelectronic resource	19422563,		MIT
+1000000000392842	^L11	Florida journal of educational administration policyhelectronic resource	19423497,		MIT
+1000000000393433	^LB1044.87	Journal of e learning and knowledge society bJe LKS cSocietà italiana di e learning	18266223,	19718829,	USTL
+1000000000397971	^LA563 .C355	Calidad en la educación	07174004,	07184565,	USTL
+1000000000397988	^LB1027	International journal of instructionhelectronic resource	1694609X,	13081470,	USTL
+1000000000411234	^LB3089.4.G7 -- P37 1999eb	Education Exclusion and Citizenship	041517497X,0415174961,0203016327,1280334436,0203267036,	041517497X,0415174961,0203016327,1280334436,0203267036,	HKSYU
+1000000000415996	^LB3 .A1E57	Ensayos	02144824,	21719098,	USTL
+1000000000423541	^LA940 .C3	�agdas egitimhelectronic resource	1300249X,		MIT
+1000000000428488	^LB1051	School Psychology Forum research in practicehelectronic resource	19382243,		OXFORD
+1000000000429478	^E185.5 .C92	The Crisis brecord of the darker races	00111422,	21691010,	USTL
+1000000000433834	^LC3950 .M85	Multiple voices for ethnically diverse exceptional learnershelectronic resource ba publication of the Division for Culturally and Linguistically Diverse Exceptional Learners	15471888,	2158396X,	MIT
+1000000000436745	^KF3989	College athletics and the lawhelectronic resource	15528774,	19437579,	MIT
+1000000000436823	^LB1028 .S625	Southeastern teacher education journalhelectronic resource	19453744,		MIT
+1000000000440222	^LC46 .J687	Journal of unschooling and alternative learninghelectronic resource	19168128,		MIT
+1000000000453973	^HQ777.S43 2005	Seven going on seventeen btween studies in the culture of girlhood cClaudia Mitchell Jacqueline Reid Walsh editors	0820467715,0820480851,	0820467715,0820480851,	MIT
+1000000000462418	^LC990 -- .D54 2006eb	Different Three Rs for Education bReason Relationality Rhythm	904201699X,9401201617,1423791975,	904201699X,9401201617,1423791975,	HKSYU
+1000000000473223	^Q181 -- .K248 2007eb	Uncovering Student Ideas in Science 2 b25 More Formative Assessment Probes	0873552733,1933531738,	0873552733,1933531738,	HKSYU
+1000000000475333	^LC71 -- .C363 2007eb	Education for a Democratic Society bCentral European Pragmatist Forum	9042021535,9401203997,1429481498,	9042021535,9401203997,1429481498,	HKSYU
+1000000000475784	^RJ506.P32 K47 2000	Personality disorders in children and adolescents cPaulina F Kernberg Alan S Weiner Karen K Bardenstein	0465095623,0786748664,0786724080,1429485817,	0465095623,0786748664,0786724080,1429485817,	LCC
+1000000000475854	^LC311 .H86 2000	The death of character bmoral education in an age without good evil cJames Davison Hunter	0465031773,1322951977,046501173X,1429485655,	0465031773,1322951977,046501173X,1429485655,	OXFORD
+1000000000475942	^RJ386.5 .C66 1989	Feeding the brainhelectronic resource bhow foods affect children cC Keith Conners	0738206202,1489965157,1429494638,	0738206202,1489965157,1429494638,	MIT
+1000000000475977	^LC196 .G573 1997	Pedagogy and the politics of hope btheory culture and schooling a critical reader cHenry A Giroux	0813332745,0786742372,1429489472,	0813332745,0786742372,1429489472,	OXFORD
+1000000000475986	^LC5146.5 .T54 1997	Teaching the commons bplace pride and the renewal of community cPaul Theobald	0813323029,0786742186,1429490896,	0813323029,0786742186,1429490896,	LCC
+1000000000476149	^P96.M4 I58 1999	Intermediality bthe teachers handbook of critical media literacy cedited by Ladislaus M Semali Ann Watts Pailliotet	0813334802,1429490470,	0813334802,1429490470,	LCC
+1000000000476158	^LC196 .L45 1999	Presence of mind beducation and the politics of deception cPepi Leistyna	0813334764,1429490454,	0813334764,1429490454,	LCC
+1000000000476170	^LA217.2 .V37 1998	Successful failure bthe school America builds cHervé Varenne and Ray McDermott with Shelley Goldman Merry Naddeo and Rosemarie Rizzo Tolk	0813391296,1429486805,	0813391296,1429486805,	OXFORD
+1000000000476295	^LB1029.A22 F56 2000	Accelerating the learning of all students bcultivating culture change in schools classrooms and individuals cChristine Finnan Julie D Swanson	0813390508,0429502575,0786742771,1429486686,	0813390508,0429502575,0786742771,1429486686,	OXFORD
+1000000000476302	^LC4704 .P476 1999	Perspectives on learning disabilities bbiological cognitive contextual cedited by Robert J Sternberg Louise Spear Swerling	0813331765,0429978014,1429491647,	0813331765,0429978014,1429491647,	OXFORD
+1000000000476305	^BD161 .L368 2000	Theory of knowledge cKeith Lehrer	0813390532,078674278X,1429486694,	0813390532,078674278X,1429486694,	OXFORD
+1000000000476406	^HD6250.L292 P67 2001	Childrens work schooling and welfare in Latin America cDavid Post	0813339154,0429981341,0429970269,1429489235,	0813339154,0429981341,0429970269,1429489235,	LCC
+1000000000476407	^LB880.A652 H36 2001	Hannah Arendt and education brenewing our common world cedited by Mordechai Gordon	0813366321,1429487828,	0813366321,1429487828,	LCC
+1000000000480347	^LB2351.2 .D68 2007	The conditions for admission baccess equity and the social contract of public universities cJohn Aubrey Douglass	0804755582,0804768307,1435608968,	0804755582,0804768307,1435608968,	LCC
+1000000000484087	^LB14.7 -- .P724 2008eb	Pragmatism Education and Children bInternational Philosophical Perspectives	9042023422,9401205418,1435628594,	9042023422,9401205418,1435628594,	HKSYU
+1000000000487351	^KFN2190.Y34 2007	Other Peoples Children bThe Battle for Justice and Equality in New Jerseys Schools	0813542057,9786611316518,1281316512,0813543932,	0813542057,9786611316518,1281316512,0813543932,	HKSYU
+1000000000489475	^HF1181	e Journal of business education scholarship of teachinghelectronic resource be JBEST	18359132,		MIT
+1000000000498278	^WMLC 93/1904	Journalhelectronic resource	19385595,		MIT
+1000000000499165	^L97 .I56	In�n� �niversitesi Egitim fak�ltesi dergisihelectronic resource	13002899,		MIT
+1000000000499168	^LB1028.25.P18 J68	Journal of educational researchhelectronic resource	10279776,		MIT
+1000000000499170	^LB3045	Jiao ke shu yan jiuhelectronic resource	19998856,	19998864,	MIT
+1000000000499171	^QC30 .L385	Latin American journal of physics educationhelectronic resource	18709095,		MIT
+1000000000525918	^L51 .N49	The new educational reviewhelectronic resource cUniversity of Silesia and University of Ostrava and Matej Bel University	17326729,		MIT
+1000000000536592	^LA1133 .L43 2008eb (Online)	Learning from the fieldhelectronic resource binnovating Chinas higher education system cedited by Ronnie Vernooy et al	8175966017,8175968702,9786611728120,1281728128,1552504085,	8175966017,8175968702,9786611728120,1281728128,1552504085,	USTL
+1000000000538444	^Q181 -- .P3475 2005eb	Teaching With Purpose bClosing the Research Practice Gap	0873552415,9786611758325,1281758329,1935155903,	0873552415,9786611758325,1281758329,1935155903,	HKSYU
+1000000000542095	^2007033808	Mama PhD bWomen Write about Motherhood and Academic Life	0813543177,0813543185,9786611776589,1281776580,081354498X,	0813543177,0813543185,9786611776589,1281776580,081354498X,	HKSYU
+1000000000543223	^L11 .I78	International electronic journal of elementary educationhelectronic resource	13079298,		MIT
+1000000000548679	^MLCM 2006/10703	Making technology standards work for you ba guide for school administrators cSusan Brooks Young	1564841901,	1564841901,	LCC
+1000000000577599	^LB1027.23	Designs for learninghelectronic resource	16547608,	20017480,	MIT
+1000000000577864	^LB2866	Campus security reporthelectronic resource	15512800,	19456247,	MIT
+1000000000699885	^LC221 .J68	Journal of community engagement and scholarshiphelectronic resource	19441207,		MIT
+1000000000709159	^LB1027	Journal of research in innovative teachinghelectronic resource	19471017,		MIT
+1000000000712570	^LC5101	Penn GSE perspectives on urban educationhelectronic resource	19467109,		MIT
+1000000000713069	^HD58.82 .O54 2007eb	Understanding action learning cJudy ONeil Victoria J Marsick	0814473954,9786611128579,1281128570,0814430007,	0814473954,9786611128579,1281128570,0814430007,	OXFORD
+1000000000713265	^LC283.V34 1975	Values Education bTheory Practice Problems Prospects	0889200157,9786613810328,1282232584,0889206856,	0889200157,9786613810328,1282232584,0889206856,	HKSYU
+1000000000716624	^Q181.A1	Acta didactica Napocensiahelectronic resource	20651430,		MIT
+1000000000716650	^Q181.A1 N43	Necatibey Egitim Fak�ltesi elektronik fen ve matematik egitimi dergisi	13076086,		MIT
+1000000000717371	^MLCM 2006/10249	The pathways from school to further study and work for Australian graduates cStephen Lamb	0864313977,	0864313977,	LCC
+1000000000717408	^LB1707	Journal of teacher education for sustainabilityhelectronic resource	16914147,	16915534,	MIT
+1000000000717908	^L56	Pamukkale �niversitesi Egitim Fak�ltesi dergisihelectronic resource	13010085,	13090275,	MIT
+1000000000723403	^LA1290 .A854	The Asia Pacific education researcherhelectronic resource	01195646,	22437908,	MIT
+1000000000726024	^L11 .B8	Bulletin of education and researchhelectronic resource	05557747,		MIT
+1000000000728233	^LC212.42.R33 2002	Race in the college classroom bpedagogy and politics cedited by Bonnie TuSmith and Maureen T Reddy	0813531098,	0813531098,	MIT
+1000000000728234	^GV885.73.W18 K87 2004	Hot potato bhow Washington and New York gave birth to Black basketball and changed Americas game forever cBob Kuska	0813922631,	0813922631,	LCC
+1000000000728235	^LC213.2 .B69 2006	Equity and excellence in American higher education cWilliam G Bowen Martin A Kurzweil and Eugene M Tobin ; in collaboration with Susanne C Pichler	0813925576,	0813925576,	LCC
+1000000000728244	^HD6276.A82 M36 2006	The transition to full time work of young people who do not go to university cGary N Marks	0864315414,	0864315414,	LCC
+1000000000728245	^Q180.U5 G345 2004	Knowledge and money bresearch universities and the paradox of the marketplace cRoger L Geiger	0804749264,	0804749264,	LCC
+1000000000728246	^LC213 .S77 2007	Stratification in higher education ba comparative study cedited by Yossi Shavit et al	0804754624,	0804754624,	OXFORD
+1000000000728248	^LB2864.6.A25 P67 2000	Preventing school injuries ba comprehensive guide for school administrators teachers and staff cMarc Posner	0813527481,	0813527481,	LCC
+1000000000728250	^LC196.5.U6 T433 2004	Teaching teachers bbuilding a quality school of urban education cedited by Joe L Kincheloe Alberto Bursztyn Shirley R Steinberg	0820449296,	0820449296,	LCC
+1000000000728251	^LB2831.92 .S36 2005	School principals cedited by Jianping Shen	0820451525,	0820451525,	LCC
+1000000000728252	^LB1707 .S263 2006	Self study of teaching practices primer cAnastasia P Samaras Anne R Freese	0820463868,	0820463868,	LCC
+1000000000728253	^LC45.3 .L43 2006	Learning in places bthe informal education reader cedited by Zvi Bekerman Nicholas C Burbules Diana Silberman Keller	0820467863,	0820467863,	LCC
+1000000000728254	^LC5800 .L45 2004	Learning culture and community in online education bresearch and practice cCaroline Haythornthwaite Michelle M Kazmer editors	0820468479,	0820468479,	LCC
+1000000000728255	^LC213.2 .P67 2005	Dismantling educational inequality ba cultural historical approach to closing the achievement gap cPedro R Portes	0820476064,	0820476064,	LCC
+1000000000728256	^LB1590.3 .K53 2005	Critical constructivism primer cJoe L Kincheloe	0820476161,	0820476161,	LCC
+1000000000728257	^LB2822.75 .J36 2006	Authentic assessment primer cValerie J Janesick	082047648X,	082047648X,	LCC
+1000000000728258	^LC4019 .V57 2006	Vital questions facing disability studies in education cedited by Scot Danforth and Susan L Gabel	0820478342,	0820478342,	LCC
+1000000000728259	^KF4125.Z9 H47 2006	No Child Left Behind primer cFrederick M Hess Michael J Petrilli	082047844X,	082047844X,	LCC
+1000000000728260	^LB1025.3 .C55 2005	Classroom teaching ban introduction ced by Joe L Kincheloe	082047858X,	082047858X,	LCC
+1000000000728261	^LB2361.5 .G45 2006	Higher education at a crossroads cPaul R Geisler	0820479144,	0820479144,	LCC
+1000000000728262	^LC196.5.U6 B73 2007	Brave new classrooms bdemocratic education the Internet cedited by Joe Lockard Mark Pegrum	0820481238,	0820481238,	OXFORD
+1000000000728263	^LB2331 .U79 2007	Unleashing suppressed voices on college campuses bdiversity issues in higher education cedited by O Gilbert Brown Kandace G Hinton Mary Howard Hamilton	0820481335,	0820481335,	LCC
+1000000000728264	^LC1099.3 .S63 2006	Social change in diverse teaching contexts btouchy subjects and routine practices cNancy G Barron Nancy M Grimm Sibylle Gruber editors	0820481424,	0820481424,	LCC
+1000000000728265	^LC196 .C759 2007	Critical pedagogy bwhere are we now cedited by Peter McLaren Joe L Kincheloe	0820481475,	0820481475,	LCC
+1000000000728266	^LC5131 .T42 2007	Teaching city kids bunderstanding and appreciating them cJoe L Kincheloe Kecia Hayes editors	0820486035,	0820486035,	LCC
+1000000000728267	^LC212.2 .S59 2007	Six lenses for anti oppressive education bpartial stories improbable conversations cKevin K Kumashiro and Bic Ngo editors	0820488496,	0820488496,	LCC
+1000000000728268	^LC213.2 .S75 2007	Still not equal bexpanding educational opportunity in society cedited by M Christopher Brown II ; with assistance from RoSusan D Bartee ; foreword by Michael L Lomax	0820495220,	0820495220,	LCC
+1000000000728269	^LA1331 .S35 2002	Education fever bsociety politics and the pursuit of schooling in South Korea cMichael J Seth	0824825349,0824862309,	0824825349,0824862309,	LCC
+1000000000728270	^LB2322.2 .G55 2004	Globalization and higher education cJaishree K Odin and Peter T Manicas editors	0824828267,	0824828267,	HKSYU
+1000000000728271	^Q181 .E94 2006	Exemplary science in grades 5 8 bstandards based success stories cRobert E Yager editor	0873552628,	0873552628,	LCC
+1000000000728272	^Q183.3.A1 T425 2006	Teaching science in the 21st century cJack Rhoton and Patricia Shane editors	0873552695,	0873552695,	LCC
+1000000000728273	^RC488 .S18	Active techniques and group psychotherapy cby Ted Saretsky	0876682727,	0876682727,	LCC
+1000000000728274	^RC483 .P7797 1993	Psychotherapy and medication ba dynamic integration cedited by Meri Schachter	0876682964,	0876682964,	LCC
+1000000000728275	^HV3176 .C44 2008	Multicultural practice evaluation ba case approach to evidence based practice cMonit Cheung Patrick Leung	0891083332,	0891083332,	LCC
+1000000000728276	^GV706.32 .S69 1999	The skin Im in bracism sports and education cChristopher M Spence	1552660176,1459319567,	1552660176,1459319567,	LCC
+1000000000728280	^LA1623 .P37 2006	Partners for progress ba Canada Africa venture in university building cMichael J Larsen and James H Morrison editors	1552661849,1459323300,	1552661849,1459323300,	LCC
+1000000000728281	^LB1028.3 .I594 2000	National educational technology standards for students bconnecting curriculum and technology cInternational Society for Technology in Education	1564841502,	1564841502,	LCC
+1000000000728282	^LB1715 .I63 2002	National educational technology standards for teachers bpreparing teachers to use technology cInternational Society for Technology in Education	1564841731,	1564841731,	LCC
+1000000000728283	^MLCM 2006/11238	Multidisciplinary units for grades 3 5 cISTE	1564841766,	1564841766,	LCC
+1000000000728284	^LB1060 .M39 2005	Multiple intelligences and instructional technology cWalter McKenzie	156484188X,	156484188X,	LCC
+1000000000728285	^MLCM 2006/10096	Multidisciplinary units for prekindergarten through grade 2 cJeri A Carroll MG Peggy Kelly Tonya L Witherspoon	1564842002,	1564842002,	LCC
+1000000000728286	^MLCM 2006/10702	Resources for assessment	1564842029,	1564842029,	LCC
+1000000000728287	^MLCM 2006/10176	Multidisciplinary units for grades 6 8 cSusan OHara Maureen McMahon	1564842061,	1564842061,	LCC
+1000000000728288	^H62 .S7247193 2004	Social studies units for grades 9 12 cWalter McKenzie editor	1564842126,	1564842126,	LCC
+1000000000728289	^Q183.3.A1 .S377 2005	Science units for grades 9 12 cRandy L Bell and Joe Garofalo editors	1564842177,	1564842177,	LCC
+1000000000728290	^LB1028.3 .K435 2006	Resources for student assessment cM G Peggy Kelly Jon Haber	1564842207,	1564842207,	LCC
+1000000000728291	^Z1033.E43 C38 2006	The digital reader busing e books in K 12 education cTerence W Cavanaugh	1564842215,	1564842215,	LCC
+1000000000728292	^LB1028.3 .T86 2006	Teachers as technology leaders ba guide to ISTE technology facilitation and technology leadership accreditation cCordelia Twomey Christopher Shamburg Laura B Zieger	1564842266,	1564842266,	LCC
+1000000000728293	^LB1044.87 .L448 2006	101 best Web sites for teacher tools and professional development cJames Lerman	1564842274,	1564842274,	LCC
+1000000000728295	^LB1028.3 .S6195 2007	Web 20 bnew tools new schools cGwen Solomon Lynne Schrum	1564842347,1564844048,	1564842347,1564844048,	LCC
+1000000000728296	^LC3732.T4 B53 2004	The strange career of bilingual education in Texas 1836 1981 cCarlos Kevin Blanton	1585443107,	1585443107,	LCC
+1000000000728301	^LB2325 .D545 2006	Doctrina perpetua bbrokering change promoting innovation and transforming marginalisation in university learning and teaching cedited by Jeanne McConachie et al	1876682930,	1876682930,	LCC
+1000000000729613	^LB3201 .P43	CELE exchangehelectronic resource	20727925,		MIT
+1000000000743780	^LC3950	Journal of international special needs educationhelectronic resource	23314001,	21594341,	MIT
+1000000000748102	^LB2844.47.U62 N494 2002	The Newark teacher strikes bhopes on the line cSteve Golin	0813530571,9786613855879,1283543427,0813547024,	0813530571,9786613855879,1283543427,0813547024,	OXFORD
+1000000000751069	^HM1261	Journal of leadership education bJOLE	15529045,		USTL
+1000000000752418	^LC4704 .I55	Insights on learning disabilitieshelectronic resource bfrom prevailing theories to validated practices	19491212,		MIT
+1000000000753320	^LC2741 .K37 2008	A visible company of professionals bAfrican Americans and the National Education Association during the civil rights movement cCarol F Karpinski	0820488488,	0820488488,	LCC
+1000000000753321	^QH541.2 .D64 2004	Currere and the environmental autobiography ba phenonmenological approach to the teaching of ecology cMarilyn N Doerr	0820463698,	0820463698,	LCC
+1000000000753322	^LC3079 .L52 2002	East is east west is west bhome literacy culture and schooling cGuofang Li	0820461199,	0820461199,	LCC
+1000000000753323	^LC1755 .O53 2006	Its just easier not to go to school badolescent girls and disengagement in middle school cLori Olafson	0820467626,	0820467626,	LCC
+1000000000753324	^LB2157.U5 G75 2005	Teaching like that bthe beginnings of teacher education at Bank Street cJaime G A Grinberg	082046239X,	082046239X,	LCC
+1000000000753325	^LB3060.3 .B35 2006	Achievement testing in US elementary and secondary schools cJoan M Baker	0820476315,	0820476315,	LCC
+1000000000753326	^LC5215 .A3443 2004	Adult education 21st century cedited by Peter Kell Sue Shore Michael Singh	0820461105,	0820461105,	LCC
+1000000000753327	^LB1060 .M3343 2006	After the information age ba dynamic learning manifesto cJames W Marcum	0820462284,	0820462284,	LCC
+1000000000753328	^E97 .H784 2008	American Indian higher educational experiences bcultural visions and personal journeys cTerry Huffman	1433100827,	1433100827,	LCC
+1000000000753330	^P94.65.U6 C58 2004	Anti intellectualism in American media bmagazines higher education cDane S Claussen	0820457213,	0820457213,	LCC
+1000000000753331	^LC5141 .D86 2008	The art of critical pedagogy bpossibilities for moving from theory to practice in urban schools cJeffrey MR Duncan Andrade and Ernest Morrell	0820474150,	0820474150,	LCC
+1000000000753332	^N72.S6 R68 2003	Art culture education bartful teaching in a fractured landscape cKarel Rose Joe L Kincheloe	0820457450,	0820457450,	LCC
+1000000000753333	^LB1731 .R65 2002	At the elbow of another blearning to teach by coteaching cWolff Michael Roth and Kenneth Tobin	0820455679,	0820455679,	LCC
+1000000000753334	^LB2369 .A885 2006	The authority to imagine bthe struggle toward representation in dissertation writing cNoreen B Garman Maria Piantanida editors	0820474541,	0820474541,	LCC
+1000000000753335	^LB2806.15 .C374 2008	The autobiographical demand of place bcurriculum inquiry in the American south cBrian Casemore	0820488054,	0820488054,	LCC
+1000000000753336	^LC196 .Q85 2003	Becoming a teacher in the new society bbringing communities and classrooms together cElizabeth P Quintero and Mary Kay Rummel	0820449202,	0820449202,	LCC
+1000000000753337	^LB14.7 .C654 2004	Betwixt between bthe liminal imagination education and democracy cJames C Conroy	0820469149,	0820469149,	LCC
+1000000000753338	^LC214.22.N66 H85 2006	Black hands in the biscuits not in the classrooms bunveiling hope in a struggle for Browns promise cSherick A Hughes	0820474312,	0820474312,	LCC
+1000000000753339	^LC2781.7 .D38 2004	Black students perceptions bthe complexity of persistence to graduation at an American university cR Deborah Davis	0820455393,	0820455393,	LCC
+1000000000753340	^LC3719 .S77 2008	Bringing memory forward bstoried remembrance in social justice education with teachers cTeresa Strong Wilson	0820488747,	0820488747,	LCC
+1000000000753341	^LB2351.4.S6 A53 2002	Building a peoples university in South Africa brace compensatory education and the limits of democratic reform cGregory M Anderson	0820449547,	0820449547,	LCC
+1000000000753342	^LC46.4 .B76 2007	Building community in an alternative school bthe perspective of an African American principal cLionel H Brown Kelvin S Beckett	082048654X,	082048654X,	LCC
+1000000000753344	^LC2771 .C45 2007	The children Hurricane Katrina left behind bschooling context professional preparation and community politics cSharon P Robinson and M Christopher Brown II editors ; with a foreword by Linda Darling Hammond and afterword by Lynn Huntley	0820488224,	0820488224,	LCC
+1000000000753345	^LB1590.3 .H65 2007	Classroom calypso bgiving voice to the voiceless cWinthrop R Holder	0820451371,	0820451371,	LCC
+1000000000753346	^RJ506.J88 B73 1997	Clinical interventions with gang adolescents and their families cCurtis W Branch	0813329043,	0813329043,	LCC
+1000000000753347	^LB1573 .P536 2005	The colonization of literacy education ba story of reading in one elementary school cJulie L Pennington	0820469254,	0820469254,	LCC
+1000000000753348	^LC196.5.U6 C66 2005	Community and difference bteaching pluralism and social justice cedited by Roberto A Peña Kristin Guest Lawrence Y Matsuda	0820468444,	0820468444,	LCC
+1000000000753349	^F234.C47 J36 2005	The conspiracy of the good bcivil rights and the struggle for community in two American cities 1875 2000 cMichael E James	0820457795,	0820457795,	LCC
+1000000000753350	^LB1628 .B42 2006	Conversations of curriculum reform bstudents and teachers voices interpreted through autobiographical and phenomenological texts cKathryn M Benson	0820474797,	0820474797,	LCC
+1000000000753351	^LC1085.2 .C664 2008	The corporate assault on youth bcommercialism exploitation and the end of innocence cedited by Deron Boyles	1433100843,	1433100843,	LCC
+1000000000753352	^HT1521 .C72 2008	Crash politics and antiracism binterrogations of liberal race discourse cedited by Philip SS Howard and George J Sefa Dei	1433102463,	1433102463,	LCC
+1000000000753353	^LB2806.15 .L33 2002	Creative planning resource for interconnected teaching and learning cLyn Ellen Lacy ; Ann Watts Pailliotet consulting editor	0820451851,	0820451851,	LCC
+1000000000753354	^LC196.5.U6 M34 2006	Critical literacy ba way of thinking a way of life cCynthia A McDaniel	0820479462,	0820479462,	LCC
+1000000000753355	^BF724.3.I55 B69 2005	The culture of classroom silence cSandra Leanne Bosacki	0820467839,	0820467839,	LCC
+1000000000753356	^LC4069.4 .B42  2004	A culture of refusal bthe lives and literacies of out of school adolescents cBrett Elizabeth Blake	0820448710,	0820448710,	LCC
+1000000000753357	^HM636 .C87 2007	Curriculum and the cultural body cedited by Stephanie Springgay and Debra Freedman	0820486868,	0820486868,	LCC
+1000000000753358	^Z5815.U5 S34 2002$aLB1570	Curriculum books bthe first hundred years cWilliam H Schubert et al	0820451924,	0820451924,	LCC
+1000000000753359	^LB1775 .F67 2006	A curriculum of difficulty bnarrative research in education and the practice of teaching cLeah C Fowler	0820481505,	0820481505,	LCC
+1000000000753360	^LC2741 .K53 2006	A curriculum of repression ba pedagogy of racial history in the United States cHaroon Kharem	0820456632,	0820456632,	LCC
+1000000000753361	^LB1570 .C266 2006	Curriculum spaces bdiscourse postmodern theory and educational research cLisa J Cary	0820481289,	0820481289,	LCC
+1000000000753362	^LB880.F682 D36 2004	Dangerous coagulations bthe uses of Foucault in the study of education cedited by Bernadette M Baker Katharina E Heyning	0820458147,	0820458147,	LCC
+1000000000753363	^LC196 .D46 2004	Democratic dialogue in education btroubling speech disturbing silence cedited by Megan Boler	0820463191,	0820463191,	LCC
+1000000000753364	^LA1441 .G87 2003	Destroying the others collective memory cIlan Gur Zeev	0820449423,	0820449423,	LCC
+1000000000753365	^LB1033.5 .S55 2005	Dialogue is not just talk ba new ground for educational leadership cCarolyn M Shields Mark M Edwards	082047469X,	082047469X,	LCC
+1000000000753366	^LC5141 .E67 2006	A different view of urban schools bcivil rights critical race theory and unexplored realities cKitty Kelly Epstein	0820478792,	0820478792,	LCC
+1000000000753367	^LC111 .C27 2007	The dissenting tradition in American education cJames C Carper and Thomas C Hunt	0820479209,	0820479209,	LCC
+1000000000753369	^HM856 .R55 2002	Ecology spirituality education bcurriculum for relational knowing cElaine Riley Taylor	0820455431,	0820455431,	LCC
+1000000000753370	^LC71.E285 2007	Educating for democracy in a changing world bunderstanding freedom in contemporary America cedited by Stephen M Fain David M Callejo P�rez and Judith J Slater	082047066X,	082047066X,	MIT
+1000000000753371	^TL220 .K57 2000	The electric vehicle and the burden of history cDavid A Kirsch	0813528097,	0813528097,	MIT
+1000000000753373	^LB1027.2 .G58 2005	Educational poetics binquiry freedom innovative necessity cAndrew Gitlin Marcie Peck	0820474460,	0820474460,	LCC
+1000000000753375	^LB1051 .G2175 2003	Educational psychology bdisrupting the dominant discourse cSuzanne Gallagher	0820441309,	0820441309,	LCC
+1000000000753376	^HV8875 .M44 2008	Educations prisoners bschooling the political economy and the prison industrial complex cKen McGrew	1433101750,	1433101750,	LCC
+1000000000753377	^PN147 .E283 2006	Educators as writers bpublishing for personal and professional development cCarol Smallwood editor	0820486019,	0820486019,	LCC
+1000000000753378	^LC2670.4 .D53 2003	The emergence of voice in Latino a high school students cRosario Diaz Greenberg	0820449687,	0820449687,	LCC
+1000000000753379	^BF576.E468 2008	Emotional intelligence bperspectives from educational and positive psychology cJerrell C Cassady Mourad Ali Eissa editors	1433101963,	1433101963,	MIT
+1000000000753380	^LB1027 .E77 2007	The ethical educator bintegrating ethics within the context of teaching and teacher research cedited by Susan E Israel Cynthia A Lassonde	1433101599,	1433101599,	LCC
+1000000000753381	^LC3731 .E875 2006	Ethnicity matters brethinking how Black Hispanic Indian students prepare for succeed in college cMaryJo Benton Lee editor	0820476021,	0820476021,	LCC
+1000000000753382	^LB1060 .B69 2005	The false promises of constructivist theories of learning ba global and ecological critique cCA Bowers	0820478849,	0820478849,	LCC
+1000000000753383	^LC197 .V55 2008	Feminist theories and education primer bprimer cLeila E Villaverde	082047147X,	082047147X,	LCC
+1000000000753384	^LB1044 .F452 2008	Film politics education bcinematic pedagogy across the disciplines cKelvin Shawn Sealey editor	0820478814,	0820478814,	LCC
+1000000000753385	^LB1715 .F45 2004	Finding our way breforming teacher education in the liberal arts setting cRichard J Mezeske editor ; Barbara A Mezeske associate editor	0820461784,	0820461784,	LCC
+1000000000753386	^LB2805 .M76 2005	Fire ice bigniting and channeling passion in new qualitative researchers cCarol A Mullen	0820471461,	0820471461,	LCC
+1000000000753387	^LB880.F732 F745 2002	The Freirean legacy beducating for social justice cedited by Judith J Slater Stephen M Fain and Cesar A Rossatto	0820456713,	0820456713,	LCC
+1000000000753388	^BF378.S65 F76 2003	From girls in their elements to women in science brethinking socialization through memory work cJudith S Kaufman et al	0820445126,	0820445126,	LCC
+1000000000753389	^LC146.7.I3 R63 2007	From the classroom to the corner bfemale dropouts reflections on their school years cCynthia Cole Robinson	0820481890,	0820481890,	LCC
+1000000000753390	^BL42.5.U5 G38 2005	Gateways to spirituality bpre school through grade twelve cPeter W Cobb editor	0820468150,	0820468150,	LCC
+1000000000753391	^LB575.M1162 T575 2004	Gender equality in the philosophy of education bCatharine Macaulays forgotten contribution cConnie Titone	0820451746,	0820451746,	LCC
+1000000000753392	^H62.5.U5 K56 2001	Getting beyond the facts bteaching social studies social sciences in the twenty first century cJoe L Kincheloe	0820441627,	0820441627,	LCC
+1000000000753393	^GE70 .G563 2004	Global perspectives in environmental adult education cedited by Darlene E Clover with the assistance of Sandra Tan	0820461989,	0820461989,	LCC
+1000000000753395	^LB1631 .K455 2006	A guide to creating student staffed writing centers grades 6 12 cRichard Kent	082047889X,	082047889X,	LCC
+1000000000753396	^LB2165 .H65 2007	The Holmes Partnership trilogy bTomorrows teachers Tomorrows schools Tomorrows schools of education cwith a new foreword by Judith Lanier	0820488321,	0820488321,	LCC
+1000000000753397	^LC205 .R66 2002	Hungry minds in hard times beducating for complexity for students of poverty cRosalie M Romano Catherine H Glascock	0820455016,	0820455016,	LCC
+1000000000753398	^LC212 .I34 2004	Identifying race and transforming whiteness in the classroom ceditors Virginia Lea Judy Helfand	0820470686,	0820470686,	LCC
+1000000000753400	^LC1200 .I34 2005	Ideology and the politics of inexclusion cedited by Linda Ware	0820470651,	0820470651,	LCC
+1000000000753401	^LB1025.3 .V56 2003	Image and education bteaching in the face of the new disciplinarity cKevin D Vinson and E Wayne Ross	0820462292,	0820462292,	LCC
+1000000000753402	^LB1067.5 .I43 2003	Image inquiry and transformative practice bengaging learners in creative and critical inquiry through visual representation cedited by Lynn Sanders Bustle	0820455539,	0820455539,	LCC
+1000000000753403	^LA217.2 .H86 2002	The impossible dream beducation and the search for panaceas cThomas C Hunt	0820437476,	0820437476,	LCC
+1000000000753404	^LB1117 .B29 2001	In perpetual motion btheories of power educational history and the child cBernadette M Baker	0820448664,	0820448664,	LCC
+1000000000753405	^LC268 .Y83 2004	In the name of morality bcharacter education and political control cTianlong Yu	0820467251,	0820467251,	LCC
+1000000000753406	^LB2343.4 .T35 2003	The intercultural campus btranscending culture power in American higher education cGreg Tanaka	0820441503,	0820441503,	LCC
+1000000000753407	^LB2806.15 .L78 2003	The internationalization of curriculum studies bselected proceedings from the LSU conference 2000 cedited by Donna Trueit et al	0820455903,	0820455903,	LCC
+1000000000753408	^LA2317.P72 H38 2006	Learning from children bthe life and legacy of Caroline Pratt cMary E Hauser	0820467510,	0820467510,	LCC
+1000000000753409	^LC5219 .W35 2004	The learning society in a postmodern world bthe education crisis cKenneth Wain	0820468363,	0820468363,	LCC
+1000000000753410	^LB1631 .B77 2003	Literacies lies silences bgirls writing lives in the classroom cHeather E Bruce	0820450421,	0820450421,	LCC
+1000000000753411	^LC151 .C33 2004	The literacy curriculum bilingual education ba critical examination cKaren Cadiero Kaplan	0820467154,	0820467154,	LCC
+1000000000753412	^LC149 .B53 2005	Literacy primer cBrett Elizabeth Blake Robert W Blake	0820470775,	0820470775,	LCC
+1000000000753413	^LB1181 .Z37 2005	Look I made a book bliteracy in a kindergarten classroom cNina Zaragoza Eric Dwyer	082046760X,	082046760X,	LCC
+1000000000753414	^LC571 .M56 2004	Minding the light bessays in friendly pedagogy cAnne Dalke Barbara Dixson editors	0820463574,	0820463574,	LCC
+1000000000753415	^LC192 .P87 1999	Moral outrage in education cDavid E Purpel	0820441694,	0820441694,	LCC
+1000000000753416	^LB1092 .B753 2006	Novel education bpsychoanalytic studies of learning and not learning cDeborah P Britzman	0820481483,	0820481483,	LCC
+1000000000753417	^LB3051 .T46 2004	Numbers games bmeasuring and mandating American education cPL Thomas	0820468258,	0820468258,	LCC
+1000000000753418	^LC192.2 .R45 2002	Parallel practices bsocial justice focused teacher education and the elementary school classroom cBarbara Regenspan	0820455938,	0820455938,	LCC
+1000000000753419	^LC5131 .P37 2008	Partnering to prepare urban teachers ba call to activism cFrancine P Peterman editor	1433101165,	1433101165,	LCC
+1000000000753420	^LA2317.K255 N85 2007	Peerless educator bthe life and work of Isaac Leon Kandel cJ Wesley Null ; with a foreword by Diane Ravitch	0820474584,	0820474584,	LCC
+1000000000753421	^LB1590.3 .J37 2006	Piaget education primer cDavid W Jardine	0820472611,	0820472611,	LCC
+1000000000753422	^LC197 .P58 2003	The play of the personal bpsychoanalytic narratives of feminist education cAlice J Pitt	0820463000,	0820463000,	LCC
+1000000000753423	^LA255 .K56 2003	The politics of knowledge bpublic schools in the nations capital cAnna Kinsman	0820467960,	0820467960,	LCC
+1000000000753424	^LB1048.5 .O45 2006	The power of parents ba critical perspective of bicultural parent involvement in public schools cEdward M Olivos ; foreword by Antonia Darder	0820474789,	0820474789,	LCC
+1000000000753425	^LC196 .A77 1999	Power meaning and identity bessays in critical educational studies cMichael W Apple	0820444278,	0820444278,	LCC
+1000000000753426	^LC196.5.U6 W45 2005	Private learning public needs bthe neoliberal assault on democratic education cEric J Weiner	0820462004,	0820462004,	LCC
+1000000000753427	^LC196 .Q87 2004	Problem posing with multicultural childrens literature bdeveloping critical early childhood curricula cElizabeth P Quintero	0820467383,	0820467383,	LCC
+1000000000753429	^LB875.P29 W35 2006	The promise of progressivism bAngelo Patri urban education cJames M Wallace	0820471429,	0820471429,	LCC
+1000000000753430	^LC3731 .M67 2004	Promoting academic resilience in multicultural America bfactors affecting student success cErik E Morales Frances K Trotman	0820467634,	0820467634,	LCC
+1000000000753431	^LB880.A67 P76 2006	Provocations bSylvia Ashton Warner and excitability in education cJudith P Robertson Cathryn McConaghy editors	0820478776,	0820478776,	LCC
+1000000000753432	^LC196.5.U6 W44 2003	Public education and the imagination intellect bI speak from the wound in my mouth cMary E Weems	0820458287,	0820458287,	LCC
+1000000000753433	^LC192.6 .Q857 2007	Queering straight teachers bdiscourse and identity in education cedited by Nelson M Rodriguez William F Pinar	082048847X,	082048847X,	LCC
+1000000000753434	^LB1025.3 .L63 2006	Quiet wisdom bteachers in the United States and England talk about standards practice and professionalism cJohn S Lofty	0820470511,	0820470511,	LCC
+1000000000753435	^LC2803.A85 R33 2005	Racism research and educational reform bvoices from the city cedited by Joanne Kilgour Dowdy Joan T Wynne ; preface by Asa Hilliard	0820467723,	0820467723,	LCC
+1000000000753436	^LC196 .R34 2006	Rage hope binterviews with Peter McLaren on war imperialism critical pedagogy cedited by Peter McLaren	0820479179,	0820479179,	LCC
+1000000000753437	^PE68.U5 M47 2005	Readin writin for the hard hat crowd bcurriculum policy at an urban university cSusan R Merrifield	0820455083,	0820455083,	LCC
+1000000000753438	^LC196 .D695 2006	Reading teaching Henry Giroux cClar Doyle Amarjit Singh	0820481750,	0820481750,	LCC
+1000000000753439	^LB1632 .N37 2005	Reading between the lines ba balanced approach to literacy cMarion E Neville Lynch	0820457590,	0820457590,	LCC
+1000000000753440	^LC212.52 .F47 2006	Reading resistance bdiscourses of exclusion in desegregation inclusion debates cBeth A Ferri David J Connor	0820474282,	0820474282,	LCC
+1000000000753441	^LC268 .G584 2002	Reclaiming caring in teaching and teacher education cLisa S Goldstein	0820455180,	0820455180,	LCC
+1000000000753442	^LC1011 .R387 2007	Reclaiming the public university bconversations on general liberal education cedited by Judith Summerfield Crystal Benedicks	0820481521,	0820481521,	LCC
+1000000000753443	^LC196 .T53 2003	Relational epistemologies cBarbara J Thayer Bacon ; foreword by Nel Noddings	0820461725,	0820461725,	LCC
+1000000000753444	^HQ53 .F53 2008	Risky lessons bsex education and social inequality cJessica Fields	0813543355,	0813543355,	LCC
+1000000000753445	^LC3731 .J69 2008	School hazard zone bbeyond the silence finding a voice cPamela Althea Joyce	0820469122,	0820469122,	LCC
+1000000000753446	^LC2731 .B37 2007	School matters bwhy African American students need multiple forms of capital cRoSusan D Bartee and M Christopher Brown II ; foreword by Vernon C Polite	0820486884,	0820486884,	LCC
+1000000000753447	^LC5751 .G65 2002	Schools in bthe history of summer education in American public schools cKenneth M Gold	0820456578,	0820456578,	LCC
+1000000000753448	^BL240.3 .G66 2005	Scientific and religious habits of mind birreconcilable tensions in the curriculum cRon Good	0820471089,	0820471089,	LCC
+1000000000753449	^LC383 .S42 2007	Searching for spirituality in higher education cedited by Bruce W Speck Sherry L Hoppe	0820481599,	0820481599,	LCC
+1000000000753450	^LC46.4 .N38 2003	Sixties legacy ba history of the public alternative schools movement 1967 2001 cRichard Neumann	082046354X,	082046354X,	LCC
+1000000000753451	^LB2831.824.A66 M34 2004	The social construction of educational leadership bsouthern Appalachian ceilings cAnna Hicks McFadden Penny Smith	0820468126,	0820468126,	LCC
+1000000000753452	^LB1570 .S645 2004	Social education in the twentieth century bcurriculum and context for citizenship cChristine Woyshner Joseph Watras and Margaret Smith Crocco editors	0820462470,	0820462470,	LCC
+1000000000753453	^LB3013.32 .W56 2005	Socially constructed school violence blessons from the field cKimberly M Williams	0820471291,	0820471291,	LCC
+1000000000753454	^LB2806.15 .M47 2005	Sounds of silence breaking bwomen autobiography curriculum cJanet L Miller	0820461571,	0820461571,	LCC
+1000000000753455	^LC1756 .S64 2005	Special women special leaders bspecial educators and the challenge of leadership cMarsha H Lupi and Suzanne M Martin editors	0820472646,	0820472646,	LCC
+1000000000753456	^LB1027.3 .S65 2004	Spirituality action pedagogy bteaching from the heart cedited by Diana Denton Will Ashton	0820470619,	0820470619,	LCC
+1000000000753457	^LB1027.2 .N37 2002	Spirituality ethics religion and teaching ba professors journey cRobert J Nash	0820458481,	0820458481,	LCC
+1000000000753458	^GV706.5 .G535 2005	Sporting pedagogies bperforming culture identity in the global arena cMichael D Giardina	0820471348,	0820471348,	LCC
+1000000000753459	^LB3051 .P543 2007	Standardized testing primer cRichard P Phelps	082049741X,	082049741X,	LCC
+1000000000753461	^LB880.F682 B47 2007	Subjectivity truth bFoucault education and the culture of self cTina AC Besley Michael A Peters	0820481955,	0820481955,	LCC
+1000000000753462	^LB2806.15 .S96 2006	The synoptic text today and other essays bcurriculum development after the reconceptualization cWilliam F Pinar	0820481270,	0820481270,	LCC
+1000000000753463	^LB885.S382 B56 2003	Talmud curriculum and the practical bJoseph Schwab and the rabbis cAlan A Block	0820461814,	0820461814,	LCC
+1000000000753464	^LB1139.4 .H975 2006	Teachable moments bre conceptualizing curricula understandings cEunsook Hyun	0820481416,	0820481416,	LCC
+1000000000753465	^LB880.D4362 R69 2003	Teachers in nomadic spaces bDeleuze and curriculum cKaustuv Roy	0820467375,	0820467375,	LCC
+1000000000753466	^LB1623.53.A8 S69 2007	Teachers in the middle breclaiming the wasteland of the adolescent years of schooling cJohn Smyth Peter McInerney	0820474592,	0820474592,	LCC
+1000000000753467	^LB1025.3 .C38 2003	Teachers teaching teachers bwit wisdom and whimsey for troubled times cGeneal G Cantrell Gregory L Cantrell	0820463035,	0820463035,	LCC
+1000000000753468	^QH362 .T438 2007	Teaching about scientific origins btaking account of creationism cedited by Leslie S Jones Michael J Reiss	0820470805,	0820470805,	LCC
+1000000000753469	^LC2731 .E92 2005	Teaching Black girls bresiliency in urban classrooms cVenus E Evans Winters	0820471038,	0820471038,	LCC
+1000000000753470	^NX280 .D53 2004	Teaching for aesthetic experience bthe art of learning cGene Diaz Martha Barry McKenna editors	082045673X,	082045673X,	LCC
+1000000000753471	^LB880.M3932 T43 2005	Teaching Peter McLaren bpaths of dissent cMarc Pruyn Luis M Huerta Charles editors	0820461458,	0820461458,	LCC
+1000000000753473	^LB1029.T4 T415 2005	Teaching together learning together cWolff Michael Roth Kenneth Tobin editors	082047911X,	082047911X,	LCC
+1000000000753474	^LB1576 .T52 2005	Teaching writing primer cPL Thomas	0820478423,	0820478423,	LCC
+1000000000753475	^LB885.M23 M32 1995	Theory as a prayerful act bthe collected essays of James B Macdonald cedited by Bradley J Macdonald ; introduction by William F Pinar	0820427926,	0820427926,	LCC
+1000000000753476	^F208.5 .W48 2007	This corner of Canaan bcurriculum studies of place the reconstruction of the South cReta Ugena Whitlock	0820486515,	0820486515,	LCC
+1000000000753477	^Q181 .T814 2002	Transforming undergraduate science teaching bsocial constructivist perspectives cEdited by Peter C Taylor Penny J Gilmer Kenneth Tobin	0820452939,	0820452939,	LCC
+1000000000753478	^LB1033.5 .T73 2002	Transmediation in the classroom ba semiotics based media literacy framework cedited by Ladislaus M Semali	0820451991,	0820451991,	LCC
+1000000000753480	^LB2341 .T594 2006	Trust and the public good bexamining the cultural conditions of academic work cWilliam G Tierney	0820486507,	0820486507,	LCC
+1000000000753481	^LB3047 .G56 2003	Twentieth century textbook wars ba history of advocacy and opposition cGerard Giordano	0820452289,	0820452289,	LCC
+1000000000753482	^LB3051 .G59 2004	Ubiquitous assessment bevaluation techniques for the new millennium cGreg S Goodman Karen T Carey	0820470694,	0820470694,	LCC
+1000000000753483	^LB1570 .U434 1995	Understanding curriculum ban introduction to the study of historical and contemporary curriculum discourses cWilliam F Pinar et al	0820426016,	0820426016,	LCC
+1000000000753484	^LC196.5.N67 U53 2008	Undoing whiteness in the classroom bcritical educultural teaching approaches for social justice activism cedited by Virginia Lea and Erma Jean Sims	0820497126,	0820497126,	LCC
+1000000000753485	^LB1631 .M55 2007	Unpacking the loaded teacher matrix bnegotiating space and time between university and secondary English classrooms csj Miller and Linda Norris	0820486760,	0820486760,	LCC
+1000000000753486	^LC4091 .U735 2006	Urban high school students and the challenge of access bmany routes difficult paths cWilliam G Tierney Julia E Colyar editors	0820463264,	0820463264,	LCC
+1000000000753487	^LC4031 .C658 2008	Urban narratives bportraits in progress life at the intersections of learning disability race social class cDavid J Connor	0820488046,	0820488046,	LCC
+1000000000753488	^LC5132.L8 L38 2005	Urban schools bthe new social spaces of resistance cMickey Lauria and Luis F Mirón	0820476439,	0820476439,	LCC
+1000000000753489	^LC196 .U83 2007	Useful theory bmaking critical education practical cedited by Rebecca A Goldstein	0820463078,	0820463078,	LCC
+1000000000753490	^LB2844.1.P6 W49 2003	Voices from Cape Town classrooms boral histories of teachers who fought apartheid cAlan Wieder ; preface by Kader Asmal	0820467685,	0820467685,	LCC
+1000000000753491	^LB3060.83 .W53 2000	Whats at stake in the K 12 standards wars ba primer for educational policy makers cedited by Sandra Stotsky	0820444901,	0820444901,	LCC
+1000000000753492	^LB2154.A3 W46 2006	Where do we go from here bissues in the sustainability of professional development school partnerships cedited by Jane E Neapolitan Terry R Berkeley	0820481785,	0820481785,	LCC
+1000000000753493	^LB1576 .W4869 2007	Whole language teaching whole hearted practice blooking back looking forward cedited by Monica Taylor	0820463108,	0820463108,	LCC
+1000000000753494	^LB880.F682 W49 2007	Why Foucault bnew directions in educational research cedited by Michael A Peters Tina AC Besley	0820478903,	0820478903,	LCC
+1000000000753495	^LC206.A8 T78 2006	Youthful imagination bschooling subcultures and social justice cGeorgina Tsolidis	0820468347,	0820468347,	LCC
+1000000000754996	^PN2000	InciteInsighthelectronic resource	19492650,		MIT
+1000000000756752	^LC5131 .A15 2004	19 urban questions bteaching in the city cedited by Shirley R Steinberg Joe L Kincheloe ; foreword by Deborah A Shanley	0820457728,	0820457728,	LCC
+1000000000756753	^LB1028.24 .H56 2008	Action research primer cPatricia H Hinchey	0820495271,	0820495271,	LCC
+1000000000756755	^NX180.S6 P68 2005	The arts education and social change blittle signs of hope cedited by Mary Clare Powell Vivien Marcow Speiser	0820463027,	0820463027,	LCC
+1000000000756757	^LB1028 .S46 2007	Bakhtin primer cCarolyn M Shields	0820481882,	0820481882,	LCC
+1000000000756758	^LC2741 .B53 2005	Black protest thought and education cWilliam H Watkins editor ; foreword by James D Anderson	0820463124,	0820463124,	LCC
+1000000000756759	^LB1570 .C44 2005	Chaos complexity curriculum and culture ba conversation cedited by William E Doll Jr et al	0820467804,	0820467804,	LCC
+1000000000756761	^QC981.8.C5 C697 2008	Climate change from Pole to Pole bbiology investigations cJuanita Constible Luke Sandro and Richard E Lee Jr	1933531231,	1933531231,	LCC
+1000000000756762	^HD58.82 .C65 2001	Competence in the learning society cedited by John Raven John Stephenson	0820451649,	0820451649,	LCC
+1000000000756763	^LB2806.15 .F57 2002	Curriculum dynamics brecreating heart cM Jayne Fleener	0820455407,	0820455407,	LCC
+1000000000756764	^LB1139.23 .C36 1997	Deconstructing early childhood education bsocial justice and revolution cGaile Sloan Cannella	0820434523,	0820434523,	LCC
+1000000000756765	^LC4019 .D55 2008	Disability the politics of education ban international reader cedited by Susan L Gabel Scot Danforth	0820488941,	0820488941,	LCC
+1000000000756766	^LC89 .R67 2005	Dos donts of education reform btoward a radical remedy for educational failure cAnthony M Roselli	0820472603,	0820472603,	LCC
+1000000000756767	^QE47.A1 O28 2008	Earth science success b50 lesson plans for grades 6 9 cby Catherine Oates Bockenstedt and Michael D Oates	1933531355,	1933531355,	LCC
+1000000000756768	^Q181 .B513 2002	An enactment of science ba dynamic balance among curriculum context and teacher beliefs cRobert W Blake Jr ; with a foreword by John R Staver	082045124X,	082045124X,	LCC
+1000000000756769	^Q175 .K663 2008	Everyday science mysteries bstories for inquiry based science teaching cRichard Konicek Moran ; foreword by Page Keeley	1933531215,1935155601,	1933531215,1935155601,	LCC
+1000000000756770	^LB880.F682 J37 2005	Foucault education cGail McNicol Jardine	0820474398,	0820474398,	LCC
+1000000000756771	^LB14.6 .H37 2009	From information to transformation beducation for the evolution of consciousness cTobin Hart	1433105918,	1433105918,	LCC
+1000000000756772	^Q181 .G397 2008	Girls in science ba framework for action cby Leisl Chatman et al	1933531045,	1933531045,	LCC
+1000000000756773	^LC196 .G58 2005	Globalizing education bpolicies pedagogies politics cedited by Michael W Apple Jane Kenway and Michael Singh	0820471208,	0820471208,	LCC
+1000000000756775	^LC2808 .H57 2002	The history of education under apartheid 1948 1994 bthe doors of learning and culture shall be opened cedited by Peter Kallaway	082045754X,	082045754X,	LCC
+1000000000756776	^LB1028 .M354 2007	Inhabited silence in qualitative research bputting poststructural theory to work cLisa A Mazzei	0820488763,	0820488763,	LCC
+1000000000756777	^LB3051 .C527 2009	Interpreting assessment data bstatistical techniques you can use cby Edwin P Christmann and John L Badgett	1933531363,1935155792,	1933531363,1935155792,	LCC
+1000000000756778	^LB875.D5 S55 2006	John Dewey primer cDouglas J Simpson	0820471364,	0820471364,	LCC
+1000000000756779	^LB14.7 .S535 2002	Learning relations bimpure education deschooled schools and dialogue with evil cAlexander M Sidorkin	0820451797,	0820451797,	LCC
+1000000000756780	^LB1623.5 .J86 2007	Learning to be an individual bemotion and person in an American junior high school cHyang Jin Jung	0820486558,	0820486558,	LCC
+1000000000756781	^LC151 .L4813 2008	Literacy as a civil right breclaiming social justice in literacy teaching and learning cStuart Greene editor	0820488682,	0820488682,	LCC
+1000000000756782	^Q149.U5 Z78 2007	Making science mentors ba 10 session guide for middle grades cBernie Zubrowski Vivian Troen and Marian Pasquale	1933531142,	1933531142,	LCC
+1000000000756784	^QA11.2 .G47 2004	A man left Albuquerque heading east bword problems as genre in mathematics education cSusan Gerofsky	0820458236,	0820458236,	LCC
+1000000000756785	^LB880.F732 M46 1997	Mentoring the mentor ba critical dialogue with Paulo Freire cedited by Paulo Freire with James W Fraser et al	0820437980,	0820437980,	LCC
+1000000000756786	^LB1731.4 .M84 2005	Mentorship primer cCarol A Mullen	0820476307,	0820476307,	LCC
+1000000000756787	^LC191 .M577 2008	Mirror images bpopular culture and education cedited by Diana Silberman Keller et al	1433102307,	1433102307,	LCC
+1000000000756788	^Q183.3.A1 M85 2003	Multicultural science education btheory practice and promise cedited by S Maxwell Hines	0820445401,	0820445401,	LCC
+1000000000756789	^BF432.3 .G379 2006	Multiple intelligences bnew horizons cHoward Gardner	0465047688,9786612746994,0786721871,1282746995,	0465047688,9786612746994,0786721871,1282746995,	LCC
+1000000000756790	^LB1775.6 .B47 2003	New possibilities for early childhood education bstories from our nontraditional students cSusan Bernheimer	0820452963,	0820452963,	LCC
+1000000000756791	^Q183.U6 B54 2007	NSTA guide to planning school science facilities cLaMoine L Motz James T Biehle and Sandra S West	1933531088,	1933531088,	LCC
+1000000000756792	^LB1585 .A58 2005	Picture perfect science lessons busing childrens books to guide inquiry grades 3 6 cby Karen Rohrich Ansberry and Emily Morgan	0873552431,1935155628,	0873552431,1935155628,	LCC
+1000000000756793	^LB1570 .P58 2005	The politics of curricular change brace hegemony and power in education cedited by M Christopher Brown II and Roderic R Land ; with a foreword by Lisa Delpit	082044863X,	082044863X,	LCC
+1000000000756794	^LC1039.8.C22 C365 2002	Post secondary education on the edge bself improvement and community development in a Cape Breton coal town cJane McEldowney Jensen	0820455466,	0820455466,	LCC
+1000000000756795	^LB41 .P248 2002	Poststructuralist readings of the pedagogical encounter cJames Palermo	0820452114,	0820452114,	LCC
+1000000000756796	^LB1585 .R33 2008	Readings in science methods K 8 ban NTSA press journals collection cEric Brunsell editor	193353138X,	193353138X,	LCC
+1000000000756797	^LB1715 .O74 2001	Redefining teacher education bthe theories of Jerome Bruner and the practice of training teachers cDiane D Orlofsky	0820451878,	0820451878,	LCC
+1000000000756798	^LB880.F732 D37 2002	Reinventing Paulo Freire ba pedagogy of love cAntonia Darder	0813339685,	0813339685,	LCC
+1000000000756801	^Q183.3.A1 S3526 2008	Science as inquiry in the secondary setting cedited by Julie Luft Randy L Bell and Julie Gess Newsome	1933531266,	1933531266,	LCC
+1000000000756802	^PN3433.6 .S38 2004	Science fiction curriculum cyborg teachers youth cultures cedited by John A Weaver Karen Anijar Toby Daspit	0820450448,	0820450448,	LCC
+1000000000756803	^LB1775.6 .M55 2001	The social fashioning of teacher identities cMonica Miller Marsh	0820455598,	0820455598,	LCC
+1000000000756804	^H62 .S7247192 2006	Social studies the next generation bre searching in the postmodern cedited by Avner Segall Elizabeth Heilman Cleo H Cherryholmes	0820470678,	0820470678,	LCC
+1000000000756806	^LB880.F73 P76413 2005	Teachers as cultural workers bletters to those who dare teach cPaulo Freire ; translated by Donaldo Macedo Dale Koike and Alexandre Oliveira ; with a foreword by Donaldo Macedo and Ana Maria Araújo Freire ; with new commentary by Peter McClaren Joe L Kincheloe and Shirley Steinberg	0813343291,9786613787545,1281606839,0786737239,	0813343291,9786613787545,1281606839,0786737239,	LCC
+1000000000756807	^GE70 .H37 2003	Teachers thinking in environmental education bconsciousness and responsibility cPaul Hart	0820461369,	0820461369,	LCC
+1000000000756808	^LB1139.25 .G65 1997	Teaching with love ba feminist approach to early childhood education cLisa S Goldstein	0820434817,	0820434817,	LCC
+1000000000756809	^LB1028.3 .O73 2003	Technology culture and socioeconomics ba rhizoanalysis of educational discourses cPatricia A ORiley	0820457930,	0820457930,	LCC
+1000000000756810	^LC1091 .T76 2006	Troubling the canon of citizenship education cedited by George H Richardson and David W Blades editors	0820476056,	0820476056,	LCC
+1000000000756813	^LB3067.4 .S56 1998	Voices of hope badolescent girls at single sex and coeducational schools cCarole B Shmurak	0820438340,	0820438340,	LCC
+1000000000756814	^LB1028 .W45 2005	What difference does research make and for whom cedited by Françoise Bodone	0820470732,	0820470732,	LCC
+1000000000756815	^LC4181 .J67 2004	Whisper writing bteenage girls talk about ableism and sexism in school cMelissa M Jones	0820470899,	0820470899,	LCC
+1000000000760055	^PS41	Teaching American literaturehelectronic resource	21503974,		MIT
+1000000000760183	^L45	Pr�xis educativahelectronic resource	18094031,	18094309,	MIT
+1000000000767738	^LB1101 .A98	Australasian journal of early childhoodhelectronic resource	18369391,	18395961,	MIT
+1000000000769417	^LB1028.43 .J687	Journal of technology integration in the classroomhelectronic resource bJOTI	2150525X,		MIT
+1000000000769928	^LA227.3	NASPA journalhelectronic resource	00276014,	15595455,	MIT
+1000000000770013	^LC89	Nonpartisan education reviewhelectronic resource	21506477,		MIT
+1000000000772823	^L76	Gazi �niversitesi Kirsehir Egitim Fak�ltesi dergisihelectronic resource	13025007,	21471037,	MIT
+1000000000786568	^LB775.W4642 -- A38 2009eb	Adventure of Education bProcess Philosophers on Learning Teaching and Research	9042025883,9786612594441,9042029226,1441616985,1282594443,	9042025883,9786612594441,9042029226,1441616985,1282594443,	HKSYU
+1000000000788402	^BR516.V58 2007	The Last Freedom bReligion from the Public School to the Public Square	0691130116,9786612157363,1282157361,1400827841,	0691130116,9786612157363,1282157361,1400827841,	HKSYU
+1000000000788510	^NX705.5.U6 G37 2008	Patronizing the arts cMarjorie Garber	0691124809,9786612158346,1282158341,1400830036,	0691124809,9786612158346,1282158341,1400830036,	LCC
+1000000000800264	^LB1139.2	International journal of early childhood special educationhelectronic resource	13085581,		MIT
+1000000000803528	^Z675.S3 S36	School library monthlyhelectronic resource	2166160X,		MIT
+1000000000803946	^LC215 .C5596	The catalysthelectronic resource	21519390,		MIT
+1000000000808300	^LA688.C95	Orbis scholae	18024637,	23363177,	USTL
+1000000000808433	^L11 .G56	Global education journalhelectronic resource	21523622,		MIT
+1000000000815350	^LA940	Dicle �niversitesi Ziya G�kalp Egitim Fak�ltesi Dergisihelectronic resource	13050060,		MIT
+1000000000815844	^LB2337.4.W53 2005	Aiding students buying students bfinancial aid in America cRupert Wilkinson	0826515029,9786612304828,0826592023,1282304828,	0826515029,9786612304828,0826592023,1282304828,	MIT
+1000000000820717	^Z1037.A1	First opinions second reactionshelectronic resource	21529043,		MIT
+2320000000000097	^LB1707 .J68	Journal of digital learning in teacher educationhelectronic resource	21532974,	23327383,	MIT
+2320000000017257	^AP2	Time for kids	21565007,		USTL
+2320000000020988	^LB1715 .S79a	The journal of humanistic counseling	21590311,	21611939,	USTL
+2430000000036309	^LB1048 .K64 2006	The homework myth bwhy our kids get too much of a bad thing cAlfie Kohn	0738210854,0738211117,0738211346,	0738210854,0738211117,0738211346,	USTL
+2550000000003464	^LB2322.2 .B65 2006	Our underachieving colleges ba candid look at how much students learn and why they should be learning more cDerek Bok	0691136181,0691125961,1400831334,1400826985,	0691136181,0691125961,1400831334,1400826985,	USTL
+2550000000027939	^P1	The journal of language and linguistic studies	1305578X,		USTL
+2550000000027940	^LB1028.25 P18 J686	Journal of research reflections in educationhelectronic resource	19955243,		MIT
+2550000000028896	SCHOOLEL^LB1028.3 .M86	Internet schoolshelectronic resource	2156843X,		MIT
+2550000000029692	^HF5549.5.M5 D58	Diversity employershelectronic resource	21598835,		MIT
+2550000000029869	^LB1028.3	Journal of applied learning technologyhelectronic resource	21600953,		MIT
+2550000000054796	^LC145.G7 G73a	Adult literacyhelectronic resource bprogress in	01445723,		MIT
+2550000000071222	^BF636.5	The journal of counselor preparation and supervisionhelectronic resource	21643288,		MIT
+2550000000071949	^Z721 .I57	Information culturehelectronic resource	21648034,	21663033,	MIT
+2550000000072404	^Z675.S3	School library research	21651019,		USTL
+2550000001348353	^HF5549.5.T7 A6	Talent developmenthelectronic resource	23740663,	23740671,	MIT
+2560000000076313	^RA440.A1 C8	Current health kidshelectronic resource	21575916,		MIT
+2560000000077396	^LA269.C4 C24	Catalyst in depthhelectronic resource	21600007,		MIT
+2560000000085614	^LC5251 .A637	Journal of research and practice for adult literacy secondary and basic educationhelectronic resource	21690480,		MIT
+2560000000094764	^Z699.A1 O546	Online searcherhelectronic resource	23249684,		MIT
+2560000000303814	^LB3050	Journal of applied testing technologyhelectronic resource	23755636,		MIT
+2610000000000064	^T10.5 .K57	Knowledge in societyhelectronic resource	08971986,	18746314,	MIT
+2670000000006356	^LB1028.35	Contemporary educational technologyhelectronic resource	1309517X,		MIT
+2670000000006392	^L71 .I68	International online journal of educational scienceshelectronic resource	13092707,		MIT
+2670000000006483	^LB5 B85	Bulgarian journal of science and education policyhelectronic resource	13131958,	13139118,	MIT
+2670000000010004	^P51	Journal of language teaching and researchhelectronic resource	17984769,	20530684,	MIT
+2670000000015181	^L56	Educa021Bia plushelectronic resource	1842077X,	20681151,	MIT
+2670000000027755	^LB2361	Review of science mathematics ICT Education cUniversity of Patras Laboratory of Didactics of Science Mathematics ICT	1791261X,		USTL
+2670000000029831	^H62.A1	Turkish online journal of qualitative inquiry	13096591,		USTL
+2670000000033996	^T10.5 .K57	Philosophy technology	22105433,	22105441,	USTL
+2670000000038149	^L10 .J68	Journal of pedagogy	13381563,	13382144,	USTL
+2670000000062297	^LB1025.3 .J65	Journal of didacticshelectronic resource	20674627,		USTL
+2670000000070906	^T61 .M28	Technology and engineering teacher	21580502,		USTL
+2670000000083182	^LB1028 .J692	Journal of research in educational sciences	20688407,		USTL
+2670000000193760	^LB1028	Discourse and Communication for Sustainable Education	16916301,	22557547,	USTL
+2670000000395279	^LC1021	Educación y humanismo	01242121,		USTL
+2920000000000008	^L36	Studi sulla formazione	11271124,	20366981,	USTL
+3220000000000201	^T10.5 .K57	Knowledge technology policyhelectronic resource	19464789,		MIT
+3340000000001770	^HV854 .C46	Exchangehelectronic resource	19460406,		MIT
+3410000000001888	^LA227.4.L49 2006	Excellence without a soul bhow a great university forgot education cHarry R Lewis	1586483935,	1586483935,	MIT
+3410000000001889	^LC5153.N4 G66 2006eb	Ms Moffetts first year bbecoming a teacher in America cAbby Goodnough	1586483803,1586482599,0786736887,	1586483803,1586482599,0786736887,	OXFORD
+3410000000001890	^LB1776.2.K67 2001	One day all children bthe unlikely triumph of Teach for America and what I learnt along the way cWendy Kopp	1586481797,0786724005,	1586481797,0786724005,	MIT
+3710000000363736	^Z965 .S767	Bulletin of the National Library of South Africahelectronic resource	23132590,		MIT
+3710000000450393	^LB1049.9 .R42	Literacy todayhelectronic resource	24117862,	24117900,	MIT
+3710000000496746	^LB1592 .I59	Scholastic teacherhelectronic resource	23808659,		OXFORD
+3710000000602048	^P1 .J67	International journal of the Linguistic Association of the Southwesthelectronic resource	23325828,		MIT
+3720000000024368	^LC461	Journal of Catholic educationhelectronic resource	23738170,		MIT
+3810000000212179	^LC5251 .J78	The learning professionalhelectronic resource	2476194X,		MIT

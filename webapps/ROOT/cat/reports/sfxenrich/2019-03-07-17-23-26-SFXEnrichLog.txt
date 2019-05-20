@@ -1,0 +1,337 @@
+----------------------------------------------------------------------
+Thu Mar 07 17:23:26 HKT 2019
+Object ID:954925247099
+Original Local String:^Z671
+Call Number EXIST; NOT GOING TO QUERY ONLINE.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:23:26 HKT 2019
+
+Provider: LCC
+Fetch Number: 0
+Object ID:954925247099
+Original Local String:
+ISSN:88888888,
+ISSN Tried: 88888888
+NO RECORD FETCHED
+
+Provider: MIT
+Fetch Number: 0
+Object ID:954925247099
+Original Local String:
+ISSN:88888888,
+ISSN Tried: 88888888
+NO RECORD FETCHED
+
+Provider: OXFORD
+Fetch Number: 0
+Object ID:954925247099
+Original Local String:
+ISSN:88888888,
+ISSN Tried: 88888888
+NO RECORD FETCHED
+
+Provider: NKFUST
+Fetch Number: 0
+Object ID:954925247099
+Original Local String:
+ISSN:88888888,
+ISSN Tried: 88888888
+NO RECORD FETCHED
+
+Provider: BL
+Fetch Number: 0
+Object ID:954925247099
+Original Local String:
+ISSN:88888888,
+ISSN Tried: 88888888
+NO RECORD FETCHED
+
+Provider: JULAC
+Fetch Number: 0
+Object ID:954925247099
+Original Local String:
+ISSN:88888888,
+ISSN Tried: 88888888
+NO RECORD FETCHED
+
+Provider: USTL
+Fetch Number: 0
+Object ID:954925247099
+Original Local String:
+ISSN:88888888,
+ISSN Tried: 88888888
+NO RECORD FETCHED
+
+Provider: LNU
+Fetch Number: 0
+Object ID:954925247099
+Original Local String:
+ISSN:88888888,
+ISSN Tried: 88888888
+NO RECORD FETCHED
+
+NOT MATCH
+SFX Object ID: 954925247099
+ISSN:88888888,
+EISSN:
+ISBN:
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:23:43 HKT 2019
+Object ID:958480155093
+Original Local String:^LB1028.43 .J68
+Call Number EXIST; NOT GOING TO QUERY ONLINE.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:23:43 HKT 2019
+
+Provider: LCC
+Fetch Number: 0
+Object ID:958480255675
+Original Local String:
+ISSN:10656901,
+ISSN Tried: 10656901
+NO RECORD FETCHED
+
+Provider: MIT
+Fetch Number: 0
+Object ID:958480255675
+Original Local String:
+ISSN:10656901,
+ISSN Tried: 10656901
+NO RECORD FETCHED
+
+Provider: OXFORD
+Fetch Number: 0
+Object ID:958480255675
+Original Local String:
+ISSN:10656901,
+ISSN Tried: 10656901
+NO RECORD FETCHED
+
+Provider: NKFUST
+Fetch Number: 0
+Object ID:958480255675
+Original Local String:
+ISSN:10656901,
+ISSN Tried: 10656901
+NO RECORD FETCHED
+
+Provider: BL
+Fetch Number: 0
+Object ID:958480255675
+Original Local String:
+ISSN:10656901,
+ISSN Tried: 10656901
+NO RECORD FETCHED
+
+Provider: JULAC
+Fetch Number: 0
+Object ID:958480255675
+Original Local String:
+ISSN:10656901,
+ISSN Tried: 10656901
+Title:Ed tech review
+Call #:LB1028.3 .E316
+Queried ISSN:10656901
+RECORD MATCHED
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:23:57 HKT 2019
+Object ID:958480269940
+Original Local String:^LB1028.3
+Call Number EXIST; NOT GOING TO QUERY ONLINE.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:23:57 HKT 2019
+Object ID:958480290379
+Original Local String:^LB1028.5 .J618
+Call Number EXIST; NOT GOING TO QUERY ONLINE.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:23:57 HKT 2019
+Object ID:958480291383
+Original Local String:^QA20.C65 J68
+Call Number EXIST; NOT GOING TO QUERY ONLINE.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:23:57 HKT 2019
+
+Provider: LCC
+Fetch Number: 1
+Object ID:962824994225
+Original Local String:
+ISSN:15228185,
+ISSN Tried: 15228185
+NO RECORD FETCHED
+
+Provider: MIT
+Fetch Number: 1
+Object ID:962824994225
+Original Local String:
+ISSN:15228185,
+ISSN Tried: 15228185
+Title:Information technology in childhood education annualhelectronic resource
+Call #:LB1028.5 .I475
+Queried ISSN:15228185
+RECORD MATCHED
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:24:02 HKT 2019
+
+Provider: LCC
+Fetch Number: 2
+Object ID:110978984350173
+Original Local String:
+ISSN:10779124,
+ISSN Tried: 10779124
+NO RECORD FETCHED
+
+Provider: MIT
+Fetch Number: 2
+Object ID:110978984350173
+Original Local String:
+ISSN:10779124,
+ISSN Tried: 10779124
+NO RECORD FETCHED
+
+Provider: OXFORD
+Fetch Number: 2
+Object ID:110978984350173
+Original Local String:
+ISSN:10779124,
+ISSN Tried: 10779124
+NO RECORD FETCHED
+
+Provider: NKFUST
+Fetch Number: 2
+Object ID:110978984350173
+Original Local String:
+ISSN:10779124,
+ISSN Tried: 10779124
+NO RECORD FETCHED
+
+Provider: BL
+Fetch Number: 2
+Object ID:110978984350173
+Original Local String:
+ISSN:10779124,
+ISSN Tried: 10779124
+NO RECORD FETCHED
+
+Provider: JULAC
+Fetch Number: 2
+Object ID:110978984350173
+Original Local String:
+ISSN:10779124,
+ISSN Tried: 10779124
+Title:International journal of educational telecommunications
+Call #:LB1044.84 .I53
+Queried ISSN:10779124
+RECORD MATCHED
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:24:16 HKT 2019
+
+Provider: LCC
+Fetch Number: 3
+Object ID:110978984444553
+Original Local String:SCHOOLEL
+ISSN:10724303,
+ISSN Tried: 10724303
+NO RECORD FETCHED
+
+Provider: MIT
+Fetch Number: 3
+Object ID:110978984444553
+Original Local String:SCHOOLEL
+ISSN:10724303,
+ISSN Tried: 10724303
+NO RECORD FETCHED
+
+Provider: OXFORD
+Fetch Number: 3
+Object ID:110978984444553
+Original Local String:SCHOOLEL
+ISSN:10724303,
+ISSN Tried: 10724303
+NO RECORD FETCHED
+
+Provider: NKFUST
+Fetch Number: 3
+Object ID:110978984444553
+Original Local String:SCHOOLEL
+ISSN:10724303,
+ISSN Tried: 10724303
+Title:TESL EJhelectronic resource
+Call #:null
+
+Provider: BL
+Fetch Number: 3
+Object ID:110978984444553
+Original Local String:SCHOOLEL
+ISSN:10724303,
+ISSN Tried: 10724303
+NO RECORD FETCHED
+
+Provider: JULAC
+Fetch Number: 3
+Object ID:110978984444553
+Original Local String:SCHOOLEL
+ISSN:10724303,
+ISSN Tried: 10724303
+NO RECORD FETCHED
+
+Provider: USTL
+Fetch Number: 3
+Object ID:110978984444553
+Original Local String:SCHOOLEL
+ISSN:10724303,
+ISSN Tried: 10724303
+NO RECORD FETCHED
+
+Provider: LNU
+Fetch Number: 3
+Object ID:110978984444553
+Original Local String:SCHOOLEL
+ISSN:10724303,
+ISSN Tried: 10724303
+NO RECORD FETCHED
+
+NOT MATCH
+SFX Object ID: 110978984444553
+ISSN:10724303,
+EISSN:
+ISBN:
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Thu Mar 07 17:24:34 HKT 2019
+
+Provider: LCC
+Fetch Number: 3
+Object ID:110985822459534
+Original Local String:
+ISSN:10644474,
+ISSN Tried: 10644474
+NO RECORD FETCHED
+
+Provider: MIT
+Fetch Number: 3
+Object ID:110985822459534
+Original Local String:
+ISSN:10644474,
+ISSN Tried: 10644474
+NO RECORD FETCHED
+
+Provider: OXFORD
+Fetch Number: 3
+Object ID:110985822459534
+Original Local String:
+ISSN:10644474,
+ISSN Tried: 10644474
+Title:The Journal of the California Association of Professors of Educational Administrationhelectronic resource
+Call #:LB1738.5 .J68
+Queried ISSN:10644474
+RECORD MATCHED
+----------------------------------------------------------------------

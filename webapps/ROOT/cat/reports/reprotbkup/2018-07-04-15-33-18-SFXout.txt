@@ -1,0 +1,800 @@
+954921333016	^HD28 .A25	Administrative science quarterly	00018392,	19303815,	MIT
+954921343175	^JX232 .F6	Foreign affairs	00157120,	23277793,	MIT
+954921347238	^JX1901 .I55	International organization	00208183,	15315088,	MIT
+954921348259	^HC241 .J6	Journal of common market studies	00219886,	14685965,	MIT
+954921349273	^JX1 .C6	Columbia journal of international affairs	0022197X,		MIT
+954921356393	^H1P656	Policy sciences	00322687,	15730891,	MIT
+954921357407	^JK1 .P85	Public administration review	00333352,	15406210,	MIT
+954921357408	^H1 .P86	The Public interest	00333557,		MIT
+954921357410	^HM261.A1 P8	Public opinion quarterly	0033362X,	15375331,	MIT
+954921358426	^HD8109.Q4 Q45	Relations industrielleshelectronic resource bIndustrial relations	0034379X,	17038138,	NKFUST
+954921359444	^HB1 .S3	Scottish journal of political economyhelectronic resource	00369292,	14679485,	NKFUST
+954921360456	^H31 .S82	Studies in comparative international developmenthelectronic resource	00393606,	19366167,	NKFUST
+954921385870	^H1 .C34	The Cato journalhelectronic resource	02733072,	19433468,	NKFUST
+954921385879	^HJ2052.A2 P8	Public budgeting financehelectronic resource	02751100,	15405850,	NKFUST
+954921391986	^RA395.A3 J68	Journal of health politics policy and lawhelectronic resource	03616878,	15271927,	NKFUST
+954921393018	^HF1410 .W667	The World economyhelectronic resource	03785920,	14679701,	NKFUST
+954921398101	^D839 .H29	Harvard international reviewhelectronic resource	07391854,	23746564,	NKFUST
+954921400149	^H1 .B76	The Brookings reviewhelectronic resource	07451253,	23282959,	NKFUST
+954921412374	^HB1 .R435	Review of political economyhelectronic resource	09538259,	14653982,	NKFUST
+954921422555	^JK1 .B86	The Public manager	10617639,		USTL
+954925241049	^JA8 .P72	The political quarterly	00323179,	1467923X,	USTL
+954925241050	^JA1 .P63	Political studies	00323217,	14679248,	USTL
+954925241052	^JN7001	Scandinavian political studies	00806757,	14679477,	USTL
+954925241054	^JA74.5 .P63	Political psychology	0162895X,	14679221,	USTL
+954925241055	^JA8	Politics	02633957,	14679256,	USTL
+954925264216	^AP4 .R6	The round table	00358533,	1474029X,	USTL
+954925265225	^DR24	Nationalities papers	00905992,	14653923,	USTL
+954925266245	^HC59.7	Third world quarterly	01436597,	13602241,	USTL
+954925269332	^JS40 .P64	Policy and politics	03055736,	14708442,	USTL
+954925269333	^DT727	Journal of southern African studies	03057070,	14653893,	USTL
+954925270363	^JA1	New political science	07393148,	14699931,	USTL
+954925271397	^DU29 .P24	The Pacific review	09512748,	14701332,	USTL
+954925272421	^DS331 .C76	Contemporary South Asia	09584935,	1469364X,	USTL
+954925274454	^DK266.A2	Europe Asia studies	09668136,	14653427,	USTL
+954925274470	^JQ1 .A938	Australian journal of political science	10361146,	1363030X,	USTL
+954925274474	^JA1 .S77	Strategies bjournal of theory culture politics	10402136,	14701251,	USTL
+954925274475	^JX1901	Peace reviewhelectronic resource	10402659,	14699982,	USTL
+954925275491	^JF1525.P8 P64	Political communication	10584609,	10917675,	MIT
+954925275501	^DS701 .J68	The journal of contemporary China	10670564,	14699400,	MIT
+954925276515	^GE195 .S65	Society and nature bthe international journal of political ecology	10855661,	14693720,	MIT
+954925276523	^DS1 .E13	East Asiahelectronic resource	10966838,	18746284,	MIT
+954925276529	^DS501 .A668	Asia Pacific reviewhelectronic resource cInstitute for International Policy Studies	13439006,	14692937,	MIT
+954925278566	^JC319 .S63	Space polityhelectronic resource	13562576,	14701235,	MIT
+954925278568	^JA8 .J68	Journal of political ideologieshelectronic resource	13569317,	14699613,	MIT
+954925278570	^JA8 .C66	Contemporary politicshelectronic resource	13569775,	14693631,	MIT
+954925280635	^JK467 .B8746	Business and politics	13695258,	14693569,	MIT
+954925280642	^JC311 .N2913	National identitieshelectronic resource	14608944,	14699907,	MIT
+954925281644	^D974 .J68	Journal of Southern Europe and the Balkanshelectronic resource	14613190,	1469963X,	MIT
+954925281652	^HQ1190 .I53	International feminist journal of politics	14616742,	14684470,	MIT
+954925282676	^JC571 .H772	Human rights review	15248879,	18746306,	MIT
+954925343772	^JC311 .N383	Nations and nationalism bjournal of the Association for the Study of Ethnicity and Nationalism	13545078,	14698129,	MIT
+954925375839	^DT1 .A22	Africa today	00019887,	15271978,	MIT
+954925383073	^DU80 .A945	The Australian journal of politics and history	00049522,	14678497,	MIT
+954925392312	^DS101 .C63	Commentary	00102601,	19434634,	MIT
+954925394382	^HD82 .D387	Development and change	0012155X,	14677660,	MIT
+954925395396	^HX1 .D58	Dissenthelectronic resource	00123846,	19460910,	MIT
+954925395409	^DR1 .E33	East European quarterly	00128449,	24694827,	MIT
+954925397468	^BJ1 .I6	International journal of ethics	00141704,	1539297X,	MIT
+954925400534	^E744 .F75	Foreign policy	00157228,	19452276,	MIT
+954925402610	^K8 .A68	Harvard civil rights civil liberties law review	00178039,	19435061,	MIT
+954925406719	^JX1	International affairs review supplementhelectronic resource	00205850,	14682346,	MIT
+954925408749	^JV6001.A1 I5	International migration	00207985,	14682435,	MIT
+954925408754	^D839 .M435	Mershon international studies review	00208833,	14682478,	MIT
+954925411843	^BV630.A1 J6	A Journal of Church and Statehelectronic resource	0021969X,	20404867,	MIT
+954925414919	^JX1 .J682	Latin American politics and society	00221937,	21622736,	MIT
+954925417989	^JA1 .J6	The journal of politics	00223816,	14682508,	MIT
+954925420074	^F1401 .L345	Latin American research review	00238791,	15424278,	MIT
+954925424174	^DS1 .M5	The Middle East journal	00263141,	19403461,	MIT
+954925431347	^DU1 .P13	News bulletinhelectronic resource cInstitute of Pacific Relations	0030851X,	17153379,	MIT
+954925431359	^JN101 .P3	Parliamentary affairs	00312290,	14602482,	MIT
+954925434435	^H1 .P8	Political science quarterly	00323195,	1538165X,	MIT
+954925434438	^JA3 .P65	Polity	00323497,	17441684,	MIT
+954925436483	^JA8	Public administration	00333298,	14679299,	USTL
+954925438524	^E185.5 .R45	The Review of Black political economy	00346446,	19364814,	USTL
+954925444670	^H1	Social research	0037783X,	1944768X,	USTL
+954925452882	^D410	The world todayhelectronic resource	00439134,		USTL
+954925455973	^DS1 .J65	Journal of contemporary Asia	00472336,	17527554,	USTL
+954925456981	^HM1 .J22	Journal of political military sociology bJPMS	00472697,		USTL
+954925456991	^H1	Philosophy public affairs	00483915,	10884963,	USTL
+954925456996	^JA1	Public choice	00485829,	15737101,	USTL
+954925456997	^JK1 .P88	Publius annual review of American federalism	00485950,	17477107,	MIT
+954925462162	^K10 .O8593	The Journal of criminal law criminologyhelectronic resource cNorthwestern University School of Law	00914169,	21600325,	NKFUST
+954925473388	^H1 .S5	Social policy administrationhelectronic resource	01445596,	14679515,	NKFUST
+954925473397	^JX1407 .D55M	Diplomatic history	01452096,	14677709,	NKFUST
+954925474425	^H1 .P69	Policy reviewhelectronic resource	01465945,	21696802,	NKFUST
+954925479553	^DK511.B25 B78	Journal of Baltic studieshelectronic resource	01629778,	17517877,	MIT
+954925479569	^D839 .W33	The Washington quarterly	0163660X,	15309177,	MIT
+954925487777	^HB846.8	Social choice and welfarehelectronic resource	01761714,	1432217X,	MIT
+954925488797	^QA273 .Z4	Probability theory and related fields	01788051,	14322064,	MIT
+954925488819	^H1 .P72	Policy studies journal bthe journal of the Policy Studies Organization	0190292X,	15410072,	MIT
+954925489825	^JA74.5 .P6	Political behavior	01909320,	15736687,	MIT
+954925490856	^K8 .A683	Harvard journal of law public policyhelectronic resource	01934872,	23746572,	MIT
+954925490876	^HQ1236 .W63	Women politicshelectronic resource	01957732,	15409473,	MIT
+954925502195	^JS40 .J6	Journal of administration overseas	02712075,	1099162X,	MIT
+954925507334	^JS40 .L63	Local government studieshelectronic resource	03003930,	17439388,	MIT
+954925511440	^JX1901.A4	Alternatives	03043754,	21633150,	MIT
+954925512453	^JA88.E9 E93	European journal of political research	03044130,	14756765,	MIT
+954925512469	^JZ6.5 .I583	International interactions	03050629,	15477444,	MIT
+954925516556	^JA26 .P8	Australian journal of public administrationhelectronic resource	03136647,	14678500,	MIT
+954925522716	^JF501 .L42	Legislative studies quarterly	03629805,	19399162,	MIT
+954925533033	^JA80 .P64	Politics and the life sciences bthe journal of the Association for Politics and the Life Sciences	07309384,	14715457,	MIT
+954925538147	^D839 .W5687	World policy journal	07402775,	19360924,	MIT
+954925538153	^Z688.G6 G68	Government information quarterly	0740624X,	18729517,	MIT
+954925574971	^JA1.A1 G68	Governance	09521895,	14680491,	MIT
+954925575000	^HM261 .I68	International journal of public opinion research	09542892,	14716909,	MIT
+954925580140	^JA1.A1 J66	The journal of political philosophy	09638016,	14679760,	MIT
+954925584253	^DS777.55 .I75	Issues studieshelectronic resource	10132511,		OXFORD
+954925585264	^UA830 .K67	Korean journal of defense analysishelectronic resource	10163271,	19414641,	USTL
+954925598603	^DS41 .M518	Middle East policy	10611924,	14754967,	MIT
+954925598604	^K22 .U78	Russian politics and lawhelectronic resource	10611940,	15580962,	MIT
+954925601685	^JA1 .W4	Political research quarterly	10659129,	1938274X,	MIT
+954925603756	^HQ1236	Social politicshelectronic resource	10724745,	14682893,	MIT
+954925604786	^JX1901 .G543	Global governance ba review of multilateralism and international organizations	10752846,	19426720,	MIT
+954925604790	^HX1 .P75	Problems of post communism	10758216,	1557783X,	MIT
+954925614033	^DS701 .A93	The China journal	13249347,	18358535,	MIT
+954926470664	^JA1 .A73	Annual review of political science	10942939,	15451577,	MIT
+954927382292	^B809.8	Studies in East European thoughthelectronic resource	09259392,	15730948,	MIT
+954927383317	^HB73	Constitutional political economyhelectronic resource	10434062,	15729966,	MIT
+954927384328	^K201	Res publicahelectronic resource	13564765,	15728692,	MIT
+954928372938	^T171.M49 M57 2014	MIT and the transformation of American economics cedited by E Roy Weintraub	00182702,	15271919,	MIT
+954928373949	^H96 .J66	Journal of policy history bJPH	08980306,	15284190,	MIT
+954928373954	^D839	Mediterranean quarterly	10474552,	15271935,	MIT
+954928374966	^D839 .J68	Journal of cold war studies	15203972,	15313298,	MIT
+954928415969	^K23 .T34	Statute law reviewhelectronic resource	01443593,	14643863,	MIT
+954928416975	^K9 .N8495	International journal of refugee lawhelectronic resource	09538186,	14643715,	MIT
+960238442033	^HX821 .A4662	Anarchist studieshelectronic resource	09673393,		OXFORD
+960238455050	^DS36 .A715	Arab studies quarterly	02713519,	20436920,	OXFORD
+960238461058	^DS33.4.U6	Asian affairs ban American review	00927678,	19401590,	USTL
+960238487091	^D31	Diplomacy and statecraft	09592296,	1557301X,	USTL
+960238491100	^F1035.A1	Canadian ethnic studies	00083496,	19138253,	USTL
+960238525138	^HN1 .C66	Community development journal	00103802,	14682656,	USTL
+960238568194	^HC59.7	Development policy review	09506764,	14677679,	USTL
+960238572196	^JV6001.A1	Diaspora ba journal of transnational studies	10442057,	19111568,	USTL
+960238653288	^JA5 .G47	Gesti籀n y pol穩tica p繳blica	14051079,		USTL
+960238685319	^H1 .I36	The independent review	10861653,	21693420,	USTL
+960238710347	^JA76	International journal of politics culture and society	08914486,	15733416,	USTL
+960238715354	^JX1 .I61	International journal on world peace	07423640,	23282851,	USTL
+960238723361	^H1 .S55	International social science review	02782308,	23320419,	USTL
+960238724363	^D839	Internationale Politik und Gesellschafthelectronic resource	09452419,		USTL
+960238831455	^JA1 .J62	Journal of public administration research and theory bJ PART	10531858,	14779803,	MIT
+960238861485	^HC59.69 .J68	Journal of global south studieshelectronic resource	87553449,		MIT
+960238909546	^DS41 .M519	Middle East quarterlyhelectronic resource	10739467,		MIT
+960238910547	^DS42 .M46a	MERIP Middle East report	08992851,	14679825,	MIT
+960238921558	^AP2 .N2	The nation	00278378,		OXFORD
+960238930573	^E839.5 .N379	New perspectives quarterly bNPQ	08937850,	15405842,	OXFORD
+960238930574	^HX1 .N57	New politics	00286494,		USTL
+960238942595	^D839 .O68	Orbis ba journal of world affairs	00304387,	18735282,	USTL
+960238953605	^JX1901	Peace and change	01490508,	14680130,	USTL
+960238958614	^JA1 .P48	Perspectives on political science	10457097,	19305478,	USTL
+960238969627	^H97 .P66	Policy studies review	02784416,	21626308,	USTL
+960238982644	^JK501	Presidential studies quarterly	03604918,	17415705,	USTL
+960239089781	^HX1 .S16	Socialism and democracy bthe bulletin of the Research Group on Socialism and Democracy	08854300,	17452635,	MIT
+960239138852	^HM276 .A44	The American prospect	10497285,		MIT
+960239189880	^H1 .T62a	The Tocqueville reviewhelectronic resourcebLa revue Tocqueville	0730479X,	19186649,	MIT
+960239217923	^JZ6.5 .A375	World affairs	00438200,	19401582,	MIT
+960988190005	^HD2741 .E36	Economics of governancehelectronic resource	14356104,	14358131,	MIT
+962824948126	^HB97.5 .C315	Capital classhelectronic resource	03098168,	20410980,	MIT
+962824965155	^E840 .N34	The National interest	08849382,	19381573,	OXFORD
+963017585089	^K5 .U7242	European journal of health law	09290273,	15718093,	USTL
+963017620096	^HD72	Economics politics	09541985,	14680343,	USTL
+963017646102	^KJE6242.A13 R48	Review of European Community international environmental law	09628797,	14679388,	USTL
+963017727151	^D839	Mershon international studies review	10791760,	23305991,	USTL
+963017754178	^H1	Constellations	13510487,	14678675,	USTL
+963017756180	^K5	European law journal	13515993,	14680386,	USTL
+963017795233	^DA589.7	British journal of politics and international relations	13691481,	1467856X,	USTL
+963017807242	^JF1061	International journal on minority and group rights	13854879,	15718115,	USTL
+963017856334	^JZ1234 .I58	International studies perspectives	15283577,	15283585,	USTL
+963017945451	^V1	Naval War College review	00281484,		USTL
+963017997528	^JA1 .P62	The Political science reviewer	00913715,		USTL
+963018009545	^DS520 .C65	Contemporary Southeast Asia	0129797X,	1793284X,	USTL
+963018121778	^JK1041 .C36	Congress the presidency	07343469,	19441053,	USTL
+963018133808	^K3 .O528	Constitutional commentary	07427115,		USTL
+963018215996	^DU80 .A947	Australian journal of international affairs	10357718,	1465332X,	USTL
+963018276146	^F1401 .N58	NACLA report on the Americas	10714839,	24712620,	USTL
+963018348356	^JZ6045 .I578	International negotiation	1382340X,	15718069,	USTL
+963018351362	^K5	European journal of migration and lawhelectronic resource	1388364X,	15718166,	MIT
+964707647002	^D839 .M435	International studies review	15219488,	14682486,	MIT
+974392608094	^HV236 .E97	European journal of social workhelectronic resource	13691457,	14682664,	MIT
+110974993510289	^JX1981.P7	Journal of international peacekeepinghelectronic resource	18754104,	18754112,	MIT
+110974993510297	^K1 .S739	Asia Pacific journal on human rights and the lawhelectronic resource	13881906,	15718158,	MIT
+110974993510311	^K10 .O743	Journal of the history of international lawhelectronic resource	1388199X,	15718050,	MIT
+110975405638446	^AP2 .C9259	Current	00113131,		MIT
+110975946727453	^HV640 .R37	Refugee survey quarterlyhelectronic resource	10204067,	1471695X,	MIT
+110975946727461	^DS502 .S76	Southeast Asian affairs	03775437,	17939135,	OXFORD
+110975946727467	^JN500 .P29	Parliamentary history	02642824,	17500206,	OXFORD
+110975946727595	^DS1	Critical Asian studieshelectronic resource	14672715,	14726033,	USTL
+110975955581232	^GE170	Environmental politics	09644016,	17438934,	USTL
+110976010040254	^JX1974.A1	Arms control today ba publication of the Arms Control Association	0196125X,	19435754,	USTL
+110976725705754	^JA5 .R46	Revista brasileira de estudos políticos	00347191,	23595736,	USTL
+110976725705764	^JX9 .R445	Revista brasileira de política internacional	00347329,	19833121,	USTL
+110976725705922	^AP22 .R72	La revue nouvellehelectronic resource brevue bimensuelle dint�r�t g�n�ral	00353809,		MIT
+110978966548552	^D839 .M383	Medunarodni problemihelectronic resource	00258555,	04655842,	MIT
+110978966549766	^JA26 .P79	Politicka misaohelectronic resource	00323241,	18468721,	MIT
+110978966552016	^DT1	Ufahamuhelectronic resource bjournal of the African Activist Association	00415715,	21505802,	MIT
+110978966552018	^DK508.A2 U66	The Ukrainian quarterly	00416010,		MIT
+110978966553032	^JF515 .P25	Parliamentary journalhelectronic resource	00482994,		MIT
+110978966553468	^K26 .A57	Vanderbilt journal of transnational law	00902594,		OXFORD
+110978966556742	^F1008 .A54	The American review of Canadian studies	02722011,	19439954,	OXFORD
+110978966558222	^D839 .M49	Mezinárodní vztahyhelectronic resource	03231844,	03241844,	OXFORD
+110978966558400	^JZ5511.4 .F75x	Die Friedens Warte	03400255,	23666714,	OXFORD
+110978966561436	^D411 .F671	Probl癡mes dAm矇rique latinehelectronic resource	07651333,	19683898,	OXFORD
+110978966562908	^K23 .O9	Statutes decisions bthe laws of the USSR and its successor states	10610014,	15580903,	USTL
+110978966563542	^D860 .S68	The Polish quarterly of international affairs	12304999,		USTL
+110978976474605	^DS1 .I63	Internationales Asien ForumbInternational quarterly for Asian studies	00209449,		USTL
+110978976475913	^HC10 .O4	�konomi og politikhelectronic resource	00301906,		MIT
+110978976476247	^JN6701.A1 P64	Politiikkahelectronic resource	00323365,	00323356,	MIT
+110978976776341	^JX1965 .P38	Peace and freedomhelectronic resource cUS Section Womens International League for Peace Freedom	00159093,		MIT
+110978976777787	^DS901 .K717	Korea observerhelectronic resource	00233919,		OXFORD
+110978976781691	^DT31 .A66	The African reviewhelectronic resource	08560056,		MIT
+110978977120166	^U4 .K85	Handlingar och tidskrifthelectronic resource	00235369,		MIT
+110978977121122	^DS376 .P32	Pakistan horizon	0030980X,		OXFORD
+110978977122260	^D839 .S73	Sprawy międzynarodowehelectronic resource	0038853X,		OXFORD
+110978977122292	^H8 .S7	Statsvetenskaplig tidskrifthelectronic resource cutgiven av Fahlbeckska stiftelsen	00390747,		MIT
+110978977122538	^AS615 .N315	Theoriahelectronic resource	00405817,	15585816,	MIT
+110978977123636	^JA8 .P98	Public sectorhelectronic resource bthe publication of the New Zealand Institute of Public Administration	01105191,		MIT
+110978977276968	^K3 .H5	Chinese law and government	00094609,	19447051,	MIT
+110978977281102	^DT621 .L525	Liberian studies journalhelectronic resource	00241989,		MIT
+110978977281248	^DK511.L2 A265	Lituanushelectronic resource	00245089,		MIT
+110978977285192	^JX1 .A53	Foreign service journal	01463543,		MIT
+110978977286516	^JA1.A1 I59	International journal of political economy	08911916,	15580970,	MIT
+110978977562195	^G122.U56a	National basic intelligence factbook	02771527,	15538133,	MIT
+110978977566877	^D839 .F57	The Fletcher forum of world affairs	10461868,		USTL
+110978977567067	^E840 .N37a online	American foreign policy interests	10803920,	15332128,	USTL
+110978977734053	^JA26 .H5	Hitotsubashi journal of law politics	00732796,		USTL
+110978977743463	^JK1 .C35	Cato policy report	0743605X,		USTL
+110978977981336	^U162 .A3 no.224	Strategic defence in the nuclear age cLawrence Freedman	0567932X,	14785145,	LNU
+110978978190500	^KZ21 .N48	Netherlands yearbook of international law	01676768,	15740951,	LNU
+110978978194570	^K1 .N487	Annales Universitatis Mariae Curie SklodowskanSectio GpIushelectronic resource	04584317,	24498505,	MIT
+110978978377349	^DT1 .P62	Politique africainehelectronic resource	02447827,	22645047,	MIT
+110978978381539	^JX1569 .O25	Occasional papers reprints series in contemporary Asian studieshelectronic resource	07300107,		MIT
+110978978556783	^DS501 .J64	The Journal of East Asian affairshelectronic resource	10101608,		MIT
+110978978734759	^HC601 .J58 x	The Journal of Australian political economyhelectronic resource	01565826,	18393675,	MIT
+110978978739887	^K10 .O87315	The journal of law politicshelectronic resource	07492227,		MIT
+110978978742239	^DD261 .G19	German monitorhelectronic resource	09271910,	18757391,	MIT
+110978978742857	^UA10.5 .I85	Strategic review for southern Africahelectronic resource	10131108,		MIT
+110978978958832	^DS51.K7 K885	The International journal of Kurdish studieshelectronic resource	10736697,		MIT
+110978979114671	^HC186 .R415	Revista de economia pol�ticahelectronic resource	01013157,	18094538,	MIT
+110978979115723	^JA26 .P62	Politeiahelectronic resource btydskrif vir politieke wetenskappe	02568845,		MIT
+110978979433094	^DL1 .N67	Nordeuropaforumhelectronic resource	09405585,	1863639X,	MIT
+110978979433472	^JN3201 .G47	German politics	09644008,	17438993,	MIT
+110978979588969	^DS140 .J47	Jewish political studies reviewhelectronic resource	0792335X,	22269967,	MIT
+110978979591603	^JA26 .T86	Dong Wu zheng zhi xue baohelectronic resource	10198636,		MIT
+110978979592365	^JA73 .P63	Political analysis ban annual publication of the Methodology Section of the American Political Science Association	10471987,	14764989,	MIT
+110978979593855	^DS41 .D66	Domes	10604367,	19493606,	OXFORD
+110978979594081	^E184.O6 A83	Asian American policy review	10621830,	21625395,	USTL
+110978979594467	^K27	William and Mary Bill of Rights journal	10658254,	1943135X,	USTL
+110978979782681	^HD8381 .R46	Renewal ba journal of Labour politics	0968252X,		USTL
+110978979783869	^DS51.K7 K883	Kurdish life	10618457,	18618457,	USTL
+110978984074687	^JQ21.A1	Asian journal of political science	02185377,	17507812,	USTL
+110978984076091	^DS119.7	Palestine Israel journal of politics economics and culturehelectronic resource	07931395,		USTL
+110978984082297	^DS128.2	Israel affairs	13537121,	17439086,	USTL
+110978984082611	^JF416 .J68	The journal of legislative studieshelectronic resource	13572334,	17439337,	MIT
+110978984082823	^JN94.A1 S68	South European society politicshelectronic resource	13608746,	17439612,	MIT
+110978984082867	^DE100 .M425	Mediterranean politicshelectronic resource	13629395,	17439418,	MIT
+110978984249768	^JX5 .Z47	Zeitschrift f�r internationale Beziehungenhelectronic resource cHerausgegeben im Auftrag der Sektion Internationale Politik der Deutschen Vereinigung f�r Politische Wissenschaft	09467165,		MIT
+110978984251288	^D860 .B78	The Brown journal of world affairshelectronic resource	10800786,	24723347,	MIT
+110978984252404	^F1029 .C324	Canadian foreign policyhelectronic resource	11926422,	21570817,	MIT
+110978984252742	^HM891 .A73	Arena journalhelectronic resource	13206567,	18372333,	MIT
+110978984253454	^DT367.8 .N39	New routeshelectronic resource	14033755,	02480200,	MIT
+110978984253462	^JL1201 .P65	Pol�tica y gobiernohelectronic resource	14051060,	16652037,	MIT
+110978984253576	^JC319 .G485	Geopoliticshelectronic resource	14650045,	15573028,	MIT
+110978984350843	^DT19.8	African studies quarterly	10932658,	21522448,	USTL
+110978984352323	^DL159 .D873	Danish foreign policy yearbook	13972480,		USTL
+110978984352369	^JA5 .M48	Metapol癃icahelectronic resource	14054558,	16050576,	MIT
+110978984441527	^JA76 .R47	Revista de sociologia e pol�ticahelectronic resource	01044478,	16789873,	MIT
+110978984444609	^JN6501 .D45	Demokratizatsiyahelectronic resource bthe journal of post soviet democratization	10746846,	19404603,	MIT
+110978984445489	^P301.5.P67 R48	Rhetoric public affairshelectronic resource bR PA	10948392,	15345238,	MIT
+110978984446267	^JA4 .P65	Politique et soci彋廥helectronic resource	12039438,	17038480,	MIT
+110978984446355	^DAW1051 .P47	Perspectiveshelectronic resource breview of Central European affairs cInstitute of International Relations	1210762X,	18034551,	MIT
+110978984446367	^DB2238.7 .N6813	The new presencehelectronic resource	12118303,		MIT
+110978984447969	^JX4541	Civil wars	13698249,	1743968X,	USTL
+110978984562147	^JA5 .E85	Estudios políticos	01215167,	24628433,	USTL
+110978984563449	^JA5 .R493	Revista uruguaya de ciencia pol穩tica	07979789,		USTL
+110978984565441	^E185.86 .H37	Harvard journal of African American public policy	10810463,	2162559X,	USTL
+110978984565793	^E183.7	American diplomacy	10948120,		USTL
+110978984566675	^DU1 .P13326	Pacific focus	12254657,	19765118,	USTL
+110978984567001	^F2331.Z9 C54	Ciencias de gobiernohelectronic resource cGobernaci�n del Estado Zulia Instituto Zuliano de Estudios Pol�ticos Econ�micos y Sociales	1316371X,		MIT
+110978984567197	^JZ6.5 .C76	Croatian international relations reviewhelectronic resource cInstitute for International Relations Zagreb	13311182,	18485782,	MIT
+110978984569273	^BT83.59 .P65	Political theologyhelectronic resource bthe journal of Christian Socialism	1462317X,	17431719,	MIT
+110978984569631	^D839 .C65	Cold War history	14682745,	17437962,	MIT
+110978984569637	^DR401 .T87	Turkish studieshelectronic resource	14683849,	17439663,	MIT
+110978984569639	^HC401.A1 J687	Journal of southeast European and Black Sea studieshelectronic resource	14683857,	17439639,	MIT
+110978984569655	^JC480 .T683	Totalitarian movements and political religionshelectronic resource	14690764,	17439647,	MIT
+110978984569675	^UA10.7 .D34	Defence studieshelectronic resource	14702436,	17439698,	MIT
+110978984569683	^JZ6.5 .I594	International relations of the Asia Pacific ba journal of the Japan Association of International Relations	1470482X,	14704838,	MIT
+110978984569799	^U102	Journal of military and strategic studieshelectronic resourcebthe electronic journal of the Centre for Military and Strategic Studies	1488559X,		MIT
+110978984570531	^D2009 .P475	Perspectives on European politics and societyhelectronic resource	15705854,	15680258,	MIT
+110979839327293	^JA1 .J58	Journal of political sciencehelectronic resource	00984612,	05870577,	MIT
+110980865608954	^JZ1318 .G5585	Global networkshelectronic resource ba journal of transnational affairs	14702266,	14710374,	MIT
+110985717554763	^GE170 .G5556	Global environmental politics	15263800,	15360091,	MIT
+110985822452654	^JL148 .C33	Revue parlementaire canadiennehelectronic resource	02292548,		MIT
+110985822458692	^JV6004 .I46	IMIS Beitr輍ehelectronic resource cInstitut f僡 Migrationsforschung und Interkulturelle Studien	09494723,		MIT
+110985822459422	^JK5101 .A73	Midsouth political science journalhelectronic resource	10515054,	23747781,	MIT
+110985822459796	^K10 .O8324	Journal for the study of peace and conflicthelectronic resource bthe annual journal of the Wisconsin Institute for Peace and Conflict Studies	10951962,		MIT
+110985822460238	^HD72 .J685	Journal of international relations and developmenthelectronic resource	14086980,	15811980,	MIT
+110985822460280	^HF1351 .G568	Global dialoguehelectronic resource	14500590,	19862601,	MIT
+110985822460314	^JZ6.5	Foreign policy in focushelectronic resource cInterhemispheric Resource Center and Institute for Policy Studies	15241939,		MIT
+110985822460324	^B945 .R23	The journal of Ayn Rand studieshelectronic resource	15261018,	21697132,	MIT
+110989422341044	^D901 .Y4	European studieshelectronic resource	15681858,	18758150,	MIT
+110990130691202	^JX1 .J682	Latin American politics and society	1531426X,	15482456,	MIT
+111004366739462	^E886.2 .W64 1998eb	From the eye of the stormhelectronic resource ba pastor to the president speaks out cJ Philip Wogaman	0664221408,0585274541,	0664221408,0585274541,	NKFUST
+111005964305004	^CLASSED SEPARATELY	Canadian American public policy	10471073,		USTL
+111006469398066	^JX7 .R63	Rivista di studi politici internazionali	00356611,		USTL
+111006469406104	^JA26 .P6	Politicahelectronic resource	01050710,	2246042X,	MIT
+111006469442728	^K1 .F68	African journal of international and comparative lawhelectronic resource	09548890,	17551609,	MIT
+111006469467390	^GE170	International environmental agreementshelectronic resource	15679764,	15731553,	MIT
+111014216985010	^HN380.5 A32	The European journal of social qualityhelectronic resource	14617919,	17522315,	MIT
+111021054534398	^K14 .E973	New York University journal of legislation and public policy	1094513X,		USTL
+111021473076010	^JZ6.5	Cambridge review of international affairs	09557571,	1474449X,	USTL
+111021473080018	^D16.9	Historical materialism	14654466,	1569206X,	USTL
+111021473080032	^HX1 .A44	American communist history	14743892,	14743906,	USTL
+111021473080042	^JC571	Journal of human rights	14754835,	14754843,	USTL
+111022104693024	^JK2403 .S762	State politics policy quarterly	15324400,	19461607,	USTL
+111025125046006	^HC79.I55	Information polity	15701255,	18758754,	USTL
+111032812859256	^JK8701 .C37	California politics policy ba journal of the Pat Brown Institute of Public Affairs California State University Los Angeles	10833374,		USTL
+111032812863724	^H97 .P66	The review of policy research	1541132X,	15411338,	USTL
+111035464599000	^JN15	EIoPhelectronic resource bEuropean integration online papers	10275193,		USTL
+111035464599004	^JA51 .A55	AntePodium	11735716,		USTL
+111035464600010	^D1056	Journal on ethnopolitics and minority issues in Europe bJEMIE	16175247,		USTL
+111035576932000	^D31 .R48	The review of international affairs cCenter for Eurasian Strategic Studies	14753553,	17439442,	USTL
+111035577506010	^DS401 .I53	India reviewhelectronic resource	14736489,	15573036,	MIT
+111035998867032	^P119.3 .J68	Journal of language and politicshelectronic resource	15692159,	15699862,	MIT
+111051022177000	^K9 .N74	International journal of constitutional lawhelectronic resource bI�CON	14742640,	14742659,	MIT
+111056485513064	^DT107 C75 1993	Contemporary Egypt bthrough Egyptian eyes essays in honour of professor PJ Vatikiotis cedited by Charles Tripp	0415061032,0203413164,1134927053,1280322691,0203316398,	0415061032,0203413164,1134927053,1280322691,0203316398,	OXFORD
+111056486507888	^JL966 .A99 2002	Democracy and the public space in Latin America cLeonardo Avritzer	0691090874,0691090882,1282935275,9786612935275,9786612087561,1400825016,1282087568,1400814154,	0691090874,0691090882,1282935275,9786612935275,9786612087561,1400825016,1282087568,1400814154,	OXFORD
+111056486507894	^HN530.2.Z9 E496 2002	The Russian people and foreign policy bRussian elite and mass perspectives 1993 2000 cWilliam Zimmerman	0691091676,0691091684,1400824990,9786612158742,1282158740,1400814863,	0691091676,0691091684,1400824990,9786612158742,1282158740,1400814863,	OXFORD
+111056486736442	^KJE3175 .G46 2000	Gender policies in the European Union cedited by Mariagrazia Rossilli ; foreword by Louise A Tilly	0820445088,0585392439,	0820445088,0585392439,	OXFORD
+111056648275078	^JA8 .P723	Political studies reviewhelectronic resource cPolitical Studies Association	14789299,	14789302,	NKFUST
+111056648954362	^HM1126 .A47	African journal on conflict resolutionhelectronic resource	15626997,	2309737X,	USTL
+111056649506082	^JA26 .L58	Lithuanian political science yearbook	13929321,		USTL
+111057011086004	^JA14 .S39	Schweizerische Zeitschrift für Politikwissenschaft	14247755,	16626370,	USTL
+111077510255000	^DS501 .J643	Journal of East Asian studies	15982408,	22346643,	USTL
+111077820655476	^JA8	European political science bEPS	16804333,	16820983,	USTL
+111079933064010	^JA84.R6	Romanian journal of political science bPolSci	1582456X,	20687613,	USTL
+111085339849004	^UA646.53 .B345	Baltic defence review	17361257,	17361265,	USTL
+111087027981742	^KF8776 .B38 2002	Supreme Court justices in the post Bork erahelectronic resource bconfirmation politics and judicial performance cJoyce A Baugh	0820456837,0820472824,	0820456837,0820472824,	USTL
+111087027981752	^BR115.P7 J44 2002	Christianitys impact on world politicshelectronic resource bnot by might nor by power cKurt W Jefferson	0820461164,082047410X,	0820461164,082047410X,	USTL
+111087028129592	^JQ1981 .S88 1999	Supporting democracy bthe South Africa Canada Program on Governance cSL Sutherland	0889368929,9786610717507,1280717505,1552500942,	0889368929,9786610717507,1280717505,1552500942,	LCC
+111088194421052	^KHQ2921.A15 P46	Pensamiento constitucionalhelectronic resource cMaestr�a en Derecho con Menci�n en Derecho Constitucional	10276769,	10276779,	MIT
+111088196431440	^JA26 .H76	Hrvatska javna upravahelectronic resource	13316443,		MIT
+111088198873340	^F2801 .R48	Revista SAAPhelectronic resource bpublicaci�n de ciencia pol�tica de la Sociedad Argentina de An�lisis Pol�tico	16667883,	18531970,	MIT
+111088199754124	^UA10.5 .N385	National security and the futurehelectronic resource	13324454,	18461425,	MIT
+991042723488138	^JA26 .I584	International review of public administrationhelectronic resource	12294659,	23317795,	MIT
+991042723496636	^DS327 .T773	Central Asia and the Caucasushelectronic resource	14046091,		MIT
+991042723619036	^DC417 .F73	French politics culture and society	15376370,	15585271,	MIT
+991042723623332	^JA26 .R485	Revista espa�ola de ciencia pol�ticahelectronic resource	15756548,	21739870,	MIT
+991042726987378	^JA1 .G46a	Politics policy	15555623,	17471346,	MIT
+991042727081906	^KZ21 .G58	Global communityhelectronic resource byearbook of international law and jurisprudence	15359468,		MIT
+991042727094788	^H1 .L47	Lincoln journal of social and political thoughthelectronic resource	15365441,		MIT
+991042727945086	^JK2351 .R55	Ripon forum	00355526,		MIT
+991042728084726	^JC571 .H956	Human rights law reviewhelectronic resource	14617781,	17441021,	MIT
+991042728101778	^H96 .K46	Kennedy School reviewhelectronic resource	15350215,	21625743,	MIT
+991042728149278	^K3 .H56	Chinese journal of international lawhelectronic resource	15401650,	17469937,	MIT
+991042728220558	^KZ3092 .C868	Cursos de derecho internacional y relaciones internacionales de Vitoria Gasteizhelectronic resource corganizados por el Departamento de Derecho Internacional P�blico Relaciones Internacionales e Historia del Derecho y de las Instituciones la Facultad de Derecho y la Facultad de Ciencias Sociales y de la Comunicaci�n de la Universidad del Pa�s Vasco	1577533X,		MIT
+991042728221586	^DR226 .A53	Analele Universita021Bii Bucure0219tip0218tiin021Be politicehelectronic resource	15822486,		MIT
+991042728221588	^JA76 .S837	Studia politicahelectronic resource bRomanian political science review cUniversity of Bucharest Dept of Political Science Institute for Political Research	15824551,		MIT
+991042728753508	^D1 .J583	Journal of European studieshelectronic resource	02589680,		MIT
+991042728800236	^JA5 .R495	Revista de ciencia pol�ticahelectronic resource	07161417,	0718090X,	MIT
+991042728829974	^D839 .H45	Hemisphereshelectronic resource	07389825,		MIT
+991042729706538	^DD1 .G3817	German politics and society cthe Center for European Studies Harvard University	10450300,	15585441,	MIT
+991042729728938	^JK2403 .A75	State local governmenthelectronic resource	10937021,	21625662,	MIT
+991042730661216	^G19 .S67	Revue belge de g廩graphiehelectronic resource	00350796,		MIT
+991042731603008	^HC411 .A53	Ajia keizaihelectronic resource	00022942,		MIT
+991042731798744	^JA26 .C537	Journal of Chinese political sciencehelectronic resource bofficial journal of the Association of Chinese Political Studies	10806954,	18746357,	MIT
+991042731799780	^JS39 .J68	Journal of public management social policyhelectronic resource	10808523,		MIT
+991042731820172	^JA1 .A37	Administrative theory praxishelectronic resource ba journal of dialogue in public administration theory	10841806,	19490461,	MIT
+991042731877070	^JZ6.5 .P47	Perceptionshelectronic resource bjournal of international affairs	13008641,		MIT
+991042731880240	^K30 .B66	Zbornik Pravnog fakulteta Sveucilista u Rijecihelectronic resource	1330349X,		MIT
+991042732535470	^F2279 .C634	Colombia internacional	01215612,		OXFORD
+991042732742392	^DS1 .A47277	Journal of international and area studieshelectronic resource	12268550,		OXFORD
+991042732770132	^JA26 .A56	Annales Universitatis Mariae Curie SkłodowskanSectio KpPolitologia	14289512,		USTL
+991042732773394	^HC10 .E3746	Economic freedom of the world	1482471X,		USTL
+991042733706950	^DS797.86.D37 -- N67 2006eb	Displacing Desire bTravel and Popular Culture in China	08248621,		HKSYU
+991042735468206	^JL148 .C33	Revue parlementaire canadiennehelectronic resource	02292556,		MIT
+991042740230260	^DR401 .M55	Milletlerarasi m�nasebetler T�rk yilligi	05441943,		MIT
+991042743143426	^H62.5.A353 E27	Eastern Africa social science research reviewhelectronic resource	10271775,	16844173,	MIT
+991042746912516	^DS611 .R44	Review of Indonesian and Malaysian affairshelectronic resource	08157251,		MIT
+991042751296042	^QK494	ICPS newsletterhelectronic resource bthe International Conifer Preservation Society	10753516,		MIT
+991042751433252	^DT367.8 .H645	Horn of Africa bulletinhelectronic resource	11002840,		MIT
+991042751438510	^DB2777 .M439x	Medzin�rodn� ot�zkyhelectronic resource	12101583,		MIT
+991042752515544	^LA565 .N66	N�madashelectronic resource	01217550,	25394762,	MIT
+991042752802644	^DK505 .P65	Politologijahelectronic resource balmanachas	13921681,		MIT
+991042753969012	^H8 .R4344	Revista de fomento socialhelectronic resource	00156043,		MIT
+991042754006056	^DT31 .C87	Current politics and economics of Africahelectronic resource	10984070,		MIT
+991042754022084	^JK468.E7 P88	Public integrityhelectronic resource bPI	10999922,	15580989,	MIT
+991042754048652	^DU80 .A95	AQhelectronic resource bjournal of contemporary analysis	14433605,		MIT
+991042754163438	^D839 .G463	Georgetown journal of international affairs	15260054,	24718831,	USTL
+991042754193612	^JK2311 .B58	Blueprint	1527439X,	21695334,	USTL
+991042754204354	^JX1 .T6	Towson University journal of international affairshelectronic resource	15301656,		MIT
+1000000000017180	^JF1525.A8 E44	Electronic journal of e governmenthelectronic resource bEJEC	1479439X,		MIT
+1000000000017440	^JA1	The New England journal of political sciencehelectronic resource	15501604,		MIT
+1000000000018841	^JZ6.5 .F668	Foreign policy analysis	17438586,	17438594,	MIT
+1000000000020872	^JZ6.5	Alternativeshelectronic resource bTurkish journal of international relations	13035525,		MIT
+1000000000021326	^JA86 .J68	Journal of political science educationhelectronic resource	15512169,	15512177,	MIT
+1000000000021328	^GN496 .E85	Ethnopoliticshelectronic resource	17449057,	17449065,	MIT
+1000000000024777	^JZ5.5 .C43x	Insight Turkeyhelectronic resource bquarterly research and information journal with focus on Turkey	1302177X,	25647717,	MIT
+1000000000024830	^DR401 .T723	T�rk d�nyasi arastirmalarihelectronic resource	02550644,		MIT
+1000000000024900	^HX3	Socialist studieshelectronic resource bthe journal of the Society for socialist studies	17172616,	19182821,	MIT
+1000000000025589	^JC337 .J68	Journal of civil societyhelectronic resource	17448689,	17448697,	MIT
+1000000000026135	^D839	Slovenská politologická revuehelectronic resource	13359096,	13383140,	OXFORD
+1000000000033775	^JQ4029.P64 D73	Australian review of public affairshelectronic resource	18321526,		MIT
+1000000000033801	^HB1 .C76	Crossroadshelectronic resource bthe ASA journal	18257208,		MIT
+1000000000045926	^E175.8 .M44	Ou Mei yan jiuhelectronic resource	10213058,	19917864,	MIT
+1000000000210065	^HD9560.6.P37 2004	Oil politics ba modern history of petroleum cFrancisco Parra	1860649777,9786612528941,0857715275,6000007388,1282528947,141758369X,	1860649777,9786612528941,0857715275,6000007388,1282528947,141758369X,	MIT
+1000000000210313	^K9 .N8543	International organizations law reviewhelectronic resource	15723739,	15723747,	MIT
+1000000000210451	^RC480.5 .P758	Psychotherapy and politics internationalhelectronic resource	14769263,	15569195,	MIT
+1000000000210684	^JA14 .O46	�sterreichische Zeitschrift f�r Politikwissenschafthelectronic resource	16155548,		MIT
+1000000000220570	^JZ11 .H34	The Hague journal of diplomacyhelectronic resource bHJD	18711901,	1871191X,	MIT
+1000000000221344	^DB2238.7 .P64	Politologick� casopishelectronic resource	12113247,		MIT
+1000000000221379	^KF4742 .S73	Stanford journal of civil rights civil libertieshelectronic resource	15537226,	15537951,	MIT
+1000000000221386	^JA8 . B75	British politicshelectronic resource	1746918X,	17469198,	MIT
+1000000000221627	^JN26	Living reviews in European governancehelectronic resource	1813856X,		MIT
+1000000000221970	^UA646.53 .B345	Baltic security and defence reviewhelectronic resource	17363772,	17363780,	MIT
+1000000000222707	^K3258.A15 R4	Religion and human rightshelectronic resource	1871031X,	18710328,	MIT
+1000000000222780	^JN26	European diversity and autonomy papers bEDAP	18278361,		USTL
+1000000000223899	^D1050	European view	17816858,	18655831,	USTL
+1000000000223916	^DS501	Comparative connectionshelectronic resource ba quarterly e journal on East Asian bilateral relations	19305370,	19305389,	USTL
+1000000000224410	^CB478	Scienza politica	15904946,	18259618,	USTL
+1000000000238263	^DS740.4 .C35454	The Chinese journal of international politics	17508916,	17508924,	USTL
+1000000000238486	^JA18	Bollettino telematico di filosofia politicahelectronic resource	15914305,		USTL
+1000000000238970	^JA26 .Q65	QOG working paper serieshelectronic resource	16538919,		USTL
+1000000000243137	^HD9566 .R85 2005eb	Addicted to oil bAmericas relentless drive for energy security cIan Rutledge	1850436746,9786612527791,600000818X,1282527797,0857710036,1423709446,	1850436746,9786612527791,600000818X,1282527797,0857710036,1423709446,	USTL
+1000000000243161	^HV376.5 .B46 2003	The charitable crescenthelectronic resource bpolitics of aid in the Muslim world cJonathan Benthall and Jérôme Bellion Jourdan	1860649017,9786612528866,6000007140,1282528866,0857711253,1417569263,	1860649017,9786612528866,6000007140,1282528866,0857711253,1417569263,	USTL
+1000000000243319	^BP195.W2 C56 2006eb	The Wahhabi mission and Saudi Arabiahelectronic resource cDavid Commins	1845110803,9786612526695,6000008724,0857731351,1282526693,0857717804,1423787749,	1845110803,9786612526695,6000008724,0857731351,1282526693,0857717804,1423787749,	USTL
+1000000000246082	^E169.1 .A116 1999	Exceptional America bnewness and national identity cPhilip Abbott	0820439126,	0820439126,	LCC
+1000000000246111	^KF4749 .K733 2004	The price of rights bthe courts government largesse and fundamental liberties cDaniel C Kramer	0820461539,0820478059,	0820461539,0820478059,	LCC
+1000000000250400	^JQ1840 .G66 2003	Good governance in the Middle East oil monarchies cedited by Tom Pierre Najem and Martin Hetherington	0415297400,0203296354,1280070668,0203220838,	0415297400,0203296354,1280070668,0203220838,	LCC
+1000000000267458	^D839 .M38	Medunarodna politikahelectronic resource	05433657,		MIT
+1000000000269219	^HX5 .C56	Communismehelectronic resource	07513496,		MIT
+1000000000277053	^DT181 .M32	Maghreb Machrekhelectronic resource	17623162,	22716815,	OXFORD
+1000000000277422	^K9 .N849732	International community law review	18719740,	18719732,	USTL
+1000000000277656	^JA76 .I67	International political sociology bIPS	17495679,	17495687,	USTL
+1000000000277703	^GE195 .I58	The International journal of inclusive democracy	1753240X,		USTL
+1000000000277735	^HB1.A1	New perspectives on political economy	18046290,	18010938,	USTL
+1000000000277739	^JA26	Politikonhelectronic resource	15833984,		MIT
+1000000000277824	^DT365 .J647	Journal of Eastern African studieshelectronic resource bthe journal of the British Institute in Eastern Africa	17531055,	17531063,	MIT
+1000000000278556	^D410 .R45	Revue d�fense nationalehelectronic resource	19503253,		MIT
+1000000000278826	^DS930 .N586	North Korean review	15512789,	19412886,	OXFORD
+1000000000280406	^JZ5588 .U55	UNISCI discussion papershelectronic resource	16962206,		OXFORD
+1000000000280791	^JZ9 .C654	CONfineshelectronic resource	18703569,		USTL
+1000000000280810	^JZ9 .M48 online	Meridiano 47 bboletim de an獺lise de conjuntura em rela癟繭es internacionais	15181219,		USTL
+1000000000281015	^DK508.A2 P67x	Political commentaryhelectronic resource	18167152,		MIT
+1000000000281112	^JF1525.A8 J68	Journal of information technology politicshelectronic resource	19331681,	1933169X,	MIT
+1000000000281171	^K10 .U72556	Jurisprudencijahelectronic resource cLietuvos Teises universitetas	13926195,	20292058,	MIT
+1000000000281421	^HT170 .J685	Journal of urban regeneration and renewal	17529638,	17529646,	MIT
+1000000000281471	^JA84.C3 C37	Canadian political science reviewhelectronic resource	19114125,		OXFORD
+1000000000289555	^HB9 .C36	Cambridge journal of regions economy and society	17521378,	17521386,	OXFORD
+1000000000289637	^D1050	Journal of contemporary European researchhelectronic resource	1815347X,		OXFORD
+1000000000289823	^JF799	Journal of public deliberationhelectronic resource	19372841,		OXFORD
+1000000000289965	^H96 .P6474	Policy perspectiveshelectronic resource	18121829,	18127347,	OXFORD
+1000000000292075	^JA26 .S46	Sfera politiciihelectronic resource brevistă lunară de științe politice editată de Fundația Societatea Civilă	12216720,		OXFORD
+1000000000294623	^BT736.4	Journal of religion conflict and peacehelectronic resource	19371985,		USTL
+1000000000295088	^KJC5132.A13 H44	Security and human rights cNetherlands Helsinki Committee	18747337,	18750230,	USTL
+1000000000302264	^JA66	International StudiesbInterdisciplinary Political and Cultural Journal	16414233,		USTL
+1000000000302313	^JK1 .J68	The journal of politics society ba national undergraduate journal of social sciences	15557359,		USTL
+1000000000305913	^DS821	Asia Pacific journalhelectronic resource bJapan focus	15574660,		USTL
+1000000000307665	^HM1271 .C35	Canadian diversityhelectronic resource	17111870,		MIT
+1000000000307844	^HC411 .A857	Asia policy	15590968,	15592960,	MIT
+1000000000307953	^E169.12 .O237	The objective standardhelectronic resource ba journal of culture and politics	15591905,	15591913,	MIT
+1000000000309348	^D860 .J677	Journal of global initiativeshelectronic resource	19303009,		MIT
+1000000000311605	^JK1 .D46	Democracyhelectronic resource	19318693,		MIT
+1000000000312842	^DK505.66 .P375	Parlamento studijoshelectronic resource bmokslo darbai	16489896,		MIT
+1000000000313573	^DR901 .A43	Albanian journal of politicshelectronic resource	19327986,		MIT
+1000000000314009	^K3240	Interdisciplinary journal of human rights lawhelectronic resource	19330049,		MIT
+1000000000315357	^JA26 .P624	Politejahelectronic resource bpismo Wydzialu Studi�w Miedzynarodowych i Politycznych Uniwersytetu Jagiellonskiego	17336716,	23916737,	MIT
+1000000000315951	^JC423 .T258	Taiwan journal of democracyhelectronic resource	18157238,		MIT
+1000000000322317	^DR603 .T839	Turkish policy quarterlyhelectronic resource	13035754,		MIT
+1000000000323558	^JZ6.5 .A387	African securityhelectronic resource	19392206,	19392214,	MIT
+1000000000325383	^E151 .A56	The Americanisthelectronic resource	18962556,		MIT
+1000000000330142	^J404	Stj�rnm�l og stj�rns�slahelectronic resource	16706803,	1670679X,	MIT
+1000000000334457	^K5250 -- .E58 2005eb	Entre el perdón y el paredón bPreguntas y dilemas de la justicia transicional	9586951685,9786610717934,1280717939,1552501906,	9586951685,9786610717934,1280717939,1552501906,	HKSYU
+1000000000340150	^HV6773 -- .I58 2006eb	Invisible Threats bFinancial and Information Technology Crimes and National Security	1586036645,6610609810,9786610609819,1429419059,1607502011,6000004656,1280609818,1601295189,	1586036645,6610609810,9786610609819,1429419059,1607502011,6000004656,1280609818,1601295189,	HKSYU
+1000000000340186	^UA646.5.B85 -- B85 2006eb	Bulgarian Integration into Europe and NATO bIssues of Science Policy and Research Evaluation Practice	1586035983,9786610505272,142379740X,1607501651,6000003587,1280505273,1601291442,	1586035983,9786610505272,142379740X,1607501651,6000003587,1280505273,1601291442,	HKSYU
+1000000000366501	^JN1 .E876	Evropsk獺 volebn穩 studiahelectronic resource	18016545,		USTL
+1000000000366639	^JA79 .J68x	Journal of international political theoryhelectronic resource	17550882,	17551722,	MIT
+1000000000378387	^BL65.P7	Politics and religionhelectronic resource	17550483,	17550491,	MIT
+1000000000378798	^DS247.T8A4 E45	Emirates lecture serieshelectronic resource cEmirates Center for Strategic Studies and Research	16821238,		MIT
+1000000000378856	^JZ9 .R4585	Rela��es internacionaishelectronic resource	16459199,		MIT
+1000000000389184	^JC328.6 .R498	REXTERhelectronic resource bcasopis pro v�zkum radikalismu extremismu a terrorismu	12147737,		MIT
+1000000000390379	^BP173.7 .C87	Current trends in Islamist ideologyhelectronic resource	1940834X,	19408358,	MIT
+1000000000392124	^JZ1318	Journal of global change and governancehelectronic resource	19418760,		MIT
+1000000000398419	^HQ1237.5.U6.F56 2006	George W Bush and the war on women bturning back the clock on progress cBarbara Finlay	184277784X,1842777858,9786611215798,1848130996,1281215791,	184277784X,1842777858,9786611215798,1848130996,1281215791,	MIT
+1000000000399367	^DT512.32 .G53 2006	Ghana bone decade of the liberal state cedited by Kwame Boafo Arthur	1842778285,1842778293,1848136854,9786611215996,1848131399,1281215996,	1842778285,1842778293,1848136854,9786611215996,1848131399,1281215996,	OXFORD
+1000000000402356	^DT14 .A374244 2005	African intellectuals brethinking politics language gender and development cThandika Mkandawire editor	1842776207,1842776215,9786611259068,1848131178,1281259063,	1842776207,1842776215,9786611259068,1848131178,1281259063,	OXFORD
+1000000000412383	^JQ1879.A15 I58 2006eb	Intellectuals and African development bpretension and resistance in African politics cBjörn Beckman Gbemisola Adeoti editors	1842777645,1842777653,9786611216047,1281216046,1848131488,	1842777645,1842777653,9786611216047,1281216046,1848131488,	OXFORD
+1000000000413161	^HV5801 .B85 2006	The political economy of narcotics bproduction consumption and global markets cJulia Buxton	1842774468,1842774476,1848137524,1780328508,9786611216115,1848131615,1281216119,	1842774468,1842774476,1848137524,1780328508,9786611216115,1848131615,1281216119,	USTL
+1000000000413405	^HN18.3 .S263 2006eb	The rise of the global lefthelectronic resource bthe World Social Forum and beyond cBoaventura de Sousa Santos	1842778005,1842778013,1848137745,1780328699,9786611216146,1281216143,1848131674,	1842778005,1842778013,1848137745,1780328699,9786611216146,1281216143,1848131674,	USTL
+1000000000413581	^RA643.86.S6 D49 2006	AIDS and power bdisease and democracy in Africa cAlex de Waal	1842777068,1842777076,1848136099,1780345208,9786611215583,1281215589,1848130546,	1842777068,1842777076,1848136099,1780345208,9786611215583,1281215589,1848130546,	LNU
+1000000000415608	^HX40.H265 2007	Rebuilding the Left cMarta Harnecker ; translated by Janet Duckworth	1842772562,1842772570,1848137621,9786611215699,1848130783,1281215694,	1842772562,1842772570,1848137621,9786611215699,1848130783,1281215694,	MIT
+1000000000416263	^JL2001 .S78	Studia politic�helectronic resource bSPAE	16697405,		MIT
+1000000000428767	^JQ1 .A7	Asian politics policyhelectronic resource	19430779,	19430787,	MIT
+1000000000429394	^JZ1306 .E87225	Ethics global politicshelectronic resource	16544951,	16546369,	MIT
+1000000000429467	^DK509	Caucasian review of international affairshelectronic resource	18656773,		MIT
+1000000000435945	^D974	Journal of Balkan Near Eastern studieshelectronic resource	19448953,	19448961,	MIT
+1000000000436728	^DS1 .G65	Global Asiahelectronic resource ba journal of the East Asia Foundation	1976068X,		MIT
+1000000000449565	^JN6699.A15 D45 2004eb	Democracy and the quest for justicehelectronic resource bRussian and American perspectives cedited by William Gay Tatiana Alekseeva	9042010991,1417564377,	9042010991,1417564377,	NKFUST
+1000000000453983	^JC143.M4 L36 2005eb	Politics patriotism and languagehelectronic resource bNiccol� Machiavellis secular patria and the creation of an Italian national identity cWilliam J Landon	0820472751,082048105X,	0820472751,082048105X,	NKFUST
+1000000000453999	^JN12 .D46 2005eb	Democracy and the post totalitarian experiencehelectronic resource ceditors Leszek Koczanowicz and Beth J Singer ; assistant editors Fredric R Kellogg and Lukasz Nysler	9042016353,9401201269,1417592087,	9042016353,9401201269,1417592087,	NKFUST
+1000000000465207	^DS95.6.I7 G66 2006eb	Syria and Iranhelectronic resource bdiplomatic alliance and power politics in the Middle East cJubin M Goodarzi	1845111273,9786612526831,6000010540,1429453710,	1845111273,9786612526831,6000010540,1429453710,	USTL
+1000000000469618	^Q127.U6 K73 2006eb	Science and technology policy in the United States bopen systems in action cSylvia Katharine Kraemer	0813538262,0813538270,9786611316563,1281316563,0813539471,	0813538262,0813538270,9786611316563,1281316563,0813539471,	USTL
+1000000000471114	^JC423 -- .P76 2006eb	Problems for Democracy	9042020601,940120330X,1429456493,	9042020601,940120330X,1429456493,	HKSYU
+1000000000471115	^HM1281 -- .S657 2006eb	Spiritual and Political Dimensions of Nonviolence and Peace	904202061X,9401203318,1429456507,	904202061X,9401203318,1429456507,	HKSYU
+1000000000471588	^RA395.A3M4184 2006	The Truth about Health Care bWhy Reform Is Not Working in America	0813538874,0813543525,9786611244316,1281244317,0813541158,	0813538874,0813543525,9786611244316,1281244317,0813541158,	HKSYU
+1000000000473160	^E183.8.I55.H69 2007	Iran oil bthe new Middle East challenge to America cRoger Howard	1845112490,9786612605376,6000009585,1282605372,0857713698,1429480122,	1845112490,9786612605376,6000009585,1282605372,0857713698,1429480122,	MIT
+1000000000476266	^JK1764 .B67 2000	American government bconflict compromise and citizenship cChristopher J Bosso John H Portz Michael C Tolley	0813368715,142948831X,	0813368715,142948831X,	OXFORD
+1000000000476278	^JF51 .C44 2000	Theories of comparative political economy cRonald H Chilcote	0813310199,0429495730,0429964285,0786742143,1429490748,	0813310199,0429495730,0429964285,0786742143,1429490748,	LCC
+1000000000476358	^JF1001 .E33 2001	Election studies bwhats their use cedited by Elihu Katz with Yael Warshel ; pref by Kathleen Hall Jamieson	0813366356,1429487836,	0813366356,1429487836,	LCC
+1000000000477335	^HV640.5.P36 P33 2007eb	Palestinian refugees bchallenges of repatriation and development cedited by Rex Brynen and Roula El Rifai	184511311X,1552502310,1552502317,9786611105211,6000009402,128110521X,0857715518,1435603923,	184511311X,1552502310,1552502317,9786611105211,6000009402,128110521X,0857715518,1435603923,	USTL
+1000000000479691	^DS95.6.S33.S86 2007	Syria and Saudi Arabia bcollaboration and conflicts in the oil era cSonoko Sunayama	1845113020,9786612750663,6000010680,1282750666,0857717251,1435615956,	1845113020,9786612750663,6000010680,1282750666,0857717251,1435615956,	MIT
+1000000000481882	^JL1496 .C66 2007	Construyendo la democracia en sociedades posconflicto bGuatemala y El Salvador un enfoque comparado cDinorah Azpuru et al	9992261641,9786611127923,1281127922,1552503402,	9992261641,9786611127923,1281127922,1552503402,	LCC
+1000000000482522	^BL980.A38 N38 2007	Strengthening religious tolerance for a secure civil society in Albania and the Southern Balkans cedited by James Pettifer and Mentor Nazarko	158603779X,6611733620,9786611733629,1607502690,6000005660,1281733628,1435625188,	158603779X,6611733620,9786611733629,1607502690,6000005660,1281733628,1435625188,	OXFORD
+1000000000525717	^TJ212 .J687	Journal of automation mobile robotics intelligent systemshelectronic resource	18978649,		USTL
+1000000000526254	^Z1003.5.U38 K79	Krytykahelectronic resource	15636461,		MIT
+1000000000533430	^JV6006 .J68	Journal of identity and migration studieshelectronic resource bJIMS cResearch Centre on Identity and Migration Issues University of Oradea Romania	18435610,		MIT
+1000000000535684	^JK1764.W635 2008	Millennial makeover bMySpace YouTube and the future of American politics cMorley Winograd Michael D Hais	0813543010,9786611397241,1281397245,0813544661,	0813543010,9786611397241,1281397245,0813544661,	MIT
+1000000000538301	^JC423 .P25 2008	Parceling the globe bphilosophical explorations in globalization global behavior and peace cedited by Danielle Poe and Eddy Souffrant	904202447X,940120621X,1435665759,	904202447X,940120621X,1435665759,	USTL
+1000000000551284	^JC352 .P37 2004	Sovereign city bthe city state through history cGeoffrey Parker	1861892195,9786612264030,1282264036,1861894597,	1861892195,9786612264030,1282264036,1861894597,	USTL
+1000000000551795	^JN7042 .H55 2008	The Nordic model bScandinavia since 1945 cMary Hilson	1861893663,9786612264061,1282264060,1861894619,	1861893663,9786612264061,1282264060,1861894619,	USTL
+1000000000552291	^DK857.5 .J64 2007	Oil Islam and conflict bCentral Asia since 1945 cRob Johnson	1861893396,9786612263972,1282263978,1861894562,	1861893396,9786612263972,1282263978,1861894562,	USTL
+1000000000555192	^HC415.26 .K66 2005	Jordan since 1989 ba study in political economy cWarwick Knowles	1850436339,9786612527760,0857713965,1282527762,6000008457,	1850436339,9786612527760,0857713965,1282527762,6000008457,	LCC
+1000000000557171	^JZ5687 .N37 2007	Tuning priorities in nuclear arms control and non proliferation bcomparing approaches of Russia and the West cedited by Alexander Nikitin and Morten Bremer Mærli	1586038249,6611733701,9786611733704,1607503018,6000005962,1281733709,1433711346,	1586038249,6611733701,9786611733704,1607503018,6000005962,1281733709,1433711346,	LCC
+1000000000575774	^HT390	Regional science policy practicehelectronic resource	17577802,		OXFORD
+1000000000577430	^DR1603 .A53	Anali Hrvatskog politološkog društva	18456707,	18475299,	OXFORD
+1000000000686818	^JCC571	Journal of human rights practice	17579619,	17579627,	USTL
+1000000000688591	^KJC5138 .G64 2007eb	A peoples history of the European Court of Human Rightshelectronic resource cMichael D Goldhaber	0813539838,9786610931989,9786813541280,1280931981,081354128X,	0813539838,9786610931989,9786813541280,1280931981,081354128X,	USTL
+1000000000693198	^HM881 .J67 2002	Activism bdirect action hacktivism and the future of society cTim Jordan	1861891229,9786612264139,1282264133,1861895062,	1861891229,9786612264139,1282264133,1861895062,	USTL
+1000000000693208	^JZ1318 .S537 2001	Global dimensions bspace place and the contemporary world cJohn Rennie Short	1861891024,9786612264344,1282264346,1861895100,	1861891024,9786612264344,1282264346,1861895100,	USTL
+1000000000697760	^JZ1305 .S48c Online only	The Whitehead journal of diplomacy and international relations	19363419,	19363427,	USTL
+1000000000700012	^HM851	Policy internet	19442866,		USTL
+1000000000708207	^K7 .L48	Global responsibility to protecthelectronic resource	18759858,	1875984X,	MIT
+1000000000714419	^JC571 .L544 online	Libertarian papershelectronic resource	19476949,		MIT
+1000000000716656	^JA5	Revista debateshelectronic resource	19825269,		MIT
+1000000000717815	^DS520 .S85	Journal of current Southeast Asian affairshelectronic resource	18681034,	18684882,	MIT
+1000000000717861	^JC423 .L58 online	Living reviews in democracyhelectronic resource	16630165,		MIT
+1000000000725683	^HD9560.5.C567 2007	Empires of oil bcorporate oil in Barbarian worlds cDuncan Clarke	1846680468,9786611880132,1281880132,184765049X,	1846680468,9786611880132,1281880132,184765049X,	MIT
+1000000000726583	^JA26	Revista de stiinte politicehelectronic resource	1584224X,		MIT
+1000000000728386	^HV91.W58 2001	Women and welfare btheory and practice in the United States and Europe cedited and with an introduction by Nancy J Hirschmann Ulrike Liebert	0813528828,	0813528828,	MIT
+1000000000728389	^HC800 .I35 2000	Africa and the new world order cJulius O Ihonvbere	0820438898,	0820438898,	OXFORD
+1000000000728390	^E183.7 .O38 1999	A concise introduction to American foreign policy cF Ugboaja Ohaegbulam	0820441821,	0820441821,	LCC
+1000000000728391	^HF1359 .W687 2000	Rethinking globalization bproduction politics actions cRichard Worthington	082044510X,	082044510X,	LCC
+1000000000728392	^JC571 .C6477 2002	Concepts and strategies in international human rights cGeorge J Andreopoulos editor	0820452254,	0820452254,	LCC
+1000000000728393	^KF3941 .C37 2002	The antiquated right ban argument for the repeal of the Second Amendment cAndrew Carlson	0820456667,	0820456667,	LCC
+1000000000729255	^KZ1242 .N45 2007	Pioneering international law bconventions treaties and standards cby Sheila Nelson	1422200736,	1422200736,	LCC
+1000000000729473	^HV8665 .S63 2007	Political prisoners cby Roger Smith	1590849876,	1590849876,	LCC
+1000000000745301	^DS701 .C3553	Journal of current Chinese affairshelectronic resource	18681026,	18684874,	MIT
+1000000000745497	^JK1 .P445	Perspectives in public affairshelectronic resource	19481764,	19481772,	MIT
+1000000000745568	^F1414.3 .J68	Journal of politics in Latin Americahelectronic resource	1866802X,	18684890,	MIT
+1000000000749406	^HF1418.7.R443 2009	Regional trade integration and conflict resolution cedited by Shaheen Rafi Khan	0415476739,041547759X,9786612323485,0203889800,1282323482,9786611837952,1134023006,1281837954,155250414X,	0415476739,041547759X,9786612323485,0203889800,1282323482,9786611837952,1134023006,1281837954,155250414X,	MIT
+1000000000751169	^JC319 .G488	Geopolitics history and international relationshelectronic resource	19489145,	23744383,	MIT
+1000000000755402	^DS119.76 .Q73 2008	Beyond Oslo the struggle for Palestine binside the Middle East peace process from Rabins death to Camp David cAhmed Qurie Abu Ala	1845119460,9786612642494,1441605800,1282642499,0857710869,6000013094,	1845119460,9786612642494,1441605800,1282642499,0857710869,6000013094,	LCC
+1000000000755815	^HN65 -- .N49 2009eb	New Kind of Containment bThe War on Terror Race and Sexuality	9042025239,9786612594144,9042029196,1441607196,1282594141,	9042025239,9786612594144,9042029196,1441607196,1282594141,	HKSYU
+1000000000756227	^K3840.C76 2008	Regulation and Public Interests bThe Possibility of Good Regulatory Government	0691134642,069113085X,9786612086731,1282086731,1400828147,	0691134642,069113085X,9786612086731,1282086731,1400828147,	HKSYU
+1000000000756237	^BR115.P7C37955 2008	Christian Political Ethics	0691134812,0691131406,9786612086786,9786612935480,1282935488,1282086782,1400828090,	0691134812,0691131406,9786612086786,9786612935480,1282935488,1282086782,1400828090,	HKSYU
+1000000000756240	^JC327.B764 2002	Legitimacy and Power Politics bThe American and French Revolutions in International Political Culture	0691074348,0691146705,9786612087691,128208769X,1400825415,	0691074348,0691146705,9786612087691,128208769X,1400825415,	HKSYU
+1000000000756248	^JC153.L87T83 2002	Locke and the Legislative Point of View bToleration Contested Principles and the Law	0691095043,0691095035,9786612087684,1282087681,1400825393,	0691095043,0691095035,9786612087684,1282087681,1400825393,	HKSYU
+1000000000756249	^JA81.M63 2007	Modern Political Science bAnglo American Exchanges Since 1880	069112874X,0691128731,9786612129599,1282129597,1400827760,	069112874X,0691128731,9786612129599,1282129597,1400827760,	HKSYU
+1000000000756262	^KF4541 .B313 2004	Restoring the lost constitution bthe presumption of liberty cRandy E Barnett	0691123764,9786612129421,1282129422,1400825849,	0691123764,9786612129421,1282129422,1400825849,	LNU
+1000000000756268	^E902.W43 2007	What They Think of Us bInternational Perceptions of the United States Since 9 11	0691130256,9786612086922,1282086928,1400827604,	0691130256,9786612086922,1282086928,1400827604,	HKSYU
+1000000000756269	^JF801.M85 2007	Constitutional Patriotism	0691118590,9786612087417,128208741X,1400828082,	0691118590,9786612087417,128208741X,1400828082,	HKSYU
+1000000000756273	^HC106.5 .B347 2008	Unequal democracy bthe political economy of the new gilded age cLarry M Bartels	0691136637,0691146233,9786612086977,1282086979,140082835X,	0691136637,0691146233,9786612086977,1282086979,140082835X,	LCC
+1000000000756285	^JC423 .D382 2005	Democratic faith cPatrick J Deneen	069111871X,0691163391,9786612087424,1282087428,1400826896,	069111871X,0691163391,9786612087424,1282087428,1400826896,	LCC
+1000000000756288	^KZ6396 .K46 2006	Of war and law cDavid Kennedy	0691128642,9786612129667,128212966X,1400827361,	0691128642,9786612129667,128212966X,1400827361,	LCC
+1000000000756289	^JC574 .G48 2001	Public goods private goods cRaymond Geuss	0691117209,0691089035,9786612087073,128208707X,1400824826,	0691117209,0691089035,9786612087073,128208707X,1400824826,	LCC
+1000000000756293	^LC111 .G68 2005	Does God belong in public schools cKent Greenawalt	0691130655,0691121117,9786612086632,1282086634,1400826276,	0691130655,0691121117,9786612086632,1282086634,1400826276,	LCC
+1000000000756304	^JK1976.G45 2008	Red state blue state rich state poor state bwhy Americans vote the way they do cAndrew Gelman et al	069113927X,9786612086984,9786612458323,1282086987,1282458329,1400828368,	069113927X,9786612086984,9786612458323,1282086987,1282458329,1400828368,	MIT
+1000000000756308	^UA772.B275 2007	Democratic breakdown and the decline of the Russian military cZoltan Barany	0691128960,9786612129773,9786612935473,128293547X,1282129775,140082804X,	0691128960,9786612129773,9786612935473,128293547X,1282129775,140082804X,	MIT
+1000000000756313	^HD75.B38 2000	From subsistence to exchange and other essays cPeter Bauer ; with an introduction by Amartya Sen	0691117829,0691006679,1400814162,9786612087110,1282087118,1400824648,	0691117829,0691006679,1400814162,9786612087110,1282087118,1400824648,	MIT
+1000000000756318	^HD7288.76.U5.B66 2006	Knocking on the door bthe federal governments attempt to desegregate the suburbs cChristopher Bonastia	069113619X,0691119341,9786612086793,1282086790,1400827256,	069113619X,0691119341,9786612086793,1282086790,1400827256,	MIT
+1000000000756320	^JN40.B3513 2004	We the people of Europe breflections on transnational citizenship cEtienne Balibar ; translated by James Swenson	0691089906,0691089892,9786612087776,1282087770,1400825784,	0691089906,0691089892,9786612087776,1282087770,1400825784,	MIT
+1000000000756322	^KF4552.B368 2003	Welfare and the Constitution cSotirios A Barber	0691123756,069111448X,9786612129414,1282129414,1400825830,	0691123756,069111448X,9786612129414,1282129414,1400825830,	MIT
+1000000000756330	^KF9325.C64 2002	Regulating intimacy ba new legal paradigm cJean L Cohen	0691117896,0691057400,1400814197,9786612087158,1282087150,1400825032,	0691117896,0691057400,1400814197,9786612087158,1282087150,1400825032,	MIT
+1000000000756332	^JC574.M67 2005	Covenants without swords bidealist liberalism and the spirit of empire cJeanne Morefield	0691119929,0691171408,9786612087394,1282087398,1400826322,	0691119929,0691171408,9786612087394,1282087398,1400826322,	MIT
+1000000000756336	^G89.E93 2006	Journeys to the other shore bMuslim and Western travelers in search of knowledge cRoxanne L Euben	0691138400,0691127212,9786612086885,128208688X,1400827493,	0691138400,0691127212,9786612086885,128208688X,1400827493,	MIT
+1000000000756342	^JC423.G9255 2004	Why deliberative democracy cAmy Gutmann and Dennis Thompson	0691120196,0691120188,9786612087271,1282087274,1400826330,	0691120196,0691120188,9786612087271,1282087274,1400826330,	MIT
+1000000000756343	^JK1764.D88 2006	Is democracy possible here bprinciples for a new political debate cRonald Dworkin	0691138729,0691126534,9786612086908,1282086901,1400827272,	0691138729,0691126534,9786612086908,1282086901,1400827272,	MIT
+1000000000756356	^JQ1499.A91.B45 2006	Beyond liberal democracy bpolitical thinking for an East Asian context cDaniel A Bell	069112308X,0691123071,9786612129377,9786612935459,1282935453,1282129376,1400827469,	069112308X,0691123071,9786612129377,9786612935459,1282935453,1282129376,1400827469,	MIT
+1000000000759218	^DS327 .O78	Orta Asya ve Kafkasya arastirmalarihelectronic resource	1306682X,		MIT
+1000000000759892	^JC79.A8 F5 1985	Democracy ancient and modern cby MI Finley	0813511275,	0813511275,	OXFORD
+1000000000772644	^JA26 .P686	Politologická revuehelectronic resource	12110353,		OXFORD
+1000000000772645	^KZ3410 .U48	Uluslararası hukuk ve politikahelectronic resource bUHP	13055208,		OXFORD
+1000000000772655	^JC574 .W45 1996	Dilemmas in liberal democratic thought since Max Weber cRichard Wellen	0820430080,	0820430080,	USTL
+1000000000772656	^HC815 .A58 1996	The post colonial society bthe Algerian struggle for economic social and political change 1965 1990 cMohamed H Abucar	082042823X,	082042823X,	USTL
+1000000000772657	^E184.A1 R74 1996	The reuniting of America beleven multicultural dialogues cDonald H Roy	0820431184,	0820431184,	USTL
+1000000000772658	^HQ1236.5.C5 D36 1996	The womens movement and the transition to democracy in Chile cAnnie G Dandavati	0820425621,	0820425621,	USTL
+1000000000772659	^JC599.U5 L37 1997	American views of liberty cPeter Augustine Lawler	0820424129,	0820424129,	LNU
+1000000000772660	^K670 .C76 1997	Women and family law bconnecting the public and the private cPatricia McGee Crotty	0820438049,	0820438049,	LCC
+1000000000772661	^JK271 .H69 1998	All of the people all of the time bAmerican government at the end of the century cCarl Cavanagh Hodge	0820430196,	0820430196,	LCC
+1000000000772662	^KF4891 .H83 1998	Along racial lines bconsequences of the 1965 Voting Rights Act cDavid Michael Hudson	0820439223,	0820439223,	LCC
+1000000000772663	^JF801 .C54 1998	Citizenship after liberalism cedited by Karen Slawner Mark E Denham	0820437603,	0820437603,	LCC
+1000000000772664	^JA84.U5 S57 1998	Legacy to the world ba study of Americas political ideas cMax J Skidmore	0820439681,	0820439681,	LCC
+1000000000772665	^DT38.9.N6 A35 1998	Nigerian foreign policy towards Africa bcontinuity and change cOkon Akiba	0820433713,	0820433713,	LCC
+1000000000772666	^JA84.U5 H33 1998	The Puritan tradition in revolutionary Federalist and Whig political theory ba rhetoric of origins cDean Hammer	0820438219,	0820438219,	LCC
+1000000000772667	^HB3505 .A683 1999	Americas demographic tapestry bbaseline for the new millennium cedited by James W Hughes and Joseph J Seneca	0813526469,	0813526469,	LCC
+1000000000772668	^JF1411 .H9 1999	Bureaucracy vs democracy in the minds of bureaucrats bto what extent are these ideologies compatible with one another cSung Don Hwang	0820424374,	0820424374,	LCC
+1000000000772669	^JC421 .D39 1999	Foundations of representative democracy cLance deHaven Smith	082044099X,	082044099X,	LCC
+1000000000772670	^JQ1981 .K64 1998	The global economy and democracy in South Africa cThomas A Koelble	0813525683,	0813525683,	LCC
+1000000000772671	^DD256.5 .V48 1999	The ideological roots of German national socialism cEric H Vieler	0820441902,	0820441902,	LCC
+1000000000772672	^HX39.5 .H59 1999	The literate communist b150 years of the Communist manifesto cDonald Clark Hodges	0820441872,	0820441872,	LCC
+1000000000772673	^DT516.8 .C66 1999	Sierra Leone at the end of the twentieth century bhistory politics and society cEarl Conteh Morgan Mac Dixon Fyle	0820441724,	0820441724,	LCC
+1000000000772674	^HB95 .H48 1999	The unfinished business of Thatcherism bthe values of the enterprise culture cCandace Hetzner	0820440523,	0820440523,	LCC
+1000000000772675	^UA646.8 .W43 1999	What security for which Europe bcase studies from the Baltic to the Black Sea cedited by David WP Lewis and Gilles Lepesant	0820442682,	0820442682,	LCC
+1000000000772676	^HN90.R3 K354 1998	The emergence of a Euro American radical right cJeffrey Kaplan and Leonard Weinberg	0813525640,	0813525640,	LCC
+1000000000772677	^P94.65.U6 I88 2000	Its show time bmedia politics and popular culture cedited by David A Schultz	082044135X,	082044135X,	LCC
+1000000000772678	^E332.2 .S538 2000	Jefferson Atatürk bpolitical philosophies cGarrett Ward Sheldon	0820449776,	0820449776,	LCC
+1000000000772679	^JC11 .C64 2000	The rise and fall of regimes btoward grand theory of politics cTerrence E Cook	0820444634,	0820444634,	LCC
+1000000000772680	^JF801 .D96 2001	Civism bcultivating citizenship in European history cThomas L Dynneson	082045012X,	082045012X,	LCC
+1000000000772681	^JC75.D36 G74 2001	Democratic virtue in the trial and death of Socrates bresistance to imperialism in classical Athens cRicky K Green	0820449792,	0820449792,	LCC
+1000000000772682	^KF8744 .P47 1999	The Supremes bessays on the current justices of the Supreme Court of the United States cBarbara A Perry	0820440469,	0820440469,	LCC
+1000000000772683	^LC3731 .B35 2001	United States Congress bilingual education cAbdul Karim Bangura Martin C Muo	0820440000,	0820440000,	LCC
+1000000000772684	^DT38.7 .U54 2001	United States African relations bthe Reagan Bush era cedited by Abdul Karim Bangura	0820441929,	0820441929,	LCC
+1000000000772685	^JC251.K49 L82 2001	VO Key Jr bthe quintessential political scientist cAndrew M Lucker	0820448966,	0820448966,	LCC
+1000000000772686	^JC585 .W649 2001	What does it mean to be human ba new interpretation of freedom in world history cAlan T Wood	0820456780,	0820456780,	LCC
+1000000000772687	^JK468.A8 F74 2002	Cyberage politics 101 bmobility technology and democracy cStephen E Frantzich	0820452467,	0820452467,	LCC
+1000000000772688	^LC213 .C37 2002	Democracy and education in classical Athens and the American founding cMartin D Carcieri	0820449733,	0820449733,	LCC
+1000000000772689	^E169.12 .J25 2002	Entertainment politics bthe influence of pop culture on young adult political socialization cDavid J Jackson	0820457469,	0820457469,	LCC
+1000000000772690	^KF539 .B33 2002	Liberal constitutionalism marriage and sexual orientation ba contemporary case for dis establishment cGordon Albert Babst	0820455334,	0820455334,	LCC
+1000000000772693	^DT157.67 .J46 2002	The Sudanese civil conflict 1969 1985 cCatherine Jendia	0820455717,	0820455717,	LCC
+1000000000772694	^KF4905 .B83 2003	Drawing lines in quicksand bcourts legislatures redistricting cJeremy Buchman	0820463590,	0820463590,	LCC
+1000000000772695	^JA81 .S43 2003	The history of political theory bancient Greece to modern America cGarrett Ward Sheldon	0820423009,	0820423009,	LCC
+1000000000772696	^KF8742 .L43 2003	Leaders of the pack bpolls case studies of great Supreme Court justices cedited by William D Pederson and Norman W Provizer	082046306X,	082046306X,	LCC
+1000000000772697	^UA26.A2 G67 2003	The politics of military base closings bnot in my district cLilly J Goren	0820455245,	0820455245,	LCC
+1000000000772698	^JK1051 .F67 2004	Congress parties puzzles bpolitics as a team sport cRichard G Forgette	0820461059,	0820461059,	LCC
+1000000000772699	^JF2112.A4 L54 2004	Lights camera campaign bmedia politics and political advertising cedited by David A Schultz	0820468312,	0820468312,	LCC
+1000000000772700	^JF1071 .R66 2004	The politics of representation belection campaigning and proportional representation cJuliet Roper Christina Holtz Bacha Gianpietro Mazzoleni	0820461482,	0820461482,	LCC
+1000000000772701	^JZ1253 .M37 2004	The prison as metaphor bre imagining international relations cMichael P Marks	0820468398,	0820468398,	LCC
+1000000000772702	^DT38.7 .O39 2004	US policy in postcolonial Africa bfour case studies in conflict resolution cF Ugboaja Ohaegbulam	0820470910,	0820470910,	LCC
+1000000000772703	^BL2540 .R47 2004	Resurgent voices in Latin America bindigenous peoples political mobilization and religious change cedited by Edward L Cleary Timothy J Steigenga	0813534615,	0813534615,	LCC
+1000000000772704	^F1034.2 .N412 2006	Canadas changing society 1984 the present cby Sheila Nelson	1422200094,	1422200094,	LCC
+1000000000772705	^E99.E7 S318 2006	Canadas modern day First Nations bNunavut and evolving relationships cby Ellyn Sanna with William Hunter	1422200108,	1422200108,	LCC
+1000000000772706	^HQ1236.5.C5 D358 2005	Engendering democracy in Chile cAnnie G Dandavati	0820461431,	0820461431,	LCC
+1000000000772707	^DF854 .Z33 2005	Essence of political manipulation bemotion institutions Greek foreign policy cNikolaos Zahariadis	0820479039,	0820479039,	LCC
+1000000000772708	^DS119.76 .B347 2005	Interpreting conflict bIsraeli Palestinian negotiations at Camp David II and beyond cOded Balaban	0820474509,	0820474509,	LCC
+1000000000772710	^F1034.2 .N413 2006	Redefining Canada ba developing identity 1960 1984 cby Sheila Nelson	1422200086,	1422200086,	LCC
+1000000000772711	^PN1995.9.P6 S14 2004	Seeing the bigger picture bunderstanding politics through film television cMark Sachleben Kevan M Yenerall	0820462489,	0820462489,	LCC
+1000000000772712	^JK2265.P25 2005	State national parties American democracy cJoel Paddock	0820476412,	0820476412,	MIT
+1000000000772714	^Z3221 .Y57 2006$aDS520	Bibliography of ASEAN China relations ccompiled by Linda Yip Seong Chun	9812303804,9812305645,	9812303804,9812305645,	LCC
+1000000000772715	^E183 .F68 2006	Foundations of American political thought cedited by Raymond Polin Constance Polin	0820479292,1453911197,	0820479292,1453911197,	LCC
+1000000000772716	^LC93.A2 H63 2006	Homo sapiens europæus bcreating the European learning citizen cMichael Kuhn Ronald G Sultana editors	0820476005,	0820476005,	LCC
+1000000000772717	^JZ1305 .S67 2006	Humanity sovereignty ba political roadmap for the 21st century cLyndon Storey	0820481297,	0820481297,	LCC
+1000000000772718	^E839.5 .P36 2006	Shifting terrain bessays on politics history and society cGlenn Perusek	0820486027,1453906584,	0820486027,1453906584,	LCC
+1000000000772719	^HC441 .C63 2006	Times arrow times cycle bglobalization in Southeast Asia over la Longue Durée cPeter A Coclanis	9812303758,981230648X,	9812303758,981230648X,	LCC
+1000000000772720	^HC240.9.I55 T69 2006	Towards a knowledge based economy bknowledge and learning in European educational research cMichael Kuhn Massimo Tomassini Robert Jan Simons editors	0820474703,	0820474703,	LCC
+1000000000772721	^HC447.5 .I635 2004	The politics and economics of Indonesias natural resources cedited by Budy P Resosudarmo	981230312X,	981230312X,	LCC
+1000000000772722	^JC573.2.U6.C67 2007	Branded conservatives bhow the brand brought the right from the fringes to the center of American politics cKenneth M Cosgrove	0820474657,	0820474657,	MIT
+1000000000772723	^JK558 .O53 2007	A culture of deference bCongress the President and the course of the US led invasion and occupation of Iraq cF Ugboaja Ohaegbulam	0820495441,	0820495441,	LCC
+1000000000772725	^JQ1875 .R68 2007	Governance and leadership in Africa cRobert I Rotberg	1590849574,	1590849574,	LCC
+1000000000772726	^HV553 .S58 2007	Humanitarian relief operations blending a helping hand cby Roger Smith	1422200701,	1422200701,	LCC
+1000000000772727	^DT22 .O23 2007	The making of modern Africa cTunde Obadina	1590849981,	1590849981,	LCC
+1000000000772728	^JA71 .D97 2005	Natural law and political realism in the history of political thought cRW Dyson	0820488828,	0820488828,	LCC
+1000000000772731	^D1055 .R39 2007	Reflections on Europe in transition cUrsula E Beitter editor	0820481939,1453906568,	0820481939,1453906568,	LCC
+1000000000772733	^DS528 .S67 2007	State of strife bthe dynamics of ethnic conflict in Burma cMartin Smith	9812304797,9812304800,	9812304797,9812304800,	LNU
+1000000000772734	^JZ1318 .N45 2007	The UN and cultural globalization bone world many people cby Sheila Nelson	1422200728,	1422200728,	LCC
+1000000000772735	^BP173.7 .F37 2007	Understanding radical Islam bmedieval ideology in the twenty first century cBrian R Farmer	0820488437,	0820488437,	LCC
+1000000000772736	^JN30 .W47 2007	Who is the European ba new global player cMichael Kuhn editor	0820478954,1453906339,	0820478954,1453906339,	LCC
+1000000000772737	^HD9560.5 .C566 2007	The battle for barrels bpeak oil myths world oil futures cDuncan Clarke	1846680123,9786611880118,1281880116,	1846680123,9786611880118,1281880116,	LCC
+1000000000772740	^JL966 .S67 2007	Latin Americas elusive democracieshelectronic resource cBernardo Sorj ; prologue By Guillermo ODonnell	859966221X,	859966221X,	MIT
+1000000000772742	^BP63.A38 S53 2007	The Islamist threat in Southeast Asia ba reassessment cJohn T Sidel	9812304894,9812304908,	9812304894,9812304908,	OXFORD
+1000000000772746	^JQ773.8 .A53 2008	The Indonesian parliament and democratization cPatrick Ziegenhain	9812304851,9812304843,981230486X,	9812304851,9812304843,981230486X,	USTL
+1000000000772750	^JA66 .N34 1998	Confessions from the left bon the pain necessity and joys of political renewal cJohn D Nagle	0820439134,	0820439134,	USTL
+1000000000772752	^HJ2449 .I47 2008	The impact and cost of taxation in Canada bthe case for flat tax reform cedited by Jason Clemens	088975229X,	088975229X,	LCC
+1000000000772753	^JC599.A36 B38 2007	Human rights in Africa cBrian Baughan	1590849604,	1590849604,	LCC
+1000000000772754	^KF4515 .A43 2000	The federalist papers ba commentary the Baton Rouge lectures cWB Allen with Kevin A Cloonan	0820437565,	0820437565,	LCC
+1000000000772755	^U21.2 .L37 2001	War stories cBruce D Larkin	082045107X,	082045107X,	LCC
+1000000000772758	^DB2011 .D63 2006	The Czech Republic cby Heather Docalavich	1422200426,	1422200426,	LCC
+1000000000772801	^RA395.A3 H57 2006	History and health policy in the United States bputting the past back in cedited by Rosemary A Stevens Charles E Rosenberg and Lawton R Burns	0813538386,0813538378,0813539870,1282133594,	0813538386,0813538378,0813539870,1282133594,	LCC
+1000000000772804	^HC79.S9 V68 2000	Vouchers and the provision of public services cC Eugene Steuerle al et editors	0815781539,	0815781539,	LCC
+1000000000772807	^E185.615 .B5465 2002	Black political organizations in the post civil rights era cedited by Ollie A Johnson III and Karin L Stanford	0813531403,	0813531403,	LCC
+1000000000772808	^HD6510.A45 2004	American labor and the Cold War bgrassroots politics and postwar political culture cedited by Robert W Cherny William Issel Kieran Walsh Taylor	0813534038,	0813534038,	MIT
+1000000000773384	^BL2525.S76 2004	Democracy and tradition cJeffrey Stout	0691123829,0691102937,9786612129445,1282129449,1400825865,	0691123829,0691102937,9786612129445,1282129449,1400825865,	MIT
+1000000000773391	^JF529.G886 2003	Identity in democracy cAmy Gutmann	0691120404,069109652X,9786612087288,1282087282,1400825520,	0691120404,069109652X,9786612087288,1282087282,1400825520,	MIT
+1000000000773404	^JV6483.T494 2002	Dividing lines bthe politics of immigration control in America cDaniel J Tichenor	0691088055,9786612087547,1282087541,1400824982,	0691088055,9786612087547,1282087541,1400824982,	MIT
+1000000000773406	^JA81 .W6 2004	Politics and vision bcontinuity and innovation in Western political thought cSheldon S Wolin	0691126275,9786612129513,1282129511,1400826101,	0691126275,9786612129513,1282129511,1400826101,	OXFORD
+1000000000780203	^JA88.P18 J685	Journal of political studieshelectronic resource	19941080,	23088338,	OXFORD
+1000000000788383	^JC49 .I766 2002	Islamic political ethics bcivil society pluralism and conflict cedited by Sohail H Hashmi ; with a foreword by Jack Miles	0691113106,0691113092,9786612157172,1282157175,1400825377,	0691113106,0691113092,9786612157172,1282157175,1400825377,	USTL
+1000000000788404	^JK468.P64 P38 2008eb	Reforms at riskhelectronic resource bwhat happens after major policy changes are enacted cEric M Patashnik	0691138974,0691119988,9786612157370,128215737X,1400828856,	0691138974,0691119988,9786612157370,128215737X,1400828856,	USTL
+1000000000788418	^K2146 .B37 2008eb	The judge in a democracyhelectronic resource cAharon Barak	0691136157,069112017X,9786612157523,1282157523,1400827043,	0691136157,069112017X,9786612157523,1282157523,1400827043,	USTL
+1000000000788421	^JZ1318 .D74 2008eb	All politics is globalhelectronic resource bexplaining international regulatory regimes cDaniel W Drezner ; with a new afterword by the author	0691096422,0691096414,9786612157561,1282157566,1400828635,	0691096422,0691096414,9786612157561,1282157566,1400828635,	USTL
+1000000000788423	^JF2011.C53 2004	The Formation of National Party Systems bFederalism and Party Competition in Canada Great Britain India and the United States	0691119325,0691119317,9786612157578,1282157574,1400826373,	0691119325,0691119317,9786612157578,1282157574,1400826373,	HKSYU
+1000000000788424	^KF4550.T87 2003	The New Constitutional Order	0691120552,9786612157585,1282157582,1400825555,	0691120552,9786612157585,1282157582,1400825555,	HKSYU
+1000000000788472	^JC423 .H748 2001	Democracy and the foreigner cBonnie Honig	0691114765,0691088845,9786612158032,1282158031,1400824818,	0691114765,0691088845,9786612158032,1282158031,1400824818,	LCC
+1000000000788473	^JA71 .B735 2007	The cultural contradictions of democracy bpolitical thought since September 11 cJohn Brenkman	0691116644,0691171203,9786612158049,128215804X,1400827957,	0691116644,0691171203,9786612158049,128215804X,1400827957,	LCC
+1000000000788475	^JC599.U5 A494 2005	American exceptionalism and human rights cedited by Michael Ignatieff	0691116482,0691116474,9786612158063,1282158066,1400826888,	0691116482,0691116474,9786612158063,1282158066,1400826888,	LCC
+1000000000788484	^KZ4041 .R328 2005	Law without nations bwhy constitutional government requires sovereign states cJeremy A Rabkin	0691130558,0691095302,9786612158148,1282158147,1400826608,	0691130558,0691095302,9786612158148,1282158147,1400826608,	LCC
+1000000000788497	^GN492 .S68 2005	Sovereign bodies bcitizens migrants and states in the postcolonial world cedited by Thomas Blom Hansen and Finn Stepputat	0691121192,0691121184,9786612158247,1282158244,1400826691,	0691121192,0691121184,9786612158247,1282158244,1400826691,	LCC
+1000000000788509	^JA79 .R7819 2008	Political hypocrisy bthe mask of power from Hobbes to Orwell and beyond cDavid Runciman	0691129312,0691148155,9786612158322,1282158325,1400828198,	0691129312,0691148155,9786612158322,1282158325,1400828198,	LCC
+1000000000788532	^DS35.69 .R46 2005	Remaking Muslim politics bpluralism contestation democratization cRobert W Hefner editor	0691120935,0691120927,9786612158568,1282158562,140082639X,	0691120935,0691120927,9786612158568,1282158562,140082639X,	LCC
+1000000000788541	^JN30 .M676 2005	The idea of a European superstate bpublic justification and European integration cGlyn Morgan	069113412X,0691122466,9786612158629,1282158627,1400828058,	069113412X,0691122466,9786612158629,1282158627,1400828058,	LCC
+1000000000788545	^JA66 .R75 2006	The politics of good intentions bhistory fear and hypocrisy in the new world order cDavid Runciman	069112566X,9786612158698,1282158694,1400827124,	069112566X,9786612158698,1282158694,1400827124,	LCC
+1000000000788555	^JK421.M328 2009	The case for big government cJeff Madrick	0691123314,9786612158766,1282158767,1400828783,	0691123314,9786612158766,1282158767,1400828783,	MIT
+1000000000788574	^D32.H87 2008	The politics of secularism in international relations cElizabeth Shakman Hurd	0691134669,0691130078,9786612158926,1282158929,1400828015,	0691134669,0691130078,9786612158926,1282158929,1400828015,	MIT
+1000000000788581	^JC423.S466 2003	The state of democratic theory cIan Shapiro	0691123969,0691115478,9786612159008,1282159003,140082589X,	0691123969,0691115478,9786612159008,1282159003,140082589X,	MIT
+1000000000793699	^JA1 .P66	Politics bureaucracy and justicehelectronic resource	21514283,	21514313,	MIT
+1000000000803960	^JL951.A1 L37	Latin American policyhelectronic resource	20417365,	20417373,	MIT
+1000000000808264	^JA5 .R28	Revista latinoamericana de pol�tica comparadahelectronic resource	13904248,		MIT
+2320000000017730	^HM1126	African conflict and peacebuilding reviewhelectronic resource bACPR	2156695X,	21567263,	MIT
+2320000000017853	^BL65.P7	Politics religion ideologyhelectronic resource	21567689,	21567697,	MIT
+2320000000019403	^HV8202.3.A2 S43	Securitas imperiihelectronic resource	18041612,		MIT
+2320000000019803	^JA1 .P467	Pepperdine policy reviewhelectronic resource	21582572,	19467192,	MIT
+2320000000020135	^Q127.U6 S96	Synesishelectronic resource	21583854,	21533679,	MIT
+2430000000035630	^HN90.M6.W867 2006	American mythos bwhy our best efforts to be a better nation fall short cRobert Wuthnow	069112504X,0691138559,1400827027,9786612157486,1282157485,	069112504X,0691138559,1400827027,9786612157486,1282157485,	MIT
+2430000000041006	^JS7197.3 .D44 2009	Deepening democracy in Indonesia bdirect elections for local leaders Pilkada cedited by Maribeth Erb and Priyambudi Sulistiyanto	9812308415,9812308407,9812308423,	9812308415,9812308407,9812308423,	USTL
+2430000000041021	^HN655.2.C6 R33 2007	Reasserting the rural development agenda blessons learned and emerging challenges in Asia cArsenio M Balisacan Nobuhiko Fuwa editors	9812304126,9812304037,9812304819,	9812304126,9812304037,9812304819,	LCC
+2430000000041109	^DS634 .A33 2009	Indonesia btowards democracy cTaufik Abdullah	9812303669,9812303650,9812305610,	9812303669,9812303650,9812305610,	USTL
+2430000000041118	^DS610.47.C5 L35 2007	Between rising powers bChina Singapore and India cAsad ul Iqbal Latif	9812304142,9812304134,9789812305178,9812305718,	9812304142,9812304134,9789812305178,9812305718,	LNU
+2430000000041124	^DS530 .M94 2007	Myanmar bstate society and ethnicity cedited by N Ganesan and Kyaw Yin Hlaing	9812304347,9812304339,9812307222,	9812304347,9812304339,9812307222,	LCC
+2430000000041127	^JQ1499.A38 R436 2007	Continent coast ocean bdynamics of regionalism in Eastern Asia cedited by Ooi Kee Beng Ding Choo Ming	9812304487,9812304479,981230455X,	9812304487,9812304479,981230455X,	LCC
+2430000000041129	^JQ776 .I53 2006	Indonesia bdemocracy and the promise of good governance cedited by Ross H McLeod Andrew MacIntyre	9812304592,9812304665,9812304673,	9812304592,9812304665,9812304673,	USTL
+2430000000041134	^DS526.7.T34 2008	Creating Greater Malaysia bdecolonization and the politics of merger cTan Tai Yong	9812307478,9812307435,9812307982,	9812307478,9812307435,9812307982,	MIT
+2430000000041146	^JQ1062.A58 G56 2008	Globalization national autonomy bthe experience of Malaysia cedited by Joan M Nelson Jacob Meerman Abdul Rahman Embong	9812308172,9812308164,9812308180,	9812308172,9812308164,9812308180,	OXFORD
+2430000000041154	^BP10.N83 B87 2009	Nahdlatul Ulama and the struggle for power within Islam and politics in Indonesia cRobin Bush	9812308768,9812308792,	9812308768,9812308792,	USTL
+2490000000000425	^JA26 .C48 online	CEU political science journal bthe graduate student review	19923147,	18187668,	USTL
+2550000000020445	^DS327 .J68	The journal of Central Asian studies cCentre of Central Asian Studies the University of Kashmir	0975086X,		USTL
+2550000000020447	^D31 .J68	Journal of political science and sociologyhelectronic resource	18849350,		MIT
+2550000000027930	^HN380.5 .A32	International journal of social qualityhelectronic resource	17570344,	17570352,	MIT
+2550000000055187	^H96 .R48	Revista brasileira de pol穩ticas p繳blicas	21798338,	22361677,	USTL
+2550000000090433	^DS41 .O783	Ortado�u y覺ll覺�覺 cedit繹rler Kemal 襤nat Muhittin Ataman Burhanettin Duran	21467595,		USTL
+2550000000090478	^DB2188.7 .P36	Pamet0315 a dejinyhelectronic resource bPD	18028241,		MIT
+2550000001048019	^H1 .I64353	The international journal of civic political and community studieshelectronic resource	23270047,		MIT
+2550000001048022	^JA1 .I5655	The international journal of interdisciplinary civic and political studieshelectronic resource	23270071,		MIT
+2550000001251121	^JK1967.P65 2002	The politics of cultural differences bsocial change and voter mobilization strategies in the post New Deal period cDavid C Leege et al	0691091528,0691091536,1400825407,9786612157349,1282157345,	0691091528,0691091536,1400825407,9786612157349,1282157345,	MIT
+2550000001346977	^TX359	World food policyhelectronic resource	23728639,		MIT
+2550000001348839	^F2279 .C53	Ciencia pol�ticahelectronic resource	1909230X,	23897481,	MIT
+2560000000014397	^K967 .F47 1998	Las consecuencias del hecho ilícito internacional bel proyecto de artículos sobre responsabilidad de los estados aprobado por la CDI en 1996 cJaume Ferrer Lloret	8479084006,9786612574184,1441647201,1282574183,	8479084006,9786612574184,1441647201,1282574183,	LCC
+2560000000014411	^K3169 .C66 2000	Constitucionalismo mundialización y crisis del concepto de soberanía balgunos efectos en América Latina y en Europa cAntonio del Cabo y Gerardo Pisarello editores ; autores Arminda Balbuena Cisneros et al	8479085606,9786612575334,1441647600,1282575333,	8479085606,9786612575334,1441647600,1282575333,	LCC
+2560000000073488	^JA26 .Z37	Zarzadzanie publicznehelectronic resource bzeszyty naukowe Instytutu Spraw Publicznych Uniwersytetu Jagiellonskiego	18960200,	20843968,	MIT
+2560000000074209	^JA84.U5 A734	American political thoughthelectronic resource	21611580,	21611599,	MIT
+2560000000080259	^DS1	Asia Pacific perspectiveshelectronic resource	21671699,		MIT
+2560000000086375	^UA646.3 .K735 2009	Medvedevs plan bgiving Russia a voice but not a veto in a new European security system cRichard J Krickus	1584874198,	1584874198,	LCC
+2560000000110165	^DK509 .C385	Caucasus internationalhelectronic resource	22221433,		MIT
+2560000000324392	^E183.7.D74 2006	Reluctant crusaders bpower culture and change in American grand strategy cColin Dueck	0691136254,1400827221,1282086812,9786612086816,0691124639,	0691136254,1400827221,1282086812,9786612086816,0691124639,	MIT
+2560000000338606	^HB9 .N232	Majallat Kulliyat al Iqtisad wa al 02BBUlum al Siyasiyahhelectronic resource cJami02BBat al Qahirah Kulliyat al Iqtisad wa al 02BBUlum al Siyasiyah	16873122,		MIT
+2580000000000065	^DA10	Political insight	20419058,	20419066,	MIT
+2580000000000239	^JZ1318 .J715 online	Journal of critical globalisation studieshelectronic resource	20408498,		MIT
+2670000000006432	^JZ9 .R454 online	Relaciones internacionaleshelectronic resource	16993950,		MIT
+2670000000007941	^JZ21 .U48	USAK yearbook of international politics and lawhelectronic resource cUluslararasi Stratejik Arastirmalar Kurumu USAK	13080334,		MIT
+2670000000015169	^JN26 .R66 online	The Romanian review of European governance studieshelectronic resource	20664885,		MIT
+2670000000027761	^HX1 .S78 online	Studies of transition states and societieshelectronic resource	1736874X,	17368758,	MIT
+2670000000034798	^PJ5030.P34 H63 2007	In spite of partition bJews Arabs and the limits of separatist imagination cGil Z Hochberg	0691128758,9786612665752,1400827930,1282665758,	0691128758,9786612665752,1400827930,1282665758,	MIT
+2670000000046497	^JA26 .A344 online	Acta Universitatis DanubiuspAdministratiohelectronic resource	20685459,	20699336,	MIT
+2670000000047939	^KF8748.W48 2007	Political foundations of judicial supremacy bthe presidency the Supreme Court and constitutional leadership in US history cKeith E Whittington	0691141029,0691096406,9786612820908,1400827752,1282820907,	0691141029,0691096406,9786612820908,1400827752,1282820907,	MIT
+2670000000054158	^JA26 .J68	Journal of comparative politicshelectronic resource	13377477,	13381385,	USTL
+2670000000054182	^JA26	Revista de administrație publică și politici sociale	20671695,	23444940,	USTL
+2670000000054187	^JA26	Societate şi politică	18431348,	20677812,	USTL
+2670000000057518	^JC423 .B784 2007eb	Democratic rightshelectronic resource bthe substance of self government cCorey Brettschneider	0691149305,0691119708,1400828104,9786612087448,1282935496,1282087444,9786612935497,	0691149305,0691119708,1400828104,9786612087448,1282935496,1282087444,9786612935497,	USTL
+2670000000057647	^KF8742.E357 2007	The Next Justice bRepairing the Supreme Court Appointments Process	0691143528,0691134979,1282569287,9786612569289,1400827825,	0691143528,0691134979,1282569287,9786612569289,1400827825,	HKSYU
+2670000000062352	^D410 .R45	Revue d�fense nationalehelectronic resource	21057508,	21175969,	MIT
+2670000000093104	^JZ5511.2 .R48 online	Revista de paz y conflictoshelectronic resource	19887221,		MIT
+2670000000114865	^JN96.A1 S77	Stredoevropsk� Politick� Studiehelectronic resource	12132691,	12127817,	MIT
+2670000000120768	^DK1 .V47	Vestnik Moskovskogo gosudarstvennogo oblastnogo universitetapSerii0361a Istori0361a i politicheskie naukihelectronic resource	20728360,		MIT
+2670000000120796	^P1	Vestnik Moskovskogo gosudarstvennogo oblastnogo universitetapSerii0361a lingvistikahelectronic resource	20728379,		MIT
+2670000000120805	^JA4 .P46	Peninsulahelectronic resource ba journal of relational politics	1925525X,		MIT
+2670000000120817	^PG2001	Vestnik Moskovskogo gosudarstvennogo oblastnogo universitetapSerii0361a Russkai0361a filologii0361ahelectronic resource	20728522,	23107278,	MIT
+2670000000121444	^JN1 .C66	Contemporary European studieshelectronic resource	18024289,	18055133,	MIT
+2670000000140872	^JA26 .A53	Analele 0219tiin021Bifice ale Universita021Bii Al I Cuza din Ia0219inSerie nouapStiin021Be politicehelectronic resource	18423221,	2247451X,	MIT
+2670000000147443	^JZ6.5 .A28 online	Acta Universitatis DanubiuspRelationes internationaleshelectronic resource	20650272,	23441348,	MIT
+2670000000147509	^D742.J3 R43 2009	Japans decision for war in 1941 bsome enduring lessons cJeffrey Record	1584873787,	1584873787,	LCC
+2670000000147527	^DS79.769 .T47 2008	Regional spillover effects of the Iraq War cW Andrew Terrill	1584873736,	1584873736,	LCC
+2670000000147545	^JZ1550.A57 E2 2008	War without borders bthe Colombia Ecuador crisis of 2008 cGabriel Marcella	1584873728,	1584873728,	LCC
+2670000000157885	^HB1 .E97	European journal of economic and political studieshelectronic resource bejeps	13076000,	13076035,	MIT
+2670000000162130	^DS79.769.F45 2004	What we owe Iraq bwar and the ethics of nation building cNoah Feldman	0691121796,0691126127,128212949X,9786612129490,1400826225,	0691121796,0691126127,128212949X,9786612129490,1400826225,	MIT
+2670000000207492	^D764 .G5557 2011	Operation Barbarossa bHitlers invasion of Russia 1941 cDavid M Glantz	0752460706,0752468421,	0752460706,0752468421,	LCC
+2670000000240370	^JK1726 .F88 2003	The future of American democratic politics bprinciples and practices cGerald M Pomper Marc D Weiner editors	0813532981,9786613845412,0813559227,1283532964,	0813532981,9786613845412,0813559227,1283532964,	LCC
+2670000000266214	^K3	Canadian journal of human rightshelectronic resource	19239211,	19255306,	MIT
+2670000000273249	^KJE6242.A13 R48	Review of European comparative international environmental lawhelectronic resource bRECIEL	20500386,	20500394,	MIT
+2670000000281412	^JF1001	Studia wyborczehelectronic resource	18980082,		MIT
+2670000000281432	^JZ11.3 .S55	Journal of international relations	13361562,		USTL
+2670000000312300	^D1050.82.R62	On line journal modelling the new Europe	22470514,		USTL
+2670000000344978	^F3081	Divergenciahelectronic resource brevista de historica pol�tica	07192398,		MIT
+2670000000357155	^H1	Romanian review of political sciences and international relations	18412300,	22852107,	USTL
+2670000000357270	^JA26 .S68	South East European journal of political sciencehelectronic resource	22864547,		MIT
+2670000000357764	^H8 .A544	Analecta pol�ticahelectronic resource	20277458,	23900067,	MIT
+2670000000491263	^KF8775.B378 2006	Judges and their audiences ba perspective on judicial behavior cLawrence Baum	0691124930,0691138273,140082754X,1282086855,9786612086854,	0691124930,0691138273,140082754X,1282086855,9786612086854,	MIT
+2670000000497966	^DJK1 .N494	New Eastern Europehelectronic resource	20837372,	2084400X,	MIT
+2670000000528179	^JA26	Politické vedy	13352741,	13385623,	USTL
+2670000000556475	^DS392.S5 G68	The governmenthelectronic resource bresearch journal of political science	22277927,		MIT
+2940000000001514	SCHOOLEL^H62.A1	Citizenship teaching and learning	17511917,	17511925,	USTL
+3190000000082570	^H97 .A675	Asia the Pacific policy studies	20502680,		USTL
+3280000000004040	^JA71.B758 2005	Edgework bCritical Essays on Knowledge and Politics	0691123608,0691123616,9786612935411,9786612129407,1282935410,1282129406,140082687X,	0691123608,0691123616,9786612935411,9786612129407,1282935410,1282129406,140082687X,	HKSYU
+3280000000022640	^JA26 .G597	Godisnjakhelectronic resource	18206700,		MIT
+3280000000022646	^JA84.P7	Horyzonty polityki	20825897,	2353950X,	USTL
+3280000000022664	^H8	Sarajevski zurnal za drustvena pitanjahelectronic resource	23034033,		MIT
+3280000000038780	^JA1 .P655 online	Politics and governancehelectronic resource	21832463,		MIT
+3280000000039159	^D2009 .P475	European politics and societyhelectronic resource	23745118,	23745126,	MIT
+3330000000000078	^DR603 .T843	Turkish reviewhelectronic resource	13099647,		MIT
+3360000000002759	^DS371.4 .B53 2009	Challenges and opportunities for the Obama administration in Central Asia cby Stephen J Blank	1584873914,	1584873914,	LCC
+3360000000003590	^HV7085 .W55 2009	Criminals militias and insurgents borganized crime in Iraq cPhil Williams	1584873973,	1584873973,	LCC
+3360000000006550	^UA856 .B35 2009	New partnerships for a new era benhancing the South African Armys stabilization role in Africa cby Deane Peter Baker	1584873965,	1584873965,	LCC
+3410000000003984	^HC240 .R3383 2011	Regional and cohesion policy binsights into the role of the partnership principle in the new policy design cedited by Ioan Horga Iordan Gh Bărbulescu Adrian Ivan Mykolia Palinchak Istvan Suli Zakar	9634734391,	9634734391,	LCC
+3410000000003985	^D804.3 .T44 2001	Theoretical interpretations of the holocaust cedited by Dan Stone	9042015055,	9042015055,	USTL
+3440000000000092	^JA26	Scandinavian journal of public administration	20008058,	20013310,	USTL
+3580000000002183	^HC59.69 .J68	Journal of global south studies	24761397,	24761419,	USTL
+3710000000126498	^HD42 .C664	Conflict studies quarterly	22857605,		USTL
+3710000000264182	^JZ6.5 .E976	Europolity bcontinuity and change in European governance	23442247,		USTL
+3710000000364411	^H62.A1	Pensamiento Americano	20272448,		USTL
+3710000000540025	^DAW1051 .P47	New perspectives binterdisciplinary journal of Central East European politics and international relations	2336825X,	23368268,	USTL
+3710000000595370	^JA26	Polish political science review		23533773,	USTL
+3710000000627995	^JX1974.7 .E53	The spokesmanhelectronic resource	13677748,		MIT
+3710000000627996	^JA26 .V62	Voprosy gosudarstvennogo i munit0361sipal02B9nogo upravlenii0361ahelectronic resource	19995431,		MIT
+3710000000712339	^UF646.53	Journal on Baltic Securityhelectronic resource	23829222,	23829230,	MIT
+3720000000017527	^JZ5584.A35 A36	Africa peace and conflict journal	16593944,		OXFORD

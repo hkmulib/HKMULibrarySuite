@@ -1,6 +1,7 @@
+
 import java.io.File;
 
-import hk.edu.csids.cat.*;
+import hk.edu.ouhk.lib.cat.*;
 
 public class TestCopyCat {
 
@@ -9,7 +10,7 @@ public class TestCopyCat {
 				"d:/list.xlsx");
 		
 		String writePath = "D:/";
-		CopyCat cc;
-		cc = new CopyCat(file, writePath);
+		CopyCatExcel cc;
+		cc = new CopyCatExcel(file, writePath);
 	} //end main()
 }

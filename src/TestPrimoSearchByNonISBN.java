@@ -1,13 +1,14 @@
-import hk.edu.csids.bookquery.*;
+
+import hk.edu.ouhk.lib.bookquery.*;
 
 public class TestPrimoSearchByNonISBN {
 	public static void main(String[] args) {
 		
-		String inst = "HKSYU";
-		String author = "梁恩榮, 阮衛華著";
-		String title = " 公民教育, 香港再造! : 迎向新世代公民社會.";
+		String inst = "CUHK";
+		String author = "村上春樹";
+		String title = " 沒有色彩的多崎作和他的巡禮之年";
 		String publisher = "";
-		String year = "2011.";
+		String year = "2013.";
 		String edition = "";
 		String vol = "";
 				
@@ -51,7 +52,7 @@ public class TestPrimoSearchByNonISBN {
 			System.out.println("NOT MATCHED. ISBN:" + q.bk.isbn.getOriginalIsbn() + ".\n"
 					+ q.getErrMsg());
 			System.out.println("Primo X-service Base: "
-					+ hk.edu.csids.bookquery.Config.PRIMO_X_BASE);
+					+ hk.edu.ouhk.lib.bookquery.Config.PRIMO_X_BASE);
 			System.out.println("Author: " + q.queryBk.getCreator());
 			System.out.println("Title: " + q.queryBk.getTitle());
 			System.out.println("Publisher: " + q.queryBk.getPublisher());

@@ -1,15 +1,16 @@
-import hk.edu.csids.bookquery.*;
+
+import hk.edu.ouhk.lib.bookquery.*;
 
 public class TestZ3950earchByNonISBN {
 	public static void main(String[] args) {
 		try {
-			String inst = "CUHK";
-			String author = "牟宗三";
-			String title = " 牟宗三先生全集.(Vol.: v.24)..";
-			String publisher = "聯經出版公司,.";
-			String year = "2003.";
+			String inst = "USTL";
+			String author = "村上春樹";
+			String title = " 沒有色彩的多崎作和他的巡禮之年";
+			String publisher = " 時報文化出版";
+			String year = "2013.";
 			String edition = "";
-			String vol = "25";
+			String vol = "";
 
 			Z3950Query q = new Z3950QueryByNonISBN(author, title, publisher, year, edition, vol, inst);
 			System.out.println("QUERY: " + author + ", " + title + ", " + publisher + ", " + year + ", " + edition

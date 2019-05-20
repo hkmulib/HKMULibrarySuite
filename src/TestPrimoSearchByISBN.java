@@ -1,9 +1,10 @@
-import hk.edu.csids.bookquery.*;
+
+import hk.edu.ouhk.lib.bookquery.*;
 
 public class TestPrimoSearchByISBN{
 	public static void main(String[] args){
 
-		String inst = "HKSYU";
+		String inst = "POLYU";
 		String isbn = "9787020075621";
 		//String isbn = "781058703X";
 		String vol = "1";
@@ -39,10 +40,11 @@ public class TestPrimoSearchByISBN{
 			}//endfor
 		} else {
 			System.out.println("NOT MATCHED. ISBN:"  + q.bk.isbn.getOriginalIsbn() + ".\n"+ q.getErrMsg());
-			System.out.println("Primo X-service Base: " + hk.edu.csids.bookquery.Config.PRIMO_X_BASE);
+			System.out.println("Primo X-service Base: " + hk.edu.ouhk.lib.bookquery.Config.PRIMO_X_BASE);
 			System.out.println("ISBN ORI " + q.bk.isbn.getOriginalIsbn());
 			System.out.println("ISBN10 " + q.bk.isbn.getIsbn10());
 			System.out.println("ISBN13: " + q.bk.isbn.getIsbn13());
+			System.out.println("query: " + q.getQueryStr());
 		} //end if
 	}
 } //end class Test

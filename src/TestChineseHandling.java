@@ -1,6 +1,7 @@
+
 import java.nio.charset.Charset;
 
-import hk.edu.csids.*;
+import hk.edu.ouhk.lib.*;
 
 public class TestChineseHandling
 {
@@ -17,8 +18,16 @@ public class TestChineseHandling
 		System.out.println(CJKStringHandling.big5ToUnicode(str3));
 		
 		String str4 = "Shek Mun Campus Library";
-		GenStringHandling strHandle = new GenStringHandling();
+		StringHandling strHandle = new StringHandling();
 		System.out.println(strHandle.normalizeString(str4));
+		
+		String str5 = "02DEC2016";
+		str5 = str5.toUpperCase();
+		if(str5.matches(".*[0-9]{4}")) System.out.println("MMMMM");
+		
+		String str6 = "天國的隕落 : 太平天國宗教再研究";
+		String[] strs = CJKStringHandling.getPhrasesInChineseString(str6);
+		System.out.println(strs.length + "" + strs[7]);
 		
 	}
 }
