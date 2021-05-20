@@ -1,5 +1,5 @@
 
-import hk.edu.ouhk.lib.bookquery.*;
+import hk.edu.hkmu.lib.bookquery.*;
 
 public class TestPrimoSearchByNonISBN {
 	public static void main(String[] args) {
@@ -52,7 +52,7 @@ public class TestPrimoSearchByNonISBN {
 			System.out.println("NOT MATCHED. ISBN:" + q.bk.isbn.getOriginalIsbn() + ".\n"
 					+ q.getErrMsg());
 			System.out.println("Primo X-service Base: "
-					+ hk.edu.ouhk.lib.bookquery.Config.PRIMO_X_BASE);
+					+ hk.edu.hkmu.lib.bookquery.Config.PRIMO_X_BASE);
 			System.out.println("Author: " + q.queryBk.getCreator());
 			System.out.println("Title: " + q.queryBk.getTitle());
 			System.out.println("Publisher: " + q.queryBk.getPublisher());

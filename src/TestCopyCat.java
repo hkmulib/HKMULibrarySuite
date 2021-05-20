@@ -1,7 +1,7 @@
 
 import java.io.File;
 
-import hk.edu.ouhk.lib.cat.*;
+import hk.edu.hkmu.lib.cat.*;
 
 public class TestCopyCat {
 

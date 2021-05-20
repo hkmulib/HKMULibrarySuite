@@ -11,39 +11,27 @@
 <br>
 <br>
 <br>
-<h3> <b> SER Report Configuration</b> </h3>
+<h3> <b> ACQ General Configuration </b> </h3>
 <%
+	if(authen!=null && !authen.isAuthenticated())
+        	response.sendRedirect("/acq/index.jsp?logout=yes");
 	String cmd = request.getParameter("cmd");
-	String inpwd = request.getParameter("pwd");
-	if(inpwd==null)
-		inpwd = "";
 	String tol = request.getParameter("tol");
         String basedir = request.getServletContext().getRealPath("/") + "acq/";
         String webinfdir = request.getServletContext().getRealPath("/") + "/WEB-INF/classes/hk/edu/ouhk/lib/acq/";
-        String pwdfile = basedir + "conf/sphinx";
         String configFilePath = basedir + "conf/config.txt";
         String configWebFilePath = webinfdir + "config.txt";
-        String pwd = "&klsldfkj2356";
-        try {
-                BufferedReader br = new BufferedReader(new FileReader(pwdfile));
-                pwd = br.readLine();
-                pwd = pwd.trim();
-        } //end try
-        catch (Exception e) {
-        }
+	String logFilePath = basedir + "logs/configLog.txt";
 	if(cmd!=null){
 
-		if(!inpwd.equals(pwd))
-			out.println("<b> <font color=red> WRONG PWD </font> </b>");
-
-		if(inpwd.equals(pwd) && cmd.equals("update")){
+		if(cmd.equals("update")){
 			String configUpdate = "";
 			int t=Integer.parseInt(tol);
 			for(int i=0;i<t;i++){
 				String configName = request.getParameter("configname_" + i);
 				String configValue = request.getParameter(configName + i);
 				String configDes = request.getParameter("des" + configName + i);
-				configUpdate += configName + "=" +configValue + "=" + configDes; 
+				configUpdate += configName + "~" +configValue + "~" + configDes; 
 				if(i<=t-1)
 					configUpdate += "\n";
 			}
@@ -59,6 +47,9 @@
                         objWriter.flush();
                         objWriter.close(); 
 			out.println("<b> <font color=red> Configuration Updated </font> </b>");
+                        BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true));
+                        writer.write( new java.util.Date()  + "\t" + request.getRemoteAddr() + "\t" + authen.getUserid() + "\tACQ LIB Tools general config updated:\n " + configUpdate + "\n\n");
+                        writer.close();
 		}
 	}
 
@@ -66,6 +57,7 @@
 %>
 
 <hr>
+<div align=center>
 <form>
 <table border=1 class="table table-hover">
 <thead>
@@ -77,7 +69,7 @@
                 String sch[] = null;
 		int count=0;
                 while((line = br.readLine()) != null){
-                        String arry[] = line.split("=");
+                        String arry[] = line.split("~");
 			String html = "";
 			arry[0] = arry[0].trim();
 			arry[1] = arry[1].trim();
@@ -97,10 +89,10 @@
 %>
 </table>
 
-Password (default: 123456) <input type=password name=pwd size=5>
 <input type=hidden value=update name=cmd>
 <input type=hidden name=tol value="<%=count%>">
-<input type=submit value=update>
+<input type=submit value="Update Configuration">
 </form>
+</div>
 </body>
 </html>

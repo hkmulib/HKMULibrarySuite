@@ -10,13 +10,13 @@ CopyCAT Program for Library
 		out.println(requestFilePath);
 		out.println(reportFilePath);
 		if (file != null && file.contains(".xlsx")) {
-	File f = new File(requestFilePath + "/" + file);
-	CopyCatExcel cc = new CopyCatExcel(f, reportFilePath);
-	String now = StringHandling.getToday();
-	out.println("Completed file: " + file);
-	out.println("End time: " + now);
+			File f = new File(requestFilePath + "/" + file);
+			CopyCatExcel cc = new CopyCatExcel(f, reportFilePath);
+			String now = GenStringHandling.getToday();
+			out.println("Completed file: " + file);
+			out.println("End time: " + now);
 		} else {
-	out.println("invalid file.");
+			out.println("invalid file.");
 		} //end if
 	} //end try
 

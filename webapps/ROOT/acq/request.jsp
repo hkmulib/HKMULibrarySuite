@@ -1,7 +1,7 @@
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
 <%@ page import="javax.servlet.http.*" %>
 <%
-	String cmd = request.getParameter("cmd");
+String cmd = request.getParameter("cmd");
 	String file = request.getParameter("file");
 	String type = request.getParameter("type");
 	String filedircopycat = request.getServletContext().getRealPath("/") + "copycat/requests/copycat";
@@ -11,12 +11,12 @@
 
 	if(cmd!=null && cmd.contains("delete")){
 		if(type.contains("copycat"))
-			f = new File(filedircopycat + "/" + file);
+	f = new File(filedircopycat + "/" + file);
 		if(type.equals("sfxenrich"))
-			f = new File(filedirsfxenrich + "/" + file);
+	f = new File(filedirsfxenrich + "/" + file);
 		f.delete();
 		out.println("File '" + file + "' deleted <br>");
-	} //end 
+	} //end
 %>
 <html>
 <head>

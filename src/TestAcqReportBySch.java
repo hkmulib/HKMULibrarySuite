@@ -1,7 +1,7 @@
 
 import java.io.PrintWriter;
 
-import hk.edu.ouhk.lib.acq.*;
+import hk.edu.hkmu.lib.acq.*;
 
 public class TestAcqReportBySch {
 
@@ -13,10 +13,9 @@ public class TestAcqReportBySch {
 		 * "20180821", "20180822", "D:\\"); acqRpt.fetchReport(); }
 		 */
 		PrintWriter out = new PrintWriter(System.out, true);
-		FetchReportBySchoolAndDates acqRpt = new FetchReportBySchoolAndDates("E&L", "20190101", "20190228", "D:\\", null);
-		acqRpt.fetchReport();
+		FetchReportBySchoolAndDates acqRpt = new FetchReportBySchoolAndDates("A&SS", "20210301", "20210319", "D:\\", null);
+		
 		acqRpt.reportLastMonth();
-		acqRpt.setSchCode("E&L");
-		acqRpt.reportLastMonth();
+		String str = "";
 	}
 }

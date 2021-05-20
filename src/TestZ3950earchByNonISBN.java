@@ -1,5 +1,5 @@
 
-import hk.edu.ouhk.lib.bookquery.*;
+import hk.edu.hkmu.lib.bookquery.*;
 
 public class TestZ3950earchByNonISBN {
 	public static void main(String[] args) {

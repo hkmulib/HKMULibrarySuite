@@ -1,5 +1,5 @@
 
-import hk.edu.ouhk.lib.*;
+import hk.edu.hkmu.lib.*;
 
 public class TestMARC {
 	public static void main(String args[]) {

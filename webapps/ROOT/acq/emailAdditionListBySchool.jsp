@@ -1,5 +1,5 @@
-<%@ page import="hk.edu.ouhk.lib.acq.*"%>
-<%@ page import="java.io.*,java.util.*, javax.servlet.*"%>
+<%@ page import="hk.edu.hkmu.lib.acq.*"%>
+<%@ page import="java.io.*,java.util.*,javax.servlet.*"%>
 <%@include file="menu.jsp"%>
 <script language="javascript">
 	function validateForm(form){
@@ -18,30 +18,17 @@
 <br>
 <h3> <b> Email New Addition List by School (Last Month only) </b> </h3>
 <%
+       	if(authen!=null && !authen.isAuthenticated())
+                	response.sendRedirect("/acq/index.jsp?logout=yes");
 	String cmd = request.getParameter("cmd");
-	String inpwd = request.getParameter("pwd");
-	if(inpwd==null)
-		inpwd = "";
 	String budtol = request.getParameter("budtol");
         String basedir = request.getServletContext().getRealPath("/") + "acq/";
         String webinfdir = request.getServletContext().getRealPath("/") + "/WEB-INF/classes/hk/edu/ouhk/lib/acq/";
-        String pwdfile = basedir + "conf/sphinx";
         String budgetCodeFilePath = basedir + "conf/budgetCodes.txt";
         String budgetCodeWebFilePath = webinfdir + "budgetCodeConfig.txt";
-        String pwd = "&klsldfkj2356";
-        try {
-                BufferedReader br = new BufferedReader(new FileReader(pwdfile));
-                pwd = br.readLine();
-                pwd = pwd.trim();
-        } //end try
-        catch (Exception e) {
-        }
+	String logFilePath = basedir + "logs/emailLog.txt";
 	if(cmd!=null){
-
-		if(!inpwd.equals(pwd))
-			out.println("<b> <font color=red> WRONG PWD </font> </b> <script language=javascript> alert('WRONG Password') </script>");
-
-		if(inpwd.equals(pwd) && cmd.equals("emailReport")){
+		if(cmd.equals("emailReport")){
 			
 			String selectedReport = request.getParameter("selectedReport");
 			out.println("<b> The selected last month report of the school <b> <font color=red>" + selectedReport + "</font></b> is going to be emailed. Please check Mail later. </b>");
@@ -50,6 +37,9 @@
 			acqRpt.reportLastMonth();
 			for (String reportFile : acqRpt.getReportFiles()) {
 				EmailReportBySubject em = new EmailReportBySubject(reportPath + reportFile);
+	                        BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true));
+        	                writer.write( new java.util.Date()  + "\t" + request.getRemoteAddr() + "\t" + authen.getUserid() + "\tACQ LIB Tools email report:  " + reportFile + "\n\n");
+                	        writer.close();
 			}	
 		}
 	}
@@ -70,7 +60,7 @@
                 String sch[] = null;
 		int count=0;
                 while((line = br.readLine()) != null){
-                        String arry[] = line.split("=");
+                        String arry[] = line.split("~");
                         String schStr = arry[0];
                         String codeStr = arry[1];
                         sch = schStr.split("@");
@@ -88,7 +78,6 @@
 </table>
 <b> <font color="red"> WARNING!!! </font> The selected report (last month) of the school will <font color="red">  be emailed IMMEDIATELY </font> to the email address(es) stated in the "Email RPT addr" column in the table above after you clicked "Email Report!". </b>
 <br><br>
-Password (default: 123456) <input type=password name=pwd size=5>
 <input type=hidden value=emailReport name=cmd>
 <input type=submit value="Email Report!">
 </form>

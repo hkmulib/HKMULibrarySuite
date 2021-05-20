@@ -1,8 +1,0 @@
-URLITEMTYPE=ERSJ, EV=The definition of Item Material Type of Aleph for URL Report.
-FINYEAR=2019=The financial year the ASR report belongs.
-SVStartDate=20100714=The start date for the parameter order status 'SV' and 'RSV'.
-SVEndDate=20190430=The end date for the parameter order status  'SV' and 'RSV'.
-LCStartDate=20190401=The start date for the parameter order status 'LC' and 'CLS'.
-LCEndDate=20190430=The end date for the parameter order status  'LC' and 'CLS'.
-SCHOOL=B&A, A&SS, E&L, N&HS, SAO, S&T, RO, LIB=All the school codes marked in Aleph for the ASR Excel report sheets. <br> The last one is defined as other that if a title does not fall into the previous catagories, it falls into the last.
-FORTRIMSCHOOLCODE=5.15 Library Print Serials Renewal, 4.15 Library Standing Order Renewal, 4.15 Library E-Serials Renewal, 4.15 Library One-off Print Serials,4.15 Library One-off E-Serials,4.15 Library - New Print Serials & SO,4.15 Library - New E-Serials=For triming the Z76_NAME (Budget name) by irrelevent strings to obtain the school code in ASR report. Delimited by ','. <br> <b> <i> Original: 4.15 Library Print Serials Renewal, 4.15 Library Standing Order Renewal, 4.15 Library E-Serials Renewal,<br> 4.15 Library One-off Print Serials,4.15 Library One-off E-Serials,4.15 Library - New Print Serials & SO,4.15 Library - New E-Serials </i> </b>

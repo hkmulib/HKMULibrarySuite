@@ -8,7 +8,7 @@ import java.nio.charset.Charset;
 import java.util.HashSet;
 import java.util.Set;
 
-import hk.edu.ouhk.lib.*;
+import hk.edu.hkmu.lib.*;
 
 public class TextHandling
 {

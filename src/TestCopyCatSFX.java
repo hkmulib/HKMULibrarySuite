@@ -1,7 +1,7 @@
 
 import java.io.File;
 
-import hk.edu.ouhk.lib.cat.*;
+import hk.edu.hkmu.lib.cat.*;
 
 public class TestCopyCatSFX {
 
@@ -11,6 +11,6 @@ public class TestCopyCatSFX {
 		
 		String writePath = "D:\\";
 		CopyCatSFX cc;
-		cc = new CopyCatSFX(null, writePath, "2018-12-12-09-10-02");
+		cc = new CopyCatSFX(file, writePath);
 	} //end main()
 }

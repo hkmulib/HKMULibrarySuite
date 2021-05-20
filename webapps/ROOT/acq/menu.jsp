@@ -1,54 +1,65 @@
-<html>
-<head>
-   <meta charset='utf-8'>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="stylesheet" href="/css/menu.css">
-   <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-   <script src="/js/standardLibrary/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script src="/js/standardLibrary/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-   <script src="/js/standardLibrary/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   <script type='text/javascript' src='/js/standardista_table_sorting/common.js'></script>
-   <script type='text/javascript' src='/js/standardista_table_sorting/css.js'></script>
-   <script type='text/javascript' src='/js/standardista_table_sorting/standardista-table-sorting.js'></script>
-
-   <title>OUHK LIB ACQ Tools</title>
-</head>
+<%@include file="../preload.jsp"%>
 <body>
+
+<%
+hk.edu.hkmu.lib.acq.Config.init();
+	AuthenticateLibLDAP authen = (AuthenticateLibLDAP) session.getAttribute("authen");
+	String username = "";
+	if(authen!=null && hk.edu.hkmu.lib.acq.Config.VALUES.get("ALLOWUSERS").toLowerCase().contains(authen.getUserid().toLowerCase()) )
+		username = authen.getSurname() + ", " + authen.getGivenName() + " (" + authen.getPatronType().trim() + ")";
+	else
+		response.sendRedirect("/acq/index.jsp?logout=yes&source=" + javax.servlet.http.HttpUtils.getRequestURL(request));
+%>
+
 <div style="background-color: lightblue;" id="cssmenu">
 <img src="/img/acq.jpg" height=50px>
-<font color=lightblue size=5> <b>  OUHK LIB ACQ's Tools (Testing Site)</b> </font>
+<font color=lightblue size=5> <b>  OUHK LIB ACQ's Tools (Testing Site) - <%=username%> </b> </font>
 <ul>
-<li>
-</li>
-<li class='has-sub'>
-<a href='#'> Tool</a>
+
+<li class='has-sub'> <a href='#'> Tool</a>
 <ul>
-<li class='has-sub'>
-<a href="additionListBySchoolMenu.jsp"> New Addition List by School</a>
+	<li class='has-sub'> <a href='#'> New Addition List Tool</a>
+		<ul>
+			<li class='has-sub'> <a href="additionListBySchoolMenu.jsp"> New Addition List by School</a></li>
+			<li class='has-sub'> <a href="emailAdditionListBySchool.jsp"> Email "New Addition List by School" Report (Last Month)</a></li>
+		</ul>
+	</li>
+</ul>
 </li>
-<li class='has-sub'>
-<a href="emailAdditionListBySchool.jsp"> Email "New Addition List by School" Report (Last Month)</a>
-</li>
-</ul
-</li>
+
 <li>
-   <li class='has-sub'><a href='pastReport.jsp'><span>Past Report</span></a>
+   <li class='has-sub'><a href='#'><span>Report</span></a>
+      <ul>
+   	<li class='has-sub'><a href='newArrivialReport.jsp'><span>New Arrivial List</span></a> </li>
+   	<li class='has-sub'><a href='eBkPlatformReport.jsp'><span>eBook Platform Checking</span></a> </li>
+   	<li class='has-sub'><a href='systemLog.jsp'><span>System Log</span></a> </li>
+      </ul>
    </li>
 <li>
+
 <li>
    <li class='has-sub'><a href='#'><span>Configuration</span></a>
       <ul>
-         <li class='has-sub'><a href='addListEmailConfig.jsp'><span>New Additional List (Email)</span></a>
-         </li>
-         <li class='has-sub'><a href='addListConfig.jsp'><span>New Addition List By School</span></a>
-         </li>
-         <li class='has-sub'><a href='cpwdconfig.jsp'><span>Change Password</span></a>
-         </li>
+	         <li class='has-sub'><a href='config.jsp'><span>General</span></a> </li>
+   		<li class='has-sub'><a href='#'><span>New Addition List</span></a>
+		      <ul>
+		         <li class='has-sub'><a href='addListReportConfig.jsp'><span>Report & Email</span></a> </li>
+		         <li class='has-sub'><a href='addListConfig.jsp'><span>Budget</span></a> </li>
+		      </ul>
+		</li>
+		<li class='has-sub'><a href='#'><span>EBook Platform Checking</span></a>
+		      <ul>
+		         <li class='has-sub'><a href='eBkPlatformCheckingGeneralConfig.jsp'><span>General Configuration</span></a> </li>
+		         <li class='has-sub'><a href='eBkPlatformCheckingConfig.jsp'><span>Platform Configuration</span></a> </li>
+		      </ul>
+		</li>
       </ul>
    </li>
 <li>
 <a href="help.jsp"> Help</a>
+</li>
+<li>
+<a href="index.jsp?logout=yes"> Logout </a>
 </li>
 </ul>
 </div>

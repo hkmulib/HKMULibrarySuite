@@ -1,7 +1,7 @@
 
 import java.io.PrintWriter;
 
-import hk.edu.ouhk.lib.ser.*;
+import hk.edu.hkmu.lib.ser.*;
 
 public class TestSerASRReport {
 

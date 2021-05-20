@@ -1,4 +1,3 @@
-<%@ page import="hk.edu.csids.cat.*,hk.edu.csids.*"%>
 <%@ page import="hk.edu.csids.bookquery.*"%>
 <%@ page import="java.sql.*"%>
 <%@ page import="java.util.*"%>
@@ -86,33 +85,20 @@
 <br>
 <h3> <b> Configiguration for ACQ Tools </b> </h3>
 <%
+	if(authen!=null && !authen.isAuthenticated())
+        	response.sendRedirect("/acq/index.jsp?logout=yes");
 	String cmd = request.getParameter("cmd");
-	String inpwd = request.getParameter("pwd");
-	if(inpwd==null)
-		inpwd = "";
 	String budtol = request.getParameter("budtol");
         String basedir = request.getServletContext().getRealPath("/") + "acq/";
         String webinfdir = request.getServletContext().getRealPath("/") + "/WEB-INF/classes/hk/edu/ouhk/lib/acq/";
 	String logdir = basedir + "logs/";
-        String pwdfile = basedir + "conf/sphinx";
         String budgetCodeFilePath = basedir + "conf/budgetCodes.txt";
         String budgetCodeWebFilePath = webinfdir + "budgetCodes.txt";
-        String pwd = "&klsldfkj2356";
-        try {
-                BufferedReader br = new BufferedReader(new FileReader(pwdfile));
-                pwd = br.readLine();
-                pwd = pwd.trim();
-        } //end try
-        catch (Exception e) {
-        }
+        String logFilePath = logdir + "configLog.txt";
 	if(cmd!=null){
-
-		if(!inpwd.equals(pwd))
-			out.println("<b> <font color=red> WRONG PWD </font> </b> <script language=javascript> alert('WRONG Password') </script>");
-
-		if(inpwd.equals(pwd) && cmd.equals("update")){
+		if(cmd.equals("update")){
 			String action = request.getParameter("action");
-			if(action.equals("update")){
+			if(action.equals("Update Configuration")){
 				String configUpdate = "";
 				int t=Integer.parseInt(budtol);
 				for(int i=0;i<t;i++){
@@ -121,7 +107,7 @@
 					String updateCode = request.getParameter("codes" + i);
 					String emails = request.getParameter("emails" + i);
 				
-					configUpdate += schCode + "@" + schName + "=" + updateCode + "=" + emails;
+					configUpdate += schCode + "@" + schName + "~" + updateCode + "~" + emails;
 					if(i<=t-1)
 						configUpdate += "\n";
 				}
@@ -137,8 +123,11 @@
                         	objWriter.flush();
 	                        objWriter.close(); 
 				out.println("<b> <font color=red> CONFIG UPDATED </font> </b>");
+				BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true));
+				writer.write( new java.util.Date()  + "\t" + request.getRemoteAddr() + "\t" + authen.getUserid() + "\tACQ LIB Tools budget codes config updated: \n" + configUpdate + "\n\n");
+				writer.close();
 			}
-			if(action.equals("delete")){
+			if(action.equals("Delete Selected Row")){
 				String schCode = request.getParameter("deleteSchCode");
 				if(schCode == null){
 					out.println("<b> <font color=red> NO school is selected. Please try again.</font> </b>");
@@ -164,10 +153,13 @@
                 	        	objWriter.flush();
 	                	        objWriter.close(); 
 					out.println("<b> <font color=red> School " + schCode + " is DELETEED </font> </b>");
+					BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true));
+					writer.write( new java.util.Date()  + "\t" + request.getRemoteAddr() + "\t" + authen.getUserid() + "\tACQ LIB Tools budget codes config deleted:\n " + configUpdate + "\n\n");
+					writer.close();
 				}
 			}
 		}
-		if(inpwd.equals(pwd) && cmd.equals("add")){
+		if(cmd.equals("add")){
 			String configUpdate = "";
 			String schName = request.getParameter("schName");
 			String schCode = request.getParameter("schCode");
@@ -176,7 +168,7 @@
 			if(schName == "" || schCode == "" || updateCode == "" || emails == ""){
 				out.println("NO field is allowed to be null, pls reenter");
 			} else {
-				configUpdate += schCode + "@" + schName + "=" + updateCode + "=" + emails;
+				configUpdate += schCode + "@" + schName + "~" + updateCode + "~" + emails;
         	                Writer objWriter = new BufferedWriter(new FileWriter(budgetCodeFilePath,true));
                 	        objWriter.write(configUpdate);
                         	objWriter.flush();
@@ -186,16 +178,10 @@
         	                objWriter.flush();
                 	        objWriter.close(); 
 				out.println("<b> <font color=red> CONFIG ADDED </font> </b>");
+				BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true));
+				writer.write( new java.util.Date()  + "\t" + request.getRemoteAddr() + "\t" + authen.getUserid() +  "\tACQ LIB Tools budget codes config added: \n" + configUpdate + "\n\n");
+				writer.close();
 			}
-		}
-		if(inpwd.equals(pwd) && cmd.equals("updatePwd")){
-			String newpwd = request.getParameter("newpwd");
-                        File file = new File(pwdfile);
-                        file.delete();
-                        Writer objWriter = new BufferedWriter(new FileWriter(budgetCodeFilePath));
-                        objWriter.write(newpwd);
-                        objWriter.flush();
-                        objWriter.close(); 
 		}
 	}
 
@@ -205,6 +191,7 @@
 
 <hr>
 <b> Update New Arrival List configuration </b>
+<div align=center>
 <form id="updateForm" onsubmit="return validateUpdateForm()">
 <table border=1 width=70% class='table table-hover'>
 <thead> <tr> <td> No </td>  <td> School Code <br> </td> <td> School Name </td> <td> Budget Codes </td> <td> Email RPT addr (',' for delimiter.) <br> The 1st entry is the TO-addr while the 2nd and onwards are CC-addr. </td> <td> Delete? </td></tr></thead>
@@ -214,15 +201,15 @@
                 String sch[] = null;
 		int count=0;
                 while((line = br.readLine()) != null){
-                        String arry[] = line.split("=");
+                        String arry[] = line.split("~");
                         String schStr = arry[0];
                         String codeStr = arry[1];
                         sch = schStr.split("@");
 			String html = "<tr> <td> " + (count+1) + ". </td> <td>";
 			html += "<input name=schCode" + count + " type=text value=" + sch[0] + "> </td> <td> ";
-			html += "<input name=schName" + count + " type=text value='" + sch[1] + "' size=45></td> <td>";
+			html += "<input name=schName" + count + " type=text value='" + sch[1] + "' size=35></td> <td>";
 			html += "<input name=codes" + count + " type=text value='" + codeStr + "' size=50></td> <td>"; 
-			html += "<input size=80px name=emails" + count + " type=text value='" + arry[2] + "' size=50></td> <td>"; 
+			html += "<input size=90px name=emails" + count + " type=text value='" + arry[2] + "' size=50></td> <td>"; 
 			html += "<input type='radio' name='deleteSchCode' value='" + sch[0] + "' </td> </tr>"; 
 			out.println(html);
 			count++;
@@ -231,11 +218,10 @@
 %>
 </table>
 
-Password (default: 123456) <input type=password name=pwd size=5>
 <input type=hidden value=update name=cmd>
 <input type=hidden name=budtol value="<%=count%>">
-<input type=submit name=action value=update>
-<input type=submit name=action value=delete>
+<input type=submit name=action value="Update Configuration">
+<input type=submit name=action value="Delete Selected Row">
 </form>
 <br>
 <b>
@@ -248,9 +234,9 @@ Add New School:
 </thead>
 <tr> <td> <input type=text name=schCode>  </td> <td> <input type=text name=schName> </td> <td> <input type=text name=codes size=40px> </td> <td> <input type=text name=emails size=60px> </td> </tr>
 </table>
-Password (default: 123456) <input type=password name=pwd size=5>
 <input type=hidden value=add name=cmd>
-<input type=submit value=add>
+<input type=submit value="Add New School Budget">
 </form>
+</div>
 </body>
 </html>

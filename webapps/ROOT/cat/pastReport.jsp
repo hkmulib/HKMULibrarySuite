@@ -18,6 +18,10 @@
 </html>
 </head>
 <%
+        if(authen!=null && !authen.isAuthenticated())
+                response.sendRedirect("/acq/index.jsp?logout=yes");
+	String basedir = request.getServletContext().getRealPath("/") + "cat/";
+	String logFilePath = basedir + "logs/reportLog.txt";
 	String cmd = request.getParameter("cmd");
 	String type = request.getParameter("type");
 	if(type==null)
@@ -49,6 +53,9 @@
 			f.delete();
 
 		out.println("File '" + file + "' deleted <br>");
+		BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true));
+		writer.write( new java.util.Date()  + "\t" + request.getRemoteAddr() + "\t" + authen.getUserid() + "\tReport deleted:" + file + "\n");
+		writer.close();
 	} //end 
 %>
 <br>

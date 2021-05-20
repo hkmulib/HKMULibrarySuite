@@ -1,6 +1,6 @@
 
-import hk.edu.ouhk.lib.*;
-import hk.edu.ouhk.lib.bookquery.*;
+import hk.edu.hkmu.lib.*;
+import hk.edu.hkmu.lib.bookquery.*;
 
 public class TestZ3950earchByISSN{
 	public static void main(String[] args){

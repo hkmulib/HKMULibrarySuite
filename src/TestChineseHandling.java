@@ -1,7 +1,7 @@
 
 import java.nio.charset.Charset;
 
-import hk.edu.ouhk.lib.*;
+import hk.edu.hkmu.lib.*;
 
 public class TestChineseHandling
 {
@@ -19,7 +19,9 @@ public class TestChineseHandling
 		
 		String str4 = "Shek Mun Campus Library";
 		StringHandling strHandle = new StringHandling();
-		System.out.println(strHandle.normalizeString(str4));
+		
+		
+		System.out.println(StringHandling.getMonthByNum(2));
 		
 		String str5 = "02DEC2016";
 		str5 = str5.toUpperCase();

@@ -24,9 +24,9 @@
 
 <b> III. Configuration </b>
 <br>
-1. <a href="/acq/addListEmailConfig.jsp"> The email configuration page </a> is an interface to define the email contents of the New Additional List by School report. This page exlpains itself. 
+1. <a href="/acq/addListReportConfig.jsp"> The new addition list by school report configuration page </a> is an interface to define the email contents  and the Excel report of the New Additional List by School report. This page exlpains itself. 
 <br>
-2. <a href="/acq/addListConfig.jsp"> The general configuration page </a> is an interface to define parameters for the ACQ report. This page exlpains itself. 
+2. <a href="/acq/addListConfig.jsp"> The new addition list by school budget code and email addresses configuration page </a> is an interface configure the budget codes and reporting email addresses. 
 
 
 </body>

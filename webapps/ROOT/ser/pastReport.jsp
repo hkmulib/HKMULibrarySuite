@@ -1,16 +1,18 @@
 <%@ page import="java.io.*,java.util.*, javax.servlet.*,org.apache.commons.io.comparator.*" %>
 <%@ page import="javax.servlet.http.*" %>
 <%@include file="menu.jsp"%>
-</html>
 </head>
+<body>
 <%
+
+        String basedir = request.getServletContext().getRealPath("/") + "ser/";
+        String logFilePath = basedir + "logs/reportLog.txt";
 	String cmd = request.getParameter("cmd");
 	String type = request.getParameter("type");
-	if(type==null)
-		type="";
 	String file = request.getParameter("file");
-	String fileddir1stReport = request.getServletContext().getRealPath("/") + "ser/reports/urlReports";
-	String filedir2ndReport = request.getServletContext().getRealPath("/") + "ser/reports/asrReports";
+	String fileddir1stReport = basedir + "/reports/urlReports";
+	String filedir2ndReport = basedir + "/reports/asrReports";
+
 	File f = new File(fileddir1stReport + "/" + file); 
 	if(cmd!=null && cmd.contains("delete")){
 
@@ -35,15 +37,20 @@
 			f.delete();
 
 		out.println("File '" + file + "' deleted <br>");
-	} //end 
+
+                BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true));
+                writer.write( new java.util.Date()  + "\t" + request.getRemoteAddr() + "\t" + authen.getUserid() + "\tReport deleted:" + file + "\n");
+                writer.close();
+	} //end if 
 %>
 <br>
 <br>
 <br>
 <br>
 <br>
-<h3> <b> Reports</b> </h3>
 <%
+
+	out.println("<h3> <b> Reports</b> </h3>");
 	File directory1stReport = new File(fileddir1stReport);
 	File[] list1stReport = directory1stReport.listFiles();
 	Arrays.sort(list1stReport, LastModifiedFileComparator.LASTMODIFIED_REVERSE);
@@ -127,4 +134,5 @@
 	out.println("<tbody></table>");
 
 %>
+</body>
 </html>

@@ -1,11 +1,16 @@
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
 <%@ page import="javax.servlet.http.*" %>
+<%@include file="menu.jsp"%>
 <%
+        if(authen!=null && !authen.isAuthenticated())
+                response.sendRedirect("/acq/index.jsp?logout=yes");
 	String cmd = request.getParameter("cmd");
 	String file = request.getParameter("file");
 	String type = request.getParameter("type");
 	String filedircopycat = request.getServletContext().getRealPath("/") + "cat/requests/copycat";
 	String filedirsfxenrich = request.getServletContext().getRealPath("/") + "cat/requests/sfxenrich";
+        String basedir = request.getServletContext().getRealPath("/") + "cat/";
+        String logFilePath = basedir + "logs/reportLog.txt";
 	File f = null;
 
 
@@ -16,9 +21,11 @@
 			f = new File(filedirsfxenrich + "/" + file);
 		f.delete();
 		out.println("File '" + file + "' deleted <br>");
+                BufferedWriter writer = new BufferedWriter(new FileWriter(logFilePath, true));
+                writer.write( new java.util.Date()  + "\t" + request.getRemoteAddr() + "\t" + authen.getUserid() + "\tRequest deleted:" + file + "\n");
+                writer.close();
 	} //end 
 %>
-<%@include file="menu.jsp"%>
 <br>
 <br>
 <br>

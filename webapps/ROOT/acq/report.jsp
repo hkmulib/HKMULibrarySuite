@@ -1,7 +1,7 @@
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
 <%@ page import="javax.servlet.http.*" %>
 <%
-	String cmd = request.getParameter("cmd");
+String cmd = request.getParameter("cmd");
 	String type = request.getParameter("type");
 	if(type==null)
 		type="";
@@ -20,10 +20,10 @@
 
 		f = new File(filedirsubjectSearchPolyU + "/" + completedFile);
 		if(f.exists())
-			f.delete();
+	f.delete();
 
 		out.println("File '" + file + "' deleted <br>");
-	} //end 
+	} //end
 %>
 <html>
 <head>
