@@ -1,4 +1,5 @@
 /hk/
+/log4j.properties
 /TestAcqEmail.class
 /TestAcqEmail2.class
 /TestAcqReportBySch.class
@@ -22,4 +23,3 @@
 /TestZ3950earchByNonISBN.class
 /TestZ3950earchBySubject.class
 /TextHandling.class
-/log4j.properties

@@ -164,138 +164,168 @@ public class FetchURLReport extends Report {
 			String subfield3 = "";
 			String reportLine = "";
 			stmt2 = conAleph.createStatement();
-			while (rs.next()) {
-				String rec_key = rs.getString("Z13_REC_KEY");
-				String title = rs.getString("Z13_TITLE");
+			BufferedWriter fileout = null;
+			String tmpFile = StringHandling.getToday();
+			tmpFile = Config.VALUES.get("TEMPFOLDER") + tmpFile + ".csv";
+			try {
+				System.out.println(tmpFile);
+				FileWriter fstream = new FileWriter(tmpFile, false);
+				fileout = new BufferedWriter(fstream);
+				while (rs.next()) {
+					String rec_key = rs.getString("Z13_REC_KEY");
+					String title = rs.getString("Z13_TITLE");
+					fileout.write(rec_key + "," + title + "\n");
+				}
 
-				// The 2nd SQL statement, for fetching the URLs from the raw data (Z00_DATA) of
-				// a title from Aleph Oracle.
-				String sql2 = "select * from z00 where z00_doc_number = '" + rec_key + "'";
+			}
 
-				try {
+			catch (IOException e) {
+				System.err.println("Error: " + e.getMessage());
+			}
 
-					rs2 = stmt2.executeQuery(sql2);
-					rs2.next();
+			finally {
+				if (fileout != null) {
+					fileout.close();
+				}
+			}
+			rs.close();
+			stmt.close();
 
-					data = rs2.getString("Z00_DATA");
-					matcher = pattern.matcher(data);
-					if (matcher.find()) {
-						subfield3 = matcher.group(1);
+			try (BufferedReader br = new BufferedReader(new FileReader(tmpFile))) {
+				String line;
+				while ((line = br.readLine()) != null) {
+					String[] lineValues = line.split(",");
+					String rec_key = lineValues[0];
+					String title = lineValues[1];
+
+					// The 2nd SQL statement, for fetching the URLs from the raw data (Z00_DATA) of
+					// a title from Aleph Oracle.
+					String sql2 = "select * from z00 where z00_doc_number = '" + rec_key + "'";
+
+					try {
+
+						rs2 = stmt2.executeQuery(sql2);
+						if (rs2.next()) {
+							data = rs2.getString("Z00_DATA");
+							matcher = pattern.matcher(data);
+							if (matcher.find()) {
+								subfield3 = matcher.group(1);
+							}
+
+							data = data.replace(subfield3, "");
+						}
+					} catch (Exception e2) {
+						e2.printStackTrace();
+						System.out.println(data);
+						System.out.println(subfield3);
+					}
+					subfield3 = subfield3.replace("$$3", "");
+					subfield3 = subfield3 + " ";
+
+					String urls[] = data.split("\\d\\d\\d\\d856..L\\$\\$u");
+					String yocs[] = new String[urls.length];
+					for (int i = 0; i < urls.length; i++) {
+						urls[i] = urls[i].trim();
+						yocs[i] = urls[i].replaceAll("^.*http.*?\\$\\$z", "");
+						if (!urls[i].contains("$z"))
+							yocs[i] = "";
+						urls[i] = urls[i].replaceAll("^.*85640L\\$u", "");
+						urls[i] = urls[i].replaceAll("^.*\\$\\$u", "");
+						urls[i] = urls[i].replaceAll("CAT  L.*", "");
+						urls[i] = urls[i].replaceAll("004\\d\\d\\d\\d .*", "");
+						urls[i] = urls[i].replaceAll("\\$\\$z.*", "");
+						yocs[i] = yocs[i].replaceAll("\\d\\d\\d\\d\\d\\d\\d..L.*", "");
+						yocs[i] = yocs[i].replaceAll("\\d\\d\\d\\dCAT  L.*", "");
+						yocs[i] = yocs[i].replaceAll("\\d\\d\\dCAT  L.*", "");
+						yocs[i] = yocs[i].replaceAll("^.*\\$\\$y", "");
+						yocs[i] = yocs[i].replaceAll("\\$\\$a", "");
+						yocs[i] = yocs[i].replaceAll("\\$\\$b", "");
+						yocs[i] = yocs[i].replaceAll("\\$\\$c", "");
+						yocs[i] = yocs[i].replaceAll("\\d\\d\\d949.*", "");
+						yocs[i] = yocs[i].replaceAll("\\)\\d+", ")");
+						yocs[i] = yocs[i].replaceAll("\\.0$", ".");
+						yocs[i] = yocs[i].replaceAll("\\-0$", "-");
 					}
 
-					data = data.replace(subfield3, "");
-				} catch (Exception e2) {
-					e2.printStackTrace();
-					System.out.println(data);
-					System.out.println(subfield3);
-				}
-				subfield3 = subfield3.replace("$$3", "");
-				subfield3 = subfield3 + " ";
+					Row row = sheet.createRow(count + 1);
+					row.createCell(0).setCellValue(count);
+					row.createCell(1).setCellValue(rec_key);
+					row.createCell(2).setCellValue(title);
 
-				String urls[] = data.split("\\d\\d\\d\\d856..L\\$\\$u");
-				String yocs[] = new String[urls.length];
-				for (int i = 0; i < urls.length; i++) {
-					urls[i] = urls[i].trim();
-					yocs[i] = urls[i].replaceAll("^.*http.*?\\$\\$z", "");
-					if (!urls[i].contains("$z"))
-						yocs[i] = "";
-					urls[i] = urls[i].replaceAll("^.*85640L\\$u", "");
-					urls[i] = urls[i].replaceAll("^.*\\$\\$u", "");
-					urls[i] = urls[i].replaceAll("CAT  L.*", "");
-					urls[i] = urls[i].replaceAll("004\\d\\d\\d\\d .*", "");
-					urls[i] = urls[i].replaceAll("\\$\\$z.*", "");
-					yocs[i] = yocs[i].replaceAll("\\d\\d\\d\\d\\d\\d\\d..L.*", "");
-					yocs[i] = yocs[i].replaceAll("\\d\\d\\d\\dCAT  L.*", "");
-					yocs[i] = yocs[i].replaceAll("\\d\\d\\dCAT  L.*", "");
-					yocs[i] = yocs[i].replaceAll("^.*\\$\\$y", "");
-					yocs[i] = yocs[i].replaceAll("\\$\\$a", "");
-					yocs[i] = yocs[i].replaceAll("\\$\\$b", "");
-					yocs[i] = yocs[i].replaceAll("\\$\\$c", "");
-					yocs[i] = yocs[i].replaceAll("\\d\\d\\d949.*", "");
-					yocs[i] = yocs[i].replaceAll("\\)\\d+", ")");
-					yocs[i] = yocs[i].replaceAll("\\.0$", ".");
-					yocs[i] = yocs[i].replaceAll("\\-0$", "-");
-				}
+					if (yocs.length > 1)
+						row.createCell(4).setCellValue(yocs[1]);
+					else
+						row.createCell(4).setCellValue("");
+					if (urls.length > 1)
+						row.createCell(3).setCellValue(urls[1]);
+					else
+						row.createCell(3).setCellValue("");
 
-				
+					if (urls.length > 1) {
+						urls[1] = urls[1].replaceAll(" ", "%20");
+						row.getCell(3).setCellStyle(hrefStyle);
+					}
+					count++;
 
-				Row row = sheet.createRow(count + 1);
-				row.createCell(0).setCellValue(count);
-				row.createCell(1).setCellValue(rec_key);
-				row.createCell(2).setCellValue(title);
+					System.out.println(count + ":" + title + ":" + row.getCell(3).getStringCellValue());
 
-				if (yocs.length > 1)
-					row.createCell(4).setCellValue(yocs[1]);
-				else
-					row.createCell(4).setCellValue("");
-				if (urls.length > 1)
-					row.createCell(3).setCellValue(urls[1]);
-				else
-					row.createCell(3).setCellValue("");
+					reportLine = "<tr> <td>#</td><td>" + rec_key + "</td><td>" + title + "</td>";
 
-				if (urls.length > 1) {
-					urls[1] = urls[1].replaceAll(" ", "%20");
-					row.getCell(3).setCellStyle(hrefStyle);
-				}
-				count++;
+					if (yocs.length > 1 && urls.length > 1)
+						reportLine += "<td> <a href='" + urls[1] + "' target='_blank'> " + urls[1] + "</a></td><td>"
+								+ yocs[1] + "</td>\n";
+					else
+						reportLine += "<td> <a href='" + "" + "' target='_blank'> " + "" + "</a></td><td>" + ""
+								+ "</td>\n";
 
-				System.out.println(count + ":" + title + ":" + row.getCell(3).getStringCellValue());
-
-				reportLine = "<tr> <td>#</td><td>" + rec_key + "</td><td>" + title + "</td>";
-
-				if (yocs.length > 1 && urls.length > 1)
-					reportLine += "<td> <a href='" + urls[1] + "' target='_blank'> " + urls[1] + "</a></td><td>"
-							+ yocs[1] + "</td>\n";
-				else
-					reportLine += "<td> <a href='" + "" + "' target='_blank'> " + "" + "</a></td><td>" + "" + "</td>\n";
-
-				if (wr != null) {
-					wr.write(reportLine);
-					wr.flush();
-				}
-
-				reportLine = "";
-
-				for (int j = 2; j < urls.length; j++)
-					if (!urls[j].contains("aleph.lib.ouhk.edu.hk")) {
-
-						row = sheet.createRow(count + 1);
-						row.createCell(0).setCellValue(count);
-						row.createCell(1).setCellValue(rec_key);
-						row.createCell(2).setCellValue(title);
-						if (yocs.length > 1)
-							row.createCell(4).setCellValue(yocs[j]);
-						else
-							row.createCell(4).setCellValue("");
-						if (urls.length > 1) {
-
-							row.createCell(3).setCellValue(urls[j]);
-							/*
-							 * href.setAddress(urls[j]); row.getCell(3).setHyperlink(href);
-							 */
-							row.getCell(3).setCellStyle(hrefStyle);
-
-						} else {
-							row.createCell(3).setCellValue("");
-						}
-						count++;
-
-						reportLine += "<tr> <td>#</td><td>" + rec_key + "</td><td>" + title + "</td>";
-
-						if (urls.length > 1 && yocs.length > 1)
-							reportLine += "<td> <a href='" + urls[j] + "' target='_blank'> " + urls[j]
-									+ "</a></td> <td>" + yocs[j] + "</td>\n";
-						else
-							reportLine += "<td> <a href='" + "" + "' target='_blank'> " + "" + "</a></td> <td>" + ""
-									+ "</td>\n";
-						if (wr != null) {
-							wr.write(reportLine);
-							wr.flush();
-						}
-
-						reportLine = "";
+					if (wr != null) {
+						wr.write(reportLine);
+						wr.flush();
 					}
 
+					reportLine = "";
+
+					for (int j = 2; j < urls.length; j++)
+						if (!urls[j].contains("aleph.lib.ouhk.edu.hk")) {
+
+							row = sheet.createRow(count + 1);
+							row.createCell(0).setCellValue(count);
+							row.createCell(1).setCellValue(rec_key);
+							row.createCell(2).setCellValue(title);
+							if (yocs.length > 1)
+								row.createCell(4).setCellValue(yocs[j]);
+							else
+								row.createCell(4).setCellValue("");
+							if (urls.length > 1) {
+
+								row.createCell(3).setCellValue(urls[j]);
+								/*
+								 * href.setAddress(urls[j]); row.getCell(3).setHyperlink(href);
+								 */
+								row.getCell(3).setCellStyle(hrefStyle);
+
+							} else {
+								row.createCell(3).setCellValue("");
+							}
+							count++;
+
+							reportLine += "<tr> <td>#</td><td>" + rec_key + "</td><td>" + title + "</td>";
+
+							if (urls.length > 1 && yocs.length > 1)
+								reportLine += "<td> <a href='" + urls[j] + "' target='_blank'> " + urls[j]
+										+ "</a></td> <td>" + yocs[j] + "</td>\n";
+							else
+								reportLine += "<td> <a href='" + "" + "' target='_blank'> " + "" + "</a></td> <td>" + ""
+										+ "</td>\n";
+							if (wr != null) {
+								wr.write(reportLine);
+								wr.flush();
+							}
+
+							reportLine = "";
+						}
+
+				}
 			}
 
 			outputHTML = "</tr></tbody></table>";
@@ -318,9 +348,7 @@ public class FetchURLReport extends Report {
 			workbook.close();
 			fileOut.close();
 
-			rs.close();
 			rs2.close();
-			stmt.close();
 			stmt2.close();
 			conAleph.close();
 		}

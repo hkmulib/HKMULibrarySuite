@@ -7,7 +7,7 @@ public class TestSerURLReport {
 
 	public static void main(String argvs[]) {
 		PrintWriter out = new PrintWriter(System.out, true);
-		FetchURLReport rpt = new FetchURLReport("/home/wwyng", null);
+		FetchURLReport rpt = new FetchURLReport("d:\\", null);
 		rpt.fetchReport();
 
 	}
