@@ -1,2 +1,0 @@
-Alive server list: LCC,MIT,OXFORD,BL,USTL,LNU,HKSYU,
-Failed server list: CAMBRI,NKFUST,

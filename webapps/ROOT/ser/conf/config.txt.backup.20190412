@@ -1,8 +1,0 @@
-FINYEAR=2019=The financial year the ASR report belongs
-SVStartDate=20190401=The start date for the parameter order status "SV" & "RSV"
-SVEndDate=20190431=The end date for the parameter order status "SV" & "RSV"
-LCStartDate=20190401=The start date for the parameter order status "LC"
-LCEndDate=20190431=The end date for the parameter order status "LC"
-SCHOOL=B&A, A&SS, E&L, N&HS, SAO, S&T, RO, LIB=All the school codes marked in Aleph. The last one is defined as other that if a title doesn't belong to all priori groups, it is treated as the last code. 
-FORTRIMSCHOOLCODE=4.15 Library Print Serials Renewal, 4.15 Library Standing Order Renewal, 4.15 Library E-Serials Renewal, 4.15 Library One-off Print Serials,4.15 Library One-off E-Serials,4.15 Library - New Print Serials & SO,4.15 Library - New E-Serials=For triming the z76_name (Budget name) and obtain the school code. Delimited by ','.
-BUDGETCODEFORM=SSS-BBBBBB-YYYY, SSS-BBBBBB-S-YYYY, SSS-BBBBBB-S-S-YYYY

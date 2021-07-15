@@ -1,6 +1,0 @@
-Request File: /data/tomdev/webapps/ROOT/cat/requests/sfxenrich/2018-12-12-18-00-43.xml-marc
-Writing report STARTS at: 2018-12-12-18-03-22
-Alive server list: MIT,OXFORD,NKFUST,BL,JULAC,USTL,LNU,HKSYU,
-Failed server list: LCCLCC,CAMBRI,
-Wed Dec 12 18:03:37 HKT 2018:954925247099,,88888888,,
-Wed Dec 12 18:04:18 HKT 2018:110978984444553,SCHOOLEL,10724303,,

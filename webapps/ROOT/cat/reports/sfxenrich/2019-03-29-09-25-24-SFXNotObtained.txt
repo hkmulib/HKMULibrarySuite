@@ -1,6 +1,0 @@
-Request File: /data/tomdev/webapps/ROOT/cat/requests/sfxenrich/2019-03-29-09-22-43.xml-marc
-Writing report STARTS at: 2019-03-29-09-25-24
-Alive server list: LCC,MIT,OXFORD,NKFUST,BL,JULAC,USTL,LNU,HKSYU,
-Failed server list: CAMBRI,
-Fri Mar 29 09:25:43 HKT 2019:954925247099,,88888888,,
-Fri Mar 29 09:26:39 HKT 2019:110978984444553,SCHOOLEL,10724303,,

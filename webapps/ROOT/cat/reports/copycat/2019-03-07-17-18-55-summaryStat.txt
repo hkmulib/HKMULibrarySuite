@@ -1,8 +1,0 @@
-Active Query List: [LCC, MIT, OXFORD, NKFUST, BL, USTL]
-Filtering Tags: ALL
-Failed Z39.50 Server List: [CAMBRI, JULAC, LNU, HKSYU]
-Server match count:LCC(7) MIT(1) OXFORD(2) NKFUST(0) BL(0) USTL(0) 
-Titles Tried: 10
-Success Records: 10
-Failed Records: 0
-----------------------------
